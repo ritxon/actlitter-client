@@ -6,7 +6,7 @@ export class Cards extends Component {
     render() {
         return (
             <div className='cards'>
-                <h1>This could be a good title</h1>
+                <h1>This could be a good title.</h1>
                 <div className='cards__container'>
                     <div className='cards__wrapper'>
                         <ul className='cards__items'>
