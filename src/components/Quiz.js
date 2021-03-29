@@ -10,7 +10,6 @@ export class Quiz extends Component {
 					questionText: 'How much time does it take to decompose one core apple??',
 					answerOptions: [
 						{ answerText: '1 Month', isCorrect: false },
-						{ answerText: '2 Months', isCorrect: false },
 						{ answerText: '6 Months', isCorrect: true },
 						{ answerText: '1 Year', isCorrect: false },
 					],
