@@ -10,6 +10,7 @@ export class home extends Component {
     render() {
         return (
             <>
+            
                 <HeroSection/>
                 <Cards/>
             </> 
