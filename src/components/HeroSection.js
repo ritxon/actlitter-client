@@ -8,7 +8,7 @@ class HeroSection extends Component {
             <div className='hero-container'>
                 <video src="/videos/video-1.mp4" autoPlay loop muted />
                 <h1>STOP LITTERING</h1>
-                <p>what are you waiting for</p>
+                <p>Be a nature saviour</p>
             </div>
         )
     }
