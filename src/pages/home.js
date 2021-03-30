@@ -6,14 +6,12 @@ import "../App.css";
 import HeroSection from "../components/HeroSection";
 import Cards from "../components/Cards";
 
-
 export class home extends Component {
   render() {
     return (
       <>
         <HeroSection />
         <Cards />
-
       </>
     );
   }
