@@ -1,0 +1,40 @@
+.stepper-wrapper-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+  position: relative;
+}
+
+.step-number {
+  border-radius: 80%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.divider-line {
+  height: 1px;
+  background-color: #bdbdbd;
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 70%;
+}
+
+.step-number-active {
+  background-color: #044d29;
+  color: white;
+}
+
+.step-number-disable{
+  border: 1px solid grey;
+}

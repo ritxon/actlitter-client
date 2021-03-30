@@ -1,17 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import Quiz from '../components/Quiz'
+import Quiz from "../components/Quiz";
 
 export class quiz extends Component {
-    render() {
-        return (
-            <div>
-                <h1 className='quiz'>Challenge your knowledge</h1>
-				<Quiz/>
-            </div>
-			
-        )
-    }
+  render() {
+    return <Quiz />;
+  }
 }
 
-export default quiz
+export default quiz;
