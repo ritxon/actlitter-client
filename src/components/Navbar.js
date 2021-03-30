@@ -26,7 +26,6 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        {/* logo + menu icon start*/}
         <div className="nav-container">
           <Link to="/" className="navbar-logo" onClick={this.closeMobileMenu}>
             <img src="../../logo.png" className="navlogo" /> AcLitter
@@ -37,8 +36,6 @@ class Navbar extends Component {
             />
           </div>
         </div>
-        {/* logo + menu icon finish*/}
-        {/* menu list start */}
         <ul className={this.state.varIcon ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={this.closeMobileMenu}>
@@ -51,7 +48,7 @@ class Navbar extends Component {
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              Impact
+              Info
             </Link>
           </li>
           <li className="nav-item">
@@ -65,32 +62,22 @@ class Navbar extends Component {
           </li>
           <li className="nav-item">
             <Link
-              to="/data"
-              className="nav-links"
-              onClick={this.closeMobileMenu}
-            >
-              Data
-            </Link>
-          </li>
-          {/* <li className="nav-item">
-            <Link
               to="/login"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
               Login
             </Link>
-          </li> */}
+          </li>
         </ul>
-        {/* menu list finish */}
       </nav>
-      //       <AppBar>
-      //     <Toolbar className="nav-container">
-      //         <Button color="inherit" component={Link} to="/login" >Login</Button>
-      //         <Button color="inherit" component={Link} to="/" >Home</Button>
-      //         <Button color="inherit" component={Link} to="/signup" >Signup</Button>
-      //     </Toolbar>
-      // </AppBar>
+      /*             <AppBar>
+                <Toolbar className="nav-container">
+                    <Button color="inherit" component={Link} to="/login" >Login</Button>
+                    <Button color="inherit" component={Link} to="/" >Home</Button>
+                    <Button color="inherit" component={Link} to="/signup" >Signup</Button>
+                </Toolbar>
+            </AppBar> */
     );
   }
 }

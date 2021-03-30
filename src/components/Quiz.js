@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./quiz.css";
 
+import StepProgressBar from "./StepProgressBar";
+
 export class Quiz extends Component {
   constructor(props) {
     super(props);
@@ -8,12 +10,12 @@ export class Quiz extends Component {
       questions: [
         {
           questionText:
-            "How much time does it take to decompose one core apple??",
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis accusantium aut illum??",
           answerOptions: [
             { answerText: "1 Month", isCorrect: false },
-            { answerText: "2 Months", isCorrect: false },
             { answerText: "6 Months", isCorrect: true },
             { answerText: "1 Year", isCorrect: false },
+            { answerText: "2 Year", isCorrect: false },
           ],
         },
         {
@@ -26,7 +28,61 @@ export class Quiz extends Component {
           ],
         },
         {
-          questionText: "The iPhone was created by which company?",
+          questionText: "The iPhone was created by which company3?",
+          answerOptions: [
+            { answerText: "Apple", isCorrect: true },
+            { answerText: "Intel", isCorrect: false },
+            { answerText: "Amazon", isCorrect: false },
+            { answerText: "Microsoft", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "The iPhone was created by which company4?",
+          answerOptions: [
+            { answerText: "Apple", isCorrect: true },
+            { answerText: "Intel", isCorrect: false },
+            { answerText: "Amazon", isCorrect: false },
+            { answerText: "Microsoft", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "The iPhone was created by which company5?",
+          answerOptions: [
+            { answerText: "Apple", isCorrect: true },
+            { answerText: "Intel", isCorrect: false },
+            { answerText: "Amazon", isCorrect: false },
+            { answerText: "Microsoft", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "The iPhone was created by which company6?",
+          answerOptions: [
+            { answerText: "Apple", isCorrect: true },
+            { answerText: "Intel", isCorrect: false },
+            { answerText: "Amazon", isCorrect: false },
+            { answerText: "Microsoft", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "The iPhone was created by which company7?",
+          answerOptions: [
+            { answerText: "Apple", isCorrect: true },
+            { answerText: "Intel", isCorrect: false },
+            { answerText: "Amazon", isCorrect: false },
+            { answerText: "Microsoft", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "The iPhone was created by which company8?",
+          answerOptions: [
+            { answerText: "Apple", isCorrect: true },
+            { answerText: "Intel", isCorrect: false },
+            { answerText: "Amazon", isCorrect: false },
+            { answerText: "Microsoft", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "The iPhone was created by which company9?",
           answerOptions: [
             { answerText: "Apple", isCorrect: true },
             { answerText: "Intel", isCorrect: false },
@@ -47,23 +103,22 @@ export class Quiz extends Component {
       currentQuestion: 0,
       showScore: false,
       score: 0,
+      currentStep: 0,
     };
   }
 
-  cost;
-
   handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect == true) {
-      
       this.setState({
         score: this.state.score + 1,
       });
     }
-    
+
     const nextQuestion = this.state.currentQuestion + 1;
 
     if (nextQuestion < this.state.questions.length) {
       this.setState({
+        currentStep: this.state.currentStep + 1,
         currentQuestion: nextQuestion,
       });
     } else {
@@ -74,28 +129,48 @@ export class Quiz extends Component {
   };
 
   render() {
+    const { currentStep } = this.state;
+
     return (
       <div>
-        <div className="app">
-          {/* HINT: replace "false" with logic to display the 
-      score when the user has answered all the questions */}
+        <div className="container-quiz">
           {this.state.showScore ? (
             <div className="score-section">
               You scored {this.state.score} out of {this.state.questions.length}
             </div>
           ) : (
             <>
-              <div className="question">
+              <div className="stepper-container-horizontal">
+                <StepProgressBar
+                  steps={this.state.questions}
+                  currentStepNumber={currentStep}
+                ></StepProgressBar>
+              </div>
+              <div className="container-question">
                 <div className="question-section">
-                  <div className="question-count">
-                    <span>Question {this.state.currentQuestion + 1}</span>/
-                    {this.state.questions.length}
+                  <div className="question">
+                    <div className="question-count">
+                      <span>Question {this.state.currentQuestion + 1}</span>
+                    </div>
+                    <div className="question-text">
+                      {
+                        this.state.questions[this.state.currentQuestion]
+                          .questionText
+                      }
+                    </div>
                   </div>
-                  <div className="question-text">
-                    {
-                      this.state.questions[this.state.currentQuestion]
-                        .questionText
-                    }
+                  <div className="answer-section">
+                    {this.state.questions[
+                      this.state.currentQuestion
+                    ].answerOptions.map((answerOption) => (
+                      <button
+                        onClick={() =>
+                          this.handleAnswerButtonClick(answerOption.isCorrect)
+                        }
+                      >
+                        {answerOption.answerText}
+                      </button>
+                    ))}
                   </div>
                 </div>
                 <div className="image-section">
@@ -107,19 +182,6 @@ export class Quiz extends Component {
                     />
                   </figure>
                 </div>
-              </div>
-              <div className="answer-section">
-                {this.state.questions[
-                  this.state.currentQuestion
-                ].answerOptions.map((answerOption) => (
-                  <button
-                    onClick={() =>
-                      this.handleAnswerButtonClick(answerOption.isCorrect)
-                    }
-                  >
-                    {answerOption.answerText}
-                  </button>
-                ))}
               </div>
             </>
           )}
