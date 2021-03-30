@@ -185,6 +185,9 @@ export class Quiz extends Component {
                   </figure>
                 </div>
               </div>
+
+
+              
             </>
           )}
         </div>
