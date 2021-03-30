@@ -2,16 +2,18 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import "./base.css";
 import "./App.css";
 
 //Components
 import Navbar from "./components/Navbar";
-
+import Footer from "./components/Footer";
 //Pages
 import home from "./pages/home";
 import login from "./pages/login";
 import quiz from "./pages/quiz";
 import info from "./pages/info";
+import data from "./pages/data";
 
 const theme = createMuiTheme({
   palette: {
@@ -43,8 +45,10 @@ class App extends Component {
                 <Route exact path="/login" component={login} />
                 <Route exact path="/quiz" component={quiz} />
                 <Route exact path="/info" component={info} />
+                <Route exact path="/data" component={data} />
               </Switch>
             </div>
+            <Footer />
           </Router>
         </div>
       </MuiThemeProvider>

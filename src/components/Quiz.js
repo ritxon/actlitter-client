@@ -117,8 +117,6 @@ export class Quiz extends Component {
     const nextQuestion = this.state.currentQuestion + 1;
 
     if (nextQuestion < this.state.questions.length) {
-
-
       this.setState({
         currentStep: this.state.currentStep + 1,
         currentQuestion: nextQuestion,
@@ -130,11 +128,8 @@ export class Quiz extends Component {
     }
   };
 
-
-
   render() {
-
-    const {currentStep} = this.state
+    const { currentStep } = this.state;
 
     return (
       <div>
@@ -146,7 +141,10 @@ export class Quiz extends Component {
           ) : (
             <>
               <div className="stepper-container-horizontal">
-                <StepProgressBar steps={this.state.questions} currentStepNumber={currentStep}></StepProgressBar>
+                <StepProgressBar
+                  steps={this.state.questions}
+                  currentStepNumber={currentStep}
+                ></StepProgressBar>
               </div>
               <div className="container-question">
                 <div className="question-section">
