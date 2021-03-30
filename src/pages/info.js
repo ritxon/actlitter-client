@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
-import '../App.css'
-
+import React, { Component } from "react";
+import "../App.css";
+import Cards from "../components/Cards";
 export class info extends Component {
-    render() {
-        return (
-            <div>
-                <h1 className='info'>Info</h1>
-            </div>
-        )
-    }
+  render() {
+    return <Cards />;
+  }
 }
 
-export default info
+export default info;
