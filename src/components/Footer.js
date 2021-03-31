@@ -16,13 +16,15 @@ function Footer() {
               <h3>Explore More: </h3>
               <ul>
                 <li>
-                  <Link to="/">Impact on Enviroment</Link>
+                  <Link to="/impact_enviorment">Impact on Enviroment</Link>
                 </li>
                 <li>
-                  <Link to="/">Impact on Human & Animals</Link>
+                  <Link to="/impact_human_animal">
+                    Impact on Human & Animals
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/quiz">Litter Classification</Link>
+                  <Link to="/impact_classification">Litter Classification</Link>
                 </li>
               </ul>
             </div>
@@ -33,7 +35,7 @@ function Footer() {
                   <Link to="/">Homepage</Link>
                 </li>
                 <li>
-                  <Link to="/">Litter Information</Link>
+                  <Link to="/impact">Litter Information</Link>
                 </li>
                 <li>
                   <Link to="/quiz">Quiz</Link>

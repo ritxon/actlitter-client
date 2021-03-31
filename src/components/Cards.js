@@ -31,20 +31,20 @@ export class Cards extends Component {
                 text="Impact on Environment. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
                 label="Impact on Environment "
-                path="/login"
+                path="/impact_enviorment"
               />
               <CardItem
                 src="images/img-7.jpg"
                 text="Litter can have an adverse impact on health of people as well as animals. Inefficient litter disposal can create unhygienic living conditions, block drainage systems and spread diseases. Litter can be injurious to Australian wildlife due to ingestion or entanglement that can lead to suffocation, drowning and maiming."
                 label="Impact on Human & Animals"
-                path="/login"
+                path="/impact_human_animal"
               />
               <CardItem
                 src="images/img-6.jpg"
                 text="Litter Classfication. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
                 label="Litter Classification"
-                path="/login"
+                path="/impact_classification"
               />
             </ul>
           </div>
