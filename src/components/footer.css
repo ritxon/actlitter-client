@@ -1,6 +1,6 @@
 .footer-container {
-  background-color: #f4faea;
-  padding: 4rem 0 2rem 0;
+  background-color: #044d29;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
   text-align: center;
   margin-bottom: 24px;
   padding: 24px;
-  color: black;
+  color: #fff;
 }
 
 .footer-subsciption-heading {
@@ -36,10 +36,11 @@
   border: 1px solid black;
 }
 .footer-links {
-  width: 100%;
-
   display: flex;
-  justify-content: center;
+  flex: 1;
+  text-align: right;
+  width: 80%;
+  justify-content: end;
 }
 .footer-link-wrapper {
   display: flex;
@@ -60,15 +61,16 @@
 }
 
 .footer-link-items > h2 {
-  color: black;
+  color: #fff;
 }
 .footer-link-items a {
-  color: black;
+  color: #fff;
   text-decoration: none;
   margin-bottom: 8px;
 }
 
 .footer-logo {
+  padding-top: 50px;
   width: 300px;
   position: relative;
   float: left;
@@ -80,6 +82,9 @@
   max-width: 400px;
   max-height: 100%;
   vertical-align: middle;
+}
+.footer-logo h1 {
+  color: #fff;
 }
 .footer-link-items {
   width: 20%;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Sections from "../components/Sections";
 
-export class data extends Component {
+export class impact extends Component {
   render() {
     return (
       <>
@@ -13,4 +13,4 @@ export class data extends Component {
   }
 }
 
-export default data;
+export default impact;

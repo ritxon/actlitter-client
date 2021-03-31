@@ -13,7 +13,7 @@ import home from "./pages/home";
 import login from "./pages/login";
 import quiz from "./pages/quiz";
 import info from "./pages/info";
-import data from "./pages/data";
+import impact from "./pages/impact";
 
 const theme = createMuiTheme({
   palette: {
@@ -45,7 +45,7 @@ class App extends Component {
                 <Route exact path="/login" component={login} />
                 <Route exact path="/quiz" component={quiz} />
                 <Route exact path="/info" component={info} />
-                <Route exact path="/data" component={data} />
+                <Route exact path="/impact" component={impact} />
               </Switch>
             </div>
             <Footer />

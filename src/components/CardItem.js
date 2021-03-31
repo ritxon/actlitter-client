@@ -9,20 +9,20 @@ export class CardItem extends Component {
   render() {
     return (
       <>
-        <li className="cards__item">
-          <Link className="cards__item__link" to={this.props.path}>
+        <li className="cards-item">
+          <Link className="cards-item-link" to={this.props.path}>
             <figure
-              className="cards__item__pic-wrap"
+              className="cards-item-pic-wrap"
               data-category={this.props.label}
             >
               <img
                 src={this.props.src}
                 alt="Image"
-                className="cards__item__img"
+                className="cards-item-img"
               />
             </figure>
-            <div className="cards__item__info">
-              <h5 className="cards__item_text">{this.props.text}</h5>
+            <div className="cards-item-nfo">
+              <p className="cards-item-text">{this.props.text}</p>
             </div>
           </Link>
         </li>

@@ -30,13 +30,13 @@ button {
 }
 
 a {
-  color: #666;
+  color: #00261c;
   text-decoration: none;
 }
 
-/* a:hover {
-  color: #c81623;
-} */
+a:hover {
+  color: #044d29;
+}
 
 button,
 input {
@@ -50,9 +50,9 @@ body {
   /* 抗锯齿性 让文字显示得更加清晰 */
   -webkit-font-smoothing: antialiased;
   background-color: #fff;
-  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
+  font: 20px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
     "\5B8B\4F53", sans-serif;
-  color: #666;
+  color: #00261c;
 }
 
 .hide,
