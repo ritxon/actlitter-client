@@ -14,11 +14,12 @@
 
 .step-number {
   border-radius: 80%;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   padding: 4px;
+  font-weight: 900;
 }
 
 .divider-line {
@@ -37,4 +38,9 @@
 
 .step-number-disable{
   border: 1px solid grey;
+}
+
+.step-number-current{
+  background-color: #E8600C;
+  color: white;
 }

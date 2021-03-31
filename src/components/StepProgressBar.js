@@ -89,7 +89,8 @@ export class StepProgressBar extends Component {
     const stepsDisplay =  steps.map((step,index) => {
       return (
         <div className="step-wrapper">
-          <div className={`step-number ${step.selected ? "step-number-active" : "step-number-disable"}`}>{step.completed ? <span>&#10003;</span> : index +1} </div>
+          <div className={`step-number ${step.selected ? step.completed ? "step-number-active" : "step-number-current" : "step-number-disable"}`}>
+            {step.completed ? <span>&#10003;</span> : index +1} </div>
           <div className={index !== steps.length - 1 ? "divider-line" : ""}/>
         </div>
       );
