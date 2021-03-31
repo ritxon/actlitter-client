@@ -13,14 +13,10 @@ import home from "./pages/home";
 import login from "./pages/login";
 import quiz from "./pages/quiz";
 import info from "./pages/info";
-<<<<<<< HEAD
-import data from "./pages/data";
 import impact_enviorment from "./pages/impact_enviorment";
 import impact_human_animal from "./pages/impact_human_animal";
 import impact_classification from "./pages/impact_classification";
-=======
 import impact from "./pages/impact";
->>>>>>> ca22880c5b549f96a5d4a7e8bb6883c4be77519b
 
 const theme = createMuiTheme({
   palette: {
@@ -52,14 +48,10 @@ class App extends Component {
                 <Route exact path="/login" component={login} />
                 <Route exact path="/quiz" component={quiz} />
                 <Route exact path="/info" component={info} />
-<<<<<<< HEAD
-                <Route exact path="/data" component={data} />
+                <Route exact path="/impact" component={impact} />
                 <Route exact path="/impact_enviorment" component={impact_enviorment} />
                 <Route exact path="/impact_human_animal" component={impact_human_animal} />
                 <Route exact path="/impact_classification" component={impact_classification} />
-=======
-                <Route exact path="/impact" component={impact} />
->>>>>>> ca22880c5b549f96a5d4a7e8bb6883c4be77519b
               </Switch>
             </div>
             <Footer />

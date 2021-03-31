@@ -15,7 +15,7 @@ export class Sections extends Component {
               src="images/img-1.jpg"
               title="Impact on Enviroment"
               text="Litter can have an adverse impact on health of people as well as animals. Inefficient litter disposal can create unhygienic living conditions, block drainage systems and spread diseases. Litter can be injurious to Australian wildlife due to ingestion or entanglement that can lead to suffocation, drowning and maiming."
-              path="/login"
+              path="/impact_enviorment"
             />
 
             <SectionItem
@@ -25,7 +25,7 @@ export class Sections extends Component {
                             Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam? 
                           "
               label="Label"
-              path="/login"
+              path="/impact_human_animal"
             />
 
             <SectionItem
@@ -33,7 +33,7 @@ export class Sections extends Component {
               title="Litter Classification"
               text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
-              path="/login"
+              path="/impact_classification"
             />
           </ul>
         </div>
