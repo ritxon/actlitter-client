@@ -59,3 +59,11 @@ body {
   margin: 20px;
   align-items: flex-start;
 }
+@media screen and (max-width: 800px) {
+  .team-felx .team-logo {
+    display: block;
+  }
+  .team-logo {
+    display: none;
+  }
+}

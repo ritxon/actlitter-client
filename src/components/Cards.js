@@ -28,8 +28,8 @@ export class Cards extends Component {
             <ul className="cards-items">
               <CardItem
                 src="images/img-9.jpg"
-                text="Impact on Environment. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
+                text="      
+"
                 label="Impact on Environment "
                 path="/impact_enviorment"
               />
@@ -41,8 +41,8 @@ export class Cards extends Component {
               />
               <CardItem
                 src="images/img-6.jpg"
-                text="Litter Classfication. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
+                text="The benefits of garbage sorting are obvious. Garbage classified collection can reduce the amount of garbage disposal and treatment equipment, reduce treatment costs, and reduce the consumption of land resources. It has social, economic, and ecological benefits.
+"
                 label="Litter Classification"
                 path="/impact_classification"
               />

@@ -1,6 +1,6 @@
 .footer-container {
   background-color: #044d29;
-  padding: 20px;
+  padding-top: 20px;
   color: #fff;
 }
 .footer-wrapper {
@@ -37,4 +37,27 @@
 }
 .footer-link-items ul li a {
   color: #fff;
+}
+.footer-copyright {
+  background-color: #00261c;
+  text-align: center;
+  font: 12px;
+}
+@media only screen and (max-width: 800px) {
+  .footer-link-items {
+    display: none;
+  }
+  .footer-logo {
+    width: 80px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  .footer-logo img {
+    display: none;
+  }
+
+  .footer-links {
+    margin: 5px;
+  }
 }

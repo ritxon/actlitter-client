@@ -44,6 +44,7 @@ function Footer() {
             </div>
           </div>
         </div>
+        <div className="footer-copyright">copyright @2020</div>
       </div>
     </>
   );
