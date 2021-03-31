@@ -13,6 +13,9 @@ import home from "./pages/home";
 import login from "./pages/login";
 import quiz from "./pages/quiz";
 import info from "./pages/info";
+import impact_enviorment from "./pages/impact_enviorment";
+import impact_human_animal from "./pages/impact_human_animal";
+import impact_classification from "./pages/impact_classification";
 import impact from "./pages/impact";
 
 const theme = createMuiTheme({
@@ -46,6 +49,9 @@ class App extends Component {
                 <Route exact path="/quiz" component={quiz} />
                 <Route exact path="/info" component={info} />
                 <Route exact path="/impact" component={impact} />
+                <Route exact path="/impact_enviorment" component={impact_enviorment} />
+                <Route exact path="/impact_human_animal" component={impact_human_animal} />
+                <Route exact path="/impact_classification" component={impact_classification} />
               </Switch>
             </div>
             <Footer />
