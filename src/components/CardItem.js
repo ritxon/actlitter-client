@@ -21,7 +21,7 @@ export class CardItem extends Component {
                 className="cards-item-img"
               />
             </figure>
-            <div className="cards-item-nfo">
+            <div className="cards-item-info">
               <p className="cards-item-text">{this.props.text}</p>
             </div>
           </Link>

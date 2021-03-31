@@ -5,6 +5,7 @@
 
 .cards h1 {
   text-align: center;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
 .cards-container {

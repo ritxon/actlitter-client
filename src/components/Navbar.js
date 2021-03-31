@@ -28,8 +28,8 @@ class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-container">
           <Link to="/" className="navbar-logo" onClick={this.closeMobileMenu}>
-            <img src="../../logo.png" className="navlogo" />
-            <h3>AcLitter</h3>
+            <img src="../../logo_white.png" className="navlogo" />
+            <h2>AcLitter</h2>
           </Link>
           <div className="menu-icon" onClick={this.handleClick}>
             <i
@@ -49,7 +49,7 @@ class Navbar extends Component {
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              Litter Impact
+              Litter Info
             </Link>
           </li>
           <li className="nav-item">
@@ -61,7 +61,7 @@ class Navbar extends Component {
               Quiz
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               to="/login"
               className="nav-links"
@@ -69,7 +69,7 @@ class Navbar extends Component {
             >
               About Us
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       /*             <AppBar>

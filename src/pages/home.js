@@ -11,6 +11,7 @@ export class home extends Component {
     return (
       <>
         <HeroSection />
+
         <Cards />
       </>
     );

@@ -1,11 +1,11 @@
 .navlogo {
   width: 5+40px;
-  height: 40px;
+  height: 70px;
 }
 
 .navbar {
   background-color: #044d29;
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,24 +26,21 @@
   color: #fff;
   justify-self: start;
   margin-left: 20px;
-  /* font-size: 20px; */
   display: flex;
   align-items: center;
+}
+.navbar-logo img {
+  padding-right: 10px;
+  vertical-align: middle;
 }
 .navbar-logo:hover {
   color: #fff;
   cursor: pointer;
 }
-/* need or not? */
-/* .fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
-} */
 
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 15px;
   list-style: none;
   text-align: center;
   width: 70%;
@@ -51,7 +48,7 @@
 }
 
 .nav-item {
-  height: 80px;
+  height: 90px;
   padding-left: 1px;
 }
 
@@ -66,22 +63,25 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #044d29;
+  border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
-  color: #044d29;
-  background-color: #fff;
+  color: #fff;
+  font-weight: 900;
+  background-color: #044d29;
+  padding: 5px 23px;
 }
-/* need improve: dont changing box size with the font weight chacnges */
+
 .nav-links:focus {
   color: #044d29;
   background-color: #fff;
   font-weight: 900;
+  padding: 5px 24px;
 }
 /* phone size menu icon */
 /* need imporve: put this icon a little bit up */
 .fa-bars {
   color: #fff;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 
 .nav-links-mobile {
@@ -91,7 +91,7 @@
 .menu-icon {
   display: none;
 }
-
+/* phone part */
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -126,21 +126,23 @@
 
   .nav-links:hover {
     background-color: #fff;
-    color: #242424;
+    color: #044d29;
     border-radius: 0;
   }
 
   .navbar-logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -10px;
+    left: -10px;
     transform: translate(25%, 50%);
+    width: 30px;
+    height: 50px;
   }
 
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
+    top: -10px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
