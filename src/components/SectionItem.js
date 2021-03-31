@@ -20,7 +20,7 @@ export class SectionItem extends Component {
             </figure>
             <div className="sections-item-info">
               <div className="sections-item-title">
-                <h2>{this.props.title}</h2>
+                <h3>{this.props.title}</h3>
               </div>
               <div className="sections-item-text">{this.props.text}</div>
             </div>

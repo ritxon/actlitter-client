@@ -38,3 +38,24 @@ body {
   color: #fff;
   font-size: 80px;
 }
+
+/* team part */
+.team {
+  padding: 30px;
+  background-color: #fff;
+}
+.team .team-flex {
+  display: flex;
+  flex: 1;
+}
+.team-felx .team-intro {
+  flex: 1 1 auto;
+  margin: 20px;
+  align-items: flex-start;
+}
+.team-felx .team-logo {
+  width: 120px;
+  flex: 0 0 auto;
+  margin: 20px;
+  align-items: flex-start;
+}
