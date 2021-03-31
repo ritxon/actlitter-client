@@ -72,3 +72,8 @@ body {
 .clearfix {
   *zoom: 1;
 }
+
+button {
+  margin: 20px 0 0 0 !important;
+}
+
