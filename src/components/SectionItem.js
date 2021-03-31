@@ -9,17 +9,20 @@ export class SectionItem extends Component {
   render() {
     return (
       <>
-        <li className="sections__item">
-          <Link className="sections__item__link" to={this.props.path}>
-            <figure className="sections__item__pic-wrap">
+        <li className="sections-item">
+          <Link className="sections-item-link" to={this.props.path}>
+            <figure className="sections-item-pic-wrap">
               <img
                 src={this.props.src}
                 alt="Image"
-                className="sections__item__img"
+                className="sections-item-img"
               />
             </figure>
-            <div className="sections__item__info">
-              <div className="sections__item_text">{this.props.text}</div>
+            <div className="sections-item-info">
+              <div className="sections-item-title">
+                <h2>{this.props.title}</h2>
+              </div>
+              <div className="sections-item-text">{this.props.text}</div>
             </div>
           </Link>
         </li>

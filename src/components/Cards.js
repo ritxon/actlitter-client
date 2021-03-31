@@ -6,10 +6,10 @@ export class Cards extends Component {
   render() {
     return (
       <div className="cards">
-        <h1>This could be a good title.</h1>
-        <div className="cards__container">
-          <div className="cards__wrapper">
-            <ul className="cards__items">
+        <h1>LITTER INFORMATION</h1>
+        <div className="cards-container">
+          <div className="cards-wrapper">
+            {/* <ul className="cards-items">
               <CardItem
                 src="images/img-1.jpg"
                 text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -24,27 +24,26 @@ export class Cards extends Component {
                 label="Label"
                 path="/login"
               />
-            </ul>
-            <ul className="cards__items">
+            </ul> */}
+            <ul className="cards-items">
               <CardItem
                 src="images/img-9.jpg"
-                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                text="Impact on Environment. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
-                label="Label"
+                label="Impact on Environment "
                 path="/login"
               />
               <CardItem
                 src="images/img-7.jpg"
-                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
-                label="Label"
+                text="Litter can have an adverse impact on health of people as well as animals. Inefficient litter disposal can create unhygienic living conditions, block drainage systems and spread diseases. Litter can be injurious to Australian wildlife due to ingestion or entanglement that can lead to suffocation, drowning and maiming."
+                label="Impact on Human & Animals"
                 path="/login"
               />
               <CardItem
                 src="images/img-6.jpg"
-                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                text="Litter Classfication. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam?"
-                label="Label"
+                label="Litter Classification"
                 path="/login"
               />
             </ul>
