@@ -50,7 +50,6 @@ body {
 }
 .team-felx .team-intro {
   flex: 1 1 auto;
-  border: 1px solid #ff4400;
   margin: 20px;
   align-items: flex-start;
 }

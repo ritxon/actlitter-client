@@ -6,19 +6,39 @@ function Footer() {
   return (
     <>
       <div className="footer-container">
-        
-        <div className="footer-links">
-          <div className="footer-link-wrapper">
-            <div className="footer-logo">
-              <img src="../../logo.png" className="navlogo" /> <h1>AcLitter</h1>
+        <div className="footer-wrapper">
+          <div className="footer-logo">
+            <img src="../../logo_white.png" className="navlogo" />{" "}
+            <h3>AcLitter</h3>
+          </div>
+          <div className="footer-links">
+            <div className="footer-link-items">
+              <h3>Explore More: </h3>
+              <ul>
+                <li>
+                  <Link to="/">Impact on Enviroment</Link>
+                </li>
+                <li>
+                  <Link to="/">Impact on Human & Animals</Link>
+                </li>
+                <li>
+                  <Link to="/quiz">Litter Classification</Link>
+                </li>
+              </ul>
             </div>
-            <div className="footer-links">
-              <div className="footer-link-items">
-                <h2>Explore More</h2>
-                <Link to="/data">Type of Litter</Link>
-                <Link to="/quiz">Litter Information</Link>
-                <Link to="/">How to reslove</Link>
-              </div>
+            <div className="footer-link-items">
+              <h3>Menu</h3>
+              <ul>
+                <li>
+                  <Link to="/">Homepage</Link>
+                </li>
+                <li>
+                  <Link to="/">Litter Information</Link>
+                </li>
+                <li>
+                  <Link to="/quiz">Quiz</Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
