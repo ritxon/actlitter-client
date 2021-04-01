@@ -32,51 +32,56 @@ export class Quiz extends Component {
           questionText:
             "Cigarettes are made of tobacco, so littering of cigarette butts will not pose a threat to the environment, right?",
           answerOptions: [
-            { answerText: "Yes", isCorrect: true },
-            { answerText: "No", isCorrect: false },
+            { answerText: "Yes", isCorrect: false },
+            { answerText: "No", isCorrect: true },
           ],
+          questionImage: "images/Q1.jpeg",
+        },
+        {
+          questionText: "What are the characteristics of litter?",
+          answerOptions: [
+            { answerText: "Can be used to make soil fertile", isCorrect: false },
+            { answerText: "Can spread diseases like cholera and typhoid", isCorrect: false },
+            {
+              answerText: "Broken glass and metal can cut skin leading to skin infections",
+              isCorrect: false,
+            },
+            {
+              answerText: " Options 2 and 3",
+              isCorrect: true,
+            },
+          ],
+          questionImage: "images/Q2.jpeg",
         },
         {
           questionText: "Can microplastics impact humans?",
           answerOptions: [
-            { answerText: "No, microplastics are too small", isCorrect: true },
-            { answerText: "Can cause suffocation", isCorrect: true },
-            {
-              answerText: "Can cause health problems like obesity",
-              isCorrect: false,
-            },
-            {
-              answerText: "No they are made from eco-friendly material",
-              isCorrect: false,
-            },
+            { answerText: "No, microplastics are too small", isCorrect: false },
+            { answerText: "Can cause suffocation", isCorrect: false },
+            { answerText: "Can cause health problems like obesity", isCorrect: true },
+            { answerText: "No they are made from eco-friendly material", isCorrect: false },
           ],
+          questionImage: "images/Q3.jpg",
         },
         {
-          questionText: "The iPhone was created by which company3?",
+          questionText: "How does plastic impact Australian wildlife?",
           answerOptions: [
-            { answerText: "Apple", isCorrect: true },
-            { answerText: "Intel", isCorrect: false },
-            { answerText: "Amazon", isCorrect: false },
-            { answerText: "Microsoft", isCorrect: false },
+            { answerText: "Small fish get stuck in plastic bags", isCorrect: false },
+            { answerText: "Turtles ingest plastic thinking it to be jellyfish", isCorrect: false },
+            { answerText: "Seabirds mistake plastic balloons as food", isCorrect: false },
+            { answerText: "All of the above", isCorrect: true },
           ],
+          questionImage: "images/Q4.jpg",
         },
         {
-          questionText: "The iPhone was created by which company4?",
+          questionText: "How can derelict fishing nets endanger marine life?",
           answerOptions: [
-            { answerText: "Apple", isCorrect: true },
-            { answerText: "Intel", isCorrect: false },
-            { answerText: "Amazon", isCorrect: false },
-            { answerText: "Microsoft", isCorrect: false },
+            { answerText: "Critically injuring body parts", isCorrect: false },
+            { answerText: "Entanglement causing whales to drown", isCorrect: false },
+            { answerText: "Washed ashore leading to suffocation", isCorrect: false },
+            { answerText: " All of the above", isCorrect: true },
           ],
-        },
-        {
-          questionText: "The iPhone was created by which company5?",
-          answerOptions: [
-            { answerText: "Apple", isCorrect: true },
-            { answerText: "Intel", isCorrect: false },
-            { answerText: "Amazon", isCorrect: false },
-            { answerText: "Microsoft", isCorrect: false },
-          ],
+          questionImage: "images/Q5.jpg",
         },
       ],
       currentQuestion: 0,
@@ -145,7 +150,7 @@ export class Quiz extends Component {
             <div className="image-section">
               <figure className="image-section-wrap">
                 <img
-                  src="images/img-6.jpg"
+                  src="images/home-quiz.png"
                   alt="Image"
                   className="image-section-img"
                 />
@@ -177,7 +182,7 @@ export class Quiz extends Component {
             <div className="image-section">
               <figure className="image-section-wrap">
                 <img
-                  src="images/img-6.jpg"
+                  src="images/home-quiz.png"
                   alt="Image"
                   className="image-section-img"
                 />
@@ -205,7 +210,7 @@ export class Quiz extends Component {
             <div className="image-section">
               <figure className="image-section-wrap">
                 <img
-                  src="images/img-6.jpg"
+                  src="images/home-quiz.png"
                   alt="Image"
                   className="image-section-img"
                 />
@@ -258,7 +263,7 @@ export class Quiz extends Component {
                 <div className="image-section">
                   <figure className="image-section-wrap">
                     <img
-                      src="images/img-6.jpg"
+                      src={this.state.questions[this.state.currentQuestion].questionImage}
                       alt="Image"
                       className="image-section-img"
                     />
