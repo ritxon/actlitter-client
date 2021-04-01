@@ -26,7 +26,7 @@ export class home extends Component {
               </p>
             </div>
             <div className="team-logo">
-              <img src="../../logo_green.png" />
+              <img src="../../logoWithName.jpg" />
             </div>
           </div>
         </div>
