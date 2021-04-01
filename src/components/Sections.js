@@ -12,24 +12,23 @@ export class Sections extends Component {
         <div className="sections-container">
           <ul className="sections-items">
             <SectionItem
-              src="images/img-1.jpg"
+              src="images/impact_enviorment.jpg"
               title="Impact on Enviroment"
-              text="reet, in the trash can, or throwing the garbage in the square or park, or even directly next to the water. Garbage may be blown into or washed into rivers, woodlands, oceans, lakes and streams. The toxic or chemical substances in them will eventually pollute waterways, forest areas, soil or aquatic environment. For example, cigarette butts"
+              text="Littering can have major influence on scenic beauty of the environment. It can contaminate soil and pollute water. Burning of litter can increase emission of harmful gases leading to air pollution."
               path="/impact_enviorment"
             />
 
             <SectionItem
-              src="images/img-2.jpg"
+              src="images/figure2.png"
               title="Impact on Human & Animals"
-              text="Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Nobis accusantium aut illum atque commodi dolorem ipsum vitae tenetur laudantium ad dicta illo quis nemo quos quidem eveniet, nisi nam! Numquam? 
+              text="Litter can have an adverse impact on health of people as well as animals. Inefficient litter disposal can create unhygienic living conditions, block drainage systems and spread diseases. Litter can be injurious to Australian wildlife due to ingestion or entanglement that can lead to suffocation, drowning and maiming. 
                           "
               label="Label"
               path="/impact_human_animal"
             />
 
             <SectionItem
-              src="images/img-9.jpg"
+              src="images/figure3.jpg"
               title="Litter Classification"
               text="The benefits of garbage sorting are obvious. Garbage classified collection can reduce the amount of garbage disposal and treatment equipment, reduce treatment costs, and reduce the consumption of land resources. It has social, economic, and ecological benefits.
 "

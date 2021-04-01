@@ -71,7 +71,13 @@ export class impact_classification extends Component {
               bio-waste such as peels and vegetables can be used as green
               fertilizers to make the land more fertile .
             </p>
-
+            <div className="impact_img_div impact_center">
+              <img
+                src="../../images/impact/figure6.jpg"
+                className="impact_img"
+                id="impact_clssific_img"
+              />
+            </div>
             <h4>4. Improve people's values</h4>
             <p>
               Garbage classification is the best solution and the best way to
