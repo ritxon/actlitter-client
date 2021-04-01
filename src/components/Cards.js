@@ -27,20 +27,20 @@ export class Cards extends Component {
             </ul> */}
             <ul className="cards-items">
               <CardItem
-                src="images/img-9.jpg"
-                text="      
+                src="images/impact_enviorment.jpg"
+                text="Littering can have major influence on scenic beauty of the environment. It can contaminate soil and pollute water. Burning of litter can increase emission of harmful gases leading to air pollution.      
 "
                 label="Impact on Environment "
                 path="/impact_enviorment"
               />
               <CardItem
-                src="images/img-7.jpg"
+                src="images/figure2.png"
                 text="Litter can have an adverse impact on health of people as well as animals. Inefficient litter disposal can create unhygienic living conditions, block drainage systems and spread diseases. Litter can be injurious to Australian wildlife due to ingestion or entanglement that can lead to suffocation, drowning and maiming."
                 label="Impact on Human & Animals"
                 path="/impact_human_animal"
               />
               <CardItem
-                src="images/img-6.jpg"
+                src="images/figure3.jpg"
                 text="The benefits of garbage sorting are obvious. Garbage classified collection can reduce the amount of garbage disposal and treatment equipment, reduce treatment costs, and reduce the consumption of land resources. It has social, economic, and ecological benefits.
 "
                 label="Litter Classification"

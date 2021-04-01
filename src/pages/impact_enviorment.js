@@ -29,7 +29,7 @@ export class impact_enviorment extends Component {
               </p>
               <div className="impact_img_div">
                 <img
-                  src="../../images/impact/Impact on environment.jpeg"
+                  src="../../images/impact/figure4.jpg"
                   className="impact_img"
                 />
               </div>
@@ -64,7 +64,7 @@ export class impact_enviorment extends Component {
               </p>
               <div className="impact_img_div">
                 <img
-                  src="../../images/impact/environment2.jpg"
+                  src="../../images/impact/figure5.jpg"
                   className="impact_img"
                 />
               </div>
@@ -103,12 +103,12 @@ export class impact_enviorment extends Component {
                   className="impact_img"
                 />
               </div>
-              <div>
+              <div className="impact_src">
                 <a
                   href="https://www.conserve-energy-future.com/causes-problems-solutions-littering.php"
                   className="impact_link"
                 >
-                  https://www.conserve-energy-future.com/causes-problems-solutions-littering.php
+                  src:https://www.conserve-energy-future.com/causes-problems-solutions-littering.php
                 </a>
               </div>
             </div>

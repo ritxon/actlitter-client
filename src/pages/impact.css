@@ -46,7 +46,10 @@
 }
 
 .impact_link {
-  color: blue;
+  font-size: 12px;
+}
+.impact_src {
+  text-align: right;
 }
 
 .impact_table {
