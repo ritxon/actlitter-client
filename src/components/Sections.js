@@ -5,7 +5,7 @@ import "./sections.css";
 export class Sections extends Component {
   render() {
     return (
-      <div className="sections">
+      <div className="sections" >
         <div className="sections-head">
           <h1>Litter Information </h1>
         </div>
