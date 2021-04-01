@@ -38,6 +38,10 @@
 .footer-link-items ul li a {
   color: #fff;
 }
+.footer-link-items ul li a:hover {
+  color: #168039;
+  text-decoration: underline;
+}
 .footer-copyright {
   background-color: #00261c;
   text-align: center;
