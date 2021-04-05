@@ -1,15 +1,35 @@
 import React, { Component } from "react";
 import "./impact.css";
+import Typography from "@material-ui/core/Typography";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import Link from "@material-ui/core/Link";
 
+function handleClick(event) {
+  event.preventDefault();
+  console.info("You clicked a breadcrumb.");
+}
 export class impact_classification extends Component {
   render() {
     return (
       <div className="impact_article_flex">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link color="inherit" href="/" onClick={handleClick} to="/">
+            Hompage
+          </Link>
+          <Link
+            color="inherit"
+            to="/impact"
+            href="/getting-started/installation/"
+            onClick={handleClick}
+          >
+            Litter Info
+          </Link>
+          <Typography color="textPrimary">Litter Classification</Typography>
+        </Breadcrumbs>
         <div className="impact_article_container w">
           <div className="impact_article_title">
             <h1> Litter Classification </h1>
           </div>
-
           <div className="impact_article_body">
             <div className="impact_img_div impact_center">
               <img

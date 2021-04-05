@@ -40,7 +40,7 @@ class Navbar extends Component {
         <ul className={this.state.varIcon ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={this.closeMobileMenu}>
-              Home
+              HOME
             </Link>
           </li>
           <li className="nav-item">
@@ -49,7 +49,7 @@ class Navbar extends Component {
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              Litter Info
+              LITTER INFO
             </Link>
           </li>
           <li className="nav-item">
@@ -58,7 +58,7 @@ class Navbar extends Component {
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              Quiz
+              QUIZ
             </Link>
           </li>
           {/* <li className="nav-item">

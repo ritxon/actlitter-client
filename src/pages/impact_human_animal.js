@@ -7,7 +7,7 @@ export class impact_human_animal extends Component {
       <div className="impact_article_flex">
         <div className="impact_article_container w">
           <div className="impact_article_title">
-            <h1> Litter Impact on human & Animals</h1>
+            <h1> Litter Impact on Human and Animals</h1>
           </div>
 
           <div className="impact_article_body">
