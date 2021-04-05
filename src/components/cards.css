@@ -1,8 +1,3 @@
-.cards {
-  padding: 30px;
-  background: #fff;
-}
-
 .cards h1 {
   text-align: center;
   text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
@@ -29,10 +24,11 @@
 .cards-item {
   display: flex;
   flex: 1;
-  margin: 0 16px;
   border-radius: 10px;
 }
-
+.cards-wrapper li:not(:last-of-type) {
+  margin-right: 25px;
+}
 .cards-item-link {
   display: flex;
   flex-flow: column;
@@ -98,7 +94,7 @@
 .cards-item-text {
   margin: 15px;
   color: #252e48;
-  font-size: 18px;
+
   line-height: 24px;
   /* 溢出部分隐藏 */
   overflow: hidden;

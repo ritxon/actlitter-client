@@ -28,8 +28,8 @@ export class Cards extends Component {
             <ul className="cards-items">
               <CardItem
                 src="images/impact_enviorment.jpg"
-                text="Littering can have major influence on scenic beauty of the environment. It can contaminate soil and pollute water. Burning of litter can increase emission of harmful gases leading to air pollution.      
-"
+                text="Littering can have major influence on scenic beauty of the environment. It can contaminate soil and pollute water. Burning of litter can increase emission of harmful gases leading to air pollution.
+                "
                 label="Impact on Environment "
                 path="/impact_enviorment"
               />
@@ -42,7 +42,7 @@ export class Cards extends Component {
               <CardItem
                 src="images/figure3.jpg"
                 text="The benefits of garbage sorting are obvious. Garbage classified collection can reduce the amount of garbage disposal and treatment equipment, reduce treatment costs, and reduce the consumption of land resources. It has social, economic, and ecological benefits.
-"
+                "
                 label="Litter Classification"
                 path="/impact_classification"
               />
