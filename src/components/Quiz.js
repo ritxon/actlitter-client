@@ -292,7 +292,7 @@ export class Quiz extends Component {
                   <h4>It's great, you got the knowledge in this area.</h4>
                 ) : (
                   <h4>
-                   That’s okay. You almost had it!
+                   That's okay. You almost had it!
                   </h4>
                 )}
                 {this.state.correctQuestion ? (
@@ -315,7 +315,10 @@ export class Quiz extends Component {
               <div className="image-section">
                 <figure className="image-section-wrap">
                   <img
-                    src="images/home-quiz.jpg"
+                    src={
+                      this.state.questions[this.state.currentQuestion]
+                        .questionImage
+                    }
                     alt="Image"
                     className="image-section-img"
                   />
