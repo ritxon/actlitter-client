@@ -5,6 +5,16 @@ export class impact_human_animal extends Component {
   render() {
     return (
       <div className="impact_article_flex">
+
+        <div className="impact_fake_navigation">
+          <p>
+            <a href="/">&emsp; Home &ensp;</a>
+            / &ensp;
+            <a href="/impact">Litter Info &ensp;</a>
+            / &ensp; Impact on Human & Animals 
+          </p>
+        </div>
+
         <div className="impact_article_container w">
           <div className="impact_article_title">
             <h1> Litter Impact on Human and Animals</h1>

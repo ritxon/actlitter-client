@@ -6,6 +6,15 @@ export class impact_enviorment extends Component {
     return (
       <>
         <div className="impact_article_flex">
+          <div className="impact_fake_navigation">
+          <p>
+            <a href="/">&emsp; Home &ensp;</a>
+            / &ensp;
+            <a href="/impact">Litter Info &ensp;</a>
+            / &ensp; Impact on enviorment
+            </p>
+          </div>
+
           <div className="impact_article_container w">
             <div className="impact_article_title">
               <h1> Impact on environment</h1>

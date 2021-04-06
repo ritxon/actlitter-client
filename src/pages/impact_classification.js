@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import "./impact.css";
-import Typography from "@material-ui/core/Typography";
-import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Link from "@material-ui/core/Link";
+// import Typography from "@material-ui/core/Typography";
+// import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+// import Link from "@material-ui/core/Link";
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info("You clicked a breadcrumb.");
-}
+// function handleClick(event) {
+//   event.preventDefault();
+//   console.info("You clicked a breadcrumb.");
+// }
 export class impact_classification extends Component {
   render() {
     return (
       <div className="impact_article_flex">
-        <Breadcrumbs aria-label="breadcrumb">
+        {/* <Breadcrumbs aria-label="breadcrumb">
           <Link color="inherit" href="/" onClick={handleClick} to="/">
             Hompage
           </Link>
@@ -25,7 +25,17 @@ export class impact_classification extends Component {
             Litter Info
           </Link>
           <Typography color="textPrimary">Litter Classification</Typography>
-        </Breadcrumbs>
+        </Breadcrumbs> */}
+
+        <div className="impact_fake_navigation">
+            <p>
+            <a href="/">&emsp; Home &ensp;</a>
+            / &ensp;
+            <a href="/impact">Litter Info &ensp;</a>
+            / &ensp; Litter classification
+            </p>
+        </div>
+
         <div className="impact_article_container w">
           <div className="impact_article_title">
             <h1> Litter Classification </h1>
