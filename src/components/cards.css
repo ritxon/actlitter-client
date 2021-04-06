@@ -1,6 +1,6 @@
 .cards h1 {
   text-align: center;
-  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3); */
 }
 
 .cards-container {
@@ -15,6 +15,7 @@
 .cards-wrapper {
   position: relative;
   margin: 50px 0 45px;
+  width: 100%;
 }
 
 .cards-items {
@@ -24,10 +25,9 @@
 .cards-item {
   display: flex;
   flex: 1;
-  border-radius: 10px;
 }
 .cards-wrapper li:not(:last-of-type) {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .cards-item-link {
   display: flex;
@@ -36,7 +36,8 @@
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  border-radius: 10px;
+
+  order: 0;
   overflow: hidden;
   text-decoration: none;
 }
@@ -53,7 +54,7 @@
   animation-duration: 2s;
 }
 
-.cards-item-pic-wrap::after {
+/* .cards-item-pic-wrap::after {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
@@ -64,7 +65,20 @@
   font-weight: 700;
   color: #fff;
   background-color: #044d29;
-  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+} */
+.cards-item-link::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #044d29;
   box-sizing: border-box;
 }
 
@@ -82,20 +96,19 @@
   object-fit: cover;
   transition: all 0.2s linear;
 }
-
-.cards-item-img:hover {
+.cards-item-link:hover .cards-item-img {
   transform: scale(1.1);
 }
 
 .cards-item-info {
-  padding: 20px 30px 30px;
+  /* padding-top: 5px; */
+  padding-bottom: 30px;
 }
 
 .cards-item-text {
-  margin: 15px;
   color: #252e48;
-
-  line-height: 24px;
+  margin: 0 10px;
+  line-height: 18px;
   /* 溢出部分隐藏 */
   overflow: hidden;
   /* 溢出部分用省略号显示 */
@@ -117,6 +130,10 @@
 @media only screen and (min-width: 1024px) {
   .cards-items {
     display: flex;
+  }
+  .cards-items li {
+    width: 33.333333333333% !important;
+    order: 0;
   }
 }
 

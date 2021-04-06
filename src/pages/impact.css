@@ -46,9 +46,7 @@
   height: 100%;
 }
 
-.impact_link {
-  font-size: 12px;
-}
+
 .impact_src {
   text-align: right;
 }
@@ -72,7 +70,7 @@
   border: 1px solid black;
   padding: 5px;
   text-align: left;
-  font-size: 12px;
+
 }
 .impact_tr:hover {
   background-color: #e0e0e0;

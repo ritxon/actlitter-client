@@ -10,10 +10,14 @@ export class CardItem extends Component {
     return (
       <>
         <li className="cards-item">
-          <Link className="cards-item-link" to={this.props.path}>
+          <Link
+            className="cards-item-link"
+            to={this.props.path}
+            data-category={this.props.label}
+          >
             <figure
               className="cards-item-pic-wrap"
-              data-category={this.props.label}
+              // data-category={this.props.label}
             >
               <img
                 src={this.props.src}
