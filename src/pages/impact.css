@@ -10,20 +10,29 @@
   padding-bottom: 5px;
 }
 .impact_article_body h4 {
+  padding-top: 5px;
   padding-bottom: 5px;
 }
-.w {
-  background-color: #fff;
-  width: 800px;
-  margin: 0 auto;
+.impact_article_body h4::before {
+  content: "|";
+  color: #4caf50;
+  padding-right: 5px;
 }
-
 .impact_article_container {
   background-color: #f5f5f5;
-  /* border: 1px solid gray; */
-  padding: 8px;
+  /* padding: 8px; */
 }
-
+.impact_links {
+  padding-top: 50px;
+  padding-left: 40px;
+}
+.impact_links p {
+  padding-top: 5px;
+}
+.impact_links p a:hover {
+  color: #4caf50;
+  text-decoration: underline;
+}
 .impact_article_title {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -31,22 +40,20 @@
   text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
 }
 .impact_article_body {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .impact_img_div {
-  padding: 20px;
-
-  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .impact_img {
-  border-radius: 20px;
-  width: 500px;
-  height: 100%;
+  width: 100%;
 }
-
-
+.bold {
+  font-weight: bold;
+}
 .impact_src {
   text-align: right;
 }
@@ -70,22 +77,37 @@
   border: 1px solid black;
   padding: 5px;
   text-align: left;
-
 }
 .impact_tr:hover {
   background-color: #e0e0e0;
 }
-
-/* impact classfication  */
-#impact_clssific_img {
-  width: 600px;
-  height: 400px;
+@media only screen and (min-width: 800px) {
+  .impact_article_left {
+    display: flex;
+    width: 70%;
+  }
+  .impact_article_right {
+    display: flex;
+    float: right;
+    width: 30%;
+    padding-left: 40px;
+  }
+  .impact-head-figure {
+    padding-left: 50px;
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .w {
+    background-color: #f5f5f5;
+    max-width: 800px;
+    margin: 0 auto;
     width: 100%;
   }
   .impact_img {
     width: 100%;
+  }
+  .impact_links {
+    display: none;
   }
 }

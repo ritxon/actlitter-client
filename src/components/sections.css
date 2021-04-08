@@ -32,7 +32,7 @@
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)); */
   overflow: hidden;
   text-decoration: none;
-  background-color: #168039;
+  background-color: rgb(179, 199, 152);
   height: auto;
   /* border: 1px solid #adadad; */
   /* border-radius: 20px; */
@@ -73,12 +73,10 @@
 }
 .sections-item-title {
   margin-bottom: 10px;
-  color: #f5f5f5;
   text-align: center;
 }
 .sections-item-text {
   margin-top: 30px;
-  color: #f5f5f5;
   height: auto;
 }
 

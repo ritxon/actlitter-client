@@ -5,23 +5,47 @@ export class impact_enviorment extends Component {
   render() {
     return (
       <>
-        <div className="impact_article_flex">
-          <div className="impact_fake_navigation">
+        <div className="impact_fake_navigation">
           <p>
-            <a href="/">&emsp; Home &ensp;</a>
-            / &ensp;
-            <a href="/impact">Litter Info &ensp;</a>
+            <a href="/">&emsp; Home &ensp;</a>/ &ensp;
+            <a classname="bold" href="/impact">
+              Litter Info &ensp;
+            </a>
             / &ensp; Impact on enviorment
-            </p>
-          </div>
-
+          </p>
+        </div>
+        <div className="impact_article_flex">
           <div className="impact_article_container w">
             <div className="impact_article_title">
               <h1> Impact on environment</h1>
             </div>
 
+            <div className="impact_article_right">
+              <div className="impact_related impact_links ">
+                <h2>Related Information</h2>
+                <p>
+                  <a href="/impact_human_animal">Impact on Human and Animals</a>
+                  <br></br>
+                  <a href="/impact_classification">Litter Classification</a>
+                </p>
+              </div>
+            </div>
+            <div className="impact_img_div impact_article_left impact-head-figure">
+              <img
+                src="../../images/impact/environment1.jpg"
+                className="impact_img"
+              />
+            </div>
             <div className="impact_article_body">
-              <p>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/figure4.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
+              <p className="impact_article_left">
                 Littering will have a very bad impact on the environment.
                 Whether it is littering on the street, in the trash can, or
                 throwing the garbage in the square or park, or even directly
@@ -36,14 +60,9 @@ export class impact_enviorment extends Component {
                 toxic chemical vapors, which will also cause air quality to
                 decline.
               </p>
-              <div className="impact_img_div">
-                <img
-                  src="../../images/impact/figure4.jpg"
-                  className="impact_img"
-                />
-              </div>
+
               <h4>1. Affect local tourism and urban environment.</h4>
-              <p>
+              <p className="impact_article_left">
                 The littered area looks rough and degrades the aesthetic value
                 of the surrounding environment. Secondly, it will affect
                 people's reputation for the city and local tourism, because the
@@ -53,14 +72,9 @@ export class impact_enviorment extends Component {
                 local residents, but also attract foreign tourists and enhance
                 the tourism economy.
               </p>
-              <div className="impact_img_div">
-                <img
-                  src="../../images/impact/environment1.jpg"
-                  className="impact_img"
-                />
-              </div>
+
               <h4>2. Increased possibility of fire</h4>
-              <p>
+              <p className="impact_article_left">
                 Cigarette butts are the easiest garbage that people throw away
                 at will, but people usually ignore the potential threats caused
                 by littering. It may cause fires due to dry air or igniting
@@ -71,55 +85,49 @@ export class impact_enviorment extends Component {
                 extinguished before throwing them into the trash can. Don't
                 throw away cigarette butts at will.
               </p>
-              <div className="impact_img_div">
-                <img
-                  src="../../images/impact/figure5.jpg"
-                  className="impact_img"
-                />
-              </div>
+
               <h4>3. Soil pollution</h4>
-              <p>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/environment5.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
+              <p className="impact_article_left">
                 Soil pollution is one of the adverse effects of littering.
                 Glass, metals, organics, etc. may contain harmful substances,
                 such as batteries. Since batteries contain many harmful
                 substances, if they are thrown away at will, they may seriously
                 pollute the soil and damage the groundwater.
               </p>
+
               <h4>4. Water pollution</h4>
-              <p>
+              <p className="impact_article_left">
                 Littering can cause water pollution in many ways. When people
                 throw rubbish directly into the water, rivers and lakes will be
                 polluted. In addition, rubbish on the road will flow into the
                 water due to wind and water power, causing pollution.
               </p>
-              <div className="impact_img_div">
-                <img
-                  src="../../images/impact/environment3.png"
-                  className="impact_img"
-                />
-              </div>
+
               <h4>5. Air pollution</h4>
-              <p>
+              <p className="impact_article_left">
                 People often burn garbage to remove it. However, during the
                 combustion process, harmful substances contained in the garbage
                 will enter the air, causing air pollution. Especially when
                 burning plastics, many toxic gases and particulates emitted will
                 have a negative impact on the human respiratory system.
               </p>
-              <div className="impact_img_div">
-                <img
-                  src="../../images/impact/environment5.jpg"
-                  className="impact_img"
-                />
-              </div>
-              <div className="impact_src">
+
+              {/* <div className="impact_src">
                 <a
                   href="https://www.conserve-energy-future.com/causes-problems-solutions-littering.php"
                   className="impact_link"
                 >
                   src:https://www.conserve-energy-future.com/causes-problems-solutions-littering.php
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
