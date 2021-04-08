@@ -143,6 +143,10 @@
   font-size: 60px;
 }
 
+.answer-section button{
+  margin: 20px 10px 0 0;
+}
+
 @media screen and (max-width: 960px) {
   .container-quiz {
     margin: 0;

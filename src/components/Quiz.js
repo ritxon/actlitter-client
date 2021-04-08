@@ -366,7 +366,7 @@ export class Quiz extends Component {
                   beautiful!
                 </h4>
                 <div className="botton-section">
-                  <Button
+                  <Button 
                     variant="contained"
                     color="secondary"
                     onClick={() => {
