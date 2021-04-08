@@ -87,13 +87,7 @@
   width: 150px;
   height: 50px;
 }
-/* .sections-item-btn button {
-  text-align: center;
-  width: 150px;
-  background-color: #f5f5f5;
-} */
 
-/* autochanging with screen size */
 /* pc */
 @media only screen and (min-width: 800px) {
   .sections-item-pic-wrap {
