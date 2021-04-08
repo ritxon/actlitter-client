@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Link from "react-router-dom/Link";
-import Button from "@material-ui/core/Button";
+import Button from "./utils/Button";
+
 export class SectionItem extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +25,7 @@ export class SectionItem extends Component {
               </div>
               <div className="sections-item-text">{this.props.text}</div>
               <div className="sections-item-btn">
-                <button to="/">MORE</button>
+                <Button styleBtn="green-btn quiz-btn" text="MORE" to="/"  />
               </div>
             </div>
           </Link>

@@ -28,6 +28,13 @@
     --text-color-after: #fff;
 }
 
+.green-btn{
+    --background-color: #168039;
+    --accent-color:  #0f6e2f;
+    --text-color-before: #fff;
+    --text-color-after: #fff;
+}
+
 .btn-slide::before{
     content: "";
     position: absolute;
