@@ -1,0 +1,66 @@
+
+.btn{
+    background-color: var(--background-color);
+    color: var(--text-color-before);
+    font-size: 18px;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.quiz-btn{
+    min-width: 150px;
+}
+
+.primary{
+    --background-color: #E8600C;
+    --accent-color:   #da5b0d;
+    --text-color-before: #fff;
+    --text-color-after: #fff;
+}
+
+.secondary{
+    --background-color: #E8600C;
+    --accent-color:  #168039;
+    --text-color-before: #fff;
+    --text-color-after: #fff;
+}
+
+.btn-slide::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+
+    transition: transform 300ms ease-in-out ;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.btn-slide:hover::before,
+.btn-slide:focus::before{
+    transform: scaleX(1);
+}
+
+.btn-slide{
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+.btn-slide:hover,
+.btn-slide:focus{
+    color: var(--text-color-after);
+}
+
+@media screen and (max-width: 960px) {
+    .quiz-btn{
+        width: 100%;
+    }
+}
+

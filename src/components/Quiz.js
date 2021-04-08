@@ -137,6 +137,7 @@ export class Quiz extends Component {
       score: 0,
       currentStep: 0,
       correctQuestion: true,
+      finalScore:"",
     };
   }
 
@@ -174,9 +175,31 @@ export class Quiz extends Component {
           whichComponentToShow: "Trophy",
         });
       } else {
-        this.setState({
-          whichComponentToShow: "Score",
-        });
+
+        if(scoreLocal == 4){
+          this.setState({
+            whichComponentToShow: "Score",
+            finalScore: "Excellent! You seem to be well aware of impacts of litter.  Now use this knowledge to reduce littering in Australia to make it a cleaner and greener place!"
+          });
+        }else if(scoreLocal == 3){
+          this.setState({
+            whichComponentToShow: "Score",
+            finalScore: "Great! Try again because you stand a chance to win Litter Master!"
+          });
+
+        }else if(scoreLocal==2){
+          this.setState({
+            whichComponentToShow: "Score",
+            finalScore: "Good! But I think you can do better. Check more info in Litter Info and play the game again. You will do much better!"
+          });
+
+        }else if(scoreLocal==1 || scoreLocal==0){
+          this.setState({
+            whichComponentToShow: "Score",
+            finalScore: "It’s okay. Everyone makes mistakes the first time. Try again and you’ll definitely do better!"
+          });
+
+        }
       }
     }
   };
@@ -337,7 +360,7 @@ export class Quiz extends Component {
                 <div className="titleQuiz">
                   <h1>{this.state.score * 10} points</h1>
                 </div>
-                <h4>You did a great job!! </h4>
+                <h4>{this.state.finalScore}</h4>
                 <h4>
                   Now let's use this knowledge to keep Australia clean and
                   beautiful!
