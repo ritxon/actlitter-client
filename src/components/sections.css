@@ -4,9 +4,9 @@
 }
 .sections-head {
   margin-top: 40px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   text-align: center;
-  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3); */
 }
 
 .sections-items {
@@ -17,23 +17,25 @@
 }
 
 .sections-item {
-  border-radius: 10px;
   margin-bottom: 20px;
+  padding-top: 50px;
 }
 /* each section item */
 .sections-item-link {
   display: flex;
+
   flex-flow: row;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  min-height: 300px;
+  /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); */
+  /* -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)); */
   overflow: hidden;
   text-decoration: none;
+  background-color: rgb(179, 199, 152);
   height: auto;
-  border: 1px solid #adadad;
-  border-radius: 20px;
-  padding: 20px;
+  /* border: 1px solid #adadad; */
+  /* border-radius: 20px; */
 }
 /* .sections-item-link:hover {
   border: 1px solid black;
@@ -42,11 +44,8 @@
 /* figure part of item*/
 .sections-item-pic-wrap {
   position: relative;
-  width: 40%;
-
-  /* padding-top: 67%; */
+  width: 60%;
   overflow: hidden;
-  border-radius: 10px;
   -webkit-transform: rotate(0deg);
 }
 
@@ -66,32 +65,43 @@
 }
 
 /* content part of item*/
+
 .sections-item-info {
+  position: relative;
   padding: 20px;
-  width: 50%;
+  width: 40%;
 }
 .sections-item-title {
   margin-bottom: 10px;
+  text-align: center;
 }
 .sections-item-text {
-  color: #252e48;
-  font-size: 16px;
-  /* text-align: center; */
+  margin-top: 30px;
   height: auto;
-  /* line-height: 200px; */
+}
+
+.sections-item-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #f5f5f5;
+}
+.sections-item-btn button {
+  text-align: center;
+  width: 150px;
+  background-color: #f5f5f5;
 }
 
 /* autochanging with screen size */
 /* pc */
 @media only screen and (min-width: 800px) {
   .sections-item-pic-wrap {
-    max-width: 400px;
-    min-width: 400px;
-    height: 100%;
-    min-height: 250px;
+    width: 60%;
   }
   .sections-item-info {
-    width: auto;
+    width: 40%;
   }
   .sections-container ul li:nth-child(even) .sections-item-info {
     order: -1;
