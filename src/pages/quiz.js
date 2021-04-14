@@ -4,7 +4,13 @@ import Game from "../components/Game"
 
 export class quiz extends Component {
   render() {
-   return <Game />;
+    return (
+      <>
+        <div>
+          <Game />
+        </div>
+      </>
+    );
   }
 }
 

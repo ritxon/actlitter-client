@@ -172,7 +172,6 @@
 .image-section-wrap {
 	position: relative;
 	width: 100%;
-	padding-top: 67%;
 	overflow: hidden;
 }
 
@@ -296,27 +295,27 @@ input[type="radio"]:checked + label {
 
 @media screen and (max-width: 960px) {
 	.containerIntro {
-		height: 1000px;
+		height: 850px;
 	}
 
+	.containerQuestion {
+		height: 850px;
+	}
+	.container-quiz {
+		height: 780px;
+	}
 	.container-question {
 		flex-direction: column;
 	}
 
-	.containerQuestion {
-		height: 1000px;
-	}
 
 	.containerTalk {
 		padding: 50px 5%;
 	}
 
-	.container-quiz {
-		height: 930px;
-	}
 
 	.cssOverlay {
-		height: 1090px !important;
+		height: 940px !important;
 	}
 
 	.titleQuiz {
@@ -336,5 +335,6 @@ input[type="radio"]:checked + label {
 	.image-section {
 		width: 100%;
 		order: 1;
+		height: 30%;
 	}
 }
