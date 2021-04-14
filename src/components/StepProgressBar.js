@@ -90,7 +90,7 @@ export class StepProgressBar extends Component {
       return (
         <div className="step-wrapper">
           <div className={`step-number ${step.selected ? step.completed ? "step-number-active" : "step-number-current" : "step-number-disable"}`}>
-            {step.completed ? <span>&#10003;</span> : index +1} </div>
+            {index +1} </div>
           <div className={index !== steps.length - 1 ? "divider-line" : ""}/>
         </div>
       );

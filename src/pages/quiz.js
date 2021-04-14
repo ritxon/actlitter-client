@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 
-import Quiz from "../components/Quiz";
-import Talk from "../components/Talk"
+import Game from "../components/Game"
 
 export class quiz extends Component {
   render() {
-    return <Quiz />;
-/*    return <Talk />;*/
+   return <Game />;
   }
 }
 

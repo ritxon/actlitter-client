@@ -35,6 +35,22 @@
     --text-color-after: #fff;
 }
 
+
+
+.green-btn-modal{
+    --background-color: #398d4f;
+    --accent-color: #307542;
+    --text-color-before: #fff;
+    --text-color-after: #fff;
+}
+
+.red-btn-modal{
+    --background-color: #f65656;
+    --accent-color: #df4d4d;
+    --text-color-before: #fff;
+    --text-color-after: #fff;
+}
+
 .btn-slide::before{
     content: "";
     position: absolute;
@@ -65,9 +81,17 @@
     color: var(--text-color-after);
 }
 
+.btn-modal{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: .8em 1em;
+}
+
 @media screen and (max-width: 960px) {
     .quiz-btn{
         width: 100%;
+        margin-top: 10px;
     }
 }
 
