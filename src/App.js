@@ -19,28 +19,11 @@ import impact_human_animal from "./pages/impact_human_animal";
 import impact_classification from "./pages/impact_classification";
 import impact from "./pages/impact";
 import notFound from "./pages/notFound";
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: "#6fbf73",
-      main: "#2e7d32",
-      dark: "#1b5e20",
-      contrastText: "#fff",
-    },
-    secondary: {
-      light: "#ff7961",
-      main: "#f44336",
-      dark: "#ba000d",
-      contrastText: "#000",
-    },
-  },
-});
+import treePage from "./pages/treePage";
 
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider theme={theme}>
         <div className="App">
           <Router>
           <ScrollToTop>
@@ -55,6 +38,7 @@ class App extends Component {
                 <Route exact path="/impact_enviorment" component={impact_enviorment} />
                 <Route exact path="/impact_human_animal" component={impact_human_animal} />
                 <Route exact path="/impact_classification" component={impact_classification} />
+                <Route exact path="/treePage" component={treePage} />
                 <Route exact component={notFound} />
               </Switch>
             </div>
@@ -62,7 +46,6 @@ class App extends Component {
            </ScrollToTop>
           </Router>
         </div>
-      </MuiThemeProvider>
     );
   }
 }

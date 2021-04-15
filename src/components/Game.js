@@ -175,13 +175,13 @@ const Game = () => {
 	});
 
 	// useTransition React-Spring
-	const transitionModal = useTransition(modalVisible, {
+	const transitionModal = useTransition(modalVisible, null, {
 		from: { opacity: 0, transform: "translateY(-40px)" },
 		enter: { opacity: 1, transform: "translateY(0px)" },
 		leave: { opacity: 0, transform: "translateY(-40px)" },
 	});
 
-	const transitionSlide = useTransition(index, {
+	const transitionSlide = useTransition(index, null, {
 		from: { opacity: 0, transform: "translate3d(100%,0,0)" },
 		enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
 		leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
@@ -263,20 +263,6 @@ const Game = () => {
 		setWelcome(false);
 	};
 
-	const fragmentModal = transitionModal((style, item) => {
-		return (
-			item && (
-				<Modal
-					style={style}
-					isCorrect={iscorrect}
-					textModal={textModal}
-					textButton={textButton}
-					closeModal={() => nextQuestion()}
-				/>
-			)
-		);
-	});
-
 	const renderRadioSection = (item) => {
 		return questions[item].answerOptions.map((answerOption) => (
 			<>
@@ -291,56 +277,6 @@ const Game = () => {
 			</>
 		));
 	};
-
-	const fragment = transitionSlide((style, item) => {
-		return (
-			<animated.div className="container-quiz" style={style}>
-				<div className="stepper-container-horizontal">
-					<StepProgressBar steps={questions} currentStepNumber={item}></StepProgressBar>
-				</div>
-				<div className="container-question">
-					<div className="question-section">
-						<div className="question">
-							<div className="question-count">
-								<span>Question {item + 1}</span>
-							</div>
-							<div className="question-text">{questions[item].questionText}</div>
-							{typeofAnswer == "RadioButton" ? (
-								<div className="radioButton-section">
-									<div className="box-radio">{renderRadioSection(item)}</div>
-								</div>
-							) : null}
-						</div>
-						{typeofAnswer == "RadioButton" ? (
-							<animated.div className="answer-section" style={buttonsAnimation}>
-								<Button
-									styleBtn="primary quiz-btn"
-									text="Check my answer"
-									onClick={() => openModal(questions[item].answerOptions[valueOption].isCorrect, questions[item])}
-								></Button>
-							</animated.div>
-						) : null}
-						{typeofAnswer == "Button" ? (
-							<div className="answer-section">
-								{questions[item].answerOptions.map((answerOption) => (
-									<Button
-										styleBtn="primary quiz-btn"
-										text={answerOption.answerText}
-										onClick={() => openModal(answerOption.isCorrect, questions[item])}
-									></Button>
-								))}
-							</div>
-						) : null}
-					</div>
-					<div className="image-section">
-						<figure className="image-section-wrap">
-							<img src={questions[item].questionImage} alt="Image" className="image-section-img" />
-						</figure>
-					</div>
-				</div>
-			</animated.div>
-		);
-	});
 
 	return (
 		<>
@@ -381,7 +317,7 @@ const Game = () => {
 								</div>
 								<div className="question-text">
 									<TypeWriter
-										options={{ delay: 50 }}
+										options={{ delay: 30 }}
 										onInit={(typeWriter) => {
 											typeWriter
 												.typeString(
@@ -449,8 +385,71 @@ const Game = () => {
 			) : null}
 			{question ? (
 				<animated.div style={questionAnimation} className="containerQuestion">
-					{fragment}
-					{fragmentModal}
+					{transitionSlide.map(({ item, props, key }) => {
+						return (
+							<animated.div className="container-quiz" style={props}>
+								<div className="stepper-container-horizontal">
+									<StepProgressBar steps={questions} currentStepNumber={item}></StepProgressBar>
+								</div>
+								<div className="container-question">
+									<div className="question-section">
+										<div className="question">
+											<div className="question-count">
+												<span>Question {item + 1}</span>
+											</div>
+											<div className="question-text">{questions[item].questionText}</div>
+											{typeofAnswer == "RadioButton" ? (
+												<div className="radioButton-section">
+													<div className="box-radio">{renderRadioSection(item)}</div>
+												</div>
+											) : null}
+										</div>
+										{typeofAnswer == "RadioButton" ? (
+											<animated.div className="answer-section" style={buttonsAnimation}>
+												<Button
+													styleBtn="primary quiz-btn"
+													text="Check my answer"
+													onClick={() =>
+														openModal(questions[item].answerOptions[valueOption].isCorrect, questions[item])
+													}
+												></Button>
+											</animated.div>
+										) : null}
+										{typeofAnswer == "Button" ? (
+											<div className="answer-section">
+												{questions[item].answerOptions.map((answerOption) => (
+													<Button
+														styleBtn="primary quiz-btn"
+														text={answerOption.answerText}
+														onClick={() => openModal(answerOption.isCorrect, questions[item])}
+													></Button>
+												))}
+											</div>
+										) : null}
+									</div>
+									<div className="image-section">
+										<figure className="image-section-wrap">
+											<img src={questions[item].questionImage} alt="Image" className="image-section-img" />
+										</figure>
+									</div>
+								</div>
+							</animated.div>
+						);
+					})}
+
+					{transitionModal.map(({ item, props, key }) => {
+						return (
+							item && (
+								<Modal
+									style={props}
+									isCorrect={iscorrect}
+									textModal={textModal}
+									textButton={textButton}
+									closeModal={() => nextQuestion()}
+								/>
+							)
+						);
+					})}
 				</animated.div>
 			) : null}
 		</>
