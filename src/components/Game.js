@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TypeWriter from "typewriter-effect";
 import "./game.css";
+import axios from 'axios';
 
 import { useTransition, useSpring, animated } from "react-spring";
 import Button from "./utils/Button";
@@ -8,7 +9,7 @@ import StepProgressBar from "./StepProgressBar";
 import Modal from "./utils/Modal";
 
 const Game = () => {
-	const [questions, setQuestions] = useState([
+	/* const [questions, setQuestions] = useState([
 		{
 			id: 0,
 			questionText:
@@ -120,7 +121,20 @@ const Game = () => {
 			negativeFeedBack:
 				"Marine animals can get entangled in these fishing nets and can drown or die due to suffocation or starvation. These nets can also cause severe injuries to their body parts. Such entanglement cases of seals, stingrays and leatherback turtles have been recorded in Victoria. Hence it is essential to properly dispose of fishing gear in waste disposal bins rather than discarding it into the ocean.",
 		},
-	]);
+	]); */
+
+	const [questions, setQuestions] = useState(null)
+
+	useEffect(() => {
+		axios.get('/questions').then(res => {
+			console.log(res.data);
+			setQuestions(res.data)
+		})
+		.catch(err => console.log(err))
+		/* return () => {
+			cleanup
+		} */
+	}, [])
 
 	// Index of the question
 	const [index, setIndex] = useState(0);
