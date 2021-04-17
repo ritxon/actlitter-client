@@ -20,32 +20,36 @@ export class impact_classification extends Component {
           </p>
         </div>
 
+        <div className="impact_menu">
+          <p><a href="#classification_title">Litter Classification</a></p>
+          <hr></hr>
+          <p><a href="#classification1">1. Affect local tourism.</a></p>
+          <hr></hr>
+          <p><a href="#classification2">2. Cause a fire.</a></p>
+          <hr></hr>
+          <p><a href="#classification3">3. Soil pollution.</a></p>
+          <hr></hr>
+          <p><a href="#classification4">4. Water pollution.</a></p>
+          <hr></hr>
+        </div>
+
+        <div className="impact_details">
+        <div id="classification_title" className="impact_jump"></div>
         <div className="impact_article_flex">
           <div className="impact_article_container w">
             <div className="impact_article_title">
               <h1> Litter Classification </h1>
             </div>
             <div className="impact_article_body">
+              <h4>What is garbage sorting?</h4>
               <div className="impact_article_right">
-                <div className="impact_related impact_links ">
-                  <h2>Related Information</h2>
-                  <p>
-                    <a href="/impact_enviorment">Impact on Enviorment</a>{" "}
-                    <br></br>
-                    <a href="/impact_human_animal">
-                      Impact on Human and Animals
-                    </a>
-                  </p>
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/impact_classification.jpg"
+                    className="impact_img"
+                  />
                 </div>
               </div>
-              <div className="impact_img_div impact_article_left impact-head-figure">
-                <img
-                  src="../../images/impact/impact_classification.jpg"
-                  className="impact_img"
-                  id="impact_clssific_img"
-                />
-              </div>
-              <h4>What is garbage sorting?</h4>
               <p className="impact_article_left">
                 Garbage classification is to put garbage into different
                 categories, and make it into resources through sorting,
@@ -59,8 +63,21 @@ export class impact_classification extends Component {
                 non-combustible garbage.
               </p>
 
+
+              </div>
+              <div className="clear_float"></div>
+              <div className="impact_article_body">
               <h4>The benefits and significance of garbage sorting:</h4>
+              <div id="classification1" className="impact_jump"></div>
               <h4>1. Reduce environmental pollution</h4>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/Q3.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
               <p className="impact_article_left">
                 Modern garbage contains chemical substances, some of which can
                 cause people's morbidity to increase. If the garbage is disposed
@@ -73,7 +90,20 @@ export class impact_classification extends Component {
                 eventually affect people's health.
               </p>
 
+
+              </div>
+              <div className="clear_float"></div>
+              <div className="impact_article_body">
+              <div id="classification2" className="impact_jump"></div>
               <h4>2. Save land resources</h4>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/figure7.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
               <p className="impact_article_left">
                 Garbage disposal methods such as landfill and garbage stacking
                 occupy land resources, and landfills are all non-repairable
@@ -85,16 +115,20 @@ export class impact_classification extends Component {
                 greatly reduce the pollution of garbage to the environment and
                 the cost of garbage disposal.
               </p>
+
+              </div>
+              <div className="clear_float"></div>
+              <div className="impact_article_body">
+              <div id="classification3" className="impact_jump"></div>
+              <h4>3. Utilization of renewable resources</h4>
               <div className="impact_article_right">
-                <div className="impact_img_div impact_center">
+                <div className="impact_img_div">
                   <img
-                    src="../../images/impact/figure6.jpg"
+                    src="../../images/impact/figure8.jpg"
                     className="impact_img"
-                    id="impact_clssific_img"
                   />
                 </div>
               </div>
-              <h4>3. Utilization of renewable resources</h4>
               <p className="impact_article_left">
                 The generation of rubbish is due to the fact that people do not
                 make good use of resources and discard the resources they do not
@@ -107,7 +141,21 @@ export class impact_classification extends Component {
                 fertilizers to make the land more fertile .
               </p>
 
+
+
+              </div>
+              <div className="clear_float"></div>
+              <div className="impact_article_body">
+              <div id="classification4" className="impact_jump"></div>
               <h4>4. Improve people's values</h4>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/figure6.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
               <p className="impact_article_left">
                 Garbage classification is the best solution and the best way to
                 deal with garbage pollution. Garbage classification has become
@@ -119,7 +167,7 @@ export class impact_classification extends Component {
                 types of trash, which also brings difficulties to trash disposal
               </p>
 
-              <table className="impact_table">
+              {/* <table className="impact_table">
                 <tr className="impact_tr">
                   <th className="impact_th">Recycling</th>
                   <th className="impact_th">Material type</th>
@@ -278,10 +326,20 @@ export class impact_classification extends Component {
                   <td className="impact_td">Plastics</td>
                   <td className="impact_td">All plastics</td>
                 </tr>
-              </table>
+              </table> */}
+              <div>
+            <img
+                    src="../../images/impact/tree.png"
+                    className="impact_img"
+                  />
             </div>
+            </div>
+            </div>
+            
           </div>
         </div>
+        <div className="clear_float"></div>
+            
       </div>
     );
   }

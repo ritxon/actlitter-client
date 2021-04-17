@@ -14,13 +14,33 @@ export class impact_enviorment extends Component {
             / &ensp; Impact on enviorment
           </p>
         </div>
+
+        <div className="impact_menu">
+          <p><a href="#envirment_title">Impact on environment</a></p>
+          <hr></hr>
+          <p><a href="#envirment1">1. Affect local tourism.</a></p>
+          <hr></hr>
+          <p><a href="#envirment2">2. Cause a fire.</a></p>
+          <hr></hr>
+          <p><a href="#envirment3">3. Soil pollution.</a></p>
+          <hr></hr>
+          <p><a href="#envirment4">4. Water pollution.</a></p>
+          <hr></hr>
+          <p><a href="#envirment5">5. Air pollution.</a></p>
+          <hr></hr>
+        </div>
+
+        {/* Article */}
+        <div className="impact_details">
+        <div id="envirment_title" className="impact_jump"></div>
         <div className="impact_article_flex">
           <div className="impact_article_container w">
             <div className="impact_article_title">
               <h1> Impact on environment</h1>
             </div>
+            <div className="clear_float"></div>
 
-            <div className="impact_article_right">
+            {/* <div className="impact_article_right">
               <div className="impact_related impact_links ">
                 <h2>Related Information</h2>
                 <p>
@@ -29,18 +49,13 @@ export class impact_enviorment extends Component {
                   <a href="/impact_classification">Litter Classification</a>
                 </p>
               </div>
-            </div>
-            <div className="impact_img_div impact_article_left impact-head-figure">
-              <img
-                src="../../images/impact/environment1.jpg"
-                className="impact_img"
-              />
-            </div>
+            </div> */}
+
             <div className="impact_article_body">
               <div className="impact_article_right">
                 <div className="impact_img_div">
                   <img
-                    src="../../images/impact/figure4.jpg"
+                    src="../../images/impact/environment1.jpg"
                     className="impact_img"
                   />
                 </div>
@@ -60,8 +75,20 @@ export class impact_enviorment extends Component {
                 toxic chemical vapors, which will also cause air quality to
                 decline.
               </p>
+            </div>
+            {/* 1 */}
+            <div className="impact_article_body">
 
+              <div id="envirment1" className="impact_jump"></div>
               <h4>1. Affect local tourism and urban environment.</h4>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/figure4.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
               <p className="impact_article_left">
                 The littered area looks rough and degrades the aesthetic value
                 of the surrounding environment. Secondly, it will affect
@@ -72,8 +99,20 @@ export class impact_enviorment extends Component {
                 local residents, but also attract foreign tourists and enhance
                 the tourism economy.
               </p>
-
+            </div>
+            <div className="clear_float"></div>
+            {/* 2 */}
+            <div className="impact_article_body">
+              <div id="envirment2" className="impact_jump"></div>
               <h4>2. Increased possibility of fire</h4>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/figure5.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
               <p className="impact_article_left">
                 Cigarette butts are the easiest garbage that people throw away
                 at will, but people usually ignore the potential threats caused
@@ -85,12 +124,16 @@ export class impact_enviorment extends Component {
                 extinguished before throwing them into the trash can. Don't
                 throw away cigarette butts at will.
               </p>
-
+            </div>
+            <div className="clear_float"></div>
+            {/* 3 */}
+            <div className="impact_article_body">
+              <div id="envirment3" className="impact_jump"></div>
               <h4>3. Soil pollution</h4>
               <div className="impact_article_right">
                 <div className="impact_img_div">
                   <img
-                    src="../../images/impact/environment5.jpg"
+                    src="../../images/impact/environment4.jpg"
                     className="impact_img"
                   />
                 </div>
@@ -102,16 +145,41 @@ export class impact_enviorment extends Component {
                 substances, if they are thrown away at will, they may seriously
                 pollute the soil and damage the groundwater.
               </p>
-
+            </div>
+            <div className="clear_float"></div>
+            {/* 4 */}
+            <div className="impact_article_body">
+              <div id="envirment4" className="impact_jump"></div>
               <h4>4. Water pollution</h4>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/environment6.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
               <p className="impact_article_left">
                 Littering can cause water pollution in many ways. When people
                 throw rubbish directly into the water, rivers and lakes will be
                 polluted. In addition, rubbish on the road will flow into the
                 water due to wind and water power, causing pollution.
               </p>
+            </div>
 
+            <div className="clear_float"></div>
+            {/* 5 */}
+            <div className="impact_article_body">
+              <div id="envirment5" className="impact_jump"></div>
               <h4>5. Air pollution</h4>
+              <div className="impact_article_right">
+                <div className="impact_img_div">
+                  <img
+                    src="../../images/impact/environment5.jpg"
+                    className="impact_img"
+                  />
+                </div>
+              </div>
               <p className="impact_article_left">
                 People often burn garbage to remove it. However, during the
                 combustion process, harmful substances contained in the garbage
@@ -130,7 +198,9 @@ export class impact_enviorment extends Component {
               </div> */}
             </div>
           </div>
+          </div>
         </div>
+        <div className="clear_float"></div>
       </>
     );
   }
