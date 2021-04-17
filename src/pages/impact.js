@@ -5,9 +5,7 @@ export class impact extends Component {
   render() {
     return (
       <>
-        <div>
-          <Sections />
-        </div>
+        <Sections />
       </>
     );
   }
