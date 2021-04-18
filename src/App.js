@@ -20,6 +20,8 @@ import impact_classification from "./pages/impact_classification";
 import impact from "./pages/impact";
 import notFound from "./pages/notFound";
 import treePage from "./pages/treePage";
+import volunteer from "./pages/volunteer/volunteer";
+import tangaroaBlue from "./pages/volunteer/tangaroaBlue";
 
 class App extends Component {
   render() {
@@ -39,6 +41,8 @@ class App extends Component {
                 <Route exact path="/impact_human_animal" component={impact_human_animal} />
                 <Route exact path="/impact_classification" component={impact_classification} />
                 <Route exact path="/treePage" component={treePage} />
+                <Route exact path="/volunteer" component={volunteer} />
+                <Route exact path="/volunteer/tangaroaBlue" component={tangaroaBlue} />
                 <Route exact component={notFound} />
               </Switch>
             </div>

@@ -51,6 +51,17 @@ class Navbar extends Component {
             >
               LITTER INFO
             </Link>
+            <ul className="nav-menu-sub">
+              <li>
+                <a href="/impact_human_animal">Impact on human& animal</a>
+              </li>
+              <li>
+                <a href="/impact_enviorment">Impact on envirment</a>
+              </li>
+              <li>
+                <a href="/impact_classification">Litter classification</a>
+              </li>
+            </ul>
           </li>
           <li className="nav-item">
             <Link

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./impact.css";
+import TreeExample from "../components/tree/TreeExample"
 // import Typography from "@material-ui/core/Typography";
 // import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 // import Link from "@material-ui/core/Link";
@@ -328,10 +329,7 @@ export class impact_classification extends Component {
                 </tr>
               </table> */}
               <div>
-            <img
-                    src="../../images/impact/tree.png"
-                    className="impact_img"
-                  />
+              <TreeExample/>
             </div>
             </div>
             </div>
