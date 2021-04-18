@@ -72,6 +72,15 @@ class Navbar extends Component {
               QUIZ
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/map"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              MAP
+            </Link>
+          </li>
           {/* <li className="nav-item">
             <Link
               to="/login"
