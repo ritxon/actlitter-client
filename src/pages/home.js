@@ -16,7 +16,7 @@ export class home extends Component {
           <div className="team">
             <div className="team-flex">
               <div className="team-intro">
-                <h1>OUR VISION Testing </h1>
+                <h1>OUR VISION</h1>
                 <p>
                   The primary goal of Aclitter is to achieve maximum litter
                   awareness in Victoria by imparting key information and
