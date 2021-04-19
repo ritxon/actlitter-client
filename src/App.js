@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import ScrollToTop from "./components/ScrollToTop"; // to scroll to top
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import axios from 'axios'
+import axios from 'axios';
 
-axios.defaults.baseURL = "https://us-central1-actlitter-backend.cloudfunctions.net/api";
 
 import "./base.css";
 import "./App.css";
@@ -29,6 +28,9 @@ import yarrariver from "./pages/volunteer/yarra_river_keeper";
 import keep_au_beautiful from "./pages/volunteer/keep_au_beautiful";
 import cleanupAu from "./pages/volunteer/cleanupAu";
 import beachpartol from "./pages/volunteer/beachpartol";
+
+
+axios.defaults.baseURL = "https://us-central1-actlitter-backend.cloudfunctions.net/api";
 
 class App extends Component {
   render() {
