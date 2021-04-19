@@ -64,6 +64,16 @@ export default function Map() {
     mapRef.current.panTo({ lat, lng });
     mapRef.current.setZoom(14);
   }, []);
+  // const navigationfrontUrl = "https://www.google.com/maps/dir/?api=1&origin=";
+  // const navigationURl =
+  //   navigationfrontUrl +
+  //   position.coords.latitude +
+  //   "," +
+  //   position.coords.longitude +
+  //   "&destination=" +
+  //   selectedBin.CoordinateLocation[0] +
+  //   "," +
+  //   selectedBin.CoordinateLocation[1];
 
   if (loadError) return "Error";
   if (!isLoaded) return "Loading...";
@@ -107,14 +117,10 @@ export default function Map() {
             <div>
               <h2>bin details</h2>
               <p>{selectedBin.DESCRIPTION}</p>
-              {/* direction part not finished */}
-              {/* <a
-                href="https://maps.googleapis.com/maps/api/directions/json?
-origin=Toronto&destination=Montreal
-&key=AIzaSyB8fN_l9SfZkAQ0As_MRWrdEQ7pcZKiVzE"
-              >
+
+              <a href="https://www.google.com/maps/dir/?api=1&origin=-37.81565030787389,144.98822645680934&destination=-37.79440891779446,144.97534654578013">
                 external
-              </a> */}
+              </a>
             </div>
           </InfoWindow>
         ) : null}
