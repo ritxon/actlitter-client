@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import ScrollToTop from "./components/ScrollToTop"; // to scroll to top
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import axios from 'axios'
+
+axios.defaults.baseURL = "https://us-central1-actlitter-backend.cloudfunctions.net/api";
+
 import "./base.css";
 import "./App.css";
 
