@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import "./volunteer.css"
 
-export class tangaroaBlue extends Component {
+export class yarra_river_keeper extends Component {
     render() {
         return (
             <div className="volunteer">
@@ -13,7 +12,7 @@ export class tangaroaBlue extends Component {
                         <a classname="bold" href="/volunteer">
                         Volunteer Organizations &ensp;
                         </a>
-                        / &ensp; Tangaroa Blue
+                        / &ensp; Yarra Riverkeeper Association
                     </p>
                 </div>
 
@@ -22,18 +21,18 @@ export class tangaroaBlue extends Component {
                     <div className="volunteer_left">
                         <div>
                             <img
-                                src="../../images/volunteer/tangaroablue_logo.jpg"
+                                src="../../images/volunteer/yarra-riverkeeper-logo-registered-trademark.jpg"
                                 className="volunteer_logo"
                             />
                         </div>
                     </div>
                     <div className="volunteer_right">
                         <div className="volunteer_title">
-                        <h1>Tangaroa Blue</h1>
+                        <h1>Yarra Riverkeeper Association</h1>
                         </div>
-                        <p className="organization_details">
+                        {/* <p className="organization_details">
                             Tangaroa Blue is an Australia-wide non-profit organisation that focuses on reducing marine litter and protecting the marine environment. To address the issue of marine litter, Tangaroa Blue has launched AMDI or Australian Marine Debris Initiative, an on-ground network for organisations, volunteers and communities to contribute debris data collected during clean-up events to the AMDI Database.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 </div>
@@ -45,16 +44,16 @@ export class tangaroaBlue extends Component {
                 </div>
                 <div className="volunteer_key_facts">
                     <p className="organization_details">
-                    ●  Founded in 2004, Tangaroa Blue has removed around 18 million pieces of marine debris from the Australian coastline.
+                    ●  In both rivers, microplastics formed the bulk of litter and accounted for 77% (4,889 pieces) of the total load in the Yarra and 67% (2,374 pieces) of the Maribyrnong load
+
                     </p>
                     <p className="organization_details">
-                    ●  In October 2015, Tangaroa Blue coordinated the Great Barrier Reef Clean-up. The organisation held 11 events in 2 weeks with over 1000 volunteers removing around 100,000 individual litter items from the reef.
+                    ●  Over the course of the Litter and Flows project 5,051 participants were involved in the Yarra Riverkeeper litter education program. Approximately 8000 kg of waste was removed from our waterways over the course of the litter and flows project
+
                     </p>
                     <p className="organization_details">
-                    ●  Tangaroa Blue has various clean-up events all year round and also provides support for beach clean-ups.
-                    </p>
-                    <p className="organization_details">
-                    ●  Tangaroa Blue uses data collected in AMDI Database for analysis and provides solutions that can stop flow of litter at the source.
+                    ●  To date, Yarra Riverkeeper has removed approximately 38,000 kg of polystyrene contaminated soil and general waste from the Yarra’s riverbanks and reedbeds.
+
                     </p>
                 </div>
 
@@ -69,17 +68,17 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                    Litter Removed
+                                Volunteers
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                    1434
+                                2042
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                    tonnes
+                                    
                                 </font>
                             </div>
                         </div>
@@ -88,17 +87,18 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                Litter Items Removed
+                                Rubbish collected
+
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                    18
+                                38,202
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                    million
+                                    Kgs
                                 </font>
                             </div>
                         </div>
@@ -107,17 +107,17 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                Locations Cleaned
+                                Microplastics
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                3895
+                                4889
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                sites
+                                
                                 </font>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ export class tangaroaBlue extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://www.tangaroablue.org/">Click here to websit</a>
+                            <a href="https://yarrariver.org.au/">Click here to websit</a>
                         </font>
                     </div>
                 </div>
@@ -138,4 +138,4 @@ export class tangaroaBlue extends Component {
     }
 }
 
-export default tangaroaBlue
+export default yarra_river_keeper

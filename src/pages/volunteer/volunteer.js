@@ -23,7 +23,15 @@ export class volunteer extends Component {
                     <div>
                         <a href="/volunteer/tangaroaBlue">
                             <img
-                                src="../../images/volunteer/tangaroablue logo.jpg"
+                                src="../../images/volunteer/tangaroablue_logo.jpg"
+                                className="volunteer_img"
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/volunteer/beachpartol">
+                            <img
+                                src="../../images/volunteer/beach-patrol_logo.jpg"
                                 className="volunteer_img"
                             />
                         </a>
@@ -31,39 +39,31 @@ export class volunteer extends Component {
                     <div>
                         <a href="/volunteer/tangaroaBlue">
                             <img
-                                src="../../images/volunteer/beach-patrol logo.jpg"
+                                src="../../images/volunteer/oceancrusaders_logo.png"
                                 className="volunteer_img"
                             />
                         </a>
                     </div>
                     <div>
-                        <a href="/volunteer/tangaroaBlue">
+                        <a href="/volunteer/cleanupAu">
                             <img
-                                src="../../images/volunteer/oceancrusaders logo.png"
+                                src="../../images/volunteer/Clean_Up_Australia_logo.jpg"
                                 className="volunteer_img"
                             />
                         </a>
                     </div>
                     <div>
-                        <a href="/volunteer/tangaroaBlue">
+                        <a href="/volunteer/yarrariver">
                             <img
-                                src="../../images/volunteer/Clean Up Australia logo.jpg"
+                                src="../../images/volunteer/yarra-riverkeeper-logo-registered-trademark.jpg"
                                 className="volunteer_img"
                             />
                         </a>
                     </div>
                     <div>
-                        <a href="/volunteer/tangaroaBlue">
+                        <a href="/volunteer/keep_au_beautiful" >
                             <img
-                                src="../../images/volunteer/Marinecarerickettspoint logo.jpg"
-                                className="volunteer_img"
-                            />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/volunteer/tangaroaBlue" >
-                            <img
-                                src="../../images/volunteer/KAB logo.jpg"
+                                src="../../images/volunteer/KAB_logo.jpg"
                                 className="volunteer_img"
                             />
                         </a>

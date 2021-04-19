@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import "./volunteer.css"
 
-export class tangaroaBlue extends Component {
+export class beachpartol extends Component {
     render() {
         return (
             <div className="volunteer">
@@ -13,7 +12,7 @@ export class tangaroaBlue extends Component {
                         <a classname="bold" href="/volunteer">
                         Volunteer Organizations &ensp;
                         </a>
-                        / &ensp; Tangaroa Blue
+                        / &ensp; Beach Patrol
                     </p>
                 </div>
 
@@ -22,17 +21,17 @@ export class tangaroaBlue extends Component {
                     <div className="volunteer_left">
                         <div>
                             <img
-                                src="../../images/volunteer/tangaroablue_logo.jpg"
+                                src="../../images/volunteer/beach-patrol_logo.jpg"
                                 className="volunteer_logo"
                             />
                         </div>
                     </div>
                     <div className="volunteer_right">
                         <div className="volunteer_title">
-                        <h1>Tangaroa Blue</h1>
+                        <h1>Beach Patrol</h1>
                         </div>
                         <p className="organization_details">
-                            Tangaroa Blue is an Australia-wide non-profit organisation that focuses on reducing marine litter and protecting the marine environment. To address the issue of marine litter, Tangaroa Blue has launched AMDI or Australian Marine Debris Initiative, an on-ground network for organisations, volunteers and communities to contribute debris data collected during clean-up events to the AMDI Database.
+                        BeachPatrol is a litter collection group spread over many postcode areas in Melbourne. In each postcode area, BeachPatrol conducts one activity every month to pick litter from beaches, streets or parks. Moreover, BeachPatrol collects data of litter from these activities and use it to raise awareness of littering in these areas and works with the government to address issue of littering.
                         </p>
                     </div>
                 </div>
@@ -45,16 +44,19 @@ export class tangaroaBlue extends Component {
                 </div>
                 <div className="volunteer_key_facts">
                     <p className="organization_details">
-                    ●  Founded in 2004, Tangaroa Blue has removed around 18 million pieces of marine debris from the Australian coastline.
+                    ●  By 2020, BeachPatrol had 30 groups with over 3000 volunteers that cover over 150 kms of Port Phillip Bay beaches and streets.
                     </p>
                     <p className="organization_details">
-                    ●  In October 2015, Tangaroa Blue coordinated the Great Barrier Reef Clean-up. The organisation held 11 events in 2 weeks with over 1000 volunteers removing around 100,000 individual litter items from the reef.
+                    ●  BeachPatrol has started LOS or Love Our Street initiative to clean a street in Melbourne to prevent litter getting into creeks, canals or on beaches.
+
                     </p>
                     <p className="organization_details">
-                    ●  Tangaroa Blue has various clean-up events all year round and also provides support for beach clean-ups.
+                    ●  BeachPatrol has enlisted various beaches and streets in and around Melbourne on their website for volunteers to participate in cleanup activities.
+
                     </p>
                     <p className="organization_details">
-                    ●  Tangaroa Blue uses data collected in AMDI Database for analysis and provides solutions that can stop flow of litter at the source.
+                    ●  Until now, BeachPatrol has collected more than 90,000 kgs of rubbish that constitute around 33000 shopping bags of rubbish.
+
                     </p>
                 </div>
 
@@ -69,17 +71,17 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                    Litter Removed
+                                Rubbish Collected
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                    1434
+                                92473 
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                    tonnes
+                                    Kgs
                                 </font>
                             </div>
                         </div>
@@ -88,17 +90,17 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                Litter Items Removed
+                                Rubbish Amount
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                    18
+                                32976 
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                    million
+                                Shopping Bags
                                 </font>
                             </div>
                         </div>
@@ -107,17 +109,18 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                Locations Cleaned
+                                Cigarette Butts
+
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                3895
+                                568555
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                sites
+                                Cigarette Butts
                                 </font>
                             </div>
                         </div>
@@ -129,7 +132,7 @@ export class tangaroaBlue extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://www.tangaroablue.org/">Click here to websit</a>
+                            <a href="https://www.beachpatrol.com.au/">Click here to websit</a>
                         </font>
                     </div>
                 </div>
@@ -138,4 +141,4 @@ export class tangaroaBlue extends Component {
     }
 }
 
-export default tangaroaBlue
+export default beachpartol

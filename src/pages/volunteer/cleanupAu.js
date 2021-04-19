@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import "./volunteer.css"
 
-export class tangaroaBlue extends Component {
+export class cleanupAu extends Component {
     render() {
         return (
             <div className="volunteer">
@@ -13,7 +12,7 @@ export class tangaroaBlue extends Component {
                         <a classname="bold" href="/volunteer">
                         Volunteer Organizations &ensp;
                         </a>
-                        / &ensp; Tangaroa Blue
+                        / &ensp; Clean Up Australia
                     </p>
                 </div>
 
@@ -22,17 +21,18 @@ export class tangaroaBlue extends Component {
                     <div className="volunteer_left">
                         <div>
                             <img
-                                src="../../images/volunteer/tangaroablue_logo.jpg"
+                                src="../../images/volunteer/Clean_Up_Australia_logo.jpg"
                                 className="volunteer_logo"
                             />
                         </div>
                     </div>
                     <div className="volunteer_right">
                         <div className="volunteer_title">
-                        <h1>Tangaroa Blue</h1>
+                        <h1>Clean Up Australia</h1>
                         </div>
                         <p className="organization_details">
-                            Tangaroa Blue is an Australia-wide non-profit organisation that focuses on reducing marine litter and protecting the marine environment. To address the issue of marine litter, Tangaroa Blue has launched AMDI or Australian Marine Debris Initiative, an on-ground network for organisations, volunteers and communities to contribute debris data collected during clean-up events to the AMDI Database.
+                        Clean Up Australia is an environmental conservation non-profit organization founded by Ian Kiernan and Kim McKay on 8 November 1989. Clean Up Australia aims to prevent rubbish from entering the environment as well as remove rubbish that is already accumulated. To do so, Clean Up Australia works together with the community, different companies and the government to provide solutions that can enable people to live more sustainably.
+
                         </p>
                     </div>
                 </div>
@@ -45,16 +45,23 @@ export class tangaroaBlue extends Component {
                 </div>
                 <div className="volunteer_key_facts">
                     <p className="organization_details">
-                    ●  Founded in 2004, Tangaroa Blue has removed around 18 million pieces of marine debris from the Australian coastline.
+                    ●  More than 19 million Australians have taken part in Clean Up Australia activities over the last 31 years.
                     </p>
                     <p className="organization_details">
-                    ●  In October 2015, Tangaroa Blue coordinated the Great Barrier Reef Clean-up. The organisation held 11 events in 2 weeks with over 1000 volunteers removing around 100,000 individual litter items from the reef.
+                    ●  Volunteers have recorded 38.5 million hours for Clean Up Australia activities to reduce rubbish from the environment.
+
                     </p>
                     <p className="organization_details">
-                    ●  Tangaroa Blue has various clean-up events all year round and also provides support for beach clean-ups.
+                    ●  Clean Up Australia volunteers removed 365,922 rubbish items from 1274 surveyed locations in 2020.
+
                     </p>
                     <p className="organization_details">
-                    ●  Tangaroa Blue uses data collected in AMDI Database for analysis and provides solutions that can stop flow of litter at the source.
+                    ●  Other volunteering organisations can be part of Clean Up Australia by registering on its website with 7778 sites registering in 2020.
+
+                    </p>
+                    <p className="organization_details">
+                    ●  Every Day Clean Up
+
                     </p>
                 </div>
 
@@ -69,17 +76,18 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                    Litter Removed
+                                Volunteers
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                    1434
+                                683,242
+
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                    tonnes
+                                volunteers
                                 </font>
                             </div>
                         </div>
@@ -88,17 +96,17 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                Litter Items Removed
+                                Rubbish collected
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                    18
+                                59,159
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                    million
+                                items
                                 </font>
                             </div>
                         </div>
@@ -107,17 +115,17 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
-                                Locations Cleaned
+                                Cigarette Butts
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details">
-                                3895
+                                13.51%
                                 </font>
                             </div>
                             <div className="volunteer_card_details_div">
                                 <font className="volunteer_card_details2">
-                                sites
+                                
                                 </font>
                             </div>
                         </div>
@@ -129,7 +137,7 @@ export class tangaroaBlue extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://www.tangaroablue.org/">Click here to websit</a>
+                            <a href="https://www.cleanup.org.au/">Click here to websit</a>
                         </font>
                     </div>
                 </div>
@@ -138,4 +146,4 @@ export class tangaroaBlue extends Component {
     }
 }
 
-export default tangaroaBlue
+export default cleanupAu
