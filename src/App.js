@@ -28,6 +28,7 @@ import yarrariver from "./pages/volunteer/yarra_river_keeper";
 import keep_au_beautiful from "./pages/volunteer/keep_au_beautiful";
 import cleanupAu from "./pages/volunteer/cleanupAu";
 import beachpartol from "./pages/volunteer/beachpartol";
+import Data from "./pages/data";
 
 
 axios.defaults.baseURL = "https://us-central1-actlitter-backend.cloudfunctions.net/api";
@@ -46,6 +47,7 @@ class App extends Component {
                   <Route exact path="/quiz" component={quiz} />
                   <Route exact path="/info" component={info} />
                   <Route exact path="/impact" component={impact} />
+                  <Route exact path="/data" component={Data} />
                   <Route exact path="/map" component={map} />
                   <Route exact path="/treePage" component={treePage} />
                   <Route exact path="/impact_enviorment" component={impact_enviorment} />
