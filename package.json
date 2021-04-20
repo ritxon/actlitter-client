@@ -5,7 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "nivo": "0.31.0",
-    "@nivo/line": "^0.62.0",
+    "@nivo/line": "^0.67.0",
     "@reach/combobox": "^0.15.0",
     "@react-google-maps/api": "^2.1.1",
     "@testing-library/jest-dom": "^5.11.9",
