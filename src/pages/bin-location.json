@@ -7,6 +7,7 @@
       "CONDITION_RATING": "3.54",
       "EASTING": "316722.44",
       "NORTHING": "5815047.46",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.79357192662097, 144.9184295036789]
     },
     {
@@ -16,6 +17,7 @@
       "CONDITION_RATING": "3.39",
       "EASTING": "320276.04",
       "NORTHING": "5815553.9",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.78971621811336, 144.95889121242757]
     },
     {
@@ -25,6 +27,7 @@
       "CONDITION_RATING": "3.71",
       "EASTING": "321229.37",
       "NORTHING": "5812188.64",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.82021591183273, 144.96888146774376]
     },
     {
@@ -34,6 +37,7 @@
       "CONDITION_RATING": "1",
       "EASTING": "320435.49",
       "NORTHING": "5812166.12",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.82026290887569, 144.9598613869657]
     },
     {
@@ -43,6 +47,7 @@
       "CONDITION_RATING": "1",
       "EASTING": "318760.6",
       "NORTHING": "5814830.14",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.79593604784199, 144.94150971847003]
     },
     {
@@ -52,6 +57,7 @@
       "CONDITION_RATING": "2",
       "EASTING": "321565.92",
       "NORTHING": "5810855.96",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.83228590166083, 144.9723744487855]
     },
     {
@@ -61,6 +67,7 @@
       "CONDITION_RATING": "3",
       "EASTING": "319700.99",
       "NORTHING": "5815943.26",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.78609577638165, 144.9524610586815]
     },
     {
@@ -70,6 +77,7 @@
       "CONDITION_RATING": "3",
       "EASTING": "319823.59",
       "NORTHING": "5813358.51",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.80940195702674, 144.9532099731792]
     },
     {
@@ -79,6 +87,7 @@
       "CONDITION_RATING": "3.71",
       "EASTING": "319036.45",
       "NORTHING": "5811708.31",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.8241102336649, 144.9438609915]
     },
     {
@@ -88,6 +97,7 @@
       "CONDITION_RATING": "3",
       "EASTING": "319733.15",
       "NORTHING": "5816594.19",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.78023889179067, 144.95298784767243]
     },
     {
@@ -97,6 +107,7 @@
       "CONDITION_RATING": "3.56",
       "EASTING": "319207.4",
       "NORTHING": "5812178.1",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.81991254816191, 144.9459195347144]
     },
     {
@@ -106,6 +117,7 @@
       "CONDITION_RATING": "3.57",
       "EASTING": "319109.26",
       "NORTHING": "5812015.79",
+      "type": "Recycling Bin",
       "CoordinateLocation": [-37.821355087027115, 144.94476461796984]
     },
     {
@@ -115,6 +127,7 @@
       "CONDITION_RATING": "3.7",
       "EASTING": "318924.48",
       "NORTHING": "5812769.06",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.814533472554935, 144.94285481866928]
     },
     {
@@ -124,6 +137,7 @@
       "CONDITION_RATING": "3.71",
       "EASTING": "321280.43",
       "NORTHING": "5812088.06",
+      "type": "Litter Bin",
       "CoordinateLocation": [-37.8211318865448, 144.96943642579498]
     },
     {
@@ -133,316 +147,23 @@
       "CONDITION_RATING": "3.38",
       "EASTING": "321231.29",
       "NORTHING": "5812070.6",
+      "type": "Recycling Bin",
       "CoordinateLocation": [-37.82127953296135, 144.96887412115842]
     },
-    {
-      "GIS_ID": "1745241",
-      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - General Waste",
-      "LOCATION_DESC": "Bourke Street between Russell Street and Swanston Street approximately 13m NE of Smoke Zone, 183 Bourke Street, Melbourne, 3000",
-      "EASTING": "321130.9",
-      "NORTHING": "5812995.72",
-      "CoordinateLocation": [-37.812926846261774, 144.96796270572693]
-    },
-    {
-      "GIS_ID": "1745283",
-      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - General Waste",
-      "LOCATION_DESC": "Elizabeth Street between Little Lonsdale Street and La Trobe Street approximately 29m East of Mars Leathers, 327 Elizabeth Street, Melbourne, 3000",
-      "EASTING": "320586.3",
-      "NORTHING": "5813192.95",
-      "CoordinateLocation": [-37.81104343280089, 144.96182824250397]
-    },
+
     {
       "GIS_ID": "1746692",
       "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
       "LOCATION_DESC": "St Kilda Road between Yarra River and Southbank Boulevard",
-      "EASTING": "321260.66",
-      "NORTHING": "5812000.08",
+      "type": "Cigarette Butt Bin",
       "CoordinateLocation": [-37.82192049444637, 144.96919021142122]
     },
     {
       "GIS_ID": "1747074",
       "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
       "LOCATION_DESC": "Southern Cross Station approximately 16m NW of Spencer Street Plaza, 75-83 Spencer Street, Docklands, 3008",
-      "EASTING": "319916.31",
-      "NORTHING": "5812270.3",
+      "type": "Cigarette Butt Bin",
       "CoordinateLocation": [-37.819222219837265, 144.95399204106667]
-    },
-    {
-      "GIS_ID": "1747180",
-      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
-      "LOCATION_DESC": "Council House 2 approximately 22m North of Shop 5, 220-224 Little Collins Street, Melbourne, 3000",
-      "EASTING": "321041.93",
-      "NORTHING": "5812874.75",
-      "CoordinateLocation": [-37.813999046395644, 144.9669226565945]
-    },
-    {
-      "GIS_ID": "1775767",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin - Boyd Community Hub",
-      "CONDITION_RATING": "5",
-      "EASTING": "320545.14",
-      "NORTHING": "5811517.76",
-      "CoordinateLocation": [-37.826124546294956, 144.96094572362338]
-    },
-    {
-      "GIS_ID": "1075370",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Grattan Street between Cardigan Street and Swanston Street approximately 48m NW of Domino's Pizza, Shop 2, Ground, 121 Grattan Street, Carlton, 3053",
-      "CONDITION_RATING": "3.33",
-      "EASTING": "320821.54",
-      "NORTHING": "5814377.29",
-      "CoordinateLocation": [-37.80042169306206, 144.9647919682499]
-    },
-    {
-      "GIS_ID": "1075371",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Intersection of Leicester Street and Grattan Street approximately 14m North of Graduate Union Of The University Of Melbourne Inc, 230-234 Leicester Street, Carlton, 3053",
-      "CONDITION_RATING": "3.51",
-      "EASTING": "320503.1",
-      "NORTHING": "5814394.37",
-      "CoordinateLocation": [-37.80020531550738, 144.96118128347783]
-    },
-    {
-      "GIS_ID": "1075381",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Queensberry Street between Lygon Street and Cardigan Street approximately 27m South of The Flora Corner, 102 Queensberry Street, Carlton, 3053",
-      "CONDITION_RATING": "3.66",
-      "EASTING": "320897.71",
-      "NORTHING": "5813878.14",
-      "CoordinateLocation": [-37.804932730711364, 144.9655332706893]
-    },
-    {
-      "GIS_ID": "1075392",
-      "DESCRIPTION": "Litter Bin - 55L Metal Bin Insert",
-      "LOCATION_DESC": "Sturt Street between Southbank Boulevard and Grant Street approximately 26m West of Betwixt Cafe & Bar, Building 877, 45 Sturt Street, Southbank, 3006",
-      "CONDITION_RATING": "3.03",
-      "EASTING": "321064.09",
-      "NORTHING": "5811694.11",
-      "CoordinateLocation": [-37.82463799292107, 144.96688246904262]
-    },
-    {
-      "GIS_ID": "1075412",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Victoria Street between Lygon Street and Cardigan Street approximately 7m SE of Royal Melbourne Institute Of Technology, 80-92 Victoria Street, Carlton, 3053",
-      "CONDITION_RATING": "3.7",
-      "EASTING": "320845.01",
-      "NORTHING": "5813674.32",
-      "CoordinateLocation": [-37.80675830109806, 144.96488458356689]
-    },
-    {
-      "GIS_ID": "1075413",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Cardigan Street between Victoria Street and Queensberry Street approximately 17m South of Royal Melbourne Institute Of Technology, 39-49 Cardigan Street, Carlton, 3053",
-      "CONDITION_RATING": "3.54",
-      "EASTING": "320799.73",
-      "NORTHING": "5813771.19",
-      "CoordinateLocation": [-37.80587685969694, 144.96439448381162]
-    },
-    {
-      "GIS_ID": "1075428",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "La Trobe Street between Queen Street and Wills Street approximately 49m SW of Shuxiang Hot Pot, Ground, 360 La Trobe Street, Melbourne, 3000",
-      "CONDITION_RATING": "2.49",
-      "EASTING": "320308.06",
-      "NORTHING": "5813192.35",
-      "CoordinateLocation": [-37.81099411502789, 144.95866907956454]
-    },
-    {
-      "GIS_ID": "1075429",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "William Street between Bourke Street and Little Bourke Street approximately 17m NW of Quest On William, 174 William Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.51",
-      "EASTING": "320255",
-      "NORTHING": "5812766.12",
-      "CoordinateLocation": [-37.81482291488168, 144.95796087602244]
-    },
-    {
-      "GIS_ID": "1075439",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Franklin Street between Swanston Street and Elizabeth Street approximately 16m East of Department of Justice and Community Safety, Ground,Mezzanine & Levels 1-16, 50 Franklin Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.61",
-      "EASTING": "320547.46",
-      "NORTHING": "5813558.65",
-      "CoordinateLocation": [-37.80774176607523, 144.96147786834578]
-    },
-    {
-      "GIS_ID": "1075441",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Franklin Street between Swanston Street and Elizabeth Street approximately 9m West of Scape Franklin (under construction), 99 Franklin Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.61",
-      "EASTING": "320529.65",
-      "NORTHING": "5813525.51",
-      "CoordinateLocation": [-37.80803677324061, 144.96126745995002]
-    },
-    {
-      "GIS_ID": "1075448",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Spring Street between Little Bourke Street and Lonsdale Street approximately 6m North of Holmes Colleges Australia Pty Ltd, 185 Spring Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.68",
-      "EASTING": "321516.77",
-      "NORTHING": "5813294.62",
-      "CoordinateLocation": [-37.810310020254846, 144.97241750343105]
-    },
-    {
-      "GIS_ID": "1075449",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Spring Street between Little Bourke Street and Lonsdale Street approximately 11m North of Holmes Colleges Australia Pty Ltd, 185 Spring Street, Melbourne, 3000",
-      "CONDITION_RATING": "2.68",
-      "EASTING": "321513.98",
-      "NORTHING": "5813299.58",
-      "CoordinateLocation": [-37.81026479744875, 144.97238704929626]
-    },
-    {
-      "GIS_ID": "1075450",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Spring Street between Little Bourke Street and Lonsdale Street approximately 20m North of Holmes Colleges Australia Pty Ltd, 185 Spring Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.68",
-      "EASTING": "321510.98",
-      "NORTHING": "5813308.27",
-      "CoordinateLocation": [-37.81018593548077, 144.97235513010688]
-    },
-    {
-      "GIS_ID": "1075451",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Spring Street between Little Bourke Street and Lonsdale Street approximately 31m West of Gillott Reserve/Tianjin Gardens, 210-230 Spring Street, East Melbourne, 3002",
-      "CONDITION_RATING": "2.68",
-      "EASTING": "321488.59",
-      "NORTHING": "5813371.89",
-      "CoordinateLocation": [-37.80960849869663, 144.97211660389908]
-    },
-    {
-      "GIS_ID": "1075452",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Russell Street between Bourke Street and Little Bourke Street approximately 5m SW of Onthego Services Pty Ltd, Shop 1, 190 Russell Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.68",
-      "EASTING": "321113.31",
-      "NORTHING": "5813113.41",
-      "CoordinateLocation": [-37.811863306358035, 144.96779205951333]
-    },
-    {
-      "GIS_ID": "1075453",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Exhibition Street between Bourke Street and Little Bourke Street approximately 5m SE of 1806/The Understudy, 169-171 Exhibition Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.53",
-      "EASTING": "321327.02",
-      "NORTHING": "5813140.54",
-      "CoordinateLocation": [-37.81166078376703, 144.97022516289974]
-    },
-    {
-      "GIS_ID": "1075454",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Little Bourke Street between Exhibition Street and Russell Street approximately 9m North of Bar Clara, Shop 5, 83-89 Little Bourke Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.67",
-      "EASTING": "321299.39",
-      "NORTHING": "5813199.45",
-      "CoordinateLocation": [-37.8111247428901, 144.96992599413892]
-    },
-    {
-      "GIS_ID": "1075455",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Exhibition Street between Little Bourke Street and Lonsdale Street approximately 7m SE of Her Majesty's Theatre, 219 Exhibition Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.68",
-      "EASTING": "321288.42",
-      "NORTHING": "5813239.95",
-      "CoordinateLocation": [-37.81075779107302, 144.96981143751324]
-    },
-    {
-      "GIS_ID": "1075456",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Exhibition Street between Little Bourke Street and Lonsdale Street approximately 4m East of Subway, 235 Exhibition Street, Melbourne, 3000",
-      "CONDITION_RATING": "1.68",
-      "EASTING": "321274.2",
-      "NORTHING": "5813278.03",
-      "CoordinateLocation": [-37.81041200112492, 144.96965938584037]
-    },
-    {
-      "GIS_ID": "1075457",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Exhibition Street between Little Bourke Street and Lonsdale Street approximately 12m North of Subway, 235 Exhibition Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.68",
-      "EASTING": "321269.06",
-      "NORTHING": "5813290.27",
-      "CoordinateLocation": [-37.81030074287102, 144.96960404898223]
-    },
-    {
-      "GIS_ID": "1075458",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Exhibition Street between Little Bourke Street and Lonsdale Street approximately 9m South of Comedy Theatre, Ground & Level 1, 240 Exhibition Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.68",
-      "EASTING": "321293.99",
-      "NORTHING": "5813291.55",
-      "CoordinateLocation": [-37.810294093403506, 144.96988740794595]
-    },
-    {
-      "GIS_ID": "1075459",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin, Old Docklands Type",
-      "LOCATION_DESC": "Exhibition Street between Little Bourke Street and Lonsdale Street approximately 27m East of Her Majesty's Theatre, 219 Exhibition Street, Melbourne, 3000",
-      "CONDITION_RATING": "1.68",
-      "EASTING": "321309.86",
-      "NORTHING": "5813251.89",
-      "CoordinateLocation": [-37.81065443791743, 144.97005780407852]
-    },
-    {
-      "GIS_ID": "1075460",
-      "DESCRIPTION": "Litter Bin - Stainless Steel 80 L Litter Bin",
-      "LOCATION_DESC": "Exhibition Street between Bourke Street and Little Bourke Street approximately 35m East of Bar Clara, Shop 5, 83-89 Little Bourke Street, Melbourne, 3000",
-      "CONDITION_RATING": "2.68",
-      "EASTING": "321332.05",
-      "NORTHING": "5813195.52",
-      "CoordinateLocation": [-37.811166534750136, 144.97029583474057]
-    },
-    {
-      "GIS_ID": "1075486",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "King Street between Little Bourke Street and Lonsdale Street approximately 3m East of Kebab Society, 217 King Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.52",
-      "EASTING": "319995.84",
-      "NORTHING": "5812725.36",
-      "CoordinateLocation": [-37.81513898974806, 144.9550082129605]
-    },
-    {
-      "GIS_ID": "1075487",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "King Street between Little Bourke Street and Lonsdale Street approximately 11m North of Walkers Stop Convenience, Ground, 221-223 King Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.52",
-      "EASTING": "319988.65",
-      "NORTHING": "5812744.74",
-      "CoordinateLocation": [-37.814963007921364, 144.95493139410135]
-    },
-    {
-      "GIS_ID": "1075488",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "King Street between Little Bourke Street and Lonsdale Street approximately 4m NE of The Melbourne Mens Gallery, 239-241 King Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.52",
-      "EASTING": "319974.82",
-      "NORTHING": "5812780.75",
-      "CoordinateLocation": [-37.81463592303018, 144.95478331853073]
-    },
-    {
-      "GIS_ID": "1075489",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "King Street between Little Bourke Street and Lonsdale Street approximately 8m NW of Colonial Hotel/Brown Alley Night Club, 240 King Street, Melbourne, 3000",
-      "CONDITION_RATING": "2.52",
-      "EASTING": "319996.54",
-      "NORTHING": "5812790.08",
-      "CoordinateLocation": [-37.81455616697603, 144.9550322481492]
-    },
-    {
-      "GIS_ID": "1075490",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "King Street between Little Bourke Street and Lonsdale Street approximately 5m NW of Thai Kitchen Beer, Gnd & Flr1, 232 King Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.52",
-      "EASTING": "320004.69",
-      "NORTHING": "5812769.54",
-      "CoordinateLocation": [-37.81474278665822, 144.95511967847742]
-    },
-    {
-      "GIS_ID": "1075491",
-      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin",
-      "LOCATION_DESC": "King Street between Little Bourke Street and Lonsdale Street approximately 17m South of Hibachi, 230 King Street, Melbourne, 3000",
-      "CONDITION_RATING": "3.52",
-      "EASTING": "320013.74",
-      "NORTHING": "5812746.33",
-      "CoordinateLocation": [-37.81495363357868, 144.95521666432262]
     }
   ]
 }

@@ -24,9 +24,6 @@ export class home extends Component {
                 </p>
               </div>
             </div>
-            {/* <div className="team-logo">
-                <img src="../../logoWithName.jpg" />
-              </div> */}
           </div>
           <Cards />
 

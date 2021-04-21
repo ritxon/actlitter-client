@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import ScrollToTop from "./components/ScrollToTop"; // to scroll to top
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import axios from 'axios';
+
+
 import "./base.css";
 import "./App.css";
 
@@ -28,6 +29,10 @@ import keep_au_beautiful from "./pages/volunteer/keep_au_beautiful";
 import cleanupAu from "./pages/volunteer/cleanupAu";
 import beachpartol from "./pages/volunteer/beachpartol";
 import oceancrusaders from "./pages/volunteer/oceancrusaders";
+import Data from "./pages/data";
+
+
+axios.defaults.baseURL = "https://us-central1-actlitter-backend.cloudfunctions.net/api";
 
 class App extends Component {
   render() {
@@ -43,6 +48,7 @@ class App extends Component {
                   <Route exact path="/quiz" component={quiz} />
                   <Route exact path="/info" component={info} />
                   <Route exact path="/impact" component={impact} />
+                  <Route exact path="/data" component={Data} />
                   <Route exact path="/map" component={map} />
                   <Route exact path="/treePage" component={treePage} />
                   <Route exact path="/impact_enviorment" component={impact_enviorment} />
