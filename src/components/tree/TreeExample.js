@@ -1,7 +1,7 @@
 import React from 'react'
 import { ParentSize } from '@vx/responsive'
 import Tree from './Tree'
-import data from './data'
+import data from './data.js'
 
 const TreeExample = () => (
   <ParentSize>

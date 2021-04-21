@@ -40,7 +40,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   list-style: none;
   text-align: center;
   width: 70%;
@@ -91,6 +91,65 @@
 .menu-icon {
   display: none;
 }
+
+
+.nav-menu-sub {
+  position: absolute;
+  height  : 0;
+  overflow: hidden;
+
+}
+
+.navbar>ul>li:hover .nav-menu-sub{
+  height: auto;
+}
+
+
+.nav-menu-sub>ul {
+  list-style: none;
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+
+.navbar>ul>li:hover .nav-menu-sub>ul{
+  transform: translateY(0);
+}
+
+
+li:hover ul.nav-menu-sub {
+  opacity: 1;
+}
+.nav-menu-sub li {
+  border-bottom: 1px solid oldlace;
+}
+.nav-menu-sub li:last-child {
+  border-bottom: none;
+}
+.nav-menu-sub li a {
+  float: none;
+  padding: 3px 10px;
+  background-color: #056536;
+  height: 40px;
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+}
+.nav-menu-sub li a:hover {
+  color: #000;
+  display: flex;
+  transition: all 0.2s ease-out;
+  font-weight: 900;
+  background-color: #089650;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+
+
+
+
+
+
 /* phone part */
 @media screen and (max-width: 960px) {
   .NavbarItems {

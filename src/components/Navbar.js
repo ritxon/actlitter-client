@@ -43,6 +43,7 @@ class Navbar extends Component {
               HOME
             </Link>
           </li>
+          {/* litter info */}
           <li className="nav-item">
             <Link
               to="/impact"
@@ -51,7 +52,50 @@ class Navbar extends Component {
             >
               LITTER INFO
             </Link>
+            <div className="nav-menu-sub">
+              <ul>
+                <li>
+                  <a href="/impact_human_animal">Impact on human& animal</a>
+                </li>
+                <li>
+                  <a href="/impact_enviorment">Impact on envirment</a>
+                </li>
+                <li>
+                  <a href="/impact_classification">Litter classification</a>
+                </li>
+              </ul>
+            </div>
           </li>
+          {/* volunteer */}
+          <li className="nav-item">
+            <Link
+              to="/volunteer"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              VOL.
+            </Link>
+            <div className="nav-menu-sub">
+              <ul>
+                <li>
+                  <a href="/volunteer/tangaroaBlue">Tangaroa Blue</a>
+                </li>
+                <li>
+                  <a href="/volunteer/yarrariver">Yarra Riverkeeper</a>
+                </li>
+                <li>
+                  <a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a>
+                </li>
+                <li>
+                  <a href="/volunteer/cleanupAu">Clean Up Australia</a>
+                </li>
+                <li>
+                  <a href="/volunteer/beachpartol">Beach Patrol</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
           <li className="nav-item">
             <Link
               to="/quiz"

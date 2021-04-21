@@ -1,0 +1,144 @@
+.volunteer {
+    background-color: #fff;
+}
+
+.volunteer_part{
+    display: flex;
+    padding: 40px;
+}
+/* 
+@media only screen and (min-width: 800px) {
+    .volunteer_left {
+      display: flex;
+      width: 30%;
+    }
+    .volunteer_right {
+      float: right;
+      margin-left: -40px;
+      width: 70%;
+    }
+  } */
+@media only screen and (max-width: 800px) {
+    .volunteer_part{
+        display: block;
+        padding: 40px;
+    }
+    .volunteer_left{
+        text-align: center;
+    }
+}
+
+.volunteer_organizations_title {
+    text-align: center;
+    margin: 15px;
+    margin-top: -20px;
+    font-size: 30px;
+}
+
+.volunteer_title{
+    margin-left: 20px;
+}
+
+.organization_details {
+    margin: 20px;
+}
+.volunteer_logo_div {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.volunteer_img{
+    margin: 15px;
+    width: 350px;
+    height: auto;
+}
+.volunteer_logo {
+    width: 300px;
+    height: auto;
+}
+
+.volunteer_blue {
+    background-color: #F5FAFD;
+}
+.volunteer_cards{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.volunteer_one_card {
+    text-align: center;
+    padding: 20px; 
+}
+
+.volunteer_card_title_div {
+    text-align: center;
+    background-color: khaki;
+    padding: 10px 40px;
+    width: 350px;
+}
+.volunteer_card_title {
+    text-align: center;
+    font-size: 200%;
+    
+}
+.volunteer_tage{
+    text-align: center;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 0px 0px 25px 25px ;
+}
+
+.volunteer_key_facts {
+    margin: 20px;
+}
+
+.organization_details {
+    font-family:"Times New Roman";
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.volunteer_card_details_div {
+    text-align: center;
+    background-color:lemonchiffon;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.volunteer_card_details {
+    text-align: center;
+    font-size: 500%;
+    color: crimson;
+}
+.volunteer_card_details2 {
+    text-align: center;
+    font-size: 300%;
+    color: crimson;
+}
+
+.volunteer_button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 25px;
+}
+.volunteer_button_div {
+    padding: 20px;
+}
+
+.clear_float{
+    clear:both;
+  }
