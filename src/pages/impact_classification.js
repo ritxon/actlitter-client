@@ -329,7 +329,7 @@ export class impact_classification extends Component {
                 </tr>
               </table> */}
               <div>
-              <TreeExample/>
+              {/* <TreeExample/> */}
             </div>
             </div>
             </div>

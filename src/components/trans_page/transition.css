@@ -1,0 +1,193 @@
+.previous_title_div {
+  text-align: center;
+  border-bottom: 1px solid #d5d6d9;
+}
+.previous_title {
+  text-align: center;
+  font-size: 170%;
+  color: #636363;
+}
+@media only screen and (min-width: 800px) {
+.previous_details {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous_text_div {
+  text-align: left;
+  line-height: 36px;
+  width: 30%;
+  margin-left: 25px;
+}
+
+.previous_text {
+  text-align: left;
+  font-family:"Times New Roman", Times, serif;
+  font-size: 125%;
+  padding: 30px;
+}
+
+
+.previous_right_img_div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+.previous_right_img {
+  justify-content: center;
+  align-items: center;
+  max-height: 300px;
+  padding: 15px;
+}
+
+.previous_right_cards_div {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer_2 {
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  background: none;
+  margin: 15px;
+}
+.trans_one_card_2 {
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .maincontainer_2 {
+    width: 300px;
+    height: 200px;
+    background: none;
+  }
+  .previous_details {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .previous_text_div {
+    text-align: left;
+  }
+
+  .previous_text {
+    text-align: left;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 120%;
+  }
+
+ 
+  .previous_right_img {
+    width: 100%;
+    margin: 5%;
+  }
+
+  .previous_right_cards_div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .trans_one_card_2 {
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+/* card_green */
+
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront_2 {
+background-color: #dcedc8;
+width: 300px;
+height: 200px;
+border-radius: 10px;
+box-shadow: 0px 0px 15px #888888;
+}
+.thefront_pink_2 {
+  background-color: rgb(229, 195, 208);
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #888888;
+  }
+
+.volunteer_card_2_title_div {
+  text-align: center;
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid #d5d6d9;
+}
+.volunteer_card_2_title {
+  text-align: center;
+  font-size: 170%;
+  color: #636363;
+}
+
+.volunteer_card_2_details_div2 {
+  text-align: center;
+  width: 100%;
+  height: 30%;
+}
+.volunteer_card_2_details__pink_div2 {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 30%;
+}
+
+.volunteer_card_2_details2 {
+  text-align: center;
+  font-size: 300%;
+  color: #636363;
+}
+.volunteer_card_2_details_div {
+  text-align: center;
+  width: 100%;
+  height: 45%;
+}
+
+.volunteer_card_2_details {
+  text-align: center;
+  font-size: 500%;
+  color: #636363;
+}
+
+.volunteer_card_2_details_pink_div {
+  text-align: center;
+  width: 100%;
+  height: 45%;
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1 {
+  font-family: "zilla slab", sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p {
+  font-family: "zilla slab", sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}

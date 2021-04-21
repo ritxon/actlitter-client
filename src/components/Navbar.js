@@ -73,7 +73,7 @@ class Navbar extends Component {
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              VOL.
+              VOLUNTEER
             </Link>
             <div className="nav-menu-sub">
               <ul>
@@ -91,6 +91,9 @@ class Navbar extends Component {
                 </li>
                 <li>
                   <a href="/volunteer/beachpartol">Beach Patrol</a>
+                </li>
+                <li>
+                  <a href="/volunteer/oceancrusaders">Ocean Crusaders</a>
                 </li>
               </ul>
             </div>

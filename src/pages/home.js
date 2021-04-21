@@ -52,7 +52,7 @@ export class home extends Component {
                         </a>
                     </div>
                     <div>
-                        <a href="/volunteer/tangaroaBlue">
+                        <a href="/volunteer/oceancrusaders">
                             <img
                                 src="../../images/volunteer/oceancrusaders_logo.png"
                                 className="volunteer_img"

@@ -117,7 +117,7 @@
       "CONDITION_RATING": "3.57",
       "EASTING": "319109.26",
       "NORTHING": "5812015.79",
-      "type": "Litter Bin",
+      "type": "Recycling Bin",
       "CoordinateLocation": [-37.821355087027115, 144.94476461796984]
     },
     {
@@ -147,8 +147,23 @@
       "CONDITION_RATING": "3.38",
       "EASTING": "321231.29",
       "NORTHING": "5812070.6",
-      "type": "Litter Bin",
+      "type": "Recycling Bin",
       "CoordinateLocation": [-37.82127953296135, 144.96887412115842]
+    },
+
+    {
+      "GIS_ID": "1746692",
+      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
+      "LOCATION_DESC": "St Kilda Road between Yarra River and Southbank Boulevard",
+      "type": "Cigarette Butt Bin",
+      "CoordinateLocation": [-37.82192049444637, 144.96919021142122]
+    },
+    {
+      "GIS_ID": "1747074",
+      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
+      "LOCATION_DESC": "Southern Cross Station approximately 16m NW of Spencer Street Plaza, 75-83 Spencer Street, Docklands, 3008",
+      "type": "Cigarette Butt Bin",
+      "CoordinateLocation": [-37.819222219837265, 144.95399204106667]
     }
   ]
 }

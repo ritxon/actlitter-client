@@ -1,0 +1,118 @@
+.maincontainer{
+  width: 300px;
+  height: 250px;
+  background: none;
+
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  box-shadow: 0px 0px 15px #888888;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+
+.volunteer_card_pink_title_div {
+  text-align: center;
+  background-color: rgb(229, 195, 208);
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid #D5D6D9;
+}
+.volunteer_card_pink_title {
+  text-align: center;
+  font-size: 150%;
+  color: #636363;
+}
+
+
+.volunteer_card_pink_details_div {
+  text-align: center;
+  background-color:rgb(229, 195, 208);
+  width: 100%;
+  height: 45%;
+}
+.volunteer_card_pink_details_div2 {
+  text-align: center;
+  background-color:rgb(229, 195, 208);
+  width: 100%;
+  height: 30%;
+}
+.volunteer_card_pink_details {
+  text-align: center;
+  font-size: 500%;
+  color: #636363;
+}
+.volunteer_card_pink_details2 {
+  text-align: center;
+  font-size: 300%;
+  color: #636363;
+}
+.volunteer_card_pink_back_div {
+  text-align: center;
+  background-color:rgb(229, 195, 208);
+  width: 100%;
+  height: 75%;
+  padding: 10px;
+}
+.volunteer_card_pink_back {
+  text-align: center;
+  font-size: 120%;
+  color: #636363;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
