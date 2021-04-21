@@ -27,6 +27,7 @@ import yarrariver from "./pages/volunteer/yarra_river_keeper";
 import keep_au_beautiful from "./pages/volunteer/keep_au_beautiful";
 import cleanupAu from "./pages/volunteer/cleanupAu";
 import beachpartol from "./pages/volunteer/beachpartol";
+import oceancrusaders from "./pages/volunteer/oceancrusaders";
 
 class App extends Component {
   render() {
@@ -53,6 +54,7 @@ class App extends Component {
                   <Route exact path="/volunteer/keep_au_beautiful" component={keep_au_beautiful} />
                   <Route exact path="/volunteer/cleanupAu" component={cleanupAu} />
                   <Route exact path="/volunteer/beachpartol" component={beachpartol} />
+                  <Route exact path="/volunteer/oceancrusaders" component={oceancrusaders} />
                   <Route exact component={notFound} />
                 </Switch>
               </div>
