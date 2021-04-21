@@ -33,6 +33,8 @@ const LineGraph = ({dataSet, xLegend, yLegend}) => {
 					legendOffset: -50,
 					legendPosition: "middle",
 				}}
+				colors={{ scheme: 'set1' }}
+				lineWidth={4}
 				pointSize={10}
 				pointColor="#ffffff"
 				pointBorderWidth={2}
