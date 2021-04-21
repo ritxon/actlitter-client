@@ -62,8 +62,21 @@ export default function Map() {
 
   const panTo = React.useCallback(({ lat, lng }) => {
     mapRef.current.panTo({ lat, lng });
-    mapRef.current.setZoom(14);
+    mapRef.current.setZoom(16);
   }, []);
+  const iconBase =
+    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+  const icons = {
+    parking: {
+      icon: iconBase + "parking_lot_maps.png",
+    },
+    library: {
+      icon: iconBase + "library_maps.png",
+    },
+    info: {
+      icon: iconBase + "info-i_maps.png",
+    },
+  };
   // const navigationfrontUrl = "https://www.google.com/maps/dir/?api=1&origin=";
   // const navigationURl =
   //   navigationfrontUrl +
@@ -91,6 +104,9 @@ export default function Map() {
         options={options}
         onLoad={onMapLoad}
       >
+        {/* display current location marker */}
+        <Marker position={center}></Marker>
+
         {binData.features.map((bin) => (
           <Marker
             key={bin.GIS_ID}
@@ -98,6 +114,9 @@ export default function Map() {
               lat: bin.CoordinateLocation[0],
               lng: bin.CoordinateLocation[1],
             }}
+            // display with type
+            // https://developers.google.com/maps/documentation/javascript/custom-markers
+            // icon={icons[bin.type].icon}
             onClick={() => {
               setSelectedBin(bin);
             }}
@@ -140,11 +159,17 @@ function Locate({ panTo }) {
               lat: position.coords.latitude,
               lng: position.coords.longitude,
             });
+            // question: how to let the consle outside of the loop
+            const locationMarker = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
           },
           () => null
         );
       }}
     >
+      {/* <Marker position={locationMarker}></Marker> */}
       <img src="./compass.png" alt="compass" />
     </button>
   );
@@ -198,6 +223,7 @@ function Search({ panTo }) {
               data.map(({ id, description }) => (
                 <ComboboxOption key={id} value={description} />
               ))}
+            
           </ComboboxList>
         </ComboboxPopover>
       </Combobox>
