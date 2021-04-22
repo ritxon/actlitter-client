@@ -155,8 +155,8 @@ export default function Map() {
                     <h2>Bin Details</h2>
                     <p>Bin Description: {selectedBin.DESCRIPTION}</p>
                     <p>Bin Location: {selectedBin.LOCATION_DESC}</p>
-                    <p>Bin Easting: {selectedBin.EASTING}</p>
-                    <p>Bin Northing: {selectedBin.NORTHING}</p>
+                    {/* <p>Bin Easting: {selectedBin.EASTING}</p>
+                    <p>Bin Northing: {selectedBin.NORTHING}</p> */}
                     <a
                       className="map-btn btn btn-slide primary"
                       target="_blank"
@@ -174,22 +174,21 @@ export default function Map() {
               <h2>Legend of Map</h2>
               <li>
                 <img src="images/current.png" alt="current location"></img>
-                current/search location
+                Current/ Search Location
               </li>
               <li>
-                <img src="images/bin.png" alt="recycling bin"></img> little bin
+                <img src="images/bin.png" alt="recycling bin"></img>Litter Bin
               </li>
               <li>
-                <img src="images/cbin.png" alt="cigerate bin"></img> cigerate
-                bin
+                <img src="images/cbin.png" alt="cigerate bin"></img>Cigarette
+                Bin
               </li>
               <li>
                 <img src="images/greenbin.png" alt="recycling bin"></img>
-                recycling bin
+                Recycling Bin
               </li>
               <li>
-                <img src="images/compass.png" alt="compass"></img>
-                compass
+                <img src="images/compass.png" alt="compass"></img>Compass
               </li>
             </ul>
           </div>

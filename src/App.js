@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import ScrollToTop from "./components/ScrollToTop"; // to scroll to top
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import axios from 'axios';
-
+import axios from "axios";
 
 import "./base.css";
 import "./App.css";
@@ -31,8 +30,8 @@ import beachpartol from "./pages/volunteer/beachpartol";
 import oceancrusaders from "./pages/volunteer/oceancrusaders";
 import Data from "./pages/data";
 
-
-axios.defaults.baseURL = "https://us-central1-actlitter-backend.cloudfunctions.net/api";
+axios.defaults.baseURL =
+  "https://us-central1-actlitter-backend.cloudfunctions.net/api";
 
 class App extends Component {
 
@@ -40,7 +39,7 @@ class App extends Component {
 
   render() {
     return (
-
+      <>
         <div className="App">
           <Router>
             <ScrollToTop>
@@ -55,16 +54,52 @@ class App extends Component {
                   <Route exact path="/data" component={Data} />
                   <Route exact path="/map" component={map} />
                   <Route exact path="/treePage" component={treePage} />
-                  <Route exact path="/impact_enviorment" component={impact_enviorment} />
-                  <Route exact path="/impact_human_animal" component={impact_human_animal} />
-                  <Route exact path="/impact_classification" component={impact_classification}/>
+                  <Route
+                    exact
+                    path="/impact_enviorment"
+                    component={impact_enviorment}
+                  />
+                  <Route
+                    exact
+                    path="/impact_human_animal"
+                    component={impact_human_animal}
+                  />
+                  <Route
+                    exact
+                    path="/impact_classification"
+                    component={impact_classification}
+                  />
                   <Route exact path="/volunteer" component={volunteer} />
-                  <Route exact path="/volunteer/tangaroaBlue" component={tangaroaBlue} />
-                  <Route exact path="/volunteer/yarrariver" component={yarrariver} />
-                  <Route exact path="/volunteer/keep_au_beautiful" component={keep_au_beautiful} />
-                  <Route exact path="/volunteer/cleanupAu" component={cleanupAu} />
-                  <Route exact path="/volunteer/beachpartol" component={beachpartol} />
-                  <Route exact path="/volunteer/oceancrusaders" component={oceancrusaders} />
+                  <Route
+                    exact
+                    path="/volunteer/tangaroaBlue"
+                    component={tangaroaBlue}
+                  />
+                  <Route
+                    exact
+                    path="/volunteer/yarrariver"
+                    component={yarrariver}
+                  />
+                  <Route
+                    exact
+                    path="/volunteer/keep_au_beautiful"
+                    component={keep_au_beautiful}
+                  />
+                  <Route
+                    exact
+                    path="/volunteer/cleanupAu"
+                    component={cleanupAu}
+                  />
+                  <Route
+                    exact
+                    path="/volunteer/beachpartol"
+                    component={beachpartol}
+                  />
+                  <Route
+                    exact
+                    path="/volunteer/oceancrusaders"
+                    component={oceancrusaders}
+                  />
                   <Route exact component={notFound} />
                 </Switch>
               </div>
@@ -72,6 +107,7 @@ class App extends Component {
             </ScrollToTop>
           </Router>
         </div>
+      </>
     );
   }
 }

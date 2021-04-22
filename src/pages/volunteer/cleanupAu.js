@@ -171,7 +171,7 @@ export class cleanupAu extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://www.cleanup.org.au/">Click here to websit</a>
+                            <a target="blank" href="https://www.cleanup.org.au/">Go to website</a>
                         </font>
                     </div>
                 </div>

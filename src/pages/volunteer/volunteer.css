@@ -23,7 +23,7 @@
 }
 
 .volunteer_all_summary {
-  font-family:"Times New Roman", Times, serif;
+  /* font-family:"Times New Roman", Times, serif; */
   font-size: 180%;
 }
 
@@ -155,14 +155,14 @@
 }
 
 .organization_details {
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
   font-size: 19px;
   line-height: 23px;
 
 }
 
 .volunteer_fun_fact {
-  width: 20px;
+  width: 35px;
 }
 
 /* 

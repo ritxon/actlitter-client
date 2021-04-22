@@ -166,7 +166,7 @@ export class oceancrusaders extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://oceancrusaders.org/">Click here to websit</a>
+                            <a target="blank" href="https://oceancrusaders.org/">Go to website</a>
                         </font>
                     </div>
                 </div>
