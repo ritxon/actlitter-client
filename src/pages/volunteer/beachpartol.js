@@ -112,7 +112,7 @@ export class beachpartol extends Component {
                 front_title="AMOUNT OF LITTER"
                 front_num="92473"
                 front_text="kgs"
-                back_details="By this year, BeachPatrol has picked 92473 kgs of litter from beaches, streets and parks! (Garbage Bin Emoji)"
+                back_details="By this year, BeachPatrol has picked 92473 kgs of litter from beaches, streets and parks!"
               />
             </div>
 
@@ -121,7 +121,7 @@ export class beachpartol extends Component {
                 front_title="NUMBER OF BAGS"
                 front_num="32976"
                 front_text="bags"
-                back_details="BeachPatrol used 32976 shopping bags until now to put in the huge amount of collected litter! (Shopping Bag Emoji)"
+                back_details="BeachPatrol used 32976 shopping bags until now to put in the huge amount of collected litter!"
               />
             </div>
           </div>
