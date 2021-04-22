@@ -37,8 +37,9 @@ export class home extends Component {
 							<div className="facts-section">
                             <p>Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in Australia, around 7 billion are littered</p>
                             <p>According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused cigarette butt litter to be a major problem for Australia.</p>
+                            <br/>
                             <a href="/data">
-									Want to know more
+									Want to know more ..
 							</a>
                             </div>
 							<div className="image-section">
