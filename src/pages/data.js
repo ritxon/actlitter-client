@@ -107,54 +107,54 @@ const Data = () => {
 	];
 
 	let data_beverage_containers = [
-		{ taste: "Beaches", Beverage_containers: 2.2 },
-		{ taste: "Car Parks", Beverage_containers: 1.9 },
-		{ taste: "Highways", Beverage_containers: 5.1 },
-		{ taste: "Industrial", Beverage_containers: 5.5 },
-		{ taste: "Recreational", Beverage_containers: 0.9 },
-		{ taste: "Residential", Beverage_containers: 1.7 },
-		{ taste: "Retail", Beverage_containers: 2.1 },
-		{ taste: "Shopping", Beverage_containers: 1.2 },
+		{ taste: "Beaches", BC: 2.2 },
+		{ taste: "Car Parks", BC: 1.9 },
+		{ taste: "Highways", BC: 5.1 },
+		{ taste: "Industrial", BC: 5.5 },
+		{ taste: "Recreational", BC: 0.9 },
+		{ taste: "Residential", BC: 1.7 },
+		{ taste: "Retail", BC: 2.1 },
+		{ taste: "Shopping", BC: 1.2 },
 	];
 
 	let data_cigarette_butts = [
-		{ taste: "Beaches", Cigarette_butts: 21.4 },
-		{ taste: "Car Parks", Cigarette_butts: 34.3 },
-		{ taste: "Highways", Cigarette_butts: 14.6 },
-		{ taste: "Industrial", Cigarette_butts: 34.5 },
-		{ taste: "Recreational", Cigarette_butts: 9.5 },
-		{ taste: "Residential", Cigarette_butts: 12 },
-		{ taste: "Retail", Cigarette_butts: 79.5 },
-		{ taste: "Shopping", Cigarette_butts: 50.7 },
+		{ taste: "Beaches", CB: 21.4 },
+		{ taste: "Car Parks", CB: 34.3 },
+		{ taste: "Highways", CB: 14.6 },
+		{ taste: "Industrial", CB: 34.5 },
+		{ taste: "Recreational", CB: 9.5 },
+		{ taste: "Residential", CB: 12 },
+		{ taste: "Retail", CB: 79.5 },
+		{ taste: "Shopping", CB: 50.7 },
 	];
 
 	let data_take_away = [
-		{ taste: "Beaches", Take_away: 11.7 },
-		{ taste: "Car Parks", Take_away: 8.2 },
-		{ taste: "Highways", Take_away: 6.6 },
-		{ taste: "Industrial", Take_away: 10.7 },
-		{ taste: "Recreational", Take_away: 6.5 },
-		{ taste: "Residential", Take_away: 6.5 },
-		{ taste: "Retail", Take_away: 13.1 },
-		{ taste: "Shopping", Take_away: 7.4 },
+		{ taste: "Beaches", TA: 11.7 },
+		{ taste: "Car Parks", TA: 8.2 },
+		{ taste: "Highways", TA: 6.6 },
+		{ taste: "Industrial", TA: 10.7 },
+		{ taste: "Recreational", TA: 6.5 },
+		{ taste: "Residential", TA: 6.5 },
+		{ taste: "Retail", TA: 13.1 },
+		{ taste: "Shopping", TA: 7.4 },
 	];
 
 	let data_plastic_bags = [
-		{ taste: "Beaches", Plastic_bags: 0.4 },
-		{ taste: "Car Parks", Plastic_bags: 0.2 },
-		{ taste: "Highways", Plastic_bags: 0.3 },
-		{ taste: "Industrial", Plastic_bags: 0.5 },
-		{ taste: "Recreational", Plastic_bags: 0.1 },
-		{ taste: "Residential", Plastic_bags: 0.2 },
-		{ taste: "Retail", Plastic_bags: 0.3 },
-		{ taste: "Shopping", Plastic_bags: 0.2 },
+		{ taste: "Beaches", PB: 0.4 },
+		{ taste: "Car Parks", PB: 0.2 },
+		{ taste: "Highways", PB: 0.3 },
+		{ taste: "Industrial", PB: 0.5 },
+		{ taste: "Recreational", PB: 0.1 },
+		{ taste: "Residential", PB: 0.2 },
+		{ taste: "Retail", PB: 0.3 },
+		{ taste: "Shopping", PB: 0.2 },
 	];
 
 	// ["beverage_containers", "Take_away", "Glass", "Paper", "Plastic", "Plastic_bags", "Others"]
 
 	const [dataSet, setDataSet] = useState(fullData);
 	const [dataSetRadar, setDataSetRadar] = useState(data_beverage_containers);
-	const [locations, setLocations] = useState(["Beverage_containers"]);
+	const [locations, setLocations] = useState(["BC"]);
 	const [valueOption, setValueOption] = useState("1");
 
 	let wellDisposedData = [
@@ -175,7 +175,7 @@ const Data = () => {
 			],
 		},
 		{
-			id: "public_litter_bins",
+			id: "Public litter bins",
 			color: "hsl(109, 70%, 50%)",
 			data: [
 				{ x: "2010", y: 4554.78 },
@@ -191,7 +191,7 @@ const Data = () => {
 			],
 		},
 		{
-			id: "commingled_recycling",
+			id: "Commingled recycling",
 			color: "hsl(100, 70%, 50%)",
 			data: [
 				{ x: "2010", y: 6525.24 },
@@ -275,16 +275,16 @@ const Data = () => {
 
 		if (e.target.value == "1") {
 			setDataSetRadar(data_beverage_containers);
-			setLocations(["Beverage_containers"]);
+			setLocations(["BC"]);
 		} else if (e.target.value == "2") {
 			setDataSetRadar(data_cigarette_butts);
-			setLocations(["Cigarette_butts"]);
+			setLocations(["CB"]);
 		} else if (e.target.value == "3") {
 			setDataSetRadar(data_take_away);
-			setLocations(["Take_away"]);
+			setLocations(["TA"]);
 		} else if (e.target.value == "4") {
 			setDataSetRadar(data_plastic_bags);
-			setLocations(["Plastic_bags"]);
+			setLocations(["PB"]);
 		}
 	};
 
@@ -311,15 +311,15 @@ const Data = () => {
 							<div className="box-button-data">
 								<Button
 									styleBtn="orange-pastel-btn quiz-btn"
-									text="Well disposed waste"
+									text="Waste Disposed Correctly"
 									onClick={() => showWellDisposed()}
 								/>
 								<Button
 									styleBtn="orange-pastel-btn quiz-btn"
-									text="Bad disposed waste"
+									text="Waste Disposed Incorrectly"
 									onClick={() => showBadDisposed()}
 								/>
-								<Button styleBtn="orange-pastel-btn quiz-btn" text="All waste" onClick={() => showAllData()} />
+								<Button styleBtn="orange-pastel-btn quiz-btn" text="All Waste" onClick={() => showAllData()} />
 							</div>
 						</div>
 					</div>
@@ -349,13 +349,13 @@ const Data = () => {
 						<div className="radioButton-data">
 							<div className="box-radio-data">
 								<input id="1" type="radio" value="1" checked={valueOption == "1"} onChange={changeRadar} />
-								<label htmlFor="1">Beverage containers</label>
+								<label htmlFor="1">Beverage containers (BC)</label>
 								<input id="2" type="radio" value="2" checked={valueOption == "2"} onChange={changeRadar} />
-								<label htmlFor="2">Cigarette butts</label>
+								<label htmlFor="2">Cigarette butts (CB)</label>
 								<input id="3" type="radio" value="3" checked={valueOption == "3"} onChange={changeRadar} />
-								<label htmlFor="3">Take away containers</label>
+								<label htmlFor="3">Take away containers (TW)</label>
 								<input id="4" type="radio" value="4" checked={valueOption == "4"} onChange={changeRadar} />
-								<label htmlFor="4">Plastic bags</label>
+								<label htmlFor="4">Plastic bags (PB)</label>
 							</div>
 						</div>
 					</div>
