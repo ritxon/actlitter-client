@@ -85,7 +85,7 @@ export class yarra_river_keeper extends Component {
                                 front_title="NUMBER OF VOLUNTEERS"
                                 front_num="2042"
                                 front_text="people"
-                                back_details="Yarra Riverkeeper has an estimated number of 2042 volunteers to help with activities involving cleaning of litter from the river. (Group of people Emoji)"
+                                back_details="Yarra Riverkeeper has an estimated number of 2042 volunteers to help with activities involving cleaning of litter from the river."
                             />
                         </div>
 
@@ -95,7 +95,7 @@ export class yarra_river_keeper extends Component {
                                 front_title="AMOUNT OF LITTER"
                                 front_num="38,202"
                                 front_text="kg"
-                                back_details="Yarra Riverkeeper volunteers have removed 38,202 kg of rubbish from the river! (Clean river/ Garbage bin Emoji)"
+                                back_details="Yarra Riverkeeper volunteers have removed 38,202 kg of rubbish from the river!"
                             />
                         </div>
 
