@@ -152,18 +152,151 @@
     },
 
     {
-      "GIS_ID": "1746692",
-      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
-      "LOCATION_DESC": "St Kilda Road between Yarra River and Southbank Boulevard",
-      "type": "Cigarette Butt Bin",
-      "CoordinateLocation": [-37.82192049444637, 144.96919021142122]
+      "GIS_ID": "1798658",
+      "DESCRIPTION": "Litter Bin - Steel 80 L Litter Bin - Hub@Docklands",
+      "LOCATION_DESC": "Waterview Walk between Bourke Street and Batmans Hill Drive approximately 25m SW of YY Liquor, 10A Waterview Walk, Docklands, 3008",
+      "CONDITION_RATING": "5",
+      "EASTING": "319370.64",
+      "NORTHING": "5812186.93",
+      "type": "Litter Bin",
+      "CoordinateLocation": [-37.819865335152315, 144.94777529991032]
     },
     {
-      "GIS_ID": "1747074",
+      "GIS_ID": "1798659",
+      "DESCRIPTION": "Litter Bin - Steel 80 L Recycling Bin - Hub@Docklands",
+      "LOCATION_DESC": "Waterview Walk between Bourke Street and Batmans Hill Drive approximately 25m SW of Care Park Pty Ltd, Carpark, 8 Waterview Walk, Docklands, 3008",
+      "CONDITION_RATING": "5",
+      "EASTING": "319371.63",
+      "NORTHING": "5812185.94",
+      "type": "Litter Bin",
+      "CoordinateLocation": [-37.81987444839347, 144.94778629419037]
+    },
+    {
+      "GIS_ID": "1796739",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - General Waste",
+      "LOCATION_DESC": "Collins Street between William Street and Market Street approximately 17m West of 431 Collins Street, Melbourne, 3000",
+      "EASTING": "320439.76",
+      "NORTHING": "5812473.23",
+      "type": "Litter Bin",
+      "CoordinateLocation": [-37.81749747084932, 144.9599860375566]
+    },
+    {
+      "GIS_ID": "1796740",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - Recycle",
+      "LOCATION_DESC": "Collins Street between William Street and Market Street approximately 17m West of 431 Collins Street, Melbourne, 3000",
+      "EASTING": "320439.76",
+      "NORTHING": "5812473.23",
+      "type": "Recycling Bin",
+      "CoordinateLocation": [-37.81749747084932, 144.9599860375566]
+    },
+    {
+      "GIS_ID": "1796741",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - General Waste",
+      "LOCATION_DESC": "Intersection of Market Street and Flinders Lane approximately 24m East of W Melbourne, 408 Flinders Lane, Melbourne, 3000",
+      "EASTING": "320494.8",
+      "NORTHING": "5812390.97",
+      "type": "Litter Bin",
+      "CoordinateLocation": [-37.818249250335704, 144.9605905984666]
+    },
+    {
+      "GIS_ID": "1796742",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - Recycle",
+      "LOCATION_DESC": "Intersection of Market Street and Flinders Lane approximately 24m East of W Melbourne, 408 Flinders Lane, Melbourne, 3000",
+      "EASTING": "320494.8",
+      "NORTHING": "5812390.97",
+      "type": "Recycling Bin",
+      "CoordinateLocation": [-37.818249250335704, 144.9605905984666]
+    },
+
+    {
+      "GIS_ID": "1785281",
       "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
-      "LOCATION_DESC": "Southern Cross Station approximately 16m NW of Spencer Street Plaza, 75-83 Spencer Street, Docklands, 3008",
+      "LOCATION_DESC": "Collins Street between King Street and Spencer Street approximately 31m SE of City West Newsagency, Shop 9, 600 Collins Street, Melbourne, 3000",
+      "EASTING": "320018.18",
+      "NORTHING": "5812309.99",
       "type": "Cigarette Butt Bin",
-      "CoordinateLocation": [-37.819222219837265, 144.95399204106667]
+      "CoordinateLocation": [-37.81888480970098, 144.9551586186608]
+    },
+    {
+      "GIS_ID": "1785282",
+      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
+      "LOCATION_DESC": "Swanston Street between Little Lonsdale Street and La Trobe Street approximately 29m East of Melbourne Central Station, 183-201 La Trobe Street, Melbourne, 3000",
+      "EASTING": "320757.75",
+      "NORTHING": "5813335.82",
+      "type": "Cigarette Butt Bin",
+      "CoordinateLocation": [-37.8097902108145, 144.96381016934816]
+    },
+    {
+      "GIS_ID": "1785283",
+      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
+      "LOCATION_DESC": "Elizabeth Street between Flinders Street and Flinders Lane approximately 8m South of Persian Grill, 36 Elizabeth Street, Melbourne, 3000",
+      "EASTING": "320852.93",
+      "NORTHING": "5812506.62",
+      "type": "Cigarette Butt Bin",
+      "CoordinateLocation": [-37.81727789929484, 144.9646856673053]
+    },
+    {
+      "GIS_ID": "1785284",
+      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
+      "LOCATION_DESC": "Bourke Street between Enterprize Way and Cumberland Street approximately 29m NW of Tsukino Snizuku, 817 Bourke Street, Docklands, 3008",
+      "EASTING": "319056.71",
+      "NORTHING": "5812208.68",
+      "type": "Cigarette Butt Bin",
+      "CoordinateLocation": [-37.81960723999643, 144.94421612098216]
+    },
+    {
+      "GIS_ID": "1785285",
+      "DESCRIPTION": "Cigarette Butt Bin - Type A - Asset Mounted",
+      "LOCATION_DESC": "Collins Street between King Street and Spencer Street approximately 12m West of Earl Canteen, Tenancy 5, 567 Collins Street, Melbourne, 3000",
+      "EASTING": "320060.78",
+      "NORTHING": "5812326.92",
+      "type": "Cigarette Butt Bin",
+      "CoordinateLocation": [-37.81874071361468, 144.95564653772166]
+    },
+    {
+      "GIS_ID": "1784032",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - Recycle",
+      "LOCATION_DESC": "Queensbridge Square approximately 15m North of Queensbridge Square, 1A Queens Bridge Street, Southbank, 3006",
+      "EASTING": "320590.45",
+      "NORTHING": "5812076.62",
+      "type": "Recycling Bin",
+      "CoordinateLocation": [-37.82109955165173, 144.96159877490078]
+    },
+    {
+      "GIS_ID": "1784033",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - Recycle",
+      "LOCATION_DESC": "Southbank Promenade approximately 63m SW of Yarra Botanicals, Sandridge Wharf, Southbank Promenade, Southbank, 3006",
+      "EASTING": "320662.7",
+      "NORTHING": "5812108.68",
+      "type": "Recycling Bin",
+      "CoordinateLocation": [-37.820824972995716, 144.96242712405487]
+    },
+    {
+      "GIS_ID": "1784034",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - Recycle",
+      "LOCATION_DESC": "Southbank Promenade approximately 67m East of Yarra Botanicals, Sandridge Wharf, Southbank Promenade, Southbank, 3006",
+      "EASTING": "320781.52",
+      "NORTHING": "5812153.44",
+      "type": "Recycling Bin",
+      "CoordinateLocation": [-37.82044513977502, 144.9637874155421]
+    },
+    {
+      "GIS_ID": "1784035",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - Recycle",
+      "LOCATION_DESC": "Southbank Promenade approximately 19m SW of LwrGround, Southbank Promenade, Southbank, 3006",
+      "EASTING": "320909.82",
+      "NORTHING": "5812195.47",
+      "type": "Recycling Bin",
+      "CoordinateLocation": [-37.820091741133325, 144.9652546635895]
+    },
+    {
+      "GIS_ID": "1784036",
+      "DESCRIPTION": "Litter Bin - Solar Compactor Bin - Clean Cube - 240L - Recycle",
+      "LOCATION_DESC": "Southbank Promenade approximately 29m NW of Southbank Promenade, 2 Southgate Avenue, Southbank, 3006",
+      "EASTING": "320886.8",
+      "NORTHING": "5812184.35",
+      "type": "Recycling Bin",
+      "CoordinateLocation": [-37.8201873867701, 144.96499052076607]
     }
   ]
 }

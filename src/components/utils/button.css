@@ -35,6 +35,13 @@
     --text-color-after: #fff;
 }
 
+.orange-pastel-btn{
+    --background-color: rgb(253, 174, 107);
+    --accent-color:   rgb(252, 151, 63);
+    --text-color-before: #fff;
+    --text-color-after: #fff;
+}
+
 
 
 .green-btn-modal{
