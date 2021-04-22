@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import Link from "react-router-dom/Link";
 
 import "../App.css";
 import HeroSection from "../components/HeroSection";
@@ -9,7 +10,6 @@ import Button from "../components/utils/Button";
 import "./volunteer/volunteer.css";
 
 export class home extends Component {
-
 	render() {
 		return (
 			<>
@@ -35,16 +35,25 @@ export class home extends Component {
 						</div>
 						<div className="section-split">
 							<div className="facts-section">
-                            <p>Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in Australia, around 7 billion are littered</p>
-                            <p>According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused cigarette butt litter to be a major problem for Australia.</p>
-                            <br/>
-                            <a href="/data">
-									Want to know more ..
-							</a>
-                            </div>
+								<p>
+									Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in
+									Australia, around 7 billion are littered
+								</p>
+								<p>
+									According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused
+									cigarette butt litter to be a major problem for Australia.
+								</p>
+								<br />
+								<Link to="/data">
+								<Button
+									styleBtn="primary quiz-btn"
+									text="Know More"
+								/>
+								</Link>
+							</div>
 							<div className="image-section">
-                            <img src="../../images/Cigarette_Butts.jpg" className="section_img" />
-                            </div>
+								<img src="../../images/Cigarette_Butts.jpg" className="section_img" />
+							</div>
 						</div>
 					</div>
 				</div>
