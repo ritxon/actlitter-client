@@ -119,20 +119,20 @@ export default function Map() {
                           url: "images/bin.png",
                           origin: new window.google.maps.Point(0, 0),
                           anchor: new window.google.maps.Point(15, 15),
-                          scaledSize: new window.google.maps.Size(40, 40),
+                          scaledSize: new window.google.maps.Size(30, 30),
                         }
                       : bin.type == "Recycling Bin"
                       ? {
                           url: "images/greenbin.png",
                           origin: new window.google.maps.Point(0, 0),
                           anchor: new window.google.maps.Point(15, 15),
-                          scaledSize: new window.google.maps.Size(40, 40),
+                          scaledSize: new window.google.maps.Size(30, 30),
                         }
                       : {
                           url: "images/cbin.png",
                           origin: new window.google.maps.Point(0, 0),
                           anchor: new window.google.maps.Point(15, 15),
-                          scaledSize: new window.google.maps.Size(40, 40),
+                          scaledSize: new window.google.maps.Size(30, 30),
                         }
                   }
                   onClick={() => {
@@ -153,9 +153,12 @@ export default function Map() {
                 >
                   <div className="bin-window">
                     <h2>Bin Details</h2>
-                    <p>{selectedBin.DESCRIPTION}</p>
+                    <p>Bin Description: {selectedBin.DESCRIPTION}</p>
+                    <p>Bin Location: {selectedBin.LOCATION_DESC}</p>
+                    <p>Bin Easting: {selectedBin.EASTING}</p>
+                    <p>Bin Northing: {selectedBin.NORTHING}</p>
                     <a
-                      className="btn btn-slide primary"
+                      className="map-btn btn btn-slide primary"
                       target="_blank"
                       href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${currentPosition.lng}&destination=${selectedBin.CoordinateLocation[0]},${selectedBin.CoordinateLocation[1]}`}
                     >

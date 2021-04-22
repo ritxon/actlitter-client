@@ -55,12 +55,17 @@
   cursor: pointer;
 }
 .bin-window {
-  height: 100px;
-  width: 300px;
+  height: 180px;
+  width: 400px;
 }
-.btn {
+.bin-window h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.map-btn {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
+  right: 10px;
 }
 .map-index {
   width: 20%;
