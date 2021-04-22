@@ -176,7 +176,7 @@ export class yarra_river_keeper extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://yarrariver.org.au/">Click here to websit</a>
+                            <a target="blank" href="https://yarrariver.org.au/">Go to website</a>
                         </font>
                     </div>
                 </div>

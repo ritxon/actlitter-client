@@ -175,7 +175,7 @@ export class beachpartol extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://www.beachpatrol.com.au/">Click here to websit</a>
+                            <a target="blank" href="https://www.beachpatrol.com.au/">Go to website</a>
                         </font>
                     </div>
                 </div>

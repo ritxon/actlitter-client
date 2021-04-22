@@ -203,7 +203,7 @@ export class keep_au_beautiful extends Component {
                 <div className="volunteer_button_div">
                     <div className="volunteer_button">
                         <font className="">
-                            <a href="https://kab.org.au/">Click here to websit</a>
+                            <a target="blank" href="https://kab.org.au/">Go to website</a>
                         </font>
                     </div>
                 </div>
