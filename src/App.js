@@ -54,11 +54,7 @@ class App extends Component {
                   <Route exact path="/data" component={Data} />
                   <Route exact path="/map" component={map} />
                   <Route exact path="/treePage" component={treePage} />
-                  <Route
-                    exact
-                    path="/impact_enviorment"
-                    component={impact_enviorment}
-                  />
+                  <Route exact path="/impact_enviorment" component={impact_enviorment}/>
                   <Route
                     exact
                     path="/impact_human_animal"

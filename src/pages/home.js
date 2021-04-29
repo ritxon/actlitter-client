@@ -14,90 +14,82 @@ export class home extends Component {
 		return (
 			<>
 				<HeroSection />
-				<div className="homepage-w">
-					<div className="team">
-						<div className="team-flex">
-							<div className="team-intro">
-								<h1>OUR VISION</h1>
-								<p>
-									The primary goal of Aclitter is to achieve maximum litter awareness in Victoria by imparting key
-									information and knowledge about impact of litter in Australia.
-								</p>
-							</div>
+				<div className="vision-home">
+					<div className="contain1080">
+						<div className="left-desc">
+							<div className="title-section">Our Vision</div>
+							<p>
+								The primary goal of Aclitter is to achieve maximum litter awareness in Victoria by imparting key
+								information and knowledge about impact of litter in Australia.
+							</p>
 						</div>
 					</div>
-					<Cards />
 				</div>
-				<div className="color-Section">
-					<div className="color-Section-content">
-						<div className="title-section">
-							<h1>DID YOU KNOW THAT CIGARETTES BUTTS ARE THE MOST COMMON KIND OF LITTER?</h1>
+				<div className="section-home">
+					<div className="contain1080">
+						<div className="title-section">Litter Information</div>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, iure dolor illo quisquam architecto
+							assumenda sequi exercitationem repellat repellendus officiis ducimus, quos alias amet nobis vero aliquam
+							laborum eum. 
+						</p>
+						<div className="cards-animation">
+							<Cards />
 						</div>
-						<div className="section-split">
-							<div className="facts-section">
+					</div>
+				</div>
+				<div className="section-green">
+					<div className="contain1080">
+						<div className="left-desc">
+							<div className="title-section">
+								Did you know that cigarettes butts are the most common kind of litter?
+							</div>
+							<p>
+								Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in
+								Australia, around 7 billion are littered
+							</p>
+							<p>
+								According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused
+								cigarette butt litter to be a major problem for Australia.
+							</p>
+						</div>
+						<div className="left-desc">
+							<Link to="/data">
+								<Button styleBtn="primary quiz-btn" text="Know More" />
+							</Link>
+						</div>
+					</div>
+				</div>
+				<div className="section-home">
+					<div className="contain1080">
+						<div className="double-side">
+							<div className="left-side">
+								<div className="title-section">Organizations</div>
+								<p>Various organisations in Australia are committed to reduce and prevent littering.</p>
 								<p>
-									Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in
-									Australia, around 7 billion are littered
+									These are the most distinguished Australian organisations, their contributions to reduce littering and
+									participate in their volunteering activities.
 								</p>
-								<p>
-									According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused
-									cigarette butt litter to be a major problem for Australia.
-								</p>
-								<br />
-								<Link to="/data">
-								<Button
-									styleBtn="primary quiz-btn"
-									text="Know More"
-								/>
+							</div>
+							<div className="right-side">
+								<Link to="/volunteer/tangaroaBlue">
+									<div className="org orgTangaroablue"></div>
 								</Link>
-							</div>
-							<div className="image-section">
-								<img src="../../images/Cigarette_Butts.jpg" className="section_img" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="homepage-w">
-					{/* Volunteer */}
-					<div>
-						{/* Title */}
-						<div className="volunteer_organizations_title">
-							<h1>ORGANIZATIONS</h1>
-						</div>
-						{/* pictures */}
-						<div className="volunteer_logo_div">
-							<div>
-								<a href="/volunteer/tangaroaBlue">
-									<img src="../../images/volunteer/tangaroablue_logo.jpg" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/beachpartol">
-									<img src="../../images/volunteer/beach-patrol_logo.jpg" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/oceancrusaders">
-									<img src="../../images/volunteer/oceancrusaders_logo.png" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/cleanupAu">
-									<img src="../../images/volunteer/Clean_Up_Australia_logo.jpg" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/yarrariver">
-									<img
-										src="../../images/volunteer/yarra-riverkeeper-logo-registered-trademark.jpg"
-										className="volunteer_img"
-									/>
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/keep_au_beautiful">
-									<img src="../../images/volunteer/KAB_logo.jpg" className="volunteer_img" />
-								</a>
+								<Link to="/volunteer/cleanupAu">
+									<div className="org orgCleanAU"></div>
+								</Link>
+								<Link to="/volunteer/keep_au_beautiful">
+									<div className="org orgKAB"></div>
+								</Link>
+								<Link to="/volunteer/yarrariver">
+									<div className="org orgYarraRiver"></div>
+								</Link>
+								<Link to="/volunteer/oceancrusaders">
+									<div className="org orgOceancrusaders"></div>
+								</Link>
+								<Link to="/volunteer/beachpartol">
+									<div className="org orgBeachatrol"></div>
+								</Link>
 							</div>
 						</div>
 					</div>
