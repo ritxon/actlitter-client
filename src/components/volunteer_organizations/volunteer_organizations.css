@@ -1,0 +1,22 @@
+.vol_org_compontent {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+.vol_org_compontent_img_div {
+    box-sizing: border-box;
+    flex: 0 0 33%;
+}
+.vol_org_compontent_img_div2 {
+    box-sizing: border-box;
+    flex: 0 0 25%;
+}
+.vol_org_compontent_img {
+    margin: 15px;
+    margin-left :30px;
+    margin-right: 30px ;
+    width: 250px;
+    height: auto;
+    box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.2),  4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

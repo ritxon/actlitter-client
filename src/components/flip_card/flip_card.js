@@ -14,6 +14,7 @@ export class flip_card extends Component {
                     <div class="thecard">
 
                         <div class="thefront">
+                            <img src={this.props.src}></img>
                             <div className="volunteer_card_title_div">
                                 <font className="volunteer_card_title">
                                 {this.props.front_title}

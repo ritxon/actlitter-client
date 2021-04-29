@@ -25,6 +25,7 @@
   
   /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
    .thefront{
+    background-color: #DCEDC8;
     position: absolute;
     top: 0;
     left: 0;
@@ -33,9 +34,19 @@
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
+    z-index: -2;
   }
 
-  
+  .thefront img {
+    object-fit: cover;
+    width: 40%;
+    opacity:0.15;
+    position: fixed;
+    z-index: -1;
+    margin-left: -60px;
+    margin-top: 65px;
+  }
+
 .volunteer_card_title_div {
     text-align: center;
     background-color: #DCEDC8;
@@ -52,7 +63,7 @@
 
 .volunteer_card_details_div {
     text-align: center;
-    background-color:#DCEDC8;
+
     width: 100%;
     height: 45%;
     /* background-image: url("./volunteer.jpg");
@@ -62,19 +73,19 @@
 }
 .volunteer_card_details_div2 {
     text-align: center;
-    background-color:#DCEDC8;
+
     width: 100%;
     height: 30%;
 }
 .volunteer_card_details {
     text-align: center;
     font-size: 500%;
-    color: #636363;
+    /* color: #636363; */
 }
 .volunteer_card_details2 {
     text-align: center;
     font-size: 300%;
-    color: #636363;
+    /* color: #636363; */
 }
 .volunteer_card_back_div {
     text-align: center;

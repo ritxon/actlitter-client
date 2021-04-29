@@ -78,22 +78,22 @@ class Navbar extends Component {
             <div className="nav-menu-sub">
               <ul>
                 <li>
-                  <a href="/volunteer/tangaroaBlue">Tangaroa Blue</a>
-                </li>
-                <li>
-                  <a href="/volunteer/yarrariver">Yarra Riverkeeper</a>
-                </li>
-                <li>
-                  <a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a>
+                  <a href="/volunteer/beachpartol">Beach Patrol</a>
                 </li>
                 <li>
                   <a href="/volunteer/cleanupAu">Clean Up Australia</a>
                 </li>
                 <li>
-                  <a href="/volunteer/beachpartol">Beach Patrol</a>
+                  <a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a>
                 </li>
                 <li>
                   <a href="/volunteer/oceancrusaders">Ocean Crusaders</a>
+                </li>
+                <li>
+                  <a href="/volunteer/tangaroaBlue">Tangaroa Blue</a>
+                </li>
+                <li>
+                  <a href="/volunteer/yarrariver">Yarra Riverkeeper</a>
                 </li>
               </ul>
             </div>

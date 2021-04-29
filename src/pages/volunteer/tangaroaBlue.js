@@ -80,6 +80,7 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card
                                 front_title="NUMBER OF VOLUNTEERS"
+                                src="../../images/volunteer/volunteer.svg"
                                 front_num="190,183"
                                 front_text="people"
                                 back_details="Over 190,000 people have participated in volunteering events organised by Tangaroa Blue!"
@@ -90,6 +91,7 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_blue
                                 front_title="AMOUNT OF LITTER"
+                                src="../../images/volunteer/litter.svg"
                                 front_num="1434"
                                 front_text="tonnes"
                                 back_details="Organisation volunteers have cleaned waterways and beaches at over 3869 sites in Australia and removed over 1434 tonnes of litter."
@@ -100,6 +102,7 @@ export class tangaroaBlue extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_pink
                                 front_title="TOTAL LITTER ITEMS"
+                                src="../../images/volunteer/bottle.svg"
                                 front_num="18"
                                 front_text="million"
                                 back_details="According to the organisation’s AMDI network, Tangaroa Blue crossed 18 million litter items mark on 26th March 2021!"
@@ -115,7 +118,7 @@ export class tangaroaBlue extends Component {
                     </div>
                     <div className="previous_event">
                         <div className="previous_list">
-                            <input type="radio" name="r" id="r1" checked></input>
+                            <input type="radio" name="r" id="r1" defaultChecked ></input>
                             <input type="radio" name="r" id="r2"></input>
 
                             {/* previous 1 */}

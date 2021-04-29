@@ -8,6 +8,7 @@ import HeroSection from "../components/HeroSection";
 import Cards from "../components/Cards";
 import Button from "../components/utils/Button";
 import "./volunteer/volunteer.css";
+import Volunteer_organizations from "../components/volunteer_organizations/volunteer_organizations"
 
 export class home extends Component {
 	render() {
