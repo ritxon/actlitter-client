@@ -83,6 +83,7 @@ export class yarra_river_keeper extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card
                                 front_title="NUMBER OF VOLUNTEERS"
+                                src="../../images/volunteer/volunteer.svg"
                                 front_num="2042"
                                 front_text="people"
                                 back_details="Yarra Riverkeeper has an estimated number of 2042 volunteers to help with activities involving cleaning of litter from the river."
@@ -93,6 +94,7 @@ export class yarra_river_keeper extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_blue
                                 front_title="AMOUNT OF LITTER"
+                                src="../../images/volunteer/litter.svg"
                                 front_num="38,202"
                                 front_text="kg"
                                 back_details="Yarra Riverkeeper volunteers have removed 38,202 kg of rubbish from the river!"
@@ -103,6 +105,7 @@ export class yarra_river_keeper extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_pink
                                 front_title="Microplastics "
+                                src="../../images/volunteer/microplastics.svg"
                                 front_num="4889"
                                 front_text="pieces"
                                 back_details="Microplastics formed the bulk of litter and accounted for 77% (4,889 pieces) of the plastic load in the Yarra."

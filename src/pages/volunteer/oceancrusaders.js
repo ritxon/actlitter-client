@@ -79,6 +79,7 @@ export class oceancrusaders extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card
                                 front_title="VOLUNTEERS FOR MOONEE PONDS"
+                                src="../../images/volunteer/volunteer.svg"
                                 front_num="122"
                                 front_text="people"
                                 back_details="122 volunteers participated in the Moonee Ponds Creek clean up organised by Ocean Crusaders. Half of the volunteers collected litter from the river in bags and the other half stayed on the riverbank to collect the bags once they were full."
@@ -89,6 +90,7 @@ export class oceancrusaders extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_blue
                                 front_title="LITTER COLLECTED IN MOONEE POND"
+                                src="../../images/volunteer/litter.svg"
                                 front_num="1157.45"
                                 front_text="kg"
                                 back_details="The amount of garbage collected in the Moonee Ponds Creek clean-up weighed 1157.45 kg!"
@@ -99,6 +101,7 @@ export class oceancrusaders extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_pink
                                 front_title="NUMBER OF BAGS"
+                                src="../../images/volunteer/garbage.svg"
                                 front_num="179"
                                 front_text="bags"
                                 back_details="For the Moonee Ponds Creek clean-up, the large amount of litter took 179 number of bags for collection."

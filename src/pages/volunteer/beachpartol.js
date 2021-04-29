@@ -101,6 +101,7 @@ export class beachpartol extends Component {
             <div className="volunteer_one_card">
               <Flip_card
                 front_title="NUMBER OF VOLUNTEERS"
+                src="../../images/volunteer/volunteer.svg"
                 front_num="3000"
                 front_text="people"
                 back_details=" BeachPatrol has 30 groups with over 3000 volunteers who can participate in events held in a region covering over 150 kms of Port Phillip Bay beaches and streets."
@@ -110,6 +111,7 @@ export class beachpartol extends Component {
             <div className="volunteer_one_card">
               <Flip_card_blue
                 front_title="AMOUNT OF LITTER"
+                src="../../images/volunteer/litter.svg"
                 front_num="92473"
                 front_text="kgs"
                 back_details="By this year, BeachPatrol has picked 92473 kgs of litter from beaches, streets and parks!"
@@ -119,6 +121,7 @@ export class beachpartol extends Component {
             <div className="volunteer_one_card">
               <Flip_card_pink
                 front_title="NUMBER OF BAGS"
+                src="../../images/volunteer/garbage.svg"
                 front_num="32976"
                 front_text="bags"
                 back_details="BeachPatrol used 32976 shopping bags until now to put in the huge amount of collected litter!"

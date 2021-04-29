@@ -84,6 +84,7 @@ export class cleanupAu extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card
                                 front_title="NUMBER OF VOLUNTEERS"
+                                src="../../images/volunteer/volunteer.svg"
                                 front_num="683,242"
                                 front_text=""
                                 back_details="By 2021, Clean Up Australia had an estimated number of 683,242 volunteers involved with 110,114 volunteers from Victoria!"
@@ -94,6 +95,7 @@ export class cleanupAu extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_blue
                                 front_title="TOTAL LITTER IN AUSTRALIA"
+                                src="../../images/volunteer/bottle.svg"
                                 front_num="365,922"
                                 front_text="items"
                                 back_details="Volunteers from Clean Up Australia picked up a staggering number of 365,922 items from 1274 surveyed locations in 2020!"
@@ -104,6 +106,7 @@ export class cleanupAu extends Component {
                         <div className="volunteer_one_card">
                             <Flip_card_pink
                                 front_title="TOTAL LITTER IN VICTORIA"
+                                src="../../images/volunteer/bottle.svg"
                                 front_num="59,159"
                                 front_text="items"
                                 back_details="In 2020, volunteers from Clean Up Victoria picked 59,159 items from 239 surveyed locations in Victoria which would require 3212 utility vans to carry!"

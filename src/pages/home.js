@@ -7,6 +7,7 @@ import HeroSection from "../components/HeroSection";
 import Cards from "../components/Cards";
 import Button from "../components/utils/Button";
 import "./volunteer/volunteer.css";
+import Volunteer_organizations from "../components/volunteer_organizations/volunteer_organizations"
 
 export class home extends Component {
 
@@ -57,39 +58,20 @@ export class home extends Component {
 						</div>
 						{/* pictures */}
 						<div className="volunteer_logo_div">
-							<div>
-								<a href="/volunteer/tangaroaBlue">
-									<img src="../../images/volunteer/tangaroablue_logo.jpg" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/beachpartol">
-									<img src="../../images/volunteer/beach-patrol_logo.jpg" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/oceancrusaders">
-									<img src="../../images/volunteer/oceancrusaders_logo.png" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/cleanupAu">
-									<img src="../../images/volunteer/Clean_Up_Australia_logo.jpg" className="volunteer_img" />
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/yarrariver">
-									<img
-										src="../../images/volunteer/yarra-riverkeeper-logo-registered-trademark.jpg"
-										className="volunteer_img"
-									/>
-								</a>
-							</div>
-							<div>
-								<a href="/volunteer/keep_au_beautiful">
-									<img src="../../images/volunteer/KAB_logo.jpg" className="volunteer_img" />
-								</a>
-							</div>
+						<Volunteer_organizations 
+                                    href1="/volunteer/tangaroaBlue"
+                                    src1="../../images/volunteer/tangaroablue_logo.jpg"
+                                    href2="/volunteer/beachpartol"
+                                    src2="../../images/volunteer/beach-patrol_logo.jpg"
+                                    href3="/volunteer/oceancrusaders"
+                                    src3="../../images/volunteer/oceancrusaders_logo.png"
+                                    href4="/volunteer/cleanupAu"
+                                    src4="../../images/volunteer/Clean_Up_Australia_logo.jpg"
+                                    href5="/volunteer/yarrariver"
+                                    src5="../../images/volunteer/yarra-riverkeeper-logo-registered-trademark.jpg"
+                                    href6="/volunteer/keep_au_beautiful"
+                                    src6="../../images/volunteer/KAB_logo.jpg"
+                                    />
 						</div>
 					</div>
 				</div>
