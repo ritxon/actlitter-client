@@ -47,7 +47,7 @@ export class volunteer extends Component {
                             </label>
                         </div>
                         <div className="volunteer_all_organizations">
-                            <input type="radio" name="r" id="r1" checked></input>
+                            <input type="radio" name="r" id="r1" defaultChecked ></input>
                             <input type="radio" name="r" id="r2"></input>
 
                             <div className="volunteer_au s1">

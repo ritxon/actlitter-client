@@ -136,7 +136,7 @@ export class beachpartol extends Component {
           </div>
           <div className="previous_event">
             <div className="previous_list">
-              <input type="radio" name="r" id="r1" checked></input>
+              <input type="radio" name="r" id="r1" defaultChecked ></input>
               <input type="radio" name="r" id="r2"></input>
 
               {/* previous 1 */}
