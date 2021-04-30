@@ -54,6 +54,9 @@ class Navbar extends Component {
             </Link>
             <div className="nav-menu-sub">
               <ul>
+              <li>
+                  <a href="/impact">Litter Info Summary</a>
+                </li>
                 <li>
                   <a href="/impact_human_animal">Impact on Humans & Animals</a>
                 </li>
