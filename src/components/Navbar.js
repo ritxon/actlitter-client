@@ -44,7 +44,7 @@ class Navbar extends Component {
             </Link>
           </li>
           {/* litter info */}
-          <li className="nav-item">
+          <li className="nav-item nav_laptop">
             <Link
               to="/impact"
               className="nav-links"
@@ -54,7 +54,7 @@ class Navbar extends Component {
             </Link>
             <div className="nav-menu-sub">
               <ul>
-              <li>
+                <li>
                   <a href="/impact">Litter Info Summary</a>
                 </li>
                 <li>
@@ -129,15 +129,82 @@ class Navbar extends Component {
               About Us
             </Link>
           </li> */}
+
+
+          <div class="box">
+            <div class="box-item">
+              <p class="title"><a className="title" href="/">HOME</a></p>
+            </div>
+            <div class="box-item">
+              <p class="title">LITTER INFO</p>
+              <ul class="box-item-content">
+                <li>
+                  <p className="nav_mobile_link">
+                  <a href="/impact">Litter Info Summary</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/impact_human_animal">Impact on Humans & Animals</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/impact_enviorment">Impact on Environment</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/impact_classification">Litter Classification</a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="box-item ">
+              <p class="title">VOLUNTEER</p>
+              <ul class="box-item-content">
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/volunteer">VOLUNTEER ORGANIZATIONS</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/volunteer/beachpartol">Beach Patrol</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/volunteer/cleanupAu">Clean Up Australia</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/volunteer/oceancrusaders">Ocean Crusaders</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/volunteer/tangaroaBlue">Tangaroa Blue</a></p>
+                </li>
+                <li>
+                <p className="nav_mobile_link">
+                  <a href="/volunteer/yarrariver">Yarra Riverkeeper</a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="box-item">
+              <p class="title"><a className="title" href="/quiz">QUIZ</a></p>
+            </div>
+            <div class="box-item">
+              <p class="title"><a className="title" href="/map">MAP</a></p>
+            </div>
+          </div>
         </ul>
       </nav>
       /*             <AppBar>
-                <Toolbar className="nav-container">
-                    <Button color="inherit" component={Link} to="/login" >Login</Button>
-                    <Button color="inherit" component={Link} to="/" >Home</Button>
-                    <Button color="inherit" component={Link} to="/signup" >Signup</Button>
-                </Toolbar>
-            </AppBar> */
+          <Toolbar className="nav-container">
+            <Button color="inherit" component={Link} to="/login" >Login</Button>
+            <Button color="inherit" component={Link} to="/" >Home</Button>
+            <Button color="inherit" component={Link} to="/signup" >Signup</Button>
+          </Toolbar>
+        </AppBar> */
     );
   }
 }
