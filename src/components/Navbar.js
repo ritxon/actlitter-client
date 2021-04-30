@@ -131,69 +131,69 @@ class Navbar extends Component {
           </li> */}
 
 
-          <div class="box">
-            <div class="box-item">
-              <p class="title"><a className="title" href="/">HOME</a></p>
+<div class="nav_box">
+            <div class="nav_box-item">
+              <p class="nav_title"><a className="nav_title" href="/">HOME</a></p>
             </div>
-            <div class="box-item">
-              <p class="title">LITTER INFO</p>
-              <ul class="box-item-content">
+            <div class="nav_box-item">
+              <p class="nav_title">LITTER INFO</p>
+              <ul class="nav_box-item-content">
                 <li>
                   <p className="nav_mobile_link">
-                  <a href="/impact">Litter Info Summary</a></p>
+                    <a href="/impact">Litter Info Summary</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/impact_human_animal">Impact on Humans & Animals</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/impact_human_animal">Impact on Humans & Animals</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/impact_enviorment">Impact on Environment</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/impact_enviorment">Impact on Environment</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/impact_classification">Litter Classification</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/impact_classification">Litter Classification</a></p>
                 </li>
               </ul>
             </div>
-            <div class="box-item ">
-              <p class="title">VOLUNTEER</p>
-              <ul class="box-item-content">
+            <div class="nav_box-item ">
+              <p class="nav_title">VOLUNTEER</p>
+              <ul class="nav_box-item-content">
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/volunteer">VOLUNTEER ORGANIZATIONS</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/volunteer">VOLUNTEER ORGANIZATIONS</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/volunteer/beachpartol">Beach Patrol</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/volunteer/beachpartol">Beach Patrol</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/volunteer/cleanupAu">Clean Up Australia</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/volunteer/cleanupAu">Clean Up Australia</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/volunteer/oceancrusaders">Ocean Crusaders</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/volunteer/oceancrusaders">Ocean Crusaders</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/volunteer/tangaroaBlue">Tangaroa Blue</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/volunteer/tangaroaBlue">Tangaroa Blue</a></p>
                 </li>
                 <li>
-                <p className="nav_mobile_link">
-                  <a href="/volunteer/yarrariver">Yarra Riverkeeper</a></p>
+                  <p className="nav_mobile_link">
+                    <a href="/volunteer/yarrariver">Yarra Riverkeeper</a></p>
                 </li>
               </ul>
             </div>
-            <div class="box-item">
-              <p class="title"><a className="title" href="/quiz">QUIZ</a></p>
+            <div class="nav_box-item">
+              <p class="nav_title"><a className="nav_title" href="/quiz">QUIZ</a></p>
             </div>
-            <div class="box-item">
-              <p class="title"><a className="title" href="/map">MAP</a></p>
+            <div class="nav_box-item">
+              <p class="nav_title"><a className="nav_title" href="/map">MAP</a></p>
             </div>
           </div>
         </ul>
