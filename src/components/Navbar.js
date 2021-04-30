@@ -140,19 +140,19 @@ class Navbar extends Component {
               <ul class="nav_box-item-content">
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/impact">Litter Info Summary</a></p>
+                    <a href="/impact">&emsp;Litter Info Summary</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/impact_human_animal">Impact on Humans & Animals</a></p>
+                    <a href="/impact_human_animal">&emsp;Impact on Humans & Animals</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/impact_enviorment">Impact on Environment</a></p>
+                    <a href="/impact_enviorment">&emsp;Impact on Environment</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/impact_classification">Litter Classification</a></p>
+                    <a href="/impact_classification">&emsp;Litter Classification</a></p>
                 </li>
               </ul>
             </div>
@@ -161,31 +161,31 @@ class Navbar extends Component {
               <ul class="nav_box-item-content">
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/volunteer">VOLUNTEER ORGANIZATIONS</a></p>
+                    <a href="/volunteer">&emsp;Volunteer Organizations</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/volunteer/beachpartol">Beach Patrol</a></p>
+                    <a href="/volunteer/beachpartol">&emsp;Beach Patrol</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/volunteer/cleanupAu">Clean Up Australia</a></p>
+                    <a href="/volunteer/cleanupAu">&emsp;Clean Up Australia</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a></p>
+                    <a href="/volunteer/keep_au_beautiful">&emsp;Keep Australia Beautiful</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/volunteer/oceancrusaders">Ocean Crusaders</a></p>
+                    <a href="/volunteer/oceancrusaders">&emsp;Ocean Crusaders</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/volunteer/tangaroaBlue">Tangaroa Blue</a></p>
+                    <a href="/volunteer/tangaroaBlue">&emsp;Tangaroa Blue</a></p>
                 </li>
                 <li>
                   <p className="nav_mobile_link">
-                    <a href="/volunteer/yarrariver">Yarra Riverkeeper</a></p>
+                    <a href="/volunteer/yarrariver">&emsp;Yarra Riverkeeper</a></p>
                 </li>
               </ul>
             </div>
