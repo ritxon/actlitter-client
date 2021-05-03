@@ -65,11 +65,7 @@
 .bin-window p {
   padding-top: 5px;
 }
-.map-btn {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
+
 .map-index {
   width: 20%;
   margin-left: 30px;
@@ -80,6 +76,16 @@
 .map-index img {
   width: 50px;
   margin-right: 10px;
+}
+.map-btn {
+  min-width: 100px;
+}
+@media screen and (min-width: 800px) {
+  .map-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
 }
 @media screen and (max-width: 800px) {
   .map {
@@ -94,5 +100,12 @@
   }
   .map-index {
     display: none;
+  }
+  .bin-window {
+    width: 120px;
+    height: auto;
+  }
+  .bin-info {
+    margin-bottom: 30px;
   }
 }

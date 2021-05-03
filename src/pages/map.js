@@ -152,17 +152,19 @@ export default function Map() {
                   }}
                 >
                   <div className="bin-window">
-                    <h2>Bin Details</h2>
-                    <p>Bin Description: {selectedBin.DESCRIPTION}</p>
-                    <p>Bin Location: {selectedBin.LOCATION_DESC}</p>
-                    {/* <p>Bin Easting: {selectedBin.EASTING}</p>
+                    <div className="bin-info">
+                      <h2>Bin Details</h2>
+                      <p>Bin Description: {selectedBin.DESCRIPTION}</p>
+                      <p>Bin Location: {selectedBin.LOCATION_DESC}</p>
+                      {/* <p>Bin Easting: {selectedBin.EASTING}</p>
                     <p>Bin Northing: {selectedBin.NORTHING}</p> */}
+                    </div>
                     <a
                       className="map-btn btn btn-slide primary"
                       target="_blank"
                       href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${currentPosition.lng}&destination=${selectedBin.CoordinateLocation[0]},${selectedBin.CoordinateLocation[1]}`}
                     >
-                      Navigation on Google Map
+                      Navigation 
                     </a>
                   </div>
                 </InfoWindow>
@@ -188,7 +190,8 @@ export default function Map() {
                 Recycling Bin
               </li>
               <li>
-                <img src="images/compass.png" alt="compass"></img>Compass
+                <img src="images/compass.png" alt="compass"></img>Get Your
+                location
               </li>
             </ul>
           </div>
