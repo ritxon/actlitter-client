@@ -1,79 +1,306 @@
 body {
-  background-color: #f5f5f5;
+	background-color: #f5f5f5;
 }
 
-.App{
-  overflow: hidden;
-}
+/* Fix error homepage 
+.App {
+	overflow: hidden;
+} */
 
 .home,
 .sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  /* font-size: 3rem; */
+	display: flex;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+	/* font-size: 3rem; */
 }
 
 .info {
-  display: flex;
-  height: 40vh;
-  align-items: center;
-  justify-content: center;
-  /* font-size: 3rem; */
-  background-image: url("assets/img-1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  /* font-size: 100px; */
+	display: flex;
+	height: 40vh;
+	align-items: center;
+	justify-content: center;
+	/* font-size: 3rem; */
+	background-image: url("assets/img-1.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	/* font-size: 100px; */
 }
 
 .quiz {
-  display: flex;
-  height: 40vh;
-  align-items: center;
-  justify-content: center;
-  /* font-size: 3rem; */
-  background-image: url("assets/img-5.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  /* font-size: 80px; */
+	display: flex;
+	height: 40vh;
+	align-items: center;
+	justify-content: center;
+	/* font-size: 3rem; */
+	background-image: url("assets/img-5.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	/* font-size: 80px; */
 }
 
-.container{
-  min-height: calc(100vh - 90px);
+.container {
+	min-height: calc(100vh - 90px);
 }
 
-.homepage-w {
-  padding: 0 50px;
-  background-color: #f5f5f5;
+.section-home {
+	padding: 90px 20px 60px 20px;
+	background-color: #f5f5f5;
+	text-align: center;
 }
+
+.section-green {
+	height: 650px;
+	padding: 60px 20px 0 20px;
+	background-image: url("assets/cigarette.jpg");
+	color: white;
+	background-size: cover;
+	background-position: 20% 60%;
+	text-align: center;
+}
+
+
+.vision-home {
+	height: 550px;
+	background-image: url("assets/vision-Section2.jpg");
+	color: black;
+	padding: 120px 20px 0 20px;
+	background-size: cover;
+	background-position: 40% 57%;
+}
+
+.title-section{
+	margin-bottom: 20px;
+    font-size: 55px;
+    line-height: 55px;
+
+	opacity: 0;
+	transition: 400ms;
+	transform: translateY(50%);
+}
+
+.title-section[data-scroll="in"]{
+	opacity: 1;
+	transition-delay: 400ms;
+	transform: translateY(0%);
+}
+
+.vision-home, .section-home p{
+	font-size: 24px;
+}
+
+.section-green p{
+	font-size: 24px;
+}
+
+
+
+
+
+.contain1080{
+	width: 100%;
+	max-width: 1080px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 0 auto;
+	flex-direction: column;
+}
+
+.left-desc{
+	max-width: 700px;
+	text-align: left;
+	margin-bottom: 60px;
+}
+
+.cards-animation{
+	opacity: 0;
+	transition: 400ms;
+	transform: translateY(50%);
+}
+
+.cards-animation[data-scroll="in"]{
+	opacity: 1;
+	transition-delay: 400ms;
+	transform: translateY(0%);
+}
+
+
+.vision-home p, .section-home p, .section-green p{
+	opacity: 0;
+	transition: 400ms;
+	transform: translateY(50%);
+}
+
+.vision-home p[data-scroll="in"], .section-home p[data-scroll="in"], .section-green p[data-scroll="in"]{
+	opacity: 1;
+	transition-delay: 400ms;
+	transform: translateY(0%);
+}
+
+.double-side{
+	display: flex;
+}
+
+.left-side{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding-right: 20px;
+}
+
+.right-side{
+	width: 65%;
+	text-align: left;
+	padding: 0 20px 20px 20px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	display: flex;
+	opacity: 0;
+	transition: 600ms;
+	transform: translateX(5%);
+}
+
+.right-side[data-scroll="in"]{
+	display: flex;
+	opacity: 1;
+	transition-delay: 600ms;
+	transform: translateX(0%);
+}
+
+.section-split {
+	display: flex;
+}
+
+.facts-section {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 100%;
+	color: white;
+	padding: 50px;
+}
+
+.facts-section a{
+  color: white;
+  font-size: 25px;
+}
+
+.image-section {
+	display: flex;
+	width: 50%;
+	height: 100%;
+}
+
+.color-Section-content {
+	width: 1080px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.section_img {
+	margin: 15px;
+	margin-left: 60px;
+	margin-right: 60px;
+	width: 500px;
+	height: auto;
+	box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.org{
+	min-width: 200px;
+    height: 200px;
+	display: flex;
+	margin-bottom: 20px;
+	box-shadow: 4px 6px 8px 0 rgb(0 0 0 / 20%), 4px 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.orgCleanAU{
+	background-image: url("assets/CleanAu.jpg");
+	background-size: cover;
+}
+
+.orgKAB{
+	background-image: url("assets/KAB_logo.jpg");
+	background-size: cover;
+}
+
+.orgYarraRiver{
+	background-image: url("assets/YarraRiver.jpg");
+	background-size: cover;
+}
+
+.orgOceancrusaders{
+	background-image: url("assets/oceancrusaders_logo.png");
+	background-size: cover;
+}
+
+.orgTangaroablue{
+	background-image: url("assets/tangaroablue_logo.jpg");
+	background-size: cover;
+}
+
+.orgBeachatrol{
+	background-image: url("assets/beach-patrol_logo.jpg");
+	background-size: cover;
+}
+
 /* team part */
-.team {
-  padding-top: 50px;
-  padding-bottom: 50px;
+/* .team {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .team .team-flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  width: 100%;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	width: 100%;
+	justify-content: center;
 }
 .team-intro {
-  width: 40% !important;
-  order: 0;
-  text-align: center;
+	width: 40% !important;
+	order: 0;
+	text-align: center;
 }
 .team-intro h1 {
-  padding-bottom: 20px;
-}
-@media screen and (max-width: 800px) {
-  .team-intro {
-    width: 100% !important;
-    order: 0;
-  }
+	padding-bottom: 20px;
+} */
+
+
+
+@media screen and (max-width: 960px) {
+	.section-home {
+		height: 100%;
+	}
+
+	.section-green {
+		padding: 20px 20px 100px 20px;;
+		height: 100%;
+	}
+
+	.double-side{
+		flex-direction: column;
+	}
+
+	.left-side{
+		width: 100%;
+		text-align: center;
+	}
+
+	.right-side{
+		width: 100%;
+	}
+
+	.team-intro {
+		width: 100% !important;
+		order: 0;
+	}
 }

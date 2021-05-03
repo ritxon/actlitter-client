@@ -10,7 +10,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 //Pages
-import home from "./pages/home";
+import Home from "./pages/home";
 import login from "./pages/login";
 import quiz from "./pages/quiz";
 import info from "./pages/info";
@@ -34,6 +34,9 @@ axios.defaults.baseURL =
   "https://us-central1-actlitter-backend.cloudfunctions.net/api";
 
 class App extends Component {
+
+  
+
   render() {
     return (
       <>
@@ -43,7 +46,7 @@ class App extends Component {
               <Navbar />
               <div className="container">
                 <Switch>
-                  <Route exact path="/" component={home} />
+                  <Route exact path="/" component={Home} />
                   <Route exact path="/login" component={login} />
                   <Route exact path="/quiz" component={quiz} />
                   <Route exact path="/info" component={info} />
@@ -51,11 +54,7 @@ class App extends Component {
                   <Route exact path="/data" component={Data} />
                   <Route exact path="/map" component={map} />
                   <Route exact path="/treePage" component={treePage} />
-                  <Route
-                    exact
-                    path="/impact_enviorment"
-                    component={impact_enviorment}
-                  />
+                  <Route exact path="/impact_enviorment" component={impact_enviorment}/>
                   <Route
                     exact
                     path="/impact_human_animal"

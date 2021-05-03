@@ -6,7 +6,6 @@ export class Cards extends Component {
   render() {
     return (
       <div className="cards">
-        <h1>LITTER INFORMATION</h1>
         <div className="cards-container">
           <div className="cards-wrapper">
             {/* <ul className="cards-items">
