@@ -22,7 +22,7 @@ const Home = () => {
 		<>
 			<HeroSection />
 			<div className="vision-home">
-				<div className="contain1080">
+				<div className="contain1140">
 					<div className="left-desc">
 						<div className="title-section">Our Vision</div>
 						<p>
@@ -33,7 +33,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="section-home">
-				<div className="contain1080">
+				<div className="contain1140">
 					<div className="title-section">Litter Information</div>
 					<p>
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, iure dolor illo quisquam architecto
@@ -46,7 +46,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="section-green">
-				<div className="contain1080">
+				<div className="contain1140">
 					<div className="left-desc">
 						<div className="title-section">Did you know that cigarettes butts are the most common kind of litter?</div>
 						<p>
@@ -66,7 +66,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="section-home">
-				<div className="contain1080">
+				<div className="contain1140">
 					<div className="double-side">
 						<div className="left-side">
 							<div className="title-section">Organizations</div>

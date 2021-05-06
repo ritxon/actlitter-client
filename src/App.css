@@ -102,14 +102,23 @@ body {
 
 
 
-.contain1080{
+.contain1140{
 	width: 100%;
-	max-width: 1080px;
+	max-width: 1140px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	flex: 0 auto;
 	flex-direction: column;
+}
+
+.contain1140-flex{
+	width: 100%;
+	max-width: 1140px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 0 auto;
 }
 
 .left-desc{
@@ -200,7 +209,7 @@ body {
 }
 
 .color-Section-content {
-	width: 1080px;
+	width: 1140px;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
