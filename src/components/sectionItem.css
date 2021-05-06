@@ -1,0 +1,107 @@
+
+.section-text-left{
+  width: 45%;
+  padding: 60px;
+  text-align: left;
+  line-height: 1.4;
+
+  opacity: 0;
+	transition: 600ms;
+	transform: translateX(-20%);
+}
+
+.section-text-left[data-scroll="in"], .section-text-right[data-scroll="in"]{
+	opacity: 1;
+	transition-delay: 600ms;
+	transform: translateX(0%);
+}
+
+.section-text-right{
+  width: 45%;
+  padding: 60px;
+  text-align: left;
+  line-height: 1.4;
+
+  opacity: 0;
+	transition: 600ms;
+	transform: translateX(20%);
+}
+
+.section-image{
+  width: 55%;
+  height: 450px;
+}
+
+.section-article {
+	padding: 60px 0px;
+	background-color: #f5f5f5;
+	text-align: center;
+  display: flex;
+}
+
+.section-article-white {
+	padding: 60px 0px;
+	background-color: #fff;
+	text-align: center;
+  display: flex;
+}
+
+.img-enviroment{
+	background-image: url("../assets/impact_enviorment.jpg");
+	background-size: cover;
+}
+
+.img-animals{
+	background-image: url("../assets/figure2.png");
+	background-size: cover;
+}
+
+.img-classification{
+	background-image: url("../assets/figure3.jpg");
+	background-size: cover;
+}
+
+.sections-head {
+  background: #fff;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+
+  .contain1140-flex{
+    flex-direction: column;
+  }
+
+  .section-image{
+    width: 100%;
+    order: 1;
+  }
+  
+  .section-text-left, .section-text-right{
+    width: 100%;
+    order: 2;
+  }
+
+  .section-article{
+    padding: 0;
+  }
+
+  .section-article-white{
+    padding: 0;
+  }
+
+  .section-article h2{
+    margin: 1rem 0;
+  }
+
+  .section-article-white h2{
+    margin: 1rem 0;
+  }
+
+  .section-image{
+    height: 400px;
+  }
+
+}

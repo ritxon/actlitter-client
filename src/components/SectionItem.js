@@ -1,38 +1,51 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import Link from "react-router-dom/Link";
 import Button from "./utils/Button";
+import ScrollOut from "scroll-out";
+import "./sectionItem.css";
 
-export class SectionItem extends Component {
-  constructor(props) {
-    super(props);
-  }
+function SectionItem({ title, text, path, img, align }) {
+  useEffect(() => {
+		ScrollOut({
+			targets: "div",
+		});
+	}, []);
 
-  render() {
-    return (
-      <>
-        <li className="sections-item">
-          <Link className="sections-item-link" to={this.props.path}>
-            <figure className="sections-item-pic-wrap">
-              <img
-                src={this.props.src}
-                alt="Image"
-                className="sections-item-img"
-              />
-            </figure>
-            <div className="sections-item-info">
-              <div className="sections-item-title">
-                <h2>{this.props.title}</h2>
-              </div>
-              <div className="sections-item-text">{this.props.text}</div>
-              <div className="sections-item-btn">
-                <Button styleBtn="green-btn quiz-btn" text="MORE" to="/"  />
-              </div>
-            </div>
-          </Link>
-        </li>
-      </>
-    );
-  }
+	if (align == "left") {
+		return (
+			<>
+				<div className="section-article-white">
+					<div className="contain1140-flex">
+						<div className="section-text-left">
+							<h2>{title}</h2>
+							<p>{text}</p>
+							<Link to={path}>
+								<Button styleBtn="green-btn quiz-btn" text="MORE" to="/" />
+							</Link>
+						</div>
+						<div className={`section-image ${img}`}></div>
+					</div>
+				</div>
+			</>
+		);
+	} else {
+		return (
+			<>
+				<div className="section-article">
+					<div className="contain1140-flex">
+						<div className={`section-image ${img}`}></div>
+						<div className="section-text-right">
+							<h2>{title}</h2>
+							<p>{text}</p>
+							<Link to={path}>
+								<Button styleBtn="green-btn quiz-btn" text="MORE" to="/" />
+							</Link>
+						</div>
+					</div>
+				</div>
+			</>
+		);
+	}
 }
 
 export default SectionItem;
