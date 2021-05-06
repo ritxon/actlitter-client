@@ -1,40 +1,50 @@
 export default {
-  name: 'T',
+  name: 'Recycling',
   children: [
     {
-      name: 'A',
+      name: 'Construction & demolition',
       children: [
-        { name: 'A1' },
-        { name: 'A2' },
-        { name: 'A3' },
-        {
-          name: 'C',
-          children: [
-            {
-              name: 'C1',
-            },
-            {
-              name: 'D',
-              children: [
-                {
-                  name: 'D1',
-                },
-                {
-                  name: 'D2',
-                },
-                {
-                  name: 'D3',
-                },
-              ],
-            },
-          ],
-        },
+        { name: 'Asphalt' },
+        { name: 'Brick rubble/ whole' },
+        { name: 'Concrete' },
+        { name: 'Soil/sand' },
       ],
     },
-    { name: 'Z' },
     {
-      name: 'B',
-      children: [{ name: 'B1' }, { name: 'B2' }, { name: 'B3' }],
+      name: 'Glass',
+      children: [
+        { name: 'Container glass' },
+        { name: 'CRT' },
+        { name: 'Mixed glass waste' },
+        { name: 'Sheet/ laminated glass' },
+      ],
+    },
+    {
+      name: 'Metals',
+      children: [
+        { name: 'Roofing iron' },
+        { name: 'Incl cans' },
+        { name: 'Batteries' },
+        { name: 'Steel cans' },
+      ],
+    },
+    {
+      name: 'Organics',
+      children: [
+        { name: 'Animal bedding/ motalities' },
+        { name: 'Barks' },
+        { name: 'Food waste' },
+        { name: 'Garden organics' },
+      ],
+    },
+    {
+      name: 'Paper/cardboard',
+      children: [
+        { name: 'Carboard/ packaging' },
+        { name: 'Newsprint/ magazines' },
+        { name: 'Liquid paper board' },
+        { name: 'Printing & writing paper' },
+      ],
     },
   ],
 }

@@ -222,6 +222,14 @@ body {
 	margin-bottom: 20px;
 	box-shadow: 4px 6px 8px 0 rgb(0 0 0 / 20%), 4px 6px 20px 0 rgb(0 0 0 / 19%);
 }
+.org:hover{
+	margin: -15px;
+	min-width: 230px;
+    height: 230px;
+	display: flex;
+	z-index: 1;
+	box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);;
+}
 
 .orgCleanAU{
 	background-image: url("assets/CleanAu.jpg");

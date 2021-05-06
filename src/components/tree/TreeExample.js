@@ -13,7 +13,6 @@ const TreeExample = () => (
             justifyContent: 'center',
             alignItems: 'center',
             height: '800px',
-            background: '#fff',
           }}>
           <Tree
             data={data}

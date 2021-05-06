@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
 function Node({ node, onClick }) {
-  const width = 40
+  const width = 100
   const height = 20
   return (
     <Fragment>

@@ -4,7 +4,7 @@ import "./impact.css";
 export class impact_human_animal extends Component {
   render() {
     return (
-      <div>
+      <body>
         {/* current place */}
         <div className="impact_fake_navigation">
           <p>
@@ -138,7 +138,7 @@ export class impact_human_animal extends Component {
         </div>
 
         <div className="clear_float"></div>
-      </div>
+      </body>
     );
   }
 }

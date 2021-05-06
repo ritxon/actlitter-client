@@ -4,7 +4,7 @@ import "./impact.css";
 export class impact_enviorment extends Component {
   render() {
     return (
-      <>
+      <body>
         <div className="impact_fake_navigation">
           <p>
             <a href="/">&emsp; Home &ensp;</a>/ &ensp;
@@ -37,8 +37,12 @@ export class impact_enviorment extends Component {
           <div className="impact_article_container w">
             <div className="impact_article_title">
               <h1> Impact on environment</h1>
+              
             </div>
             <div className="clear_float"></div>
+            <div className="impact_video_div">
+            <iframe  className="impact_video" src="https://www.youtube.com/embed/OJEQaVT45XA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
             {/* <div className="impact_article_right">
               <div className="impact_related impact_links ">
@@ -76,6 +80,7 @@ export class impact_enviorment extends Component {
                 decline.
               </p>
             </div>
+            <div className="clear_float"></div>
             {/* 1 */}
             <div className="impact_article_body">
 
@@ -201,7 +206,7 @@ export class impact_enviorment extends Component {
           </div>
         </div>
         <div className="clear_float"></div>
-      </>
+      </body>
     );
   }
 }
