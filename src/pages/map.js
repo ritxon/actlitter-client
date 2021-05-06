@@ -25,7 +25,7 @@ import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyle";
 const libraries = ["places"];
 
-const mapContainerStyle = { height: "500px", width: "100%" };
+const mapContainerStyle = { height: "400px", width: "100%" };
 const options = {
   styles: mapStyles,
   disableDefaultUI: true,
@@ -61,27 +61,44 @@ export default function Map() {
 
   return (
     <>
-      <div className="map-main">
+      {/* map page title */}
+      <div className="contain1080">
+        <h1 id="page-title">Bin Map</h1>
+      </div>
+
+      {/* map page introduction */}
+      <div className="contain1080">
         <div className="map-intro">
-          <h1>Location of Bins</h1>
-          <p>
-            There are nearly 450 solar-powered smart trash bins, 230 public
-            trash bins, and 2,000 public trash bins around Melbourne. These
-            trash bins are set up at important locations so that the public can
-            dispose of trash and recycle items. After banning smoking in public
-            places, the number of cigarette butts falling on our streets has
-            increased a lot. So the government has installed more than 500
-            wall-mounted pipes in the Melbourne area so that smokers can dispose
-            of their cigarette butts. And these cigarette butts will be used by
-            waste, such as making shipping trays and plastic furniture. below.
-          </p>
-          <p>
-            In the Bin’s map we can clearly see the location of the trash ban,
-            you are able to search for bin’s location arround your current
-            location or searching area.
-          </p>
+          <div className="map-left">
+            <div className="map-title">
+              <h3>About the Bin Map</h3>
+            </div>
+            <p>
+              You can search for the trash can near you by searching for the
+              address, and you can also use the filter function to select the
+              specific type of trash bin you want the map to display.
+            </p>
+          </div>
+          <div className="map-right">
+            {/* <img src="../../images/impact/impact_classification.jpg"></img> */}
+          </div>
         </div>
-        <Search panTo={panTo} />
+      </div>
+      <div className="map-division"></div>
+
+      {/* search area */}
+      <div className="contain1080">
+        <div className="map-search">
+          <div className="map-title">
+            <h3>Find a bin location</h3>
+          </div>
+          <p>Find a specific types of trash cans near you.</p>
+          <Search panTo={panTo} />
+        </div>
+      </div>
+
+      {/* map display area */}
+      <div className="contain1080">
         <div className="map-body">
           <div className="map-container">
             <Locate panTo={panTo} />
@@ -153,7 +170,7 @@ export default function Map() {
                 >
                   <div className="bin-window">
                     <div className="bin-info">
-                      <h2>Bin Details</h2>
+                      <h4>Bin Details</h4>
                       <p>Bin Description: {selectedBin.DESCRIPTION}</p>
                       <p>Bin Location: {selectedBin.LOCATION_DESC}</p>
                       {/* <p>Bin Easting: {selectedBin.EASTING}</p>
@@ -164,7 +181,7 @@ export default function Map() {
                       target="_blank"
                       href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${currentPosition.lng}&destination=${selectedBin.CoordinateLocation[0]},${selectedBin.CoordinateLocation[1]}`}
                     >
-                      Navigation 
+                      Navigation
                     </a>
                   </div>
                 </InfoWindow>
@@ -173,24 +190,26 @@ export default function Map() {
           </div>
           <div className="map-index">
             <ul>
-              <h2>Legend of Map</h2>
+              <h4>Map Legend</h4>
               <li>
-                <img src="images/current.png" alt="current location"></img>
-                Current/ Search Location
+                <img src="images/bin.png" alt="General Waste Bin"></img>General
+                Waste Bin
               </li>
               <li>
-                <img src="images/bin.png" alt="recycling bin"></img>Litter Bin
+                <img src="images/cbin.png" alt="Cigarette Bin"></img>
+                Cigarette Bin
               </li>
               <li>
-                <img src="images/cbin.png" alt="cigerate bin"></img>Cigarette
-                Bin
-              </li>
-              <li>
-                <img src="images/greenbin.png" alt="recycling bin"></img>
+                <img src="images/greenbin.png" alt="Recycling Bin"></img>
                 Recycling Bin
               </li>
               <li>
-                <img src="images/compass.png" alt="compass"></img>Get Your
+                <img src="images/current.png" alt="current location"></img>
+                Current Location
+              </li>
+
+              <li>
+                <img src="images/compass.png" alt="Get Location"></img>Get
                 location
               </li>
             </ul>
@@ -262,13 +281,13 @@ export default function Map() {
 
     return (
       <div className="search">
-        <h1>Search:</h1>
-        <Combobox onSelect={handleSelect}>
+        <h4>Search:</h4>
+        <Combobox className="search-bar" onSelect={handleSelect}>
           <ComboboxInput
             value={value}
             onChange={handleInput}
             disabled={!ready}
-            placeholder="Search your location"
+            placeholder="Search your address here"
           />
           <ComboboxPopover>
             <ComboboxList>

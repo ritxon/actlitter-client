@@ -1,25 +1,75 @@
-.map-main {
-  margin: 0 50px;
-  padding-bottom: 40px;
+h3 {
+  margin: 0;
 }
-.map-intro {
-  margin: 30px auto;
-}
-.map-intro h1 {
-  margin: 40px auto;
-  text-align: center;
-  font-weight: 700;
-}
-.map-body {
-  display: flex;
-  flex-direction: row;
+h4 {
+  margin: 0;
 }
 
-.map-intro p {
-  margin: 10px auto;
+.contain1080 {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0 auto;
+  flex-direction: column;
 }
+/* page title part */
+#page-title {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+/* introduction part */
+.map-intro {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  padding-bottom: 20px;
+}
+.map-left {
+  width: 60%;
+}
+.map-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.map-right {
+  width: 40%;
+  height: 100%;
+  background-image: url("../assets/impact_classification.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.map-division {
+  border-top: gray 1px solid;
+  border-bottom: gray 1px solid;
+  height: 3px;
+}
+/* search area */
+.map-search {
+  border-bottom: gray 1px solid;
+}
+.search {
+  display: flex;
+  padding-bottom: 30px;
+}
+.search h4 {
+  padding-right: 10px;
+}
+.search input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.search-bar {
+  width: 500px;
+}
+
+/* map display area */
 .map-container {
-  height: 600px;
+  height: 400px;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -28,20 +78,13 @@
 #map {
   flex: 1;
 }
-.search {
-  display: flex;
-  width: 100%;
-  padding-bottom: 10px;
-}
-.search h1 {
-  padding-right: 10px;
-}
-.search input {
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  width: 100%;
-}
 
+.map-body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
 .locate {
   position: absolute;
   top: 1rem;
@@ -62,10 +105,16 @@
   text-align: center;
   margin-bottom: 5px;
 }
-.bin-window p {
-  padding-top: 5px;
+.bin-info p {
+  margin-bottom: 5px;
 }
-
+/* .bin-window p {
+  padding-top: 5px;
+} */
+.map-btn {
+  min-width: 100px;
+}
+/* map legend */
 .map-index {
   width: 20%;
   margin-left: 30px;
@@ -77,24 +126,19 @@
   width: 50px;
   margin-right: 10px;
 }
-.map-btn {
-  min-width: 100px;
-}
-@media screen and (min-width: 800px) {
+
+/* @media screen and (min-width: 800px) {
   .map-btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
   }
-}
-@media screen and (max-width: 800px) {
+} */
+/* @media screen and (max-width: 800px) {
   .map {
     width: 100% !important;
   }
-  .map-body {
-    display: flex;
-    flex-direction: column;
-  }
+
   .map-container {
     width: 100%;
   }
@@ -108,4 +152,4 @@
   .bin-info {
     margin-bottom: 30px;
   }
-}
+} */
