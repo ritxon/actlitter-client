@@ -22,7 +22,7 @@ const center = { lat: -37.813629, lng: 144.963058 };
 
 export default function Map() {
 
-  const [binDataSet, setBinDataSet] = useState(null)
+  const [binDataSet, setBinDataSet] = useState([])
 
   useEffect(() => {
     // Check this url https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/8fgn-5q6t
@@ -30,18 +30,14 @@ export default function Map() {
     // App Token for the API CMgZAQjc7TpQfXi0JQvJsBax7
 		const url = "https://data.melbourne.vic.gov.au/resource/8fgn-5q6t.json?$$app_token=CMgZAQjc7TpQfXi0JQvJsBax7&$limit=10000&asset_type=Litter%20Bin&$select=gis_id,description,geometry";
 
-		axios.get(url).then(res => {
-			console.log(res.data);
-      setBinDataSet(res.data)
-		})
-		.catch(err => console.log(err))
-		/* return () => {
-			cleanup
-		} */
+    async function fetchData(){
+      await axios.get(url).then(res => {
+        setBinDataSet(res.data)
+        console.log(res.data);
+      }).catch(err => console.log(err))
+    }
+    fetchData();
 	}, [])
-
-
-
 
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: "AIzaSyB8fN_l9SfZkAQ0As_MRWrdEQ7pcZKiVzE",
@@ -131,12 +127,15 @@ export default function Map() {
                 position={currentPosition}
               />
 
-              {binData.features.map((bin) => (
+              {
+                
+              
+              binDataSet.map((bin) => (
                 <Marker
-                  key={bin.GIS_ID}
+                  key={bin.gis_id}
                   position={{
-                    lat: bin.CoordinateLocation[0],
-                    lng: bin.CoordinateLocation[1],
+                    lat: parseFloat(bin.geometry.latitude),
+                    lng: parseFloat(bin.geometry.longitude),
                   }}
                   // display bin with type
                   icon={
