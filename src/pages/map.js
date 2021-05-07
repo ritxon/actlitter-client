@@ -1,10 +1,24 @@
 import "./map.css";
 import React, { useState, useEffect } from "react";
 import * as binData from "./bin-location.json";
-import {GoogleMap, useLoadScript, Marker, InfoWindow } from "@react-google-maps/api";
-import usePlacesAutocomplete, { getGeocode, getLatLng } from "use-places-autocomplete";
-import { Combobox, ComboboxInput, ComboboxPopover, ComboboxList, ComboboxOption} from "@reach/combobox";
-import axios from 'axios';
+import {
+  GoogleMap,
+  useLoadScript,
+  Marker,
+  InfoWindow,
+} from "@react-google-maps/api";
+import usePlacesAutocomplete, {
+  getGeocode,
+  getLatLng,
+} from "use-places-autocomplete";
+import {
+  Combobox,
+  ComboboxInput,
+  ComboboxPopover,
+  ComboboxList,
+  ComboboxOption,
+} from "@reach/combobox";
+import axios from "axios";
 
 import "../../src/components/utils/button.css";
 
@@ -21,27 +35,27 @@ const options = {
 const center = { lat: -37.813629, lng: 144.963058 };
 
 export default function Map() {
-
-  const [binDataSet, setBinDataSet] = useState(null)
+  const [binDataSet, setBinDataSet] = useState(null);
 
   useEffect(() => {
     // Check this url https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/8fgn-5q6t
     // SoQL https://dev.socrata.com/docs/queries/
     // App Token for the API CMgZAQjc7TpQfXi0JQvJsBax7
-		const url = "https://data.melbourne.vic.gov.au/resource/8fgn-5q6t.json?$$app_token=CMgZAQjc7TpQfXi0JQvJsBax7&$limit=10000&asset_type=Litter%20Bin&$select=gis_id,description,geometry";
+    const url =
+      "https://data.melbourne.vic.gov.au/resource/8fgn-5q6t.json?$$app_token=CMgZAQjc7TpQfXi0JQvJsBax7&$limit=10000&asset_type=Litter%20Bin&$select=gis_id,description,geometry";
 
-		axios.get(url).then(res => {
-			console.log(res.data);
-      setBinDataSet(res.data)
-		})
-		.catch(err => console.log(err))
-		/* return () => {
+    axios
+      .get(url)
+      .then((res) => {
+        console.log(res.data);
+        setBinDataSet(res.data);
+      })
+      .catch((err) => console.log(err));
+
+    /* return () => {
 			cleanup
 		} */
-	}, [])
-
-
-
+  }, []);
 
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: "AIzaSyB8fN_l9SfZkAQ0As_MRWrdEQ7pcZKiVzE",
@@ -131,39 +145,45 @@ export default function Map() {
                 position={currentPosition}
               />
 
-              {binData.features.map((bin) => (
+              {binDataSet.map((bin) => (
                 <Marker
-                  key={bin.GIS_ID}
+                  key={bin.gis_id}
                   position={{
-                    lat: bin.CoordinateLocation[0],
-                    lng: bin.CoordinateLocation[1],
+                    lat: bin.geometry.latitude,
+                    lng: bin.geometry.longitude,
                   }}
                   // display bin with type
                   icon={
-                    bin.type == "Litter Bin"
-                      ? {
-                          url: "images/bin.png",
-                          origin: new window.google.maps.Point(0, 0),
-                          anchor: new window.google.maps.Point(15, 15),
-                          scaledSize: new window.google.maps.Size(30, 30),
-                        }
-                      : bin.type == "Recycling Bin"
-                      ? {
-                          url: "images/greenbin.png",
-                          origin: new window.google.maps.Point(0, 0),
-                          anchor: new window.google.maps.Point(15, 15),
-                          scaledSize: new window.google.maps.Size(30, 30),
-                        }
-                      : {
-                          url: "images/cbin.png",
-                          origin: new window.google.maps.Point(0, 0),
-                          anchor: new window.google.maps.Point(15, 15),
-                          scaledSize: new window.google.maps.Size(30, 30),
-                        }
+                    {
+                      url: "images/greenbin.png",
+                      origin: new window.google.maps.Point(0, 0),
+                      anchor: new window.google.maps.Point(15, 15),
+                      scaledSize: new window.google.maps.Size(30, 30),
+                    }
+                    // bin.type == "Litter Bin"
+                    //   ? {
+                    //       url: "images/bin.png",
+                    //       origin: new window.google.maps.Point(0, 0),
+                    //       anchor: new window.google.maps.Point(15, 15),
+                    //       scaledSize: new window.google.maps.Size(30, 30),
+                    //     }
+                    //   : bin.type == "Recycling Bin"
+                    //   ? {
+                    //       url: "images/greenbin.png",
+                    //       origin: new window.google.maps.Point(0, 0),
+                    //       anchor: new window.google.maps.Point(15, 15),
+                    //       scaledSize: new window.google.maps.Size(30, 30),
+                    //     }
+                    //   : {
+                    //       url: "images/cbin.png",
+                    //       origin: new window.google.maps.Point(0, 0),
+                    //       anchor: new window.google.maps.Point(15, 15),
+                    //       scaledSize: new window.google.maps.Size(30, 30),
+                    //     }
                   }
-                  onClick={() => {
-                    setSelectedBin(bin);
-                  }}
+                  // onClick={() => {
+                  //   setSelectedBin(bin);
+                  // }}
                 ></Marker>
               ))}
 
@@ -180,8 +200,8 @@ export default function Map() {
                   <div className="bin-window">
                     <div className="bin-info">
                       <h4>Bin Details</h4>
-                      <p>Bin Description: {selectedBin.DESCRIPTION}</p>
-                      <p>Bin Location: {selectedBin.LOCATION_DESC}</p>
+                      {/* <p>Bin Description: {selectedBin.DESCRIPTION}</p>
+                      <p>Bin Location: {selectedBin.LOCATION_DESC}</p> */}
                       {/* <p>Bin Easting: {selectedBin.EASTING}</p>
                     <p>Bin Northing: {selectedBin.NORTHING}</p> */}
                     </div>
