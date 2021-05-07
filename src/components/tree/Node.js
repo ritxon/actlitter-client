@@ -25,7 +25,7 @@ function Node({ node, onClick }) {
       )}
       <text
         dy={'.33em'}
-        fontSize={9}
+        fontSize={12}
         fontFamily="Arial"
         textAnchor={'middle'}
         style={{ pointerEvents: 'none' }}

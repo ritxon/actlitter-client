@@ -54,7 +54,7 @@ export class transition_2_cards extends Component {
 
                             <div class="thecard_2">
 
-                                <div class="thefront_pink_2">
+                                <div class="thefront_2">
                                     <div className="volunteer_card_2_title_div">
                                         <font className="volunteer_card_2_title">
                                             {this.props.pink_front_title}

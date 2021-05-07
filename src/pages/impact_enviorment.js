@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./impact.css";
+import ".././App.css";
 
 export class impact_enviorment extends Component {
   render() {
@@ -34,7 +35,7 @@ export class impact_enviorment extends Component {
         <div className="impact_details">
         <div id="envirment_title" className="impact_jump"></div>
         <div className="impact_article_flex">
-          <div className="impact_article_container w">
+          <div className="impact_article_container contain1140">
             <div className="impact_article_title">
               <h1> Impact on environment</h1>
               

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./impact.css";
+import ".././App.css";
 import TreeExample from "../components/tree/TreeExample"
 // import Typography from "@material-ui/core/Typography";
 // import Breadcrumbs from "@material-ui/core/Breadcrumbs";
@@ -37,10 +38,16 @@ export class impact_classification extends Component {
         <div className="impact_details">
           <div id="classification_title" className="impact_jump"></div>
           <div className="impact_article_flex">
-            <div className="impact_article_container w">
+            <div className="impact_article_container contain1140">
               <div className="impact_article_title">
                 <h1> Litter Classification </h1>
               </div>
+
+              <div className="impact_video_div">
+                <iframe className="impact_video" src="https://www.youtube.com/embed/OJEQaVT45XA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+
               <div className="impact_article_body">
                 <h4>What is garbage sorting?</h4>
                 <div className="impact_article_right">
