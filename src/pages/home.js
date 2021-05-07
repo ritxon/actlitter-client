@@ -69,7 +69,7 @@ const Home = () => {
 				<div className="contain1140">
 					<div className="double-side">
 						<div className="left-side">
-							<div className="title-section">Organizations</div>
+							<div className="title-section">Volunteering Organisations</div>
 							<p>Various organisations in Australia are committed to reduce and prevent littering.</p>
 							<p>
 								These are the most distinguished Australian organisations, their contributions to reduce littering and

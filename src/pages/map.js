@@ -1,23 +1,10 @@
 import "./map.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as binData from "./bin-location.json";
-import {
-  GoogleMap,
-  useLoadScript,
-  Marker,
-  InfoWindow,
-} from "@react-google-maps/api";
-import usePlacesAutocomplete, {
-  getGeocode,
-  getLatLng,
-} from "use-places-autocomplete";
-import {
-  Combobox,
-  ComboboxInput,
-  ComboboxPopover,
-  ComboboxList,
-  ComboboxOption,
-} from "@reach/combobox";
+import {GoogleMap, useLoadScript, Marker, InfoWindow } from "@react-google-maps/api";
+import usePlacesAutocomplete, { getGeocode, getLatLng } from "use-places-autocomplete";
+import { Combobox, ComboboxInput, ComboboxPopover, ComboboxList, ComboboxOption} from "@reach/combobox";
+import axios from 'axios';
 
 import "../../src/components/utils/button.css";
 
@@ -34,6 +21,24 @@ const options = {
 const center = { lat: -37.813629, lng: 144.963058 };
 
 export default function Map() {
+
+  const [binDataSet, setBinDataSet] = useState([])
+
+  useEffect(() => {
+    // Check this url https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/8fgn-5q6t
+    // SoQL https://dev.socrata.com/docs/queries/
+    // App Token for the API CMgZAQjc7TpQfXi0JQvJsBax7
+		const url = "https://data.melbourne.vic.gov.au/resource/8fgn-5q6t.json?$$app_token=CMgZAQjc7TpQfXi0JQvJsBax7&$limit=10000&asset_type=Litter%20Bin&$select=gis_id,description,geometry";
+
+    async function fetchData(){
+      await axios.get(url).then(res => {
+        setBinDataSet(res.data)
+        console.log(res.data);
+      }).catch(err => console.log(err))
+    }
+    fetchData();
+	}, [])
+
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: "AIzaSyB8fN_l9SfZkAQ0As_MRWrdEQ7pcZKiVzE",
     libraries,
@@ -122,12 +127,15 @@ export default function Map() {
                 position={currentPosition}
               />
 
-              {binData.features.map((bin) => (
+              {
+                
+              
+              binDataSet.map((bin) => (
                 <Marker
-                  key={bin.GIS_ID}
+                  key={bin.gis_id}
                   position={{
-                    lat: bin.CoordinateLocation[0],
-                    lng: bin.CoordinateLocation[1],
+                    lat: parseFloat(bin.geometry.latitude),
+                    lng: parseFloat(bin.geometry.longitude),
                   }}
                   // display bin with type
                   icon={

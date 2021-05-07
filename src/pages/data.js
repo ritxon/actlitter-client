@@ -330,7 +330,7 @@ const Data = () => {
 			</div>
 			<div className="data-radioContent">
 				<div className="title-data">
-					<h1>Littering Location</h1>
+					<h1>What is the most common location of litter by item?</h1>
 				</div>
 				<div className="vertical-data-container">
 					<div className="info-vertical-data">
@@ -340,7 +340,6 @@ const Data = () => {
 							This information was sample from eight different kind of places among Australia. Each type of litter is
 							provided with an axis that starts from the centre.
 						</p>
-						<br />
 						<p>
 							This data was collected from the national litter report made by the organization Keep Australia beautiful.
 						</p>
