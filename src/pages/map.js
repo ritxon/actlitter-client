@@ -1,5 +1,7 @@
 import "./map.css";
 import React, { useState, useEffect } from "react";
+import Select from "react-select";
+import useSupercluster from "react-supercluster";
 import * as binData from "./bin-location.json";
 import {
   GoogleMap,
@@ -24,6 +26,7 @@ import "../../src/components/utils/button.css";
 
 import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyle";
+import { cluster } from "d3-hierarchy";
 const libraries = ["places"];
 
 const mapContainerStyle = { height: "400px", width: "100%" };
@@ -33,10 +36,10 @@ const options = {
   zoomControl: true,
 };
 const center = { lat: -37.813629, lng: 144.963058 };
+var binType = "Recycling";
 
 export default function Map() {
-
-  const [binDataSet, setBinDataSet] = useState([])
+  const [binDataSet, setBinDataSet] = useState([]);
 
   useEffect(() => {
     // Check this url https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/8fgn-5q6t
@@ -48,26 +51,51 @@ export default function Map() {
     axios
       .get(url)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setBinDataSet(res.data);
       })
       .catch((err) => console.log(err));
 
-    async function fetchData(){
-      await axios.get(url).then(res => {
-        setBinDataSet(res.data)
-        console.log(res.data);
-      }).catch(err => console.log(err))
+    async function fetchData() {
+      await axios
+        .get(url)
+        .then((res) => {
+          setBinDataSet(res.data);
+          console.log(binDataSet);
+        })
+        .catch((err) => console.log(err));
     }
     fetchData();
-	}, [])
+  }, []);
+  const geojsonPoints = binDataSet.map((bin) => {
+    return {
+      type: "Feature",
+      properties: {
+        gis_id: bin.gis_id,
+        descrition: bin.description,
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [bin.geometry.longitude, bin.geometry.latitude],
+      },
+    };
+  });
+  console.log(geojsonPoints);
+  const { clusters } = useSupercluster({
+    points: geojsonPoints,
+    // bounds,
+    zoom: 10,
+    options: { radius: 75, maxZoom: 20 },
+  });
+  const [selectedBin, setSelectedBin] = useState(null);
+
+  const [reRenderMarkers, setReRendermarkers] = useState(null);
 
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: "AIzaSyB8fN_l9SfZkAQ0As_MRWrdEQ7pcZKiVzE",
     libraries,
   });
 
-  const [selectedBin, setSelectedBin] = useState(null);
   const [currentPosition, setCurrentPosition] = useState({
     lat: -37.813629,
     lng: 144.963058,
@@ -116,12 +144,13 @@ export default function Map() {
 
       {/* search area */}
       <div className="contain1080">
-        <div className="map-search">
-          <div className="map-title">
-            <h3>Find a bin location</h3>
-          </div>
+        <div className="map-title">
+          <h3>Find a bin location</h3>
           <p>Find a specific types of trash cans near you.</p>
+        </div>
+        <div className="map-search">
           <Search panTo={panTo} />
+          <BinTypeFilter />
         </div>
       </div>
 
@@ -131,99 +160,7 @@ export default function Map() {
           <div className="map-container">
             <Locate panTo={panTo} />
 
-            <GoogleMap
-              id="map"
-              mapContainerStyle={mapContainerStyle}
-              zoom={15}
-              center={center}
-              options={options}
-              onLoad={onMapLoad}
-            >
-              <Marker
-                // icon="https://www.robotwoods.com/dev/misc/bluecircle.png"
-                icon={{
-                  url: "images/current.png",
-                  origin: new window.google.maps.Point(0, 0),
-                  anchor: new window.google.maps.Point(15, 15),
-                  scaledSize: new window.google.maps.Size(35, 35),
-                }}
-                position={currentPosition}
-              />
-
-              {
-                
-              
-              binDataSet.map((bin) => (
-                <Marker
-                  key={bin.gis_id}
-                  position={{
-                    lat: parseFloat(bin.geometry.latitude),
-                    lng: parseFloat(bin.geometry.longitude),
-                  }}
-                  // display bin with type
-                  icon={
-                    {
-                      url: "images/greenbin.png",
-                      origin: new window.google.maps.Point(0, 0),
-                      anchor: new window.google.maps.Point(15, 15),
-                      scaledSize: new window.google.maps.Size(30, 30),
-                    }
-                    // bin.type == "Litter Bin"
-                    //   ? {
-                    //       url: "images/bin.png",
-                    //       origin: new window.google.maps.Point(0, 0),
-                    //       anchor: new window.google.maps.Point(15, 15),
-                    //       scaledSize: new window.google.maps.Size(30, 30),
-                    //     }
-                    //   : bin.type == "Recycling Bin"
-                    //   ? {
-                    //       url: "images/greenbin.png",
-                    //       origin: new window.google.maps.Point(0, 0),
-                    //       anchor: new window.google.maps.Point(15, 15),
-                    //       scaledSize: new window.google.maps.Size(30, 30),
-                    //     }
-                    //   : {
-                    //       url: "images/cbin.png",
-                    //       origin: new window.google.maps.Point(0, 0),
-                    //       anchor: new window.google.maps.Point(15, 15),
-                    //       scaledSize: new window.google.maps.Size(30, 30),
-                    //     }
-                  }
-                  // onClick={() => {
-                  //   setSelectedBin(bin);
-                  // }}
-                ></Marker>
-              ))}
-
-              {selectedBin ? (
-                <InfoWindow
-                  position={{
-                    lat: selectedBin.CoordinateLocation[0],
-                    lng: selectedBin.CoordinateLocation[1],
-                  }}
-                  onCloseClick={() => {
-                    setSelectedBin(null);
-                  }}
-                >
-                  <div className="bin-window">
-                    <div className="bin-info">
-                      <h4>Bin Details</h4>
-                      {/* <p>Bin Description: {selectedBin.DESCRIPTION}</p>
-                      <p>Bin Location: {selectedBin.LOCATION_DESC}</p> */}
-                      {/* <p>Bin Easting: {selectedBin.EASTING}</p>
-                    <p>Bin Northing: {selectedBin.NORTHING}</p> */}
-                    </div>
-                    <a
-                      className="map-btn btn btn-slide primary"
-                      target="_blank"
-                      href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${currentPosition.lng}&destination=${selectedBin.CoordinateLocation[0]},${selectedBin.CoordinateLocation[1]}`}
-                    >
-                      Navigation
-                    </a>
-                  </div>
-                </InfoWindow>
-              ) : null}
-            </GoogleMap>
+            <MapDisplay />
           </div>
           <div className="map-index">
             <ul>
@@ -256,6 +193,171 @@ export default function Map() {
     </>
   );
 
+  function MapPinMarker() {
+    {
+      binDataSet.map((bin) => (
+        <Marker
+          key={bin.gis_id}
+          position={{
+            lat: parseFloat(bin.geometry.latitude),
+            lng: parseFloat(bin.geometry.longitude),
+          }}
+          // display bin with type
+          icon={
+            /Cigarette/.test(bin.description) &&
+            (binType == "All" || binType == "Cigarette")
+              ? {
+                  url: "images/cbin.png",
+                  origin: new window.google.maps.Point(0, 0),
+                  anchor: new window.google.maps.Point(15, 15),
+                  scaledSize: new window.google.maps.Size(30, 30),
+                }
+              : /Recycling/.test(bin.description) &&
+                (binType == "All" || binType == "Recycling")
+              ? {
+                  url: "images/greenbin.png",
+                  origin: new window.google.maps.Point(0, 0),
+                  anchor: new window.google.maps.Point(15, 15),
+                  scaledSize: new window.google.maps.Size(30, 30),
+                }
+              : !binType == "Cigarette" && !binType == "Recycling"
+              ? {
+                  url: "images/bin.png",
+                  origin: new window.google.maps.Point(0, 0),
+                  anchor: new window.google.maps.Point(15, 15),
+                  scaledSize: new window.google.maps.Size(30, 30),
+                }
+              : {
+                  url: "images/bin.png",
+                  origin: new window.google.maps.Point(0, 0),
+                  anchor: new window.google.maps.Point(0, 0),
+                  scaledSize: new window.google.maps.Size(0, 0),
+                }
+          }
+          // onClick={() => {
+          //   console.log(bin);
+          //   setSelectedBin(bin);
+          // }}
+        ></Marker>
+      ));
+    }
+  }
+  // function MapClusterMarker() {
+  //   {
+  //     cluster.map((cluster) => {
+  //       const [longtitude, latitude] = cluster.geometry.coordinates;
+  //       const [
+  //         cluster: isculster,
+  //         point_count: pointCount,
+  //       ] = cluster.properties;
+  //     });
+  //   }
+  // }
+  function MapDisplay() {
+    return (
+      <GoogleMap
+        id="map"
+        mapContainerStyle={mapContainerStyle}
+        zoom={15}
+        center={center}
+        options={options}
+        onLoad={onMapLoad}
+      >
+        <Marker
+          // icon="https://www.robotwoods.com/dev/misc/bluecircle.png"
+          icon={{
+            url: "images/current.png",
+            origin: new window.google.maps.Point(0, 0),
+            anchor: new window.google.maps.Point(15, 15),
+            scaledSize: new window.google.maps.Size(35, 35),
+          }}
+          position={currentPosition}
+        />
+        {/* https://www.youtube.com/watch?v=uMSGnZFW-h8 */}
+        {/* https://www.npmjs.com/package/react-supercluster */}
+        {/* 
+        {clusters.map((cluster) => {
+          if (cluster.properties.cluster) {
+            return <MapClusterMarker />;
+          }
+          return <MapPinMarker />;
+        })} */}
+        {binDataSet.map((bin) => (
+          <Marker
+            key={bin.gis_id}
+            position={{
+              lat: parseFloat(bin.geometry.latitude),
+              lng: parseFloat(bin.geometry.longitude),
+            }}
+            // display bin with type
+            icon={
+              /Cigarette/.test(bin.description) &&
+              (binType == "All" || binType == "Cigarette")
+                ? {
+                    url: "images/cbin.png",
+                    origin: new window.google.maps.Point(0, 0),
+                    anchor: new window.google.maps.Point(15, 15),
+                    scaledSize: new window.google.maps.Size(30, 30),
+                  }
+                : /Recycling/.test(bin.description) &&
+                  (binType == "All" || binType == "Recycling")
+                ? {
+                    url: "images/greenbin.png",
+                    origin: new window.google.maps.Point(0, 0),
+                    anchor: new window.google.maps.Point(15, 15),
+                    scaledSize: new window.google.maps.Size(30, 30),
+                  }
+                : !binType == "Cigarette" && !binType == "Recycling"
+                ? {
+                    url: "images/bin.png",
+                    origin: new window.google.maps.Point(0, 0),
+                    anchor: new window.google.maps.Point(15, 15),
+                    scaledSize: new window.google.maps.Size(30, 30),
+                  }
+                : {
+                    url: "images/bin.png",
+                    origin: new window.google.maps.Point(0, 0),
+                    anchor: new window.google.maps.Point(0, 0),
+                    scaledSize: new window.google.maps.Size(0, 0),
+                  }
+            }
+            onClick={() => {
+              setSelectedBin(bin);
+            }}
+          ></Marker>
+        ))}
+        {selectedBin ? (
+          <InfoWindow
+            position={{
+              lat: selectedBin.geometry.latitude,
+              lng: selectedBin.geometry.longitude,
+            }}
+            onCloseClick={() => {
+              setSelectedBin(null);
+            }}
+          >
+            <div className="bin-window">
+              <div className="bin-info">
+                <h4>Bin Details</h4>
+                <p>Bin Description: {selectedBin.description}</p>
+                {/* <p>Bin Description: {selectedBin.DESCRIPTION}</p>
+                      <p>Bin Location: {selectedBin.LOCATION_DESC}</p> */}
+                {/* <p>Bin Easting: {selectedBin.EASTING}</p>
+                    <p>Bin Northing: {selectedBin.NORTHING}</p> */}
+              </div>
+              {/* <a
+                className="map-btn btn btn-slide primary"
+                target="_blank"
+                href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${currentPosition.lng}&destination=${selectedBin.CoordinateLocation[0]},${selectedBin.CoordinateLocation[1]}`}
+              >
+                Navigation
+              </a> */}
+            </div>
+          </InfoWindow>
+        ) : null}
+      </GoogleMap>
+    );
+  }
   function Locate({ panTo }) {
     return (
       <button
@@ -335,6 +437,31 @@ export default function Map() {
             </ComboboxList>
           </ComboboxPopover>
         </Combobox>
+      </div>
+    );
+  }
+
+  function BinTypeFilter() {
+    const options = [
+      { value: "All", label: "All" },
+      { value: "General", label: "General Waste Bin" },
+      { value: "Recycling", label: "Recycling Bin" },
+      { value: "Cigarette", label: "Cigarette Bin" },
+    ];
+    const handleSelect = async (bin) => {
+      binType = bin.value;
+      console.log(binType);
+    };
+    return (
+      <div className="map-filter">
+        <h4> Bin Type: </h4>
+        <Select
+          className="map-filter-dropdown"
+          // isMulti={true}
+          options={options}
+          defaultValue={options[0]}
+          onChange={handleSelect}
+        />
       </div>
     );
   }

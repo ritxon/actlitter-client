@@ -50,6 +50,7 @@ h4 {
 /* search area */
 .map-search {
   border-bottom: gray 1px solid;
+  display: flex;
 }
 .search {
   display: flex;
@@ -66,7 +67,14 @@ h4 {
 .search-bar {
   width: 500px;
 }
-
+.map-filter {
+  display: flex;
+  margin-left: auto;
+}
+.map-filter-dropdown {
+  margin-left: 20px;
+  width: 200px;
+}
 /* map display area */
 .map-container {
   height: 400px;
