@@ -20,6 +20,7 @@
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+
 .thecard:hover{
   transform: rotateY(180deg);
 }
@@ -59,7 +60,7 @@
 .volunteer_card_blue_title {
   text-align: center;
   font-size: 150%;
-  color: #636363;
+  /* color: #636363; */
 }
 
 

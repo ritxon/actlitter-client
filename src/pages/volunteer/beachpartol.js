@@ -10,39 +10,43 @@ export class beachpartol extends Component {
     return (
       <div className="volunteer">
         {/* place */}
-        <div className="vol_impact_fake_navigation">
-          <p>
-            <a href="/">&emsp; Home &ensp;</a>/ &ensp;
+        <div className="volunteer_back_white">
+          <div className="vol_impact_fake_navigation">
+            <p>
+              <a href="/">&emsp; Home &ensp;</a>/ &ensp;
             <a classname="bold" href="/volunteer">
-              Volunteer Organizations &ensp;
+                Volunteer Organizations &ensp;
             </a>
             / &ensp; Beach Patrol
           </p>
+          </div>
         </div>
         <div className="volunteer_bluex">
           {/* Details */}
-          <div className="volunteer_part">
-            <div className="volunteer_left">
-              <div>
-                <img
-                  src="../../images/volunteer/beach-patrol_logo.jpg"
-                  className="volunteer_logo"
-                />
+          <div className="volunteer_back_white">
+            <div className="volunteer_part">
+              <div className="volunteer_left">
+                <div>
+                  <img
+                    src="../../images/volunteer/beach-patrol_logo.jpg"
+                    className="volunteer_logo"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="volunteer_right">
-              <div className="volunteer_title">
-                <h1>BEACH PATROL</h1>
-              </div>
-              <p className="organization_details">
-                BeachPatrol is a volunteer group in Melbourne that aims to
-                improve cleanliness of beaches in Melbourne. BeachPatrol is
-                spread over many postcode areas in Melbourne and conducts one
-                activity in each area every month to pick litter from beaches,
-                streets or parks. It collects litter data from these activities
-                and uses it to raise awareness of littering as well as work with
-                the government to provide solutions.
+              <div className="volunteer_right">
+                <div className="volunteer_title">
+                  <h1>BEACH PATROL</h1>
+                </div>
+                <p className="organization_details">
+                  BeachPatrol is a volunteer group in Melbourne that aims to
+                  improve cleanliness of beaches in Melbourne. BeachPatrol is
+                  spread over many postcode areas in Melbourne and conducts one
+                  activity in each area every month to pick litter from beaches,
+                  streets or parks. It collects litter data from these activities
+                  and uses it to raise awareness of littering as well as work with
+                  the government to provide solutions.
               </p>
+              </div>
             </div>
           </div>
         </div>
@@ -92,40 +96,42 @@ export class beachpartol extends Component {
         </div>
 
         {/* Key Figures */}
-        <div className="volunteer_blue">
-          <div className="volunteer_tage">
-            <h1>KEY FIGURES</h1>
-          </div>
-
-          <div className="volunteer_cards">
-            <div className="volunteer_one_card">
-              <Flip_card
-                front_title="NUMBER OF VOLUNTEERS"
-                src="../../images/volunteer/volunteer.svg"
-                front_num="3000"
-                front_text="people"
-                back_details=" BeachPatrol has 30 groups with over 3000 volunteers who can participate in events held in a region covering over 150 kms of Port Phillip Bay beaches and streets."
-              />
+        <div className="volunteer_back_white">
+          <div className="volunteer_blue">
+            <div className="volunteer_tage">
+              <h1>KEY FIGURES</h1>
             </div>
 
-            <div className="volunteer_one_card">
-              <Flip_card_blue
-                front_title="AMOUNT OF LITTER"
-                src="../../images/volunteer/litter.svg"
-                front_num="92473"
-                front_text="kgs"
-                back_details="By this year, BeachPatrol has picked 92473 kgs of litter from beaches, streets and parks!"
-              />
-            </div>
+            <div className="volunteer_cards">
+              <div className="volunteer_one_card">
+                <Flip_card_blue
+                  front_title="NUMBER OF VOLUNTEERS"
+                  src="../../images/volunteer/volunteer.svg"
+                  front_num="3000"
+                  front_text="people"
+                  back_details=" BeachPatrol has 30 groups with over 3000 volunteers who can participate in events held in a region covering over 150 kms of Port Phillip Bay beaches and streets."
+                />
+              </div>
 
-            <div className="volunteer_one_card">
-              <Flip_card_pink
-                front_title="NUMBER OF BAGS"
-                src="../../images/volunteer/garbage.svg"
-                front_num="32976"
-                front_text="bags"
-                back_details="BeachPatrol used 32976 shopping bags until now to put in the huge amount of collected litter!"
-              />
+              <div className="volunteer_one_card">
+                <Flip_card_blue
+                  front_title="AMOUNT OF LITTER"
+                  src="../../images/volunteer/litter.svg"
+                  front_num="92473"
+                  front_text="kgs"
+                  back_details="By this year, BeachPatrol has picked 92473 kgs of litter from beaches, streets and parks!"
+                />
+              </div>
+
+              <div className="volunteer_one_card">
+                <Flip_card_blue
+                  front_title="NUMBER OF BAGS"
+                  src="../../images/volunteer/garbage.svg"
+                  front_num="32976"
+                  front_text="bags"
+                  back_details="BeachPatrol used 32976 shopping bags until now to put in the huge amount of collected litter!"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -142,7 +148,12 @@ export class beachpartol extends Component {
               {/* previous 1 */}
               <div className="previous_trans s1">
                 <div className="previous_left">
-                  <label for="r2" class="bar"></label>
+                  <label for="r2" class="bar">
+                    <img
+                      src="../../images/gallery_button_left.png"
+                      className="previous_trans_img"
+                    ></img>
+                  </label>
                 </div>
                 <div className="previous_container">
                   <Transition_cards
@@ -188,22 +199,30 @@ export class beachpartol extends Component {
                     pink_front_text2="items"
                   />
                 </div>
-                <div className="previous_right"></div>
+                <div className="previous_right">
+                  <label for="r1" class="bar">
+                    <img
+                      src="../../images/gallery_button_right.png"
+                      className="previous_trans_img"
+                    ></img>
+                  </label></div>
               </div>
+            </div>
+          </div>
+
+
+          {/* Junp button */}
+          <div className="volunteer_button_div">
+            <div className="volunteer_button">
+              <p className="">
+                Click here to go to source :&ensp;
+                            <a target="blank" href="https://www.beachpatrol.com.au/">https://www.beachpatrol.com.au/</a>
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Junp button */}
-        <div className="volunteer_button_div">
-          <div className="volunteer_button">
-            <font className="">
-              <a target="_blank" href="https://www.beachpatrol.com.au/">
-              Go to website
-              </a>
-            </font>
-          </div>
-        </div>
+
       </div>
     );
   }

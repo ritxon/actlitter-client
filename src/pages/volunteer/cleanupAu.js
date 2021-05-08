@@ -10,36 +10,40 @@ export class cleanupAu extends Component {
         return (
             <div className="volunteer">
                 {/* place */}
-                <div className="vol_impact_fake_navigation">
-                    <p>
-                        <a href="/">&emsp; Home &ensp;</a>/ &ensp;
+                <div className="volunteer_back_white">
+                    <div className="vol_impact_fake_navigation">
+                        <p>
+                            <a href="/">&emsp; Home &ensp;</a>/ &ensp;
                         <a classname="bold" href="/volunteer">
-                            Volunteer Organizations &ensp;
+                                Volunteer Organizations &ensp;
                         </a>
                         / &ensp; Clean Up Australia
                     </p>
+                    </div>
                 </div>
                 <div className="volunteer_bluex">
 
 
                     {/* Details */}
-                    <div className="volunteer_part">
-                        <div className="volunteer_left">
-                            <div>
-                                <img
-                                    src="../../images/volunteer/Clean_Up_Australia_logo.jpg"
-                                    className="volunteer_logo"
-                                />
+                    <div className="volunteer_back_white">
+                        <div className="volunteer_part">
+                            <div className="volunteer_left">
+                                <div>
+                                    <img
+                                        src="../../images/volunteer/Clean_Up_Australia_logo.jpg"
+                                        className="volunteer_logo"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="volunteer_right">
-                            <div className="volunteer_title">
-                                <h1>CLEAN UP AUSTRALIA</h1>
-                            </div>
-                            <p className="organization_details">
-                                Clean Up Australia is a large environmental conservation non-profit organization founded by Ian Kiernan and Kim McKay on 8 November 1989. Clean Up Australia aims to prevent rubbish from entering the environment as well as remove rubbish that is already accumulated. To do so, Clean Up Australia works together with the community, different companies and the government to provide solutions that can enable people to live more sustainably.
+                            <div className="volunteer_right">
+                                <div className="volunteer_title">
+                                    <h1>CLEAN UP AUSTRALIA</h1>
+                                </div>
+                                <p className="organization_details">
+                                    Clean Up Australia is a large environmental conservation non-profit organization founded by Ian Kiernan and Kim McKay on 8 November 1989. Clean Up Australia aims to prevent rubbish from entering the environment as well as remove rubbish that is already accumulated. To do so, Clean Up Australia works together with the community, different companies and the government to provide solutions that can enable people to live more sustainably.
 
                         </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -52,67 +56,69 @@ export class cleanupAu extends Component {
                     </div>
                     <div className="volunteer_key_facts">
                         <p className="organization_details">
-                        <img src="../../images/volunteer/fun-fact.png"
-                                    className="volunteer_fun_fact"></img>  More than 19 million Australians have taken part in Clean Up Australia activities over the last 31 years.
+                            <img src="../../images/volunteer/fun-fact.png"
+                                className="volunteer_fun_fact"></img>  More than 19 million Australians have taken part in Clean Up Australia activities over the last 31 years.
                     </p>
                         <p className="organization_details">
-                        <img src="../../images/volunteer/fun-fact.png"
-                                    className="volunteer_fun_fact"></img>  Volunteers have recorded 38.5 million hours for Clean Up Australia activities to reduce rubbish from the environment.
+                            <img src="../../images/volunteer/fun-fact.png"
+                                className="volunteer_fun_fact"></img>  Volunteers have recorded 38.5 million hours for Clean Up Australia activities to reduce rubbish from the environment.
 
                     </p>
                         <p className="organization_details">
-                        <img src="../../images/volunteer/fun-fact.png"
-                                    className="volunteer_fun_fact"></img>  In 2020, Cigarette Butts were the largest single item rubbish in Victoria comprising 13.51% of the total Single Item Rubbish!
+                            <img src="../../images/volunteer/fun-fact.png"
+                                className="volunteer_fun_fact"></img>  In 2020, Cigarette Butts were the largest single item rubbish in Victoria comprising 13.51% of the total Single Item Rubbish!
 
                     </p>
                         <p className="organization_details">
-                        <img src="../../images/volunteer/fun-fact.png"
-                                    className="volunteer_fun_fact"></img>  Other volunteering organisations can be part of Clean Up Australia by registering on its website with 7778 sites registering in 2020.
+                            <img src="../../images/volunteer/fun-fact.png"
+                                className="volunteer_fun_fact"></img>  Other volunteering organisations can be part of Clean Up Australia by registering on its website with 7778 sites registering in 2020.
 
                     </p>
-        
+
                     </div>
 
                 </div>
                 {/* Key Figures */}
-                <div className="volunteer_blue">
-                    <div className="volunteer_tage">
-                        <h1>KEY FIGURES</h1>
-                    </div>
-
-                    <div className="volunteer_cards">
-                        <div className="volunteer_one_card">
-                            <Flip_card
-                                front_title="NUMBER OF VOLUNTEERS"
-                                src="../../images/volunteer/volunteer.svg"
-                                front_num="683,242"
-                                front_text=""
-                                back_details="By 2021, Clean Up Australia had an estimated number of 683,242 volunteers involved with 110,114 volunteers from Victoria!"
-                            />
+                <div className="volunteer_back_white">
+                    <div className="volunteer_blue">
+                        <div className="volunteer_tage">
+                            <h1>KEY FIGURES</h1>
                         </div>
 
+                        <div className="volunteer_cards">
+                            <div className="volunteer_one_card">
+                                <Flip_card_blue
+                                    front_title="NUMBER OF VOLUNTEERS"
+                                    src="../../images/volunteer/volunteer.svg"
+                                    front_num="683,242"
+                                    front_text=""
+                                    back_details="By 2021, Clean Up Australia had an estimated number of 683,242 volunteers involved with 110,114 volunteers from Victoria!"
+                                />
+                            </div>
 
-                        <div className="volunteer_one_card">
-                            <Flip_card_blue
-                                front_title="TOTAL LITTER IN AUSTRALIA"
-                                src="../../images/volunteer/bottle.svg"
-                                front_num="365,922"
-                                front_text="items"
-                                back_details="Volunteers from Clean Up Australia picked up a staggering number of 365,922 items from 1274 surveyed locations in 2020!"
-                            />
+
+                            <div className="volunteer_one_card">
+                                <Flip_card_blue
+                                    front_title="TOTAL LITTER IN AUSTRALIA"
+                                    src="../../images/volunteer/bottle.svg"
+                                    front_num="365,922"
+                                    front_text="items"
+                                    back_details="Volunteers from Clean Up Australia picked up a staggering number of 365,922 items from 1274 surveyed locations in 2020!"
+                                />
+                            </div>
+
+
+                            <div className="volunteer_one_card">
+                                <Flip_card_blue
+                                    front_title="TOTAL LITTER IN VICTORIA"
+                                    src="../../images/volunteer/bottle.svg"
+                                    front_num="59,159"
+                                    front_text="items"
+                                    back_details="In 2020, volunteers from Clean Up Victoria picked 59,159 items from 239 surveyed locations in Victoria which would require 3212 utility vans to carry!"
+                                />
+                            </div>
+
                         </div>
-
-
-                        <div className="volunteer_one_card">
-                            <Flip_card_pink
-                                front_title="TOTAL LITTER IN VICTORIA"
-                                src="../../images/volunteer/bottle.svg"
-                                front_num="59,159"
-                                front_text="items"
-                                back_details="In 2020, volunteers from Clean Up Victoria picked 59,159 items from 239 surveyed locations in Victoria which would require 3212 utility vans to carry!"
-                            />
-                        </div>
-
                     </div>
                 </div>
                 <div className="clear_float"></div>
@@ -128,8 +134,7 @@ export class cleanupAu extends Component {
                             {/* previous 1 */}
                             <div className="previous_trans s1">
                                 <div className="previous_left">
-                                    <label for="r2" class="bar">
-                                    </label>
+                                    <label for="r2" class="bar"><img src="../../images/gallery_button_left.png" className="previous_trans_img"></img></label>
                                 </div>
                                 <div className="previous_container">
                                     <Transition_cards
@@ -157,27 +162,33 @@ export class cleanupAu extends Component {
                                     <label for="r1" class="bar"><img src="../../images/gallery_button_left.png" className="previous_trans_img"></img></label>
                                 </div>
                                 <div className="previous_container">
-                                    <Transition title="Tasmania" 
-                                    text="In August 2020, the Tasman Council held a clean-up initiative called Clean Up Our Patch for a month to reduce litter from the Tasman and Forestier Peninsula. Around 160 volunteers came together at 14 locations and collected 88 bags of rubbish!" 
-                                    src="../../images/volunteer/Tasman_Peninsula.jpg" />
+                                    <Transition title="Tasmania"
+                                        text="In August 2020, the Tasman Council held a clean-up initiative called Clean Up Our Patch for a month to reduce litter from the Tasman and Forestier Peninsula. Around 160 volunteers came together at 14 locations and collected 88 bags of rubbish!"
+                                        src="../../images/volunteer/Tasman_Peninsula.jpg" 
+                                        img_name="Tasman Peninsula"/>
                                 </div>
                                 <div className="previous_right">
-
+                                    <label for="r1" class="bar">
+                                        <img src="../../images/gallery_button_right.png" className="previous_trans_img"></img>
+                                    </label>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                </div>
 
-                {/* Junp button */}
-                <div className="volunteer_button_div">
-                    <div className="volunteer_button">
-                        <font className="">
-                            <a target="blank" href="https://www.cleanup.org.au/">Go to website</a>
-                        </font>
+                    {/* Junp button */}
+                    <div className="volunteer_button_div">
+                        <div className="volunteer_button">
+                            <p className="">
+                                Click here to go to source :&ensp;
+                          <a target="blank" href="https://www.cleanup.org.au/">https://www.cleanup.org.au/</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         )
     }

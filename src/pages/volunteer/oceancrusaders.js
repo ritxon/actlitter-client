@@ -10,36 +10,40 @@ export class oceancrusaders extends Component {
         return (
             <div className="volunteer">
                 {/* place */}
-                <div className="vol_impact_fake_navigation">
-                    <p>
-                        <a href="/">&emsp; Home &ensp;</a>/ &ensp;
+                <div className="volunteer_back_white">
+                    <div className="vol_impact_fake_navigation">
+                        <p>
+                            <a href="/">&emsp; Home &ensp;</a>/ &ensp;
                         <a classname="bold" href="/volunteer">
-                            Volunteer Organizations &ensp;
+                                Volunteer Organizations &ensp;
                         </a>
                         / &ensp; OCEAN CRUSADERS
                     </p>
+                    </div>
                 </div>
                 <div className="volunteer_bluex">
 
 
                     {/* Details */}
-                    <div className="volunteer_part">
-                        <div className="volunteer_left">
-                            <div>
-                                <img
-                                    src="../../images/volunteer/oceancrusaders_logo.png"
-                                    className="volunteer_logo"
-                                />
+                    <div className="volunteer_back_white">
+                        <div className="volunteer_part">
+                            <div className="volunteer_left">
+                                <div>
+                                    <img
+                                        src="../../images/volunteer/oceancrusaders_logo.png"
+                                        className="volunteer_logo"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="volunteer_right">
-                            <div className="volunteer_title">
-                                <h1>OCEAN CRUSADERS</h1>
-                            </div>
-                            <p className="organization_details">
-                            Ocean Crusaders is a charity organisation focused on cleaning Australian waterways on a large scale to tackle the issue of litter damage on wildlife. The organisation drives the Paddle Against Plastic Campaign that involves paddlers who aim to keep waterways, beaches and ocean safe and clean. Moreover, Ocean Crusaders works together with government organisations and corporations to reduce the amount of litter from Australian waters.
+                            <div className="volunteer_right">
+                                <div className="volunteer_title">
+                                    <h1>OCEAN CRUSADERS</h1>
+                                </div>
+                                <p className="organization_details">
+                                    Ocean Crusaders is a charity organisation focused on cleaning Australian waterways on a large scale to tackle the issue of litter damage on wildlife. The organisation drives the Paddle Against Plastic Campaign that involves paddlers who aim to keep waterways, beaches and ocean safe and clean. Moreover, Ocean Crusaders works together with government organisations and corporations to reduce the amount of litter from Australian waters.
 
                         </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -52,62 +56,64 @@ export class oceancrusaders extends Component {
                     </div>
                     <div className="volunteer_key_facts">
                         <p className="organization_details">
-                        <img src="../../images/volunteer/fun-fact.png"
-                                    className="volunteer_fun_fact"></img>  Ocean Crusaders started the campaign Paddle Against Plastic on 29th September when paddlers Ian Thomson, Luke and Tris Mairs and Kyle Rose paddled a distance of 120 km to raise awareness about plastic impact on oceans.
+                            <img src="../../images/volunteer/fun-fact.png"
+                                className="volunteer_fun_fact"></img>  Ocean Crusaders started the campaign Paddle Against Plastic on 29th September when paddlers Ian Thomson, Luke and Tris Mairs and Kyle Rose paddled a distance of 120 km to raise awareness about plastic impact on oceans.
                     </p>
                         <p className="organization_details">
-                        <img src="../../images/volunteer/fun-fact.png"
-                                    className="volunteer_fun_fact"></img>  In September 2017, 72 volunteers picked 660 kgs of litter from Green Island, Queensland in one morning!
+                            <img src="../../images/volunteer/fun-fact.png"
+                                className="volunteer_fun_fact"></img>  In September 2017, 72 volunteers picked 660 kgs of litter from Green Island, Queensland in one morning!
 
                     </p>
                         <p className="organization_details">
-                        <img src="../../images/volunteer/fun-fact.png"
-                                    className="volunteer_fun_fact"></img>  Ocean Crusaders have conducted clean-up activities all over Australia from Darwin, Northern Territory to Hobart, Tasmania!
+                            <img src="../../images/volunteer/fun-fact.png"
+                                className="volunteer_fun_fact"></img>  Ocean Crusaders have conducted clean-up activities all over Australia from Darwin, Northern Territory to Hobart, Tasmania!
 
                     </p>
-        
+
                     </div>
 
                 </div>
                 {/* Key Figures */}
-                <div className="volunteer_blue">
-                    <div className="volunteer_tage">
-                        <h1>KEY FIGURES</h1>
-                    </div>
-
-                    <div className="volunteer_cards">
-                        <div className="volunteer_one_card">
-                            <Flip_card
-                                front_title="VOLUNTEERS FOR MOONEE PONDS"
-                                src="../../images/volunteer/volunteer.svg"
-                                front_num="122"
-                                front_text="people"
-                                back_details="122 volunteers participated in the Moonee Ponds Creek clean up organised by Ocean Crusaders. Half of the volunteers collected litter from the river in bags and the other half stayed on the riverbank to collect the bags once they were full."
-                            />
+                <div className="volunteer_back_white">
+                    <div className="volunteer_blue">
+                        <div className="volunteer_tage">
+                            <h1>KEY FIGURES</h1>
                         </div>
 
+                        <div className="volunteer_cards">
+                            <div className="volunteer_one_card">
+                                <Flip_card_blue
+                                    front_title="VOLUNTEERS FOR MOONEE PONDS"
+                                    src="../../images/volunteer/volunteer.svg"
+                                    front_num="122"
+                                    front_text="people"
+                                    back_details="122 volunteers participated in the Moonee Ponds Creek clean up organised by Ocean Crusaders. Half of the volunteers collected litter from the river in bags and the other half stayed on the riverbank to collect the bags once they were full."
+                                />
+                            </div>
 
-                        <div className="volunteer_one_card">
-                            <Flip_card_blue
-                                front_title="LITTER COLLECTED IN MOONEE POND"
-                                src="../../images/volunteer/litter.svg"
-                                front_num="1157.45"
-                                front_text="kg"
-                                back_details="The amount of garbage collected in the Moonee Ponds Creek clean-up weighed 1157.45 kg!"
-                            />
+
+                            <div className="volunteer_one_card">
+                                <Flip_card_blue
+                                    front_title="LITTER COLLECTED IN MOONEE POND"
+                                    src="../../images/volunteer/litter.svg"
+                                    front_num="1157.45"
+                                    front_text="kg"
+                                    back_details="The amount of garbage collected in the Moonee Ponds Creek clean-up weighed 1157.45 kg!"
+                                />
+                            </div>
+
+
+                            <div className="volunteer_one_card">
+                                <Flip_card_blue
+                                    front_title="NUMBER OF BAGS"
+                                    src="../../images/volunteer/garbage.svg"
+                                    front_num="179"
+                                    front_text="bags"
+                                    back_details="For the Moonee Ponds Creek clean-up, the large amount of litter took 179 number of bags for collection."
+                                />
+                            </div>
+
                         </div>
-
-
-                        <div className="volunteer_one_card">
-                            <Flip_card_pink
-                                front_title="NUMBER OF BAGS"
-                                src="../../images/volunteer/garbage.svg"
-                                front_num="179"
-                                front_text="bags"
-                                back_details="For the Moonee Ponds Creek clean-up, the large amount of litter took 179 number of bags for collection."
-                            />
-                        </div>
-
                     </div>
                 </div>
                 <div className="clear_float"></div>
@@ -123,8 +129,7 @@ export class oceancrusaders extends Component {
                             {/* previous 1 */}
                             <div className="previous_trans s1">
                                 <div className="previous_left">
-                                    <label for="r2" class="bar">
-                                    </label>
+                                    <label for="r2" class="bar"><img src="../../images/gallery_button_left.png" className="previous_trans_img"></img></label>
                                 </div>
                                 <div className="previous_container">
                                     <Transition_cards
@@ -152,27 +157,34 @@ export class oceancrusaders extends Component {
                                     <label for="r1" class="bar"><img src="../../images/gallery_button_left.png" className="previous_trans_img"></img></label>
                                 </div>
                                 <div className="previous_container">
-                                    <Transition title="Coolum Beach, Queensland" 
-                                    text="In June 2017, 18 volunteers from Paddle Against Plastic campaign cleaned up Upper Stumers Creek in Coolum. They collected 107 kg of litter items comprising plastic bags, plastic bottles, aluminium cans and polystyrene items." 
-                                    src="../../images/volunteer/Coolum_Beach.jpg" />
+                                    <Transition title="Coolum Beach, Queensland"
+                                        text="In June 2017, 18 volunteers from Paddle Against Plastic campaign cleaned up Upper Stumers Creek in Coolum. They collected 107 kg of litter items comprising plastic bags, plastic bottles, aluminium cans and polystyrene items."
+                                        src="../../images/volunteer/Coolum_Beach.jpg" 
+                                        img_name="Coolum Beach"/>
                                 </div>
                                 <div className="previous_right">
-
+                                    <label for="r1" class="bar">
+                                        <img src="../../images/gallery_button_right.png" className="previous_trans_img"></img>
+                                    </label>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                </div>
 
-                {/* Junp button */}
-                <div className="volunteer_button_div">
-                    <div className="volunteer_button">
-                        <font className="">
-                            <a target="blank" href="https://oceancrusaders.org/">Go to website</a>
-                        </font>
+
+                    {/* Junp button */}
+                    <div className="volunteer_button_div">
+                        <div className="volunteer_button">
+                            <p className="">
+                                Click here to go to source :&ensp;
+                                  <a target="blank" href="https://oceancrusaders.org/">https://oceancrusaders.org/</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         )
     }

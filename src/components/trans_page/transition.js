@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "./transition.css"
 
 export class transition extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
     render() {
@@ -20,11 +20,15 @@ export class transition extends Component {
                         </font>
                     </div>
                     <div className="previous_right_img_div">
-                            <img
-                                src={this.props.src}
-                                alt="Image"
-                                className="previous_right_img"
-                            />
+                        <img
+                            src={this.props.src}
+                            alt="Image"
+                            className="previous_right_img"
+                        />
+                        <p>
+                            {this.props.img_name}
+                        </p>
+
                     </div>
                 </div>
             </div>

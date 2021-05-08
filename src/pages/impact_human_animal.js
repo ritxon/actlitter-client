@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "./impact.css";
+import ".././App.css";
 
 export class impact_human_animal extends Component {
   render() {
     return (
-      <div>
+      <body>
         {/* current place */}
         <div className="impact_fake_navigation">
           <p>
@@ -16,29 +17,34 @@ export class impact_human_animal extends Component {
 
         {/* left top menu */}
         <div>
-        <div className="impact_menu">
-          <p><a href="#human_title">Litter Impact on Human & Animals</a></p>
-          <hr></hr>
-          <p><a href="#human_id">Litter Impact on human</a></p>
-          <hr></hr>
-          <p><a href="#animal_id">Impact on animals</a></p>
-          <hr></hr>
-        </div>
+          <div className="impact_menu">
+            <p><a href="#human_title">Litter Impact on Human & Animals</a></p>
+            <hr></hr>
+            <p><a href="#human_id">Litter Impact on human</a></p>
+            <hr></hr>
+            <p><a href="#animal_id">Impact on animals</a></p>
+            <hr></hr>
+          </div>
 
-        {/* Article */}
-        <div className="impact_details">
+          {/* Article */}
+          <div className="impact_details">
 
-          <div id="human_title" className="impact_jump"></div>
-          <div className="impact_article_flex">
-              <div className="impact_article_container w">
-                <div  className="impact_article_title">
+            <div id="human_title" className="impact_jump"></div>
+            <div className="impact_article_flex">
+              <div className="impact_article_container contain1140">
+                <div className="impact_article_title">
                   <h1> Litter Impact on Human and Animals</h1>
                 </div>
+
+                <div className="impact_video_div">
+                  <iframe className="impact_video" src="https://www.youtube.com/embed/OJEQaVT45XA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
                 {/* body */}
                 <div className="clear_float"></div>
                 <div className="impact_article_body">
 
-                <div id="human_id" className="impact_jump"></div>
+                  <div id="human_id" className="impact_jump"></div>
                   <h4>Litter Impact on human</h4>
                   <div className="impact_article_right">
                     <div className="impact_img_div">
@@ -75,7 +81,7 @@ export class impact_human_animal extends Component {
                 <div className="clear_float"></div>
                 <div className="impact_article_body">
 
-                <div id="animal_id" className="impact_jump"></div>
+                  <div id="animal_id" className="impact_jump"></div>
                   <h4> Impact on animals</h4>
                   <div className="impact_article_right">
                     <div className="impact_img_div">
@@ -131,14 +137,14 @@ export class impact_human_animal extends Component {
                     to their body parts. Some entanglement cases of seals, stingrays
                     and leatherback turtles have been recorded in Victoria.
                   </p>
-              </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="clear_float"></div>
-      </div>
+      </body>
     );
   }
 }

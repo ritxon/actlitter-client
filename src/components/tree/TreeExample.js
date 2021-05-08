@@ -12,8 +12,7 @@ const TreeExample = () => (
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '800px',
-            background: '#fff',
+            height: '1200px',
           }}>
           <Tree
             data={data}

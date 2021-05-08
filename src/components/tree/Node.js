@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
 function Node({ node, onClick }) {
-  const width = 40
+  const width = 100
   const height = 20
   return (
     <Fragment>
@@ -25,7 +25,7 @@ function Node({ node, onClick }) {
       )}
       <text
         dy={'.33em'}
-        fontSize={9}
+        fontSize={12}
         fontFamily="Arial"
         textAnchor={'middle'}
         style={{ pointerEvents: 'none' }}
