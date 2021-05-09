@@ -58,10 +58,10 @@ class Navbar extends Component {
                   <a href="/impact">Litter Info Summary</a>
                 </li> */}
                 <li>
-                  <a href="/impact_human_animal">Impact on Humans & Animals</a>
+                  <a href="/impact_enviorment">Impact on Environment</a>
                 </li>
                 <li>
-                  <a href="/impact_enviorment">Impact on Environment</a>
+                  <a href="/impact_human_animal">Impact on Humans and Animals</a>
                 </li>
                 <li>
                   <a href="/impact_classification">Litter Classification</a>
@@ -142,24 +142,24 @@ class Navbar extends Component {
                   <p class="nav_title"><a className="nav_title" href="/">HOME</a></p>
                 </div>
                 <label for="rr2" class="bar">
-                <div class="nav_box-item_trans">
+                  <div class="nav_box-item_trans">
 
                     <p class="nav_title">LITTER INFO</p>
                     <img
                       src="../../images/gallery_button_right.png"
                       className="nav_main_trans_img"
                     ></img>
-                </div>
-                <div className="clear_float"></div>
+                  </div>
+                  <div className="clear_float"></div>
                 </label>
                 <label for="rr3" class="bar">
-                <div class="nav_box-item_trans ">
+                  <div class="nav_box-item_trans ">
                     <p class="nav_title">VOLUNTEER</p>
                     <img
                       src="../../images/gallery_button_right.png"
                       className="nav_main_trans_img"
                     ></img>
-                </div>
+                  </div>
                 </label>
                 <div class="nav_box-item">
                   <p class="nav_title"><a className="nav_title" href="/quiz">QUIZ</a></p>
@@ -172,12 +172,12 @@ class Navbar extends Component {
               <div className="nav_box_item_2 ss2">
                 <label for="rr1" class="bar">
                   <div className="nav_opyions_choose">
-                  <img
+                    <img
                       src="../../images/gallery_button_left.png"
                       className="nav_trans_img"
                     ></img>
                     <p className="nav_opyion_text">
-                    Main Menu
+                      Main Menu
                                 </p>
                   </div>
                   <ul class="nav_box-item-content">
@@ -187,11 +187,11 @@ class Navbar extends Component {
                     </li>
                     <li>
                       <p className="nav_mobile_link">
-                        <a className="nav_mobile_link" href="/impact_human_animal">&emsp;Impact on Humans & Animals</a></p>
+                        <a className="nav_mobile_link" href="/impact_enviorment">&emsp;Impact on Environment</a></p>
                     </li>
                     <li>
                       <p className="nav_mobile_link">
-                        <a className="nav_mobile_link" href="/impact_enviorment">&emsp;Impact on Environment</a></p>
+                        <a className="nav_mobile_link" href="/impact_human_animal">&emsp;Impact on Humans and Animals</a></p>
                     </li>
                     <li>
                       <p className="nav_mobile_link">
@@ -204,12 +204,12 @@ class Navbar extends Component {
               <div className="nav_box_item_3 ss3">
                 <label for="rr1" class="bar">
                   <div className="nav_opyions_choose">
-                  <img
+                    <img
                       src="../../images/gallery_button_left.png"
                       className="nav_trans_img"
                     ></img>
                     <p className="nav_opyion_text">
-                    Main Menu
+                      Main Menu
                                 </p>
                   </div>
                 </label>
