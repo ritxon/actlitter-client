@@ -42,7 +42,7 @@ export class impact_enviorment extends Component {
             </div>
             <div className="clear_float"></div>
             <div className="impact_video_div">
-            <iframe  className="impact_video" src="https://www.youtube.com/embed/OJEQaVT45XA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video className="impact_video" src="../../videos/impact-on-environment-demo.mp4" type="video/mp4"  controls="controls" loop="-1" />
             </div>
 
             {/* <div className="impact_article_right">

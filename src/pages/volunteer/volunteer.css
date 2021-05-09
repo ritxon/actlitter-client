@@ -161,8 +161,8 @@
 
 .organization_details {
   /* font-family: "Times New Roman"; */
-  font-size: 19px;
-  line-height: 23px;
+  font-size: 120%;
+  line-height: 1.4;
 
 }
 
@@ -224,16 +224,16 @@
   text-align: center;
   margin: 15px;
   margin-top: -20px;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 .volunteer_all_summary_div {
   padding: 30px;
   text-align: left;
-  line-height: 36px;
+  line-height: 1.4;
 }
 .volunteer_all_summary {
   /* font-family:"Times New Roman", Times, serif; */
-  font-size: 24px;
+  font-size: 150%;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .volunteer_au_vic_opyions {
@@ -295,11 +295,10 @@
   text-align: center;
   margin: 15px;
   margin-top: -20px;
-  font-size: 20px;
 }
-.volunteer_organizations_title h1 {
+/* .volunteer_organizations_title h1 {
   font-size: 26px;
-}
+} */
 .volunteer_all_summary_div {
   padding: 5px;
   text-align: left;

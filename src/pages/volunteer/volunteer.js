@@ -39,16 +39,16 @@ export class volunteer extends Component {
                                 <div className="volunteer_au_vic_opyions">
                                     <label for="r1" class="bar">
                                         <div className="volunteer_au_opyions_choose">
-                                            <font className="volunteer_opyion_text">
+                                            <p className="volunteer_opyion_text">
                                                 AU
-                                </font>
+                                </p>
                                         </div>
                                     </label>
                                     <label for="r2" class="bar">
                                         <div className="volunteer_vic_opyions">
-                                            <font className="volunteer_opyion_text">
+                                            <p className="volunteer_opyion_text">
                                                 VIC
-                                </font>
+                                </p>
                                         </div>
                                     </label>
                                 </div>
@@ -91,16 +91,16 @@ export class volunteer extends Component {
                                 <div className="volunteer_au_vic_opyions">
                                     <label for="r1" class="bar">
                                         <div className="volunteer_au_opyions">
-                                            <font className="volunteer_opyion_text">
+                                            <p className="volunteer_opyion_text">
                                                 AU
-                                </font>
+                                </p>
                                         </div>
                                     </label>
                                     <label for="r2" class="bar">
                                         <div className="volunteer_vic_opyions_choose">
-                                            <font className="volunteer_opyion_text">
+                                            <p className="volunteer_opyion_text">
                                                 VIC
-                                </font>
+                                </p>
                                         </div>
                                     </label>
                                 </div>
