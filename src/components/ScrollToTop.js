@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom'
 export class ScrollToTop extends Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (this.props.location.pathname!==prevProps.location.pathname){
-          window.scrollTo(0,0)
+          window.scrollTo({ top: 0, behavior: 'instant' })
         }
       }
      

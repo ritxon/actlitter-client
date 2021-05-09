@@ -25,13 +25,17 @@ export class impact_classification extends Component {
         <div className="impact_menu">
           <p><a href="#classification_title">Litter Classification</a></p>
           <hr></hr>
-          <p><a href="#classification1">1. Affect local tourism.</a></p>
+          <p><a href="#classification_summary">What is garbage classification?</a></p>
           <hr></hr>
-          <p><a href="#classification2">2. Cause a fire.</a></p>
+          <p><a href="#classification1">Reduce pollution</a></p>
           <hr></hr>
-          <p><a href="#classification3">3. Soil pollution.</a></p>
+          <p><a href="#classification2">Reduce landfill</a></p>
           <hr></hr>
-          <p><a href="#classification4">4. Water pollution.</a></p>
+          <p><a href="#classification3">Utilise renewable waste</a></p>
+          <hr></hr>
+          <p><a href="#classification4">Develop effective disposal habits</a></p>
+          <hr></hr>
+          <p><a href="#tree">Recycling tree</a></p>
           <hr></hr>
         </div>
 
@@ -47,9 +51,9 @@ export class impact_classification extends Component {
                 <iframe className="impact_video" src="https://www.youtube.com/embed/6jQ7y_qQYUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
 
-
+              <div id="classification_summary" className="impact_jump"></div>
               <div className="impact_article_body">
-                <h4>What is garbage sorting?</h4>
+                <h4>What is garbage classification?</h4>
                 <div className="impact_article_right">
                   <div className="impact_img_div">
                     <img
@@ -59,16 +63,7 @@ export class impact_classification extends Component {
                   </div>
                 </div>
                 <p className="impact_article_left">
-                  Garbage classification is to put garbage into different
-                  categories, and make it into resources through sorting,
-                  transportation and recycling. It is roughly classified according
-                  to the composition and amount of waste generated, combined with
-                  the resource utilization and disposal methods of local waste.
-                  For example, Germany is generally divided into paper, glass,
-                  metal, plastic, etc.; Australia is generally divided into
-                  compostable garbage, recyclable garbage, and non-recyclable
-                  garbage; Japan is generally divided into combustible garbage and
-                  non-combustible garbage.
+                  Garbage classification is a method to organise garbage into different categories by sorting and recycling. It can help to stop the action of littering before it happens by improving garbage disposal habits of people. Classification is done using different resource utilisation and disposal methods according to the amount and composition of waste generated. In Australia, garbage is classified into compostable, recyclable, and non-recyclable garbage.
               </p>
 
 
@@ -77,7 +72,7 @@ export class impact_classification extends Component {
               <div className="impact_article_body">
                 <h4>The benefits and significance of garbage sorting:</h4>
                 <div id="classification1" className="impact_jump"></div>
-                <h4>1. Reduce environmental pollution</h4>
+                <h4>Reduce pollution</h4>
                 <div className="impact_article_right">
                   <div className="impact_img_div">
                     <img
@@ -87,15 +82,7 @@ export class impact_classification extends Component {
                   </div>
                 </div>
                 <p className="impact_article_left">
-                  Modern garbage contains chemical substances, some of which can
-                  cause people's morbidity to increase. If the garbage is disposed
-                  of through landfill or stacking, even if the garbage is buried
-                  far away from the living place and the corresponding isolation
-                  technology is adopted, it is difficult to prevent the
-                  penetration of harmful substances, which will enter the entire
-                  ecosystem along with the circulation of the earth. , Pollution
-                  of water sources and land, through plants or animals, will
-                  eventually affect people's health.
+                  Some litter can contain toxic substances that can cause harm to health of people. Even if this litter gets disposed of by stacking or buried in landfills away from residential places using modern technology, it is difficult to prevent it from releasing harmful chemicals to enter the ecosystem. This can cause soil and water pollution and affect health of people. Hence, garbage classification can enable to sort this kind of garbage so that proper disposal methods are used for them.
               </p>
 
 
@@ -103,7 +90,7 @@ export class impact_classification extends Component {
               <div className="clear_float"></div>
               <div className="impact_article_body">
                 <div id="classification2" className="impact_jump"></div>
-                <h4>2. Save land resources</h4>
+                <h4>Reduced use of landfill</h4>
                 <div className="impact_article_right">
                   <div className="impact_img_div">
                     <img
@@ -113,22 +100,14 @@ export class impact_classification extends Component {
                   </div>
                 </div>
                 <p className="impact_article_left">
-                  Garbage disposal methods such as landfill and garbage stacking
-                  occupy land resources, and landfills are all non-repairable
-                  places, that is, landfills cannot be re-used as living quarters.
-                  In addition, some substances in domestic garbage are not easily
-                  degraded, which makes the land seriously eroded. Sort garbage,
-                  separate recyclable and non-degradable materials, or set up a
-                  special recycling station for non-degradable materials. It will
-                  greatly reduce the pollution of garbage to the environment and
-                  the cost of garbage disposal.
+                  Garbage disposal methods like landfill and garbage stacking occupy land resources. Moreover, garbage from landfills can get blown by wind and end up as litter on beaches or into water bodies. In addition, some substances from domestic garbage cannot be easily degraded that cause the land to get seriously eroded. Therefore, sorting garbage, separating degradable and non-degradable materials, and setting up a special recycling station for non-degradable materials can greatly reduce the pollution of the environment and cost of garbage disposal.
               </p>
 
               </div>
               <div className="clear_float"></div>
               <div className="impact_article_body">
                 <div id="classification3" className="impact_jump"></div>
-                <h4>3. Utilization of renewable resources</h4>
+                <h4>Utilise renewable waste</h4>
                 <div className="impact_article_right">
                   <div className="impact_img_div">
                     <img
@@ -138,15 +117,7 @@ export class impact_classification extends Component {
                   </div>
                 </div>
                 <p className="impact_article_left">
-                  The generation of rubbish is due to the fact that people do not
-                  make good use of resources and discard the resources they do not
-                  use as rubbish. This way of discarding resources is impossible
-                  to estimate the loss of the entire ecosystem. Before garbage
-                  disposal, through garbage sorting and recycling, garbage can be
-                  turned into treasure. For example, recycling paper can protect
-                  forests and reduce the waste of forest resources; recycling
-                  bio-waste such as peels and vegetables can be used as green
-                  fertilizers to make the land more fertile .
+                  The generation of litter is due to the fact that people discard resources they deem are unnecessary. If people dispose garbage efficiently by garbage sorting and recycling methods, it can be turned into treasure. For example, recycling of paper can reduce cutting of trees and protect forests. Recycling bio-waste like fruit and vegetable peels can be used as green fertilizers to make land more fertile.
               </p>
 
 
@@ -155,7 +126,7 @@ export class impact_classification extends Component {
               <div className="clear_float"></div>
               <div className="impact_article_body">
                 <div id="classification4" className="impact_jump"></div>
-                <h4>4. Improve people's values</h4>
+                <h4>Develop effective disposal habits</h4>
                 <div className="impact_article_right">
                   <div className="impact_img_div">
                     <img
@@ -165,177 +136,176 @@ export class impact_classification extends Component {
                   </div>
                 </div>
                 <p className="impact_article_left">
-                  Garbage classification is the best solution and the best way to
-                  deal with garbage pollution. Garbage classification has become
-                  an inevitable path for the development of a country. Garbage
-                  classification can enable people to learn to save resources, use
-                  resources, develop good living habits, and improve personal
-                  quality. Although Melbourne’s houses are equipped with various
-                  types of trash bins, many people still cannot distinguish the
-                  types of trash, which also brings difficulties to trash disposal
+                  Garbage classification can encourage people to save and reuse resources, develop effective garbage disposal habits and improve personal life. Places in Victoria are equipped with various types of garbage bins. However, many people find it hard to distinguish types of garbage causing irritation during garbage disposal and potentially leading to littering. By inculcating good disposal habits, people can dispose of garbage efficiently.
               </p>
 
-                {/* <table className="impact_table">
-                <tr className="impact_tr">
-                  <th className="impact_th">Recycling</th>
-                  <th className="impact_th">Material type</th>
-                  <th className="impact_th">Classification/ composition</th>
-                </tr>
+                <table className="impact_table">
+                  <tr className="impact_tr">
+                    <th className="impact_th">Recycling</th>
+                    <th className="impact_th">Material type</th>
+                    <th className="impact_th">Classification/ composition</th>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Construction and demolition</td>
-                  <td className="impact_td">Asphalt</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Brick rubble/ whole</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Concrete</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Soil/sand</td>
-                </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Construction and demolition</td>
+                    <td className="impact_td">Asphalt</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Brick rubble/ whole</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Concrete</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Soil/sand</td>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Glass</td>
-                  <td className="impact_td">Container glass</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">CRT</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Mixed glass waste</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Sheet/ laminated glass</td>
-                </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Glass</td>
+                    <td className="impact_td">Container glass</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">CRT</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Mixed glass waste</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Sheet/ laminated glass</td>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Metals</td>
-                  <td className="impact_td">Roofing iron</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Incl cans</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Batteries</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Steel cans</td>
-                </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Metals</td>
+                    <td className="impact_td">Roofing iron</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Incl cans</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Batteries</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Steel cans</td>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Organics</td>
-                  <td className="impact_td">Animal bedding/ motalities</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Barks</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Food waste</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Garden organics</td>
-                </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Organics</td>
+                    <td className="impact_td">Animal bedding/ motalities</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Barks</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Food waste</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Garden organics</td>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Paper/cardboard</td>
-                  <td className="impact_td">Carboard/ packaging</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Newsprint/ magazines</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Liquid paper board</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Printing and writing paper</td>
-                </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Paper/cardboard</td>
+                    <td className="impact_td">Carboard/ packaging</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Newsprint/ magazines</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Liquid paper board</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Printing and writing paper</td>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Rubber</td>
-                  <td className="impact_td">Crumb rubber</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Rubber granules</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Tread ends</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Uncured rubber scrap</td>
-                </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Rubber</td>
+                    <td className="impact_td">Crumb rubber</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Rubber granules</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Tread ends</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Uncured rubber scrap</td>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Textiles</td>
-                  <td className="impact_td">Carpet</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Clothing</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Industrial textiles</td>
-                </tr>
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Mixed textile waste</td>
-                </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Textiles</td>
+                    <td className="impact_td">Carpet</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Clothing</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Industrial textiles</td>
+                  </tr>
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Mixed textile waste</td>
+                  </tr>
 
-                <tr className="impact_tr">
-                  <td className="impact_td"></td>
-                  <td className="impact_td">Plastics</td>
-                  <td className="impact_td">All plastics</td>
-                </tr>
-              </table> */}
+                  <tr className="impact_tr">
+                    <td className="impact_td"></td>
+                    <td className="impact_td">Plastics</td>
+                    <td className="impact_td">All plastics</td>
+                  </tr>
+                </table>
+                <div className="clear_float"></div>
+                <div id="tree" className="impact_jump"></div>
                 <div className="impact_tree">
+                <h4>Recycling tree</h4>
+                <p className="">
+                  Click the button, then the tree will show you the classification information.
+              </p>
                   <TreeExample />
                 </div>
               </div>

@@ -92,7 +92,18 @@
   text-align: center;
   padding-bottom: 40px;
 }
-
+@media only screen and (min-width: 1300px) {
+  .impact_video {
+    width:1030px;
+     height:580px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .impact_video {
+    width:840px;
+     height:473px;
+  }
+}
 @media only screen and (min-width: 900px) {
   .impact_article_title {
     margin-top: 0px;
@@ -104,21 +115,18 @@
   .impact_article_left {
     display: flex;
     width: 40%;
+    text-align:justify;
   }
   .impact_article_right {
     display: flex;
     float: right;
     width: 60%;
     padding-left: 40px;
-    margin-top: -10px;
+    margin-top: -35px;
   }
   .impact-head-figure {
     padding-left: 50px;
     height: 400px;
-  }
-  .impact_video {
-    width:840px;
-     height:473px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -135,27 +143,27 @@
     display: none;
   }
   .impact_video {
-    width:560px;
-     height:315px;
+    width:750px;
+     height:507px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .w {
-    background-color: #f5f5f5;
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .impact_img {
-    width: 100%;
-  }
-  .impact_links {
-    display: none;
-  }
+@media only screen and (max-width: 750px) {
   .impact_video {
-    width:230px;
-     height:156px;
+    width:625px;
+     height:423px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .impact_video {
+    width:500px;
+     height:338px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .impact_video {
+    width:250px;
+     height:169px;
   }
 }
 
@@ -175,8 +183,7 @@
 
 }
 .impact_tree {
-  width: 80%;
-  text-align: center;
+  text-align: left;
 }
 }
 @media screen and (max-width: 960px) {
@@ -192,7 +199,7 @@
   }
   .impact_tree {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 }
 .impact_jump {
@@ -211,4 +218,13 @@ body,html {
 }
 
 
-
+@media screen and (min-width: 640px) {
+  .impact_table {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .impact_tree {
+    display: none;
+  }
+}
