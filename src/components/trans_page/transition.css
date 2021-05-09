@@ -15,14 +15,14 @@
 }
 
 .previous_text_div {
-  text-align: left;
+  text-align:justify;
   line-height: 36px;
   width: 30%;
   margin-left: 25px;
 }
 
 .previous_text {
-  text-align: left;
+  text-align:justify;
   /* font-family:"Times New Roman", Times, serif; */
   font-size: 125%;
   padding: 30px;
@@ -79,11 +79,11 @@
   }
 
   .previous_text_div {
-    text-align: left;
+    text-align:justify;
   }
 
   .previous_text {
-    text-align: left;
+    text-align:justify;
     /* font-family:"Times New Roman", Times, serif; */
     font-size: 120%;
   }

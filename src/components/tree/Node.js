@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react'
 
 function Node({ node, onClick }) {
-  const width = 100
-  const height = 20
+  const width = 200
+  const height = 30
   return (
     <Fragment>
       {node.depth === 0 && (
-        <circle r={20} fill="url('#lg')" onClick={onClick} />
+        <circle r={40} fill="url('#lg')" onClick={onClick} />
       )}
       {node.depth !== 0 && (
         <rect
@@ -25,7 +25,7 @@ function Node({ node, onClick }) {
       )}
       <text
         dy={'.33em'}
-        fontSize={12}
+        fontSize={16}
         fontFamily="Arial"
         textAnchor={'middle'}
         style={{ pointerEvents: 'none' }}
