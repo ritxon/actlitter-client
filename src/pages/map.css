@@ -26,7 +26,7 @@ h4 {
   display: flex;
   flex-direction: row;
   height: 250px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .map-left {
   width: 60%;
@@ -37,19 +37,20 @@ h4 {
 }
 .map-right {
   width: 40%;
-  height: 100%;
+  height: 250px;
   background-image: url("../assets/impact_classification.jpg");
   background-size: cover;
+
   background-repeat: no-repeat;
 }
 .map-division {
-  border-top: gray 1px solid;
-  border-bottom: gray 1px solid;
+  border-top: rbg(255, 255, 255) 1px solid;
+  border-bottom: rbg(255, 255, 255) 1px solid;
   height: 3px;
 }
 /* search area */
 .map-search {
-  border-bottom: gray 1px solid;
+  border-bottom: rbg(255, 255, 255) 1px solid;
   display: flex;
 }
 .search {
