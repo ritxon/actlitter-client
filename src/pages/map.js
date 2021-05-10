@@ -303,7 +303,7 @@ export default function Map() {
             <ul>
               <h4>Map Legend</h4>
               <li>
-                <img src="images/binb.png" alt="General Waste Bin"></img>
+                <img src="images/binB.png" alt="General Waste Bin"></img>
                 <p className="hashed-text">
                   You can throw everything in this type of bin.
                 </p>
@@ -312,7 +312,7 @@ export default function Map() {
                 </p>
               </li>
               <li>
-                <img src="images/cbinb.png" alt="Cigarette Bin"></img>
+                <img src="images/cbinB.png" alt="Cigarette Bin"></img>
                 <p className="hashed-text">
                   You can only throw cigarette buts in this type of bin.
                 </p>
@@ -321,7 +321,7 @@ export default function Map() {
                 </p>
               </li>
               <li>
-                <img src="images/greenbinb.png" alt="Recycling Bin"></img>
+                <img src="images/greenbinB.png" alt="Recycling Bin"></img>
                 <p className="hashed-text">
                   You can only throw recyclables into this trash can.{" "}
                 </p>
