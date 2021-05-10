@@ -9,7 +9,7 @@ export class impact extends Component {
 					<h1>Litter Information </h1>
 				</div>
 				<SectionItem
-					src="images/figure2.png"
+					src="images/figure2.jpg"
 					title="Impact on Enviroment"
 					text="Littering can have major influence on scenic beauty of the environment. It can contaminate soil and pollute water. Burning of litter can increase emission of harmful gases leading to air pollution."
 					path="/impact_enviorment"
@@ -18,7 +18,7 @@ export class impact extends Component {
           />
 
 				<SectionItem
-					src="images/figure2.png"
+					src="images/figure2.jpg"
 					title="Impact on Human and Animals"
 					text="Litter can have an adverse impact on health of people as well as animals.
           Inefficient litter disposal can create unhygienic living conditions, block drainage 

@@ -43,6 +43,15 @@ class Navbar extends Component {
               HOME
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/data"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              DATA
+            </Link>
+          </li>
           {/* litter info */}
           <li className="nav-item nav_laptop">
             <Link

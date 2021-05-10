@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
+import React, { useEffect } from "react";
 import Link from "react-router-dom/Link";
-
-import "../App.css";
 import HeroSection from "../components/HeroSection";
 import Cards from "../components/Cards";
+import CardCarousel from "../components/CardCarousel";
 import Button from "../components/utils/Button";
-import "./volunteer/volunteer.css";
-import Volunteer_organizations from "../components/volunteer_organizations/volunteer_organizations";
 import ScrollOut from "scroll-out";
+import Carousel from "react-elastic-carousel";
+
+import "./volunteer/volunteer.css";
+import "../App.css";
+import CarouselComp from "../components/CarouselComp";
 
 const Home = () => {
 	useEffect(() => {
@@ -36,17 +36,19 @@ const Home = () => {
 				<div className="contain1140">
 					<div className="title-section">Litter Information</div>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, iure dolor illo quisquam architecto
-						assumenda sequi exercitationem repellat repellendus officiis ducimus, quos alias amet nobis vero aliquam
-						laborum eum.
+						Find out below about how litter can cause an impact on the environment and damage health of people as well
+						as our Australian wildlife. Get information about how waste classification can improve waste disposal habits
+						and play a part in reducing litter.
 					</p>
 					<div className="cards-animation">
 						<Cards />
 					</div>
 				</div>
 			</div>
-			<div className="section-green">
-				<div className="contain1140">
+			<div className="section-full">
+				<CarouselComp></CarouselComp>
+
+				{/* <div className="contain1140">
 					<div className="left-desc">
 						<div className="title-section">Did you know that cigarettes butts are the most common kind of litter?</div>
 						<p>
@@ -63,7 +65,7 @@ const Home = () => {
 							<Button styleBtn="primary quiz-btn" text="Know More" />
 						</Link>
 					</div>
-				</div>
+				</div> */}
 			</div>
 			<div className="section-home">
 				<div className="contain1140">

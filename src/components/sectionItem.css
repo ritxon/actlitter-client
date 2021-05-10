@@ -52,12 +52,22 @@
 }
 
 .img-animals{
-	background-image: url("../assets/figure2.png");
+	background-image: url("../assets/figure2.jpg");
 	background-size: cover;
 }
 
 .img-classification{
 	background-image: url("../assets/figure3.jpg");
+	background-size: cover;
+}
+
+.figure4{
+	background-image: url("../assets/figure4.jpg");
+	background-size: cover;
+}
+
+.figure5{
+	background-image: url("../assets/figure5.jpg");
 	background-size: cover;
 }
 

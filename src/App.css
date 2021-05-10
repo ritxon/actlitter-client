@@ -54,10 +54,20 @@ body {
 	text-align: center;
 }
 
-.section-green {
-	height: 650px;
-	padding: 60px 20px 0 20px;
-	background-image: url("assets/cigarette.jpg");
+.section-full {
+	text-align: center;
+}
+
+.carousel1 {
+	background-image: url("assets/carousel1.jpg");
+	color: white;
+	background-size: cover;
+	background-position: 20% 60%;
+	text-align: center;
+}
+
+.carousel2 {
+	background-image: url("assets/carousel2.jpg");
 	color: white;
 	background-size: cover;
 	background-position: 20% 60%;
@@ -76,12 +86,18 @@ body {
 
 .title-section{
 	margin-bottom: 20px;
-    font-size: 55px;
+    font-size: 3.2rem;
     line-height: 55px;
 
 	opacity: 0;
 	transition: 400ms;
 	transform: translateY(50%);
+}
+
+.title-carousel{
+	margin-bottom: 20px;
+    font-size: 3.2rem;
+    line-height: 55px;
 }
 
 .title-section[data-scroll="in"]{
@@ -90,7 +106,7 @@ body {
 	transform: translateY(0%);
 }
 
-.vision-home, .section-home p{
+.vision-home, .section-home p, .section-full p{
 	font-size: 24px;
 }
 
@@ -121,6 +137,15 @@ body {
 	flex: 0 auto;
 }
 
+.contain1280-flex{
+	width: 100%;
+	max-width: 1280px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 0 auto;
+}
+
 .left-desc{
 	max-width: 700px;
 	text-align: left;
@@ -140,13 +165,13 @@ body {
 }
 
 
-.vision-home p, .section-home p, .section-green p{
+.vision-home p, .section-home p{
 	opacity: 0;
 	transition: 400ms;
 	transform: translateY(50%);
 }
 
-.vision-home p[data-scroll="in"], .section-home p[data-scroll="in"], .section-green p[data-scroll="in"]{
+.vision-home p[data-scroll="in"], .section-home p[data-scroll="in"]{
 	opacity: 1;
 	transition-delay: 400ms;
 	transform: translateY(0%);

@@ -19,6 +19,9 @@ import impact_human_animal from "./pages/impact_human_animal";
 import impact_classification from "./pages/impact_classification";
 import impact from "./pages/impact";
 import map from "./pages/map";
+import data from "./pages/data";
+import waste from "./pages/data/waste"
+import items from "./pages/data/items"
 import notFound from "./pages/notFound";
 import treePage from "./pages/treePage";
 import volunteer from "./pages/volunteer/volunteer";
@@ -28,7 +31,6 @@ import keep_au_beautiful from "./pages/volunteer/keep_au_beautiful";
 import cleanupAu from "./pages/volunteer/cleanupAu";
 import beachpartol from "./pages/volunteer/beachpartol";
 import oceancrusaders from "./pages/volunteer/oceancrusaders";
-import Data from "./pages/data";
 
 axios.defaults.baseURL =
   "https://us-central1-actlitter-backend.cloudfunctions.net/api";
@@ -49,9 +51,9 @@ class App extends Component {
                   <Route exact path="/" component={Home} />
                   <Route exact path="/login" component={login} />
                   <Route exact path="/quiz" component={quiz} />
+                  <Route exact path="/data" component={data} />
                   <Route exact path="/info" component={info} />
                   <Route exact path="/impact" component={impact} />
-                  <Route exact path="/data" component={Data} />
                   <Route exact path="/map" component={map} />
                   <Route exact path="/treePage" component={treePage} />
                   <Route exact path="/impact_enviorment" component={impact_enviorment}/>
@@ -95,6 +97,16 @@ class App extends Component {
                     exact
                     path="/volunteer/oceancrusaders"
                     component={oceancrusaders}
+                  />
+                  <Route
+                    exact
+                    path="/data/waste"
+                    component={waste}
+                  />
+                  <Route
+                    exact
+                    path="/data/items"
+                    component={items}
                   />
                   <Route exact component={notFound} />
                 </Switch>

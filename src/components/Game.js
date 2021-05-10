@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TypeWriter from "typewriter-effect";
 import "./game.css";
-import axios from 'axios';
+import axios from "axios";
 
 import { useTransition, useSpring, animated } from "react-spring";
 import Button from "./utils/Button";
@@ -123,18 +123,20 @@ const Game = () => {
 	// 	},
 	// ]);
 
-	const [questions, setQuestions] = useState(null)
+	const [questions, setQuestions] = useState(null);
 
 	useEffect(() => {
-		axios.get('/questions').then(res => {
-			console.log(res.data);
-			setQuestions(res.data)
-		})
-		.catch(err => console.log(err))
+		axios
+			.get("/questions")
+			.then((res) => {
+				console.log(res.data);
+				setQuestions(res.data);
+			})
+			.catch((err) => console.log(err));
 		/* return () => {
 			cleanup
 		} */
-	}, [])
+	}, []);
 
 	// Index of the question
 	const [index, setIndex] = useState(0);
@@ -204,12 +206,14 @@ const Game = () => {
 	const transitionToWelcome = () => {
 		setIntro(false);
 		setWelcome(true);
-		setShowButtons(false);
+		setShowButtons(true);
 	};
 
 	const transitionQuestion = () => {
 		setWelcome(false);
 		setQuestion(true);
+		setShowButtons(false);
+		setTextButton("Go to next question");
 		questions[0].typeofAnswer == "RadioButton" ? setTypeofAnswer("RadioButton") : setTypeofAnswer("Button");
 	};
 
@@ -330,19 +334,10 @@ const Game = () => {
 									<h1>Litter Master</h1>
 								</div>
 								<div className="question-text">
-									<TypeWriter
-										options={{ delay: 30 }}
-										onInit={(typeWriter) => {
-											typeWriter
-												.typeString(
-													"Litter master is a quiz game that is design to measure your knowledge about Littering and also explain you about why is important to take action on this issue."
-												)
-												.callFunction(() => {
-													setShowButtons(true);
-												})
-												.start();
-										}}
-									/>
+									<p>
+										Litter master is a quiz game that is design to measure your knowledge about Littering and also
+										explain you about why is important to take action on this issue.
+									</p>
 								</div>
 								<animated.div className="botton-section" style={buttonsAnimation}>
 									<Button styleBtn="primary quiz-btn" text="Let's Go" onClick={() => transitionQuestion()} />

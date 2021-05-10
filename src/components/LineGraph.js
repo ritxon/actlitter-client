@@ -9,7 +9,7 @@ const LineGraph = ({dataSet, xLegend, yLegend}) => {
 		<>
 			<ResponsiveLine
 				data={dataSet}
-				margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+				margin={{ top: 50, right: 20, bottom: 50, left: 80 }}
 				xScale={{ type: "point" }}
 				yScale={{ type: "linear", min: 0, max: "auto", stacked: false, reverse: false }}
 				yFormat=" >-.2f"
@@ -51,7 +51,7 @@ const LineGraph = ({dataSet, xLegend, yLegend}) => {
                         translateY: -32,
                         itemsSpacing: 20,
                         itemDirection: 'left-to-right',
-                        itemWidth: 125,
+                        itemWidth: 100,
                         itemHeight: 20,
                         itemOpacity: 0.75,
                         symbolSize: 10,

@@ -26,7 +26,7 @@ const Radar = ({ dataSet, attributes }) => {
 				keys={attributes}
 				indexBy="taste"
 				maxValue="auto"
-				margin={{ top: 70, right: 80, bottom: 40, left: 80 }}
+				margin={{ top: 50, right: 0, bottom: 30, left: 0 }}
 				curve="linearClosed"
 				borderWidth={1}
 				borderColor={{ from: "color" }}
