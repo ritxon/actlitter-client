@@ -255,17 +255,17 @@
   .volunteer_au_opyions {
     background-color: rgb(255, 255, 255);
     text-align: center;
-    border-style: outset solid outset outset;
+    border-style: outset;
     width: 160px;
     height: 35px;
     border-radius: 15px 0px 0px 15px;
-    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4); */
   }
   .volunteer_au_opyions_choose {
     /* background-color: rgb(255, 250, 250); */
-    background-color: #E67E22;
+    background-color: #044d29;
     text-align: center;
-    border-style: outset solid outset outset;
+    border-style: outset;
     width: 160px;
     height: 35px;
     border-radius: 15px 0px 0px 15px;
@@ -273,21 +273,27 @@
   .volunteer_vic_opyions {
     background-color: rgb(255, 255, 255);
     text-align: center;
-    border-style: outset outset outset none;
+    border-style: outset;
     width: 160px;
     height: 35px;
     border-radius: 0px 15px 15px 0px;
-    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4); */
   }
 
   .volunteer_vic_opyions_choose {
     /* background-color: rgb(255, 250, 250); */
-    background-color: #E67E22;
+    background-color: #044d29;
     text-align: center;
-    border-style: outset outset outset none;
+    border-style: outset;
     width: 160px;
     height: 35px;
     border-radius: 0px 15px 15px 0px;
+  }
+  .volunteer_vic_opyions_choose p{
+    color: #fff;
+  }
+  .volunteer_au_opyions_choose p{
+    color: #fff;
   }
 }
 
@@ -329,16 +335,13 @@
     font-size: 130%;
   }
   .volunteer_au_opyions {
-    background-color: rgb(255, 255, 255);
     text-align: center;
     border-style: outset solid outset outset;
     width: 80px;
     height: 30px;
     border-radius: 15px 0px 0px 15px;
-    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
   }
   .volunteer_au_opyions_choose {
-    background-color: rgb(255, 250, 250);
     text-align: center;
     border-style: outset solid outset outset;
     width: 80px;
@@ -346,22 +349,33 @@
     border-radius: 15px 0px 0px 15px;
   }
   .volunteer_vic_opyions {
-    background-color: rgb(255, 255, 255);
     text-align: center;
     border-style: outset outset outset none;
     width: 80px;
     height: 30px;
     border-radius: 0px 15px 15px 0px;
-    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
   }
 
   .volunteer_vic_opyions_choose {
-    background-color: rgb(255, 250, 250);
     text-align: center;
     border-style: outset outset outset none;
     width: 80px;
     height: 30px;
     border-radius: 0px 15px 15px 0px;
+  }
+  .volunteer_vic_opyions_choose {
+    /* background-color: rgb(255, 250, 250); */
+    background-color: #044d29;
+  }
+  .volunteer_au_opyions_choose {
+    /* background-color: rgb(255, 250, 250); */
+    background-color: #044d29;
+  }
+  .volunteer_vic_opyions_choose p{
+    color: #fff;
+  }
+  .volunteer_au_opyions_choose p{
+    color: #fff;
   }
 }
 
