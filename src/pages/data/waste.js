@@ -295,6 +295,12 @@ const Waste = () => {
 
 	return (
 		<>
+		<div className="impact_fake_navigation">
+				<p>
+					<a href="/">&emsp; Home &ensp;</a>/ &ensp;
+					<a href="/data">Data &ensp;</a>/ &ensp; Waste collected per year
+				</p>
+			</div>
 			<div className="section-article">
 				<div className="contain1280-flex">
 					<div className="section-text-left">

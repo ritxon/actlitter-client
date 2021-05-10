@@ -5,7 +5,7 @@ const Data = () => {
 	return (
 		<>
 			<div className="sections-head">
-				<h1>Litter Information </h1>
+				<h1>Litter Visualisation </h1>
 			</div>
 			<SectionItem
 				src="images/figure4.png"
