@@ -25,11 +25,12 @@ h4 {
 .map-intro {
   display: flex;
   flex-direction: row;
-  height: 250px;
+
   padding-bottom: 40px;
 }
 .map-left {
   width: 60%;
+  padding-right: 20px;
 }
 .map-title {
   margin-top: 20px;
@@ -37,6 +38,7 @@ h4 {
 }
 .map-right {
   width: 40%;
+  min-width: 400px;
   height: 250px;
   background-image: url("../assets/impact_classification.jpg");
   background-size: cover;
@@ -44,18 +46,19 @@ h4 {
   background-repeat: no-repeat;
 }
 .map-division {
-  border-top: rbg(255, 255, 255) 1px solid;
-  border-bottom: rbg(255, 255, 255) 1px solid;
+  box-shadow: 1px 1px 2px #888888;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   height: 3px;
 }
 /* search area */
 .map-search {
-  border-bottom: rbg(255, 255, 255) 1px solid;
+  border-bottom: 1px solid #ccc;
   display: flex;
 }
 .search {
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .search h4 {
   padding-right: 10px;
@@ -66,11 +69,12 @@ h4 {
   width: 100%;
 }
 .search-bar {
-  width: 500px;
+  width: 350px;
 }
 .map-filter {
   display: flex;
   margin-left: auto;
+  padding-bottom: 30px;
 }
 .map-filter-dropdown {
   margin-left: 20px;
@@ -78,7 +82,7 @@ h4 {
 }
 /* map display area */
 .map-container {
-  height: 400px;
+  height: 450px;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -114,6 +118,10 @@ h4 {
   text-align: center;
   margin-bottom: 5px;
 }
+.bin-info h4 {
+  text-align: center;
+  padding: 15px;
+}
 .bin-info p {
   margin-bottom: 5px;
 }
@@ -121,19 +129,48 @@ h4 {
   padding-top: 5px;
 } */
 .map-btn {
-  min-width: 100px;
+  left: 0px;
 }
+
 /* map legend */
 .map-index {
   width: 20%;
   margin-left: 30px;
 }
+.map-index ul h4 {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
 .map-index ul li {
-  margin-top: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.map-index ul li p {
+  margin: 0 auto;
+}
+.map-index ul li p img {
+  height: 12px;
+  width: 12px;
+}
+.hashed-text {
+  display: none;
+}
+.map-index ul li:hover > img {
+  display: none;
+}
+.map-index ul li:hover .hashed-text {
+  display: block;
+  height: 50px;
+  text-align: center;
+
+  margin: 0 auto;
+  background-color: #ccc;
 }
 .map-index img {
   width: 50px;
-  margin-right: 10px;
+  margin: 0 auto;
 }
 
 /* @media screen and (min-width: 800px) {
@@ -143,8 +180,63 @@ h4 {
     right: 10px;
   }
 } */
-/* @media screen and (max-width: 800px) {
-  .map {
+@media screen and (max-width: 800px) {
+  .map-intro {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+  .map-left {
+    width: 100%;
+  }
+  .map-right {
+    width: 100%;
+  }
+  .map-title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .map-search {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+  }
+  .map-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+  }
+  .map-container {
+    width: 100%;
+  }
+  .map-index {
+    width: 100%;
+    margin-left: 0;
+  }
+  .map-index ul {
+    display: flex;
+    flex-direction: row;
+  }
+  /* .map-index ul h4 {
+    width: 100%;
+  }
+  .map-index ul li {
+    width: 30%;
+  }
+  .map-index ul li p {
+    padding-right: 3px;
+  } */
+  .map-index ul li:hover > img {
+    display: block;
+  }
+  .map-index ul li:hover .hashed-text {
+    display: none;
+  }
+  .bin-window {
+    width: 200px;
+  }
+  /* .map {
     width: 100% !important;
   }
 
@@ -160,5 +252,5 @@ h4 {
   }
   .bin-info {
     margin-bottom: 30px;
-  }
-} */
+  } */
+}
