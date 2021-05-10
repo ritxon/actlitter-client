@@ -125,21 +125,19 @@ const Items = () => {
 						<h2>What is the most common location of litter by item?</h2>
 						<p>
 							Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in
-							Australia, around 7 billion are littered
-						</p>
-						<p>
-							According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused
-							cigarette butt litter to be a major problem for Australia.
+							Australia, around 7 billion are littered. Find out what other items are littered in Australia in the chart below.
+
 						</p>
 						<h4>Main insights from the graph</h4>
 						<p>
 							The graph below provides useful insights that certain items are more likely to be littered at certain
-							locations. <b>Beverage containers are more likely to be littered on highways or near industrial areas</b>.
-							Similarly, <b>cigarette butts are more likely to be littered in large amounts near retail and shopping
-							centres</b> with moderate amounts in car parks, near industrial areas and on beaches. Takeaway containers are
-							littered more often near recreational areas like beaches and retail centres while plastic bags are most
-							likely to be littered on highways, beaches and near industrial areas.
+							locations. <b>Beverage containers</b> are more likely to be littered on <b>highways</b> or near <b>industrial areas</b>.
+							Similarly, <b>cigarette butts</b> are more likely to be littered in large amounts near <b>retail</b> and <b>shopping
+							centres</b> with moderate amounts in <b>car parks</b>, near <b>industrial areas</b> and on <b>beaches</b>. 
 						</p>
+						<p><b>Takeaway containers</b> are
+							littered more often near recreational areas like <b>beaches</b> and <b>retail centres</b> while <b>plastic bags</b> are most
+							likely to be littered on <b>highways</b>, <b>beaches</b> and near <b>industrial areas.</b></p>
 					</div>
 					<div className="section-image figure5"></div>
 				</div>
@@ -151,8 +149,8 @@ const Items = () => {
 							<div className="info-vertical-data">
 								<h4>Description</h4>
 								<p>
-									This radar chart shows the average amount of litter items per 1.000 square meters between 2009 and
-									2019. This information was sample from eight different kind of places among Australia. Each type of
+									This radar chart shows the average amount of litter items per <b>1,000 square meters</b> between <b>2009</b> and
+									<b>2019</b>. This information was sampled from eight different kind of places among Australia. Each type of
 									litter is provided with an axis that starts from the centre.
 								</p>
 								<h4>Source</h4>

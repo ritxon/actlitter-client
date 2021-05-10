@@ -300,16 +300,17 @@ const Waste = () => {
 					<div className="section-text-left">
 						<h2>Waste collected per year</h2>
 						<p>
-							The government needs to dispose of the rubbish that people throw away every year, and there is a lot of
-							rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal.
+						This page shows amount of collected waste in Melbourne. It provides a visualisation about amount of waste collected from houses and garbage bins in public areas as well as dumped waste and provides interesting insights from it.
+
 						</p>
 						<h4>Main insights from the graph</h4>
 						<p>
-							There is an upward trend in residential waste showing that the amount of residential waste in Melbourne
-							has been rapidly increasing over the years. This makes it highly necessary to segregate and dispose it
-							properly. The graph also shows that disposing street sweepings incorrectly has reduced dramatically over
-							the years. However, dumping rubbish has not reduced a lot and is still prevalent over the years. This
-							makes it essential to reduce dumping rubbish as it can enable to reduce littering.
+							There is an upward trend in <b>residential waste</b> showing that the amount of <b>residential waste</b>{" "}
+							in Melbourne has been rapidly increasing over the years. This makes it highly necessary to segregate and
+							dispose it properly. The graph also shows that disposing <b>street sweepings</b> incorrectly has reduced
+							dramatically over the years. However, <b>dumping rubbish</b> has not reduced a lot and is still prevalent
+							over the years. This makes it essential to reduce <b>dumping rubbish</b> as it can enable to reduce
+							littering.
 						</p>
 					</div>
 					<div className="section-image figure4"></div>
@@ -322,8 +323,8 @@ const Waste = () => {
 							<div className="info-vertical-data">
 								<h4>Description</h4>
 								<p>
-									The government needs to dispose of the rubbish that people throw away every year, and there is a lot
-									of rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal.
+									The government disposes waste that is thrown by people <b>every year</b>. There is a lot of waste that is
+									disposed incorrectly that can result in increase in cost of rubbish disposal.
 								</p>
 								<h4>Source</h4>
 								<p>This data was collected from the City of Melbourne Open Data.</p>
