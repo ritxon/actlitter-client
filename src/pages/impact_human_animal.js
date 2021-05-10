@@ -48,7 +48,7 @@ export class impact_human_animal extends Component {
                   <div className="impact_article_right">
                     <div className="impact_img_div">
                       <img
-                        src=""
+                        src="../../images/impact/impact_animals_1.jpg"
                         className="impact_img"
                       />
                     </div>
@@ -68,7 +68,7 @@ export class impact_human_animal extends Component {
                   <div className="impact_article_right">
                     <div className="impact_img_div">
                       <img
-                        src="../../images/impact/impact_animals_1.jpg"
+                        src="../../images/impact/Impact_on_Humans.jpg"
                         className="impact_img"
                       />
                     </div>
@@ -89,13 +89,13 @@ export class impact_human_animal extends Component {
                   <div className="impact_article_right">
                     <div className="impact_img_div">
                       <img
-                        src="../../images/impact/impact_animals_3.jpg"
+                        src="../../images/impact/Ingestionbyanimals1.jpg"
                         className="impact_img"
                       />
                     </div>
                   </div>
                   <p className="impact_article_left">
-                    Various types of marine litter like plastic bags, glass and plastic bottles, balloons, pieces of rubber, metal, fishing gear etc can injure or kill marine life if they ingest it. Plastic bags can be hazardous to turtles as these clear floating bags resemble their primary food jellyfish and are consequently ingested by them. This can cause suffocation and lead to death. Seabirds mistake litter like strings and balloons as food and consequently ingest it. There have also been cases in Victoria where common and bottlenose dolphins were found to have ingested fishing hooks.
+                  Various types of marine litter like plastic bags, glass and plastic bottles, balloons, pieces of rubber, metal, fishing gear etc can injure or kill marine life if they ingest it. Plastic bags can be hazardous to turtles as these clear floating bags resemble their primary food jellyfish and are consequently ingested by them. This can cause suffocation and lead to death. Seabirds mistake litter like plastic scraps, strings and balloons as food and consequently ingest it. There have also been cases in Victoria where common and bottlenose dolphins were found to have ingested fishing hooks.
                   </p>
                 </div>
                 {/* 3 */}
@@ -107,7 +107,7 @@ export class impact_human_animal extends Component {
                   <div className="impact_article_right">
                     <div className="impact_img_div">
                       <img
-                        src=""
+                        src="../../images/impact/Animalentanglement1.jpg"
                         className="impact_img"
                       />
                     </div>
@@ -125,13 +125,13 @@ export class impact_human_animal extends Component {
                   <div className="impact_article_right">
                     <div className="impact_img_div">
                       <img
-                        src=""
+                        src="../../images/impact/Impactofmicroplasticonanimals.jpg"
                         className="impact_img"
                       />
                     </div>
                   </div>
                   <p className="impact_article_left">
-                  Moreover, research shows that around 15 million tons of microplastics can be found on the ocean floor. This is due to plastic pollution in the ocean that deteriorates into microplastics. Various marine animals are often victims of microplastic ingestion as they cannot distinguish between microplastics and their food sources. Microplastics can cause harm to them if ingested in large volumes.
+                  Moreover, research shows that around 15 million tons of microplastics can be found on the ocean floor. This is due to plastic pollution in the ocean that deteriorates into microplastics. Various marine animals like whales, turtles and seabirds are often victims of microplastic ingestion as they cannot distinguish between microplastics and their food sources. Microplastics can cause harm to them if ingested in large volumes.
                   </p>
                 </div>
               </div>

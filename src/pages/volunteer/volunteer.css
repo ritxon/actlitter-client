@@ -12,18 +12,19 @@
   padding: 15px;
 }
 
-
 .volunteer_organizations_background {
-  background: linear-gradient(rgb(253,254,255),rgb(217,246,255),rgb(253,254,255));
+  /* background: linear-gradient(
+    rgb(253, 254, 255),
+    rgb(217, 246, 255),
+    rgb(253, 254, 255)
+  ); */
   padding: 40px;
 }
-
-
 
 .volunteer_part {
   max-width: 1140px;
   margin: 0px auto;
-  padding: 10px 0px;
+  padding: 60px 0px;
   display: flex;
 }
 /* 
@@ -38,6 +39,11 @@
       width: 70%;
     }
   } */
+@media only screen and (min-width: 800px) {
+  .volunteer_right {
+    padding-left: 60px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .volunteer_part {
     display: block;
@@ -54,7 +60,7 @@
 }
 .volunteer_inter_fats {
   max-width: 1140px;
-  padding: 10px 0px;
+  padding: 60px 0px;
   margin: 0px auto;
   /* background-color: rgb(255,250,250);
   border-radius: 10px;
@@ -65,15 +71,12 @@
 .volunteer_previous_div {
   max-width: 1140px;
   margin: 0px auto;
-  padding: 10px 0px;
+  padding: 60px 0px;
   /* background-color: rgb(255,250,250);
   border-radius: 10px;
   box-shadow:0 0 5px 3px rgb(224,236,240) inset;
   padding: 20px 60px 60px 60px; */
 }
-
-
-
 
 .volunteer_title {
   margin-left: 20px;
@@ -89,7 +92,7 @@
 }
 .volunteer_logo_div {
   display: flex;
-  text-align:center;
+  text-align: center;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -99,26 +102,28 @@
 }
 .volunteer_img {
   margin: 15px;
-  margin-left :60px;
-  margin-right: 60px ;
+  margin-left: 60px;
+  margin-right: 60px;
   width: 250px;
   height: auto;
-  box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.2),  4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.2),
+    4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .volunteer_logo {
   width: 250px;
   margin: 10px;
   height: auto;
-  text-align:center;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.2),  4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.2),
+    4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .volunteer_blue {
   max-width: 1140px;
   margin: 0px auto;
-  padding: 10px 0px;
+  padding: 60px 0px;
   /* padding: 20px 60px 60px 60px;
   background-color: rgb(245,250,253);
   border-radius: 10px;
@@ -127,7 +132,7 @@
 .volunteer_cards {
   display: flex;
   flex-flow: row wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
@@ -163,8 +168,7 @@
   /* font-family: "Times New Roman"; */
   font-size: 120%;
   line-height: 1.4;
-  text-align:justify;
-
+  text-align: justify;
 }
 
 .volunteer_fun_fact {
@@ -204,161 +208,161 @@
   text-decoration: underline;
 }
 .volunteer_button_div {
-  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: -40px;
+  padding: 20px 0px;
 }
 
 .clear_float {
   clear: both;
 }
 
-
-
-
-
 @media only screen and (min-width: 600px) {
-.previous_event {
+  .previous_event {
     overflow: hidden;
-    background-color: rgb(216,228,235);
+    background-color: rgb(216, 228, 235);
     border-radius: 10px;
-}
-.volunteer_organizations_title {
-  text-align: center;
-  margin: 15px;
-  margin-top: -20px;
-  /* font-size: 30px; */
-}
-.volunteer_all_summary_div {
-  padding: 30px;
-  text-align: left;
-  line-height: 1.4;
-}
-.volunteer_all_summary {
-  /* font-family:"Times New Roman", Times, serif; */
-  font-size: 150%;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align:justify;
-}
-.volunteer_au_vic_opyions {
-  width: 100%;
-  margin: 40px 0px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.volunteer_opyion_text {
-  text-align: center;
-  font-size: 170%;
-}
-.volunteer_au_opyions {
-  background-color: rgb(255,255,255);
-  text-align: center;
-  border-style: outset solid outset outset;
-  width: 160px;
-  height: 35px;
-  border-radius: 15px 0px 0px 15px;
-  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
-}
-.volunteer_au_opyions_choose {
-  background-color: rgb(255,250,250);
-  text-align: center;
-  border-style: outset solid outset outset;
-  width: 160px;
-  height: 35px;
-  border-radius: 15px 0px 0px 15px
-}
-.volunteer_vic_opyions {
-  background-color: rgb(255,255,255);
-  text-align: center;
-  border-style: outset outset outset none;
-  width: 160px;
-  height: 35px;
-  border-radius: 0px 15px 15px 0px;
-  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
-}
+  }
+  .volunteer_organizations_title {
+    text-align: center;
+    margin: 15px;
+    margin-top: -20px;
+    /* font-size: 30px; */
+  }
+  .volunteer_all_summary_div {
+    padding: 30px;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .volunteer_all_summary {
+    /* font-family:"Times New Roman", Times, serif; */
+    font-size: 150%;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: justify;
+  }
+  .volunteer_au_vic_opyions {
+    width: 100%;
+    margin: 40px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .volunteer_opyion_text {
+    text-align: center;
+    font-size: 170%;
+  }
+  .volunteer_au_opyions {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: outset solid outset outset;
+    width: 160px;
+    height: 35px;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  .volunteer_au_opyions_choose {
+    /* background-color: rgb(255, 250, 250); */
+    background-color: #E67E22;
+    text-align: center;
+    border-style: outset solid outset outset;
+    width: 160px;
+    height: 35px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .volunteer_vic_opyions {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: outset outset outset none;
+    width: 160px;
+    height: 35px;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+  }
 
-.volunteer_vic_opyions_choose {
-  background-color: rgb(255,250,250);
-  text-align: center;
-  border-style: outset outset outset none;
-  width: 160px;
-  height: 35px;
-  border-radius: 0px 15px 15px 0px
-}
+  .volunteer_vic_opyions_choose {
+    /* background-color: rgb(255, 250, 250); */
+    background-color: #E67E22;
+    text-align: center;
+    border-style: outset outset outset none;
+    width: 160px;
+    height: 35px;
+    border-radius: 0px 15px 15px 0px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .previous_event {
     overflow: hidden;
-    background-color: rgb(216,228,235);
+    background-color: rgb(216, 228, 235);
     border-radius: 5px;
-}
-.volunteer_organizations_title {
-  text-align: center;
-  margin: 15px;
-  margin-top: -20px;
-}
-/* .volunteer_organizations_title h1 {
+  }
+  .volunteer_organizations_title {
+    text-align: center;
+    margin: 15px;
+    margin-top: -20px;
+  }
+  /* .volunteer_organizations_title h1 {
   font-size: 26px;
 } */
-.volunteer_all_summary_div {
-  padding: 5px;
-  text-align: left;
-  line-height: 1.4;
-}
-.volunteer_all_summary {
-  /* font-family:"Times New Roman", Times, serif; */
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align:justify;
-}
+  .volunteer_all_summary_div {
+    padding: 5px;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .volunteer_all_summary {
+    /* font-family:"Times New Roman", Times, serif; */
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: justify;
+  }
 
-.volunteer_au_vic_opyions {
-  width: 100%;
-  margin: 20px 0px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.volunteer_opyion_text {
-  text-align: center;
-  font-size: 130%;
-}
-.volunteer_au_opyions {
-  background-color: rgb(255,255,255);
-  text-align: center;
-  border-style: outset solid outset outset;
-  width: 80px;
-  height: 30px;
-  border-radius: 15px 0px 0px 15px;
-  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
-}
-.volunteer_au_opyions_choose {
-  background-color: rgb(255,250,250);
-  text-align: center;
-  border-style: outset solid outset outset;
-  width: 80px;
-  height: 30px;
-  border-radius: 15px 0px 0px 15px
-}
-.volunteer_vic_opyions {
-  background-color: rgb(255,255,255);
-  text-align: center;
-  border-style: outset outset outset none;
-  width: 80px;
-  height: 30px;
-  border-radius: 0px 15px 15px 0px;
-  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
-}
+  .volunteer_au_vic_opyions {
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .volunteer_opyion_text {
+    text-align: center;
+    font-size: 130%;
+  }
+  .volunteer_au_opyions {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: outset solid outset outset;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  .volunteer_au_opyions_choose {
+    background-color: rgb(255, 250, 250);
+    text-align: center;
+    border-style: outset solid outset outset;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .volunteer_vic_opyions {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: outset outset outset none;
+    width: 80px;
+    height: 30px;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+  }
 
-.volunteer_vic_opyions_choose {
-  background-color: rgb(255,250,250);
-  text-align: center;
-  border-style: outset outset outset none;
-  width: 80px;
-  height: 30px;
-  border-radius: 0px 15px 15px 0px
-}
+  .volunteer_vic_opyions_choose {
+    background-color: rgb(255, 250, 250);
+    text-align: center;
+    border-style: outset outset outset none;
+    width: 80px;
+    height: 30px;
+    border-radius: 0px 15px 15px 0px;
+  }
 }
 
 .volunteer_all_organizations_div {
@@ -366,8 +370,8 @@
 }
 
 .previous_list {
-    width: 1000%;
-    display: flex;
+  width: 1000%;
+  display: flex;
 }
 
 .volunteer_all_organizations {
@@ -393,41 +397,37 @@
 
 .previous_left {
   width: 5%;
-  position: relative
+  position: relative;
 }
 .previous_container {
-    float: left;
+  float: left;
   width: 90%;
   padding-right: 5%;
 }
 .previous_right {
-    float: left;
+  float: left;
   width: 5%;
-  position: relative
+  position: relative;
 }
 .previous_trans_img {
   width: 100%;
   position: absolute;
   top: 50%;
-  margin:  -50% 0 0 0;
+  margin: -50% 0 0 0;
 }
 
-.bar
-{
+.bar {
   cursor: pointer;
 }
 
-input[name="r"]
-{
+input[name="r"] {
   visibility: hidden;
   position: absolute;
 }
 
-#r1:checked ~.s1
-{
-  margin-left:0;
+#r1:checked ~ .s1 {
+  margin-left: 0;
 }
-#r2:checked ~.s1
-{
+#r2:checked ~ .s1 {
   margin-left: -10%;
 }

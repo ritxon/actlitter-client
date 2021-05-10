@@ -9,6 +9,7 @@
 /* .impact_article_body p {
   padding-bottom: 5px;
 } */
+
 .impact_article_body h4 {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -90,7 +91,7 @@
 
 .impact_video_div {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 @media only screen and (min-width: 1300px) {
   .impact_video {
@@ -174,7 +175,9 @@
   width: 20%;
   line-height: 1.8;
 }
-
+.impact_menu p{
+  padding-top: 20px;
+}
 
 .impact_details {
   display: flex;
@@ -222,9 +225,15 @@ body,html {
   .impact_table {
     display: none;
   }
+  .impact_article_body {
+    padding: 60px 0px;
+  }
 }
 @media screen and (max-width: 640px) {
   .impact_tree {
     display: none;
+  }
+  .impact_article_body {
+    padding: 30px 0px;
   }
 }
