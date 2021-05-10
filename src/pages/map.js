@@ -332,7 +332,7 @@ export default function Map() {
               <li>
                 <img src="images/current.png" alt="current location"></img>
                 <p className="hashed-text">
-                  This icon show your current location or the searched location.
+                  This icon show your current / searched location.
                 </p>
                 <p>
                   Current Location <img src="images/i.png"></img>
@@ -342,7 +342,7 @@ export default function Map() {
               <li>
                 <img src="images/compass.png" alt="Get Location"></img>
                 <p className="hashed-text">
-                  This icon show your current location or the searched location.
+                  This icon helps you get your current location.
                 </p>
                 <p>
                   Get location <img src="images/i.png"></img>
