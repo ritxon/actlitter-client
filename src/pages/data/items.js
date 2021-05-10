@@ -132,7 +132,14 @@ const Items = () => {
 							cigarette butt litter to be a major problem for Australia.
 						</p>
 						<h4>Main insights from the graph</h4>
-						<p></p>
+						<p>
+							The graph below provides useful insights that certain items are more likely to be littered at certain
+							locations. <b>Beverage containers are more likely to be littered on highways or near industrial areas</b>.
+							Similarly, <b>cigarette butts are more likely to be littered in large amounts near retail and shopping
+							centres</b> with moderate amounts in car parks, near industrial areas and on beaches. Takeaway containers are
+							littered more often near recreational areas like beaches and retail centres while plastic bags are most
+							likely to be littered on highways, beaches and near industrial areas.
+						</p>
 					</div>
 					<div className="section-image figure5"></div>
 				</div>
@@ -153,7 +160,7 @@ const Items = () => {
 									This data was collected from the national litter report made by the organization Keep Australia
 									beautiful.
 								</p>
-								<h4>Years</h4>
+								{/* <h4>Years</h4>
 								<Slider
 									className="sliderItems"
 									min={2010}
@@ -163,7 +170,7 @@ const Items = () => {
 									step={null}
 									onChange={onSliderChange}
 									defaultValue={2010}
-								/>
+								/> */}
 								<h4>Kinds of litter</h4>
 								<p>Change the option to see a different type of litter</p>
 								<div className="radioButton-data">

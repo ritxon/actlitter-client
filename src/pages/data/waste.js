@@ -303,8 +303,14 @@ const Waste = () => {
 							The government needs to dispose of the rubbish that people throw away every year, and there is a lot of
 							rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal.
 						</p>
-                        <h4>Main insights from the graph</h4>
-						<p></p>
+						<h4>Main insights from the graph</h4>
+						<p>
+							There is an upward trend in residential waste showing that the amount of residential waste in Melbourne
+							has been rapidly increasing over the years. This makes it highly necessary to segregate and dispose it
+							properly. The graph also shows that disposing street sweepings incorrectly has reduced dramatically over
+							the years. However, dumping rubbish has not reduced a lot and is still prevalent over the years. This
+							makes it essential to reduce dumping rubbish as it can enable to reduce littering.
+						</p>
 					</div>
 					<div className="section-image figure4"></div>
 				</div>

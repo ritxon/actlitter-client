@@ -32,91 +32,117 @@ import cleanupAu from "./pages/volunteer/cleanupAu";
 import beachpartol from "./pages/volunteer/beachpartol";
 import oceancrusaders from "./pages/volunteer/oceancrusaders";
 
+import Button from "./components/utils/Button";
+
 axios.defaults.baseURL =
   "https://us-central1-actlitter-backend.cloudfunctions.net/api";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: "in",
+      input: "input",
+    };
+  }
 
+  clickLogin = () => {
+      this.setState({
+        value: "in",
+      });
+    }
   
 
   render() {
-    return (
-      <>
-        <div className="App">
-          <Router>
-            <ScrollToTop>
-              <Navbar />
-              <div className="container">
-                <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/login" component={login} />
-                  <Route exact path="/quiz" component={quiz} />
-                  <Route exact path="/data" component={data} />
-                  <Route exact path="/info" component={info} />
-                  <Route exact path="/impact" component={impact} />
-                  <Route exact path="/map" component={map} />
-                  <Route exact path="/treePage" component={treePage} />
-                  <Route exact path="/impact_enviorment" component={impact_enviorment}/>
-                  <Route
-                    exact
-                    path="/impact_human_animal"
-                    component={impact_human_animal}
-                  />
-                  <Route
-                    exact
-                    path="/impact_classification"
-                    component={impact_classification}
-                  />
-                  <Route exact path="/volunteer" component={volunteer} />
-                  <Route
-                    exact
-                    path="/volunteer/tangaroaBlue"
-                    component={tangaroaBlue}
-                  />
-                  <Route
-                    exact
-                    path="/volunteer/yarrariver"
-                    component={yarrariver}
-                  />
-                  <Route
-                    exact
-                    path="/volunteer/keep_au_beautiful"
-                    component={keep_au_beautiful}
-                  />
-                  <Route
-                    exact
-                    path="/volunteer/cleanupAu"
-                    component={cleanupAu}
-                  />
-                  <Route
-                    exact
-                    path="/volunteer/beachpartol"
-                    component={beachpartol}
-                  />
-                  <Route
-                    exact
-                    path="/volunteer/oceancrusaders"
-                    component={oceancrusaders}
-                  />
-                  <Route
-                    exact
-                    path="/data/waste"
-                    component={waste}
-                  />
-                  <Route
-                    exact
-                    path="/data/items"
-                    component={items}
-                  />
-                  <Route exact component={notFound} />
-                </Switch>
-              </div>
-              <Footer />
-            </ScrollToTop>
-          </Router>
-        </div>
-      </>
-    );
+    if (this.state.value == "in"){
+      return (
+        <>
+          <div className="App">
+            <Router>
+              <ScrollToTop>
+                <Navbar />
+                <div className="container">
+                  <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/login" component={login} />
+                    <Route exact path="/quiz" component={quiz} />
+                    <Route exact path="/data" component={data} />
+                    <Route exact path="/info" component={info} />
+                    <Route exact path="/impact" component={impact} />
+                    <Route exact path="/map" component={map} />
+                    <Route exact path="/treePage" component={treePage} />
+                    <Route exact path="/impact_enviorment" component={impact_enviorment}/>
+                    <Route
+                      exact
+                      path="/impact_human_animal"
+                      component={impact_human_animal}
+                    />
+                    <Route
+                      exact
+                      path="/impact_classification"
+                      component={impact_classification}
+                    />
+                    <Route exact path="/volunteer" component={volunteer} />
+                    <Route
+                      exact
+                      path="/volunteer/tangaroaBlue"
+                      component={tangaroaBlue}
+                    />
+                    <Route
+                      exact
+                      path="/volunteer/yarrariver"
+                      component={yarrariver}
+                    />
+                    <Route
+                      exact
+                      path="/volunteer/keep_au_beautiful"
+                      component={keep_au_beautiful}
+                    />
+                    <Route
+                      exact
+                      path="/volunteer/cleanupAu"
+                      component={cleanupAu}
+                    />
+                    <Route
+                      exact
+                      path="/volunteer/beachpartol"
+                      component={beachpartol}
+                    />
+                    <Route
+                      exact
+                      path="/volunteer/oceancrusaders"
+                      component={oceancrusaders}
+                    />
+                    <Route
+                      exact
+                      path="/data/waste"
+                      component={waste}
+                    />
+                    <Route
+                      exact
+                      path="/data/items"
+                      component={items}
+                    />
+                    <Route exact component={notFound} />
+                  </Switch>
+                </div>
+                <Footer />
+              </ScrollToTop>
+            </Router>
+          </div>
+        </>
+      );
+
+    }else{
+      return(
+        <>
+        <div></div>
+        <input type="text" value="" />
+        <Button styleBtn="primary quiz-btn" text="Login" onClick={() => this.clickLogin() } />
+        </>
+      )
+    }
+    
   }
 }
 
