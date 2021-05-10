@@ -1,7 +1,6 @@
 import React, { Component, useState } from "react";
 import SectionItem from "../components/SectionItem";
 
-
 const Data = () => {
 	return (
 		<>
@@ -10,8 +9,8 @@ const Data = () => {
 			</div>
 			<SectionItem
 				src="images/figure4.png"
-				title="Impact on Enviroment"
-				text="Littering can have major influence on scenic beauty of the environment. It can contaminate soil and pollute water. Burning of litter can increase emission of harmful gases leading to air pollution."
+				title="Do you know how huge the amount of different types of waste collected each year is?"
+				text="The government needs to dispose of the rubbish that people throw away every year, and there is a lot of rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal."
 				path="/data/waste"
 				img="figure4"
 				align="left"
@@ -19,11 +18,8 @@ const Data = () => {
 
 			<SectionItem
 				src="images/figure5.png"
-				title="Impact on Human and Animals"
-				text="Litter can have an adverse impact on health of people as well as animals.
-			Inefficient litter disposal can create unhygienic living conditions, block drainage 
-			systems and spread diseases. Litter can be injurious to Australian wildlife due to 
-			ingestion or entanglement that can lead to suffocation, drowning and maiming."
+				title="Did you know that cigarettes butts are the most common kind of litter?"
+				text="Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in Australia, around 7 billion are littered."
 				label="Label"
 				path="/data/items"
 				img="figure5"

@@ -12,7 +12,7 @@ const Waste = () => {
 		});
 	}, []);
 
-    let fullData = [
+	let fullData = [
 		{
 			id: "Residential",
 			color: "hsl(65, 70%, 50%)",
@@ -300,11 +300,11 @@ const Waste = () => {
 					<div className="section-text-left">
 						<h2>Waste collected per year</h2>
 						<p>
-							This line graph illustrates the weight (in tonnes) of waste collected between 2010 and 2019. This
-							information is divided in two main categories well-disposed and bad-disposed waste. We can see from the
-							graph that residual waste has an upward trend while the waste that is collected by street sweeping show a
-							decreasing trend.
+							The government needs to dispose of the rubbish that people throw away every year, and there is a lot of
+							rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal.
 						</p>
+                        <h4>Main insights from the graph</h4>
+						<p></p>
 					</div>
 					<div className="section-image figure4"></div>
 				</div>
@@ -316,12 +316,10 @@ const Waste = () => {
 							<div className="info-vertical-data">
 								<h4>Description</h4>
 								<p>
-									This line graph illustrates the weight (in tonnes) of waste collected between 2010 and 2019. This
-									information is divided in two main categories well-disposed and bad-disposed waste. We can see from
-									the graph that residual waste has an upward trend while the waste that is collected by street sweeping
-									show a decreasing trend.
+									The government needs to dispose of the rubbish that people throw away every year, and there is a lot
+									of rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal.
 								</p>
-                                <h4>Source</h4>
+								<h4>Source</h4>
 								<p>This data was collected from the City of Melbourne Open Data.</p>
 								<h4>Kinds of waste collected</h4>
 								<p>Change the option to see a different set of data</p>

@@ -26,14 +26,12 @@ const CarouselComp = () => {
 			</Carousel.Item>
 			<Carousel.Item className="carousel2">
 				<div className="left-desc-carousel">
-					<div className="title-carousel">Did you know that cigarettes butts are the most common kind of litter?</div>
+					<div className="title-carousel">
+						Do you know how huge the amount of different types of waste collected each year is?
+					</div>
 					<p>
-						Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in Australia,
-						around 7 billion are littered
-					</p>
-					<p>
-						According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused
-						cigarette butt litter to be a major problem for Australia.
+						The government needs to dispose of the rubbish that people throw away every year, and there is a lot of
+						rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal.
 					</p>
 					<Link to="/data/items">
 						<Button styleBtn="primary quiz-btn" text="Know More" />
