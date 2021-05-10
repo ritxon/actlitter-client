@@ -247,6 +247,7 @@ export default function Map() {
   );
 
   function MapDisplay() {
+    console.log({ selectedBin });
     return (
       <GoogleMap
         id="map"
@@ -279,7 +280,6 @@ export default function Map() {
           }}
           position={currentPosition}
         />
-
         {binDataSet.map((bin) => {
           return (
             <Marker
@@ -327,6 +327,7 @@ export default function Map() {
             ></Marker>
           );
         })}
+
         {selectedBin ? (
           <InfoWindow
             position={{
@@ -340,15 +341,20 @@ export default function Map() {
             <div className="bin-window">
               <div className="bin-info">
                 <h4>Bin Details</h4>
+                <p>Bin Type: {selectedBin.type} Bin</p>
                 <p>Bin Description: {selectedBin.description}</p>
               </div>
-              {/* <a
-                className="map-btn btn btn-slide primary"
+              <a
+                className="map-btn btn btn-slide green-btn-modal btn-modal quiz-btn"
                 target="_blank"
-                href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${currentPosition.lng}&destination=${selectedBin.CoordinateLocation[0]},${selectedBin.CoordinateLocation[1]}`}
+                href={`https://www.google.com/maps/dir/?api=1&origin=${
+                  currentPosition.lat
+                },${currentPosition.lng}&destination=${parseFloat(
+                  selectedBin.geometry.latitude
+                )},${parseFloat(selectedBin.geometry.longitude)}`}
               >
-                Navigation
-              </a> */}
+                Navigation to Google Map
+              </a>
             </div>
           </InfoWindow>
         ) : null}

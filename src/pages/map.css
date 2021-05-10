@@ -118,6 +118,10 @@ h4 {
   text-align: center;
   margin-bottom: 5px;
 }
+.bin-info h4 {
+  text-align: center;
+  padding: 15px;
+}
 .bin-info p {
   margin-bottom: 5px;
 }
@@ -125,8 +129,9 @@ h4 {
   padding-top: 5px;
 } */
 .map-btn {
-  min-width: 100px;
+  left: 0px;
 }
+
 /* map legend */
 .map-index {
   width: 20%;
@@ -227,6 +232,9 @@ h4 {
   }
   .map-index ul li:hover .hashed-text {
     display: none;
+  }
+  .bin-window {
+    width: 200px;
   }
   /* .map {
     width: 100% !important;
