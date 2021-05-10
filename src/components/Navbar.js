@@ -51,6 +51,19 @@ class Navbar extends Component {
             >
               DATA
             </Link>
+            <div className="nav-menu-sub">
+              <ul>
+                {/* <li>
+                  <a href="/impact">Litter Info Summary</a>
+                </li> */}
+                <li>
+                  <a href="/data/waste">Waste collected per year</a>
+                </li>
+                <li>
+                  <a href="/data/items">Common location of litter</a>
+                </li>
+              </ul>
+            </div>
           </li>
           {/* litter info */}
           <li className="nav-item nav_laptop">
@@ -150,6 +163,9 @@ class Navbar extends Component {
                 <div class="nav_box-item">
                   <p class="nav_title"><a className="nav_title" href="/">HOME</a></p>
                 </div>
+                <div class="nav_box-item">
+                  <p class="nav_title"><a className="nav_title" href="/data">DATA</a></p>
+                </div>
                 <label for="rr2" class="bar">
                   <div class="nav_box-item_trans">
 
@@ -177,6 +193,7 @@ class Navbar extends Component {
                   <p class="nav_title"><a className="nav_title" href="/map">MAP</a></p>
                 </div>
               </div>
+              
               {/* litter info */}
               <div className="nav_box_item_2 ss2">
                 <label for="rr1" class="bar">

@@ -10,7 +10,7 @@ const Data = () => {
 			</div>
 			<SectionItem
 				src="images/figure4.png"
-				title="Impact on Enviroment"
+				title="Waste collected per year"
 				text="Littering can have major influence on scenic beauty of the environment. It can contaminate soil and pollute water. Burning of litter can increase emission of harmful gases leading to air pollution."
 				path="/data/waste"
 				img="figure4"
@@ -19,7 +19,7 @@ const Data = () => {
 
 			<SectionItem
 				src="images/figure5.png"
-				title="Impact on Human and Animals"
+				title="What is the most common location of litter by item?"
 				text="Litter can have an adverse impact on health of people as well as animals.
 			Inefficient litter disposal can create unhygienic living conditions, block drainage 
 			systems and spread diseases. Litter can be injurious to Australian wildlife due to 
