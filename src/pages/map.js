@@ -305,7 +305,7 @@ export default function Map() {
               <li>
                 <img src="images/binB.png" alt="General Waste Bin"></img>
                 <p className="hashed-text">
-                  You can throw everything in this type of bin.
+                  You can throw non-recyclables in this type of bin.
                 </p>
                 <p>
                   General Waste Bin <img src="images/i.png"></img>
@@ -464,8 +464,9 @@ export default function Map() {
         <Select
           className="map-filter-dropdown"
           options={options}
-          defaultValue={options[0]}
+          // defaultValue={options[0]}
           onChange={handleSelect}
+          // theme={ }
         />
       </div>
     );
