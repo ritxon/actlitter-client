@@ -37,6 +37,7 @@ const Items = () => {
 
 	let data_beverage_containers = [
 		[
+			// Year 2008
 			{ taste: "Beaches", BC: 2.2 },
 			{ taste: "Car Parks", BC: 1.9 },
 			{ taste: "Highways", BC: 5.1 },
@@ -47,6 +48,7 @@ const Items = () => {
 			{ taste: "Shopping", BC: 1.2 },
 		],
 		[
+			//Year 2009
 			{ taste: "Beaches", BC: 3.2 },
 			{ taste: "Car Parks", BC: 1.9 },
 			{ taste: "Highways", BC: 5.1 },
@@ -122,11 +124,15 @@ const Items = () => {
 					<div className="section-text-left">
 						<h2>What is the most common location of litter by item?</h2>
 						<p>
-							This line graph illustrates the weight (in tonnes) of waste collected between 2010 and 2019. This
-							information is divided in two main categories well-disposed and bad-disposed waste. We can see from the
-							graph that residual waste has an upward trend while the waste that is collected by street sweeping show a
-							decreasing trend.
+							Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in
+							Australia, around 7 billion are littered
 						</p>
+						<p>
+							According to research, 6 out of 10 smokers in Australia throw cigarette butts outdoors that has caused
+							cigarette butt litter to be a major problem for Australia.
+						</p>
+						<h4>Main insights from the graph</h4>
+						<p></p>
 					</div>
 					<div className="section-image figure5"></div>
 				</div>
