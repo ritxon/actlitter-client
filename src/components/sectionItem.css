@@ -2,7 +2,7 @@
 .section-text-left{
   width: 45%;
   padding: 60px;
-  text-align: left;
+  text-align:justify;
   line-height: 1.4;
 
   opacity: 0;
@@ -19,7 +19,7 @@
 .section-text-right{
   width: 45%;
   padding: 60px;
-  text-align: left;
+  text-align:justify;
   line-height: 1.4;
 
   opacity: 0;

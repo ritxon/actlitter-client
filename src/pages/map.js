@@ -1,7 +1,7 @@
 import "./map.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Select from "react-select";
-import useSupercluster from "react-supercluster";
+import useSupercluster from "use-supercluster";
 import * as binData from "./bin-location.json";
 import {
   GoogleMap,
@@ -36,11 +36,12 @@ const options = {
   zoomControl: true,
 };
 const center = { lat: -37.813629, lng: 144.963058 };
-var binType = "Recycling";
+var binType = "All";
 
 export default function Map() {
   const [binDataSet, setBinDataSet] = useState([]);
-
+  const [bounds, setBounds] = useState(null);
+  const [zoom, setZoom] = useState(10);
   useEffect(() => {
     // Check this url https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/8fgn-5q6t
     // SoQL https://dev.socrata.com/docs/queries/
@@ -61,32 +62,37 @@ export default function Map() {
         .get(url)
         .then((res) => {
           setBinDataSet(res.data);
-          console.log(binDataSet);
+          // console.log(binDataSet);
         })
         .catch((err) => console.log(err));
     }
     fetchData();
   }, []);
-  const geojsonPoints = binDataSet.map((bin) => {
-    return {
-      type: "Feature",
-      properties: {
-        gis_id: bin.gis_id,
-        descrition: bin.description,
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [bin.geometry.longitude, bin.geometry.latitude],
-      },
-    };
-  });
-  console.log(geojsonPoints);
+  const points = binDataSet.map((bin) => ({
+    type: "Feature",
+    properties: {
+      cluster: false,
+      gis_id: bin.gis_id,
+      description: bin.description,
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        parseFloat(bin.geometry.longitude),
+        parseFloat(bin.geometry.latitude),
+      ],
+    },
+  }));
+
   const { clusters } = useSupercluster({
-    points: geojsonPoints,
-    // bounds,
-    zoom: 10,
+    points,
+    bounds,
+    zoom,
     options: { radius: 75, maxZoom: 20 },
   });
+  console.log(points);
+  // issues here,cluster doesnt work
+  console.log(clusters);
   const [selectedBin, setSelectedBin] = useState(null);
 
   const [reRenderMarkers, setReRendermarkers] = useState(null);
@@ -193,66 +199,6 @@ export default function Map() {
     </>
   );
 
-  function MapPinMarker() {
-    {
-      binDataSet.map((bin) => (
-        <Marker
-          key={bin.gis_id}
-          position={{
-            lat: parseFloat(bin.geometry.latitude),
-            lng: parseFloat(bin.geometry.longitude),
-          }}
-          // display bin with type
-          icon={
-            /Cigarette/.test(bin.description) &&
-            (binType == "All" || binType == "Cigarette")
-              ? {
-                  url: "images/cbin.png",
-                  origin: new window.google.maps.Point(0, 0),
-                  anchor: new window.google.maps.Point(15, 15),
-                  scaledSize: new window.google.maps.Size(30, 30),
-                }
-              : /Recycling/.test(bin.description) &&
-                (binType == "All" || binType == "Recycling")
-              ? {
-                  url: "images/greenbin.png",
-                  origin: new window.google.maps.Point(0, 0),
-                  anchor: new window.google.maps.Point(15, 15),
-                  scaledSize: new window.google.maps.Size(30, 30),
-                }
-              : !binType == "Cigarette" && !binType == "Recycling"
-              ? {
-                  url: "images/bin.png",
-                  origin: new window.google.maps.Point(0, 0),
-                  anchor: new window.google.maps.Point(15, 15),
-                  scaledSize: new window.google.maps.Size(30, 30),
-                }
-              : {
-                  url: "images/bin.png",
-                  origin: new window.google.maps.Point(0, 0),
-                  anchor: new window.google.maps.Point(0, 0),
-                  scaledSize: new window.google.maps.Size(0, 0),
-                }
-          }
-          // onClick={() => {
-          //   console.log(bin);
-          //   setSelectedBin(bin);
-          // }}
-        ></Marker>
-      ));
-    }
-  }
-  // function MapClusterMarker() {
-  //   {
-  //     cluster.map((cluster) => {
-  //       const [longtitude, latitude] = cluster.geometry.coordinates;
-  //       const [
-  //         cluster: isculster,
-  //         point_count: pointCount,
-  //       ] = cluster.properties;
-  //     });
-  //   }
-  // }
   function MapDisplay() {
     return (
       <GoogleMap
@@ -262,26 +208,42 @@ export default function Map() {
         center={center}
         options={options}
         onLoad={onMapLoad}
+        yesIwantToUseGoogleMapApiInternals
+        onGoogleApiLoaded={({ map }) => {
+          mapRef.current = map;
+        }}
+        onChange={({ zoom, bounds }) => {
+          setZoom(zoom);
+          setBounds([
+            bounds.nw.lng,
+            bounds.se.lat,
+            bounds.se.lng,
+            bounds.nw.lat,
+          ]);
+        }}
       >
         <Marker
           // icon="https://www.robotwoods.com/dev/misc/bluecircle.png"
           icon={{
             url: "images/current.png",
             origin: new window.google.maps.Point(0, 0),
-            anchor: new window.google.maps.Point(15, 15),
-            scaledSize: new window.google.maps.Size(35, 35),
+            anchor: new window.google.maps.Point(10, 10),
+            scaledSize: new window.google.maps.Size(30, 30),
           }}
           position={currentPosition}
         />
         {/* https://www.youtube.com/watch?v=uMSGnZFW-h8 */}
         {/* https://www.npmjs.com/package/react-supercluster */}
-        {/* 
-        {clusters.map((cluster) => {
-          if (cluster.properties.cluster) {
-            return <MapClusterMarker />;
+        {/* https://github.com/leighhalliday/google-maps-clustering */}
+        {/* {clusters.map((cluster) => {
+          const [longtitude, latitude] = cluster.geometry.coordinates;
+          const {
+            clsuter: isCulster,
+            point_count: pointCount,
+          } = cluster.properties;
+          if (isCulster) {
           }
-          return <MapPinMarker />;
-        })} */}
+          return */}
         {binDataSet.map((bin) => (
           <Marker
             key={bin.gis_id}
@@ -307,7 +269,8 @@ export default function Map() {
                     anchor: new window.google.maps.Point(15, 15),
                     scaledSize: new window.google.maps.Size(30, 30),
                   }
-                : !binType == "Cigarette" && !binType == "Recycling"
+                : !/Cigarette/.test(bin.description) &&
+                  !/Recycling/.test(bin.description)
                 ? {
                     url: "images/bin.png",
                     origin: new window.google.maps.Point(0, 0),
@@ -326,6 +289,7 @@ export default function Map() {
             }}
           ></Marker>
         ))}
+
         {selectedBin ? (
           <InfoWindow
             position={{
@@ -450,8 +414,12 @@ export default function Map() {
     ];
     const handleSelect = async (bin) => {
       binType = bin.value;
-      console.log(binType);
+      // setReRendermarkers(binType);
+      // console.log(binType);
     };
+    // reRenderMarkers?{
+    //   <MapDisplay />
+    // }
     return (
       <div className="map-filter">
         <h4> Bin Type: </h4>

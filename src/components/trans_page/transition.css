@@ -1,10 +1,18 @@
 .previous_title_div {
   text-align: center;
   border-bottom: 1px solid #d5d6d9;
+  padding: 30px 0px;
 }
 .previous_title {
   text-align: center;
   font-size: 170%;
+}
+.previous_text_div {
+  padding-top: 35px;
+  margin: 0% 5%;
+}
+.previous_right_img_div {
+  padding-top: 35px;
 }
 @media only screen and (min-width: 800px) {
 .previous_details {
@@ -15,14 +23,14 @@
 }
 
 .previous_text_div {
-  text-align: left;
+  text-align:justify;
   line-height: 36px;
   width: 30%;
   margin-left: 25px;
 }
 
 .previous_text {
-  text-align: left;
+  text-align:justify;
   /* font-family:"Times New Roman", Times, serif; */
   font-size: 125%;
   padding: 30px;
@@ -79,11 +87,11 @@
   }
 
   .previous_text_div {
-    text-align: left;
+    text-align:justify;
   }
 
   .previous_text {
-    text-align: left;
+    text-align:justify;
     /* font-family:"Times New Roman", Times, serif; */
     font-size: 120%;
   }
@@ -91,7 +99,6 @@
  
   .previous_right_img {
     width: 100%;
-    margin: 5%;
   }
 
   .previous_right_cards_div {
@@ -143,7 +150,7 @@ box-shadow: 0px 0px 5px #888888;
   justify-content: center;
   align-items: center;
   font-size: 130%;
-  color: #636363;
+  /* color: #636363; */
 }
 
 .volunteer_card_2_details_div2 {
@@ -161,7 +168,7 @@ box-shadow: 0px 0px 5px #888888;
 .volunteer_card_2_details2 {
   text-align: center;
   font-size: 300%;
-  color: #636363;
+  /* color: #636363; */
 }
 .volunteer_card_2_details_div {
   text-align: center;
@@ -172,7 +179,7 @@ box-shadow: 0px 0px 5px #888888;
 .volunteer_card_2_details {
   text-align: center;
   font-size: 500%;
-  color: #636363;
+  /* color: #636363; */
 }
 
 .volunteer_card_2_details_pink_div {

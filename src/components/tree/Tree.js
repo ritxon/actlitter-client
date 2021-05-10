@@ -21,8 +21,8 @@ export default class extends React.Component {
       height,
       margin = {
         top: 30,
-        left: 30,
-        right: 30,
+        left: 40,
+        right: 100,
         bottom: 30,
       },
     } = this.props

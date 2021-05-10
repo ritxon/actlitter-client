@@ -19,33 +19,33 @@ export class impact_enviorment extends Component {
         <div className="impact_menu">
           <p><a href="#envirment_title">Impact on environment</a></p>
           <hr></hr>
-          <p><a href="#envirment1">1. Affect local tourism.</a></p>
+          <p><a href="#envirment1">Affect tourism</a></p>
           <hr></hr>
-          <p><a href="#envirment2">2. Cause a fire.</a></p>
+          <p><a href="#envirment2">Cause a fire</a></p>
           <hr></hr>
-          <p><a href="#envirment3">3. Soil pollution.</a></p>
+          <p><a href="#envirment3">Soil pollution</a></p>
           <hr></hr>
-          <p><a href="#envirment4">4. Water pollution.</a></p>
+          <p><a href="#envirment4">Water pollution</a></p>
           <hr></hr>
-          <p><a href="#envirment5">5. Air pollution.</a></p>
+          <p><a href="#envirment5">Air pollution</a></p>
           <hr></hr>
         </div>
 
         {/* Article */}
         <div className="impact_details">
-        <div id="envirment_title" className="impact_jump"></div>
-        <div className="impact_article_flex">
-          <div className="impact_article_container contain1140">
-            <div className="impact_article_title">
-              <h1> Impact on environment</h1>
-              
-            </div>
-            <div className="clear_float"></div>
-            <div className="impact_video_div">
-            <video className="impact_video" src="../../videos/impact-on-environment-demo.mp4" type="video/mp4"  controls="controls" loop="-1" />
-            </div>
+          <div id="envirment_title" className="impact_jump"></div>
+          <div className="impact_article_flex">
+            <div className="impact_article_container contain1140">
+              <div className="impact_article_title">
+                <h1> Impact on environment</h1>
 
-            {/* <div className="impact_article_right">
+              </div>
+              <div className="clear_float"></div>
+              <div className="impact_video_div">
+              <iframe className="impact_video" src="https://www.youtube.com/embed/dvMzCy4Bd54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              {/* <div className="impact_article_right">
               <div className="impact_related impact_links ">
                 <h2>Related Information</h2>
                 <p>
@@ -56,145 +56,107 @@ export class impact_enviorment extends Component {
               </div>
             </div> */}
 
-            <div className="impact_article_body">
-              <div className="impact_article_right">
-                <div className="impact_img_div">
-                  <img
-                    src="../../images/impact/environment1.jpg"
-                    className="impact_img"
-                  />
+              <div className="impact_article_body">
+                <div className="impact_article_right">
+                  <div className="impact_img_div">
+                    <img
+                      src="../../images/impact/environment1.jpg"
+                      className="impact_img"
+                    />
+                  </div>
                 </div>
+                <p className="impact_article_left">
+                  Litter is waste that is incorrectly disposed or discarded at unsuitable locations. It can have a significant impact on the environment. Litter can be found on the street, in city squares, parks or beaches, and get blown or washed into rivers, lakes, creeks and oceans. It contains harmful substances that can pollute forest areas, soil and water bodies.
+                </p>
               </div>
-              <p className="impact_article_left">
-                Littering will have a very bad impact on the environment.
-                Whether it is littering on the street, in the trash can, or
-                throwing the garbage in the square or park, or even directly
-                next to the water. Garbage may be blown into or washed into
-                rivers, woodlands, oceans, lakes and streams. The toxic or
-                chemical substances in them will eventually pollute waterways,
-                forest areas, soil or aquatic environment. For example,
-                cigarette butts contain toxic substances such as arsenic, which
-                can pollute soil and water. There is also a Pacific garbage dump
-                related to ocean plastics on the earth, and marine life is also
-                harmed. In addition, garbage will continuously emit odors and
-                toxic chemical vapors, which will also cause air quality to
-                decline.
-              </p>
-            </div>
-            <div className="clear_float"></div>
-            {/* 1 */}
-            <div className="impact_article_body">
+              <div className="clear_float"></div>
+              {/* 1 */}
+              <div className="impact_article_body">
 
-              <div id="envirment1" className="impact_jump"></div>
-              <h4>1. Affect local tourism and urban environment.</h4>
-              <div className="impact_article_right">
-                <div className="impact_img_div">
-                  <img
-                    src="../../images/impact/figure4.jpg"
-                    className="impact_img"
-                  />
+                <div id="envirment1" className="impact_jump"></div>
+                <h4>Affect tourism</h4>
+                <div className="impact_article_right">
+                  <div className="impact_img_div">
+                    <img
+                      src="../../images/impact/figure4.jpg"
+                      className="impact_img"
+                    />
+                  </div>
                 </div>
-              </div>
-              <p className="impact_article_left">
-                The littered area looks rough and degrades the aesthetic value
-                of the surrounding environment. Secondly, it will affect
-                people's reputation for the city and local tourism, because the
-                garbage on the ground will make the urban area and the roadside
-                look disgusting. Melbourne is also a tourist resort, so keeping
-                the city environment clean can not only improve the happiness of
-                local residents, but also attract foreign tourists and enhance
-                the tourism economy.
+                <p className="impact_article_left">
+                  Litter in popular tourist spots like city monuments, parks, beaches and sanctuaries can degrade their scenic view. It affects the reputation of the residents and local tourism as litter on the ground can make urban as well as countryside areas lose their aesthetic appeal. Melbourne is a city famous for its monuments, so keeping the city clean will not only improve the happiness of city residents, but also attract tourists and improve tourism economy.
               </p>
-            </div>
-            <div className="clear_float"></div>
-            {/* 2 */}
-            <div className="impact_article_body">
-              <div id="envirment2" className="impact_jump"></div>
-              <h4>2. Increased possibility of fire</h4>
-              <div className="impact_article_right">
-                <div className="impact_img_div">
-                  <img
-                    src="../../images/impact/figure5.jpg"
-                    className="impact_img"
-                  />
+              </div>
+              <div className="clear_float"></div>
+              {/* 2 */}
+              <div className="impact_article_body">
+                <div id="envirment2" className="impact_jump"></div>
+                <h4>Cause fire</h4>
+                <div className="impact_article_right">
+                  <div className="impact_img_div">
+                    <img
+                      src="../../images/impact/figure5.jpg"
+                      className="impact_img"
+                    />
+                  </div>
                 </div>
-              </div>
-              <p className="impact_article_left">
-                Cigarette butts are the easiest garbage that people throw away
-                at will, but people usually ignore the potential threats caused
-                by littering. It may cause fires due to dry air or igniting
-                combustibles. Therefore, smokers should pay special attention to
-                how to deal with the problem of cigarette butts and try to throw
-                them in the cigarette extinction box. If there are only ordinary
-                trash cans, make sure that the cigarette butts are completely
-                extinguished before throwing them into the trash can. Don't
-                throw away cigarette butts at will.
+                <p className="impact_article_left">
+                  Cigarette butts can cause fires due to dry air or igniting combustibles. Therefore, smokers should ensure to throw them in the cigarette extinction box. If there are only ordinary garbage bins, cigarette butts should be completely extinguished before throwing them into the bin.
               </p>
-            </div>
-            <div className="clear_float"></div>
-            {/* 3 */}
-            <div className="impact_article_body">
-              <div id="envirment3" className="impact_jump"></div>
-              <h4>3. Soil pollution</h4>
-              <div className="impact_article_right">
-                <div className="impact_img_div">
-                  <img
-                    src="../../images/impact/environment4.jpg"
-                    className="impact_img"
-                  />
+              </div>
+              <div className="clear_float"></div>
+              {/* 3 */}
+              <div className="impact_article_body">
+                <div id="envirment3" className="impact_jump"></div>
+                <h4>Soil pollution</h4>
+                <div className="impact_article_right">
+                  <div className="impact_img_div">
+                    <img
+                      src="../../images/impact/environment4.jpg"
+                      className="impact_img"
+                    />
+                  </div>
                 </div>
-              </div>
-              <p className="impact_article_left">
-                Soil pollution is one of the adverse effects of littering.
-                Glass, metals, organics, etc. may contain harmful substances,
-                such as batteries. Since batteries contain many harmful
-                substances, if they are thrown away at will, they may seriously
-                pollute the soil and damage the groundwater.
+                <p className="impact_article_left">
+                  Soil pollution is one of the adverse effects of littering. Glass, metal, organics etc can contain substances that can reduce quality of soil. Batteries contain many harmful chemicals. If batteries seep into soil, they corrode and release harmful metals like mercury, lead and cadmium causing soil contamination. Moreover, cigarette butts contain toxic substances like arsenic that can contaminate soil and groundwater.
               </p>
-            </div>
-            <div className="clear_float"></div>
-            {/* 4 */}
-            <div className="impact_article_body">
-              <div id="envirment4" className="impact_jump"></div>
-              <h4>4. Water pollution</h4>
-              <div className="impact_article_right">
-                <div className="impact_img_div">
-                  <img
-                    src="../../images/impact/environment6.jpg"
-                    className="impact_img"
-                  />
+              </div>
+              <div className="clear_float"></div>
+              {/* 4 */}
+              <div className="impact_article_body">
+                <div id="envirment4" className="impact_jump"></div>
+                <h4>Water pollution</h4>
+                <div className="impact_article_right">
+                  <div className="impact_img_div">
+                    <img
+                      src="../../images/impact/environment6.jpg"
+                      className="impact_img"
+                    />
+                  </div>
                 </div>
-              </div>
-              <p className="impact_article_left">
-                Littering can cause water pollution in many ways. When people
-                throw rubbish directly into the water, rivers and lakes will be
-                polluted. In addition, rubbish on the road will flow into the
-                water due to wind and water power, causing pollution.
+                <p className="impact_article_left">
+                  Littering can cause water pollution in many ways. When batteries containing harmful metals seep into soil, they can contaminate groundwater. When people throw rubbish directly into water, rivers, lakes and creeks can get polluted. In addition, rubbish on roads and pavements can be blown by wind into a water body leading to water pollution.
               </p>
-            </div>
+              </div>
 
-            <div className="clear_float"></div>
-            {/* 5 */}
-            <div className="impact_article_body">
-              <div id="envirment5" className="impact_jump"></div>
-              <h4>5. Air pollution</h4>
-              <div className="impact_article_right">
-                <div className="impact_img_div">
-                  <img
-                    src="../../images/impact/environment5.jpg"
-                    className="impact_img"
-                  />
+              <div className="clear_float"></div>
+              {/* 5 */}
+              <div className="impact_article_body">
+                <div id="envirment5" className="impact_jump"></div>
+                <h4>Air pollution</h4>
+                <div className="impact_article_right">
+                  <div className="impact_img_div">
+                    <img
+                      src="../../images/impact/environment5.jpg"
+                      className="impact_img"
+                    />
+                  </div>
                 </div>
-              </div>
-              <p className="impact_article_left">
-                People often burn garbage to remove it. However, during the
-                combustion process, harmful substances contained in the garbage
-                will enter the air, causing air pollution. Especially when
-                burning plastics, many toxic gases and particulates emitted will
-                have a negative impact on the human respiratory system.
+                <p className="impact_article_left">
+                  People often burn garbage to remove it. However, during their combustion, many harmful substances contained can enter the air causing air pollution. Burning of plastic leads to emission of toxic gases and particulates that can cause damage to the air atmosphere. Moreover, litter in parks and on pavements release an odour that can impact the surrounding environment.
               </p>
 
-              {/* <div className="impact_src">
+                {/* <div className="impact_src">
                 <a
                   href="https://www.conserve-energy-future.com/causes-problems-solutions-littering.php"
                   className="impact_link"
@@ -202,8 +164,8 @@ export class impact_enviorment extends Component {
                   src:https://www.conserve-energy-future.com/causes-problems-solutions-littering.php
                 </a>
               </div> */}
+              </div>
             </div>
-          </div>
           </div>
         </div>
         <div className="clear_float"></div>

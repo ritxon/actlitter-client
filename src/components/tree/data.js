@@ -46,5 +46,31 @@ export default {
         { name: 'Printing & writing paper' },
       ],
     },
+    {
+      name: 'Rubber',
+      children: [
+        { name: 'Crumb rubber' },
+        { name: 'Rubber granules' },
+        { name: 'Tread ends' },
+        { name: 'Uncured rubber scrap' },
+      ],
+    },
+    {
+      name: 'Textiles',
+      children: [
+        { name: 'Carpet' },
+        { name: 'Clothing' },
+        { name: 'Industrial textiles' },
+        { name: 'Mixed textile waste' },
+      ],
+    },
+    {
+      name: 'Plastics',
+      children: [
+        { name: 'Beverage bottles' },
+        { name: 'Disposable dinnerware' },
+        { name: 'All other plastics' },
+      ],
+    },
   ],
 }

@@ -26,8 +26,7 @@ const Home = () => {
 					<div className="left-desc">
 						<div className="title-section">Our Vision</div>
 						<p>
-							The primary goal of Aclitter is to achieve maximum litter awareness in Victoria by imparting key
-							information and knowledge about impact of litter in Australia.
+						Aclitter aims to achieve maximum litter awareness in Victoria by imparting knowledge to Victorian students about the impact of litter in Australia.
 						</p>
 					</div>
 				</div>
@@ -52,7 +51,7 @@ const Home = () => {
 					<div className="left-desc">
 						<div className="title-section">Did you know that cigarettes butts are the most common kind of litter?</div>
 						<p>
-							Cigarette butts are the highest littered item in Australia. Out of 24 billion cigarettes sold in
+							Cigarette butts is the highest littered item in Australia. Out of 24 billion cigarettes sold in
 							Australia, around 7 billion are littered
 						</p>
 						<p>
@@ -74,8 +73,7 @@ const Home = () => {
 							<div className="title-section">Volunteering Organisations</div>
 							<p>Various organisations in Australia are committed to reduce and prevent littering.</p>
 							<p>
-								These are the most distinguished Australian organisations, their contributions to reduce littering and
-								participate in their volunteering activities.
+							Check out distinguished organisations in Australia, their contribution to reduce litter and get interested to participate in volunteering activities.
 							</p>
 						</div>
 						<div className="right-side">
