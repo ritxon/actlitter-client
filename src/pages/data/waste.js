@@ -295,6 +295,7 @@ const Waste = () => {
 
 	return (
 		<>
+		
 		<div className="impact_fake_navigation">
 				<p>
 					<a href="/">&emsp; Home &ensp;</a>/ &ensp;
