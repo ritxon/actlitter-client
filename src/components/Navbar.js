@@ -171,7 +171,7 @@ class Navbar extends Component {
 
                     <p class="nav_title">LITTER INFO</p>
                     <img
-                      src="../../images/gallery_button_right.png"
+                      src="../../images/gallery_button_right_w.png"
                       className="nav_main_trans_img"
                     ></img>
                   </div>
@@ -181,7 +181,7 @@ class Navbar extends Component {
                   <div class="nav_box-item_trans ">
                     <p class="nav_title">VOLUNTEER</p>
                     <img
-                      src="../../images/gallery_button_right.png"
+                      src="../../images/gallery_button_right_w.png"
                       className="nav_main_trans_img"
                     ></img>
                   </div>
@@ -199,7 +199,7 @@ class Navbar extends Component {
                 <label for="rr1" class="bar">
                   <div className="nav_opyions_choose">
                     <img
-                      src="../../images/gallery_button_left.png"
+                      src="../../images/gallery_button_left_w.png"
                       className="nav_trans_img"
                     ></img>
                     <p className="nav_opyion_text">
@@ -231,7 +231,7 @@ class Navbar extends Component {
                 <label for="rr1" class="bar">
                   <div className="nav_opyions_choose">
                     <img
-                      src="../../images/gallery_button_left.png"
+                      src="../../images/gallery_button_left_w.png"
                       className="nav_trans_img"
                     ></img>
                     <p className="nav_opyion_text">
