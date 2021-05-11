@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "actlitter",
     "public": "build",
     "ignore": [
       "firebase.json",
