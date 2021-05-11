@@ -26,7 +26,7 @@ const Home = () => {
 					<div className="left-desc">
 						<div className="title-section">Our Vision</div>
 						<p>
-						Aclitter aims to achieve maximum litter awareness in Victoria by imparting knowledge to Victorian university test students about the impact of litter in Australia.
+						Aclitter aims to achieve maximum litter awareness in Victoria by imparting knowledge to Victorian university students about the impact of litter in Australia.
 						</p>
 					</div>
 				</div>
