@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "actlitter-backend"
+  },
+  "targets": {
+    "actlitter-backend": {
+      "hosting": {
+        "actlitter": [
+          "actlitter"
+        ],
+        "actlitter-backend": [
+          "actlitter-backend"
+        ]
+      }
+    }
   }
 }
