@@ -194,7 +194,7 @@ const Items = () => {
 									</div>
 								</div>
 							</div>
-							<div className="vis-vertical-data">
+							<div className="vis-vertical-data-radio">
 								<Radar dataSet={dataSetRadar} attributes={locations} />
 							</div>
 						</div>

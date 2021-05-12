@@ -1,6 +1,3 @@
-
-
-
 .section-image-data {
 	width: 55%;
 	height: 450px;
@@ -30,7 +27,7 @@
 }
 
 .data-radioContent {
-	width: 1280px;
+	max-width: 1280px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -55,19 +52,19 @@
 .info-vertical-data {
 	width: 40%;
 	padding: 20px 40px 20px 20px;
-    text-align: left;
+	text-align: left;
 }
 
-.info-vertical-data p{
+.info-vertical-data p {
 	text-align: left;
 }
 
 .info-vertical-data h2 {
 	margin: 15px 0 10px 0;
-    text-align: left;
+	text-align: left;
 }
 
-.vis-vertical-data {
+.vis-vertical-data ,.vis-vertical-data-radio {
 	width: 60%;
 }
 
@@ -75,8 +72,8 @@
     display: none !important;
 } */
 
-.sliderItems{
-    height: 60px !important;
+.sliderItems {
+	height: 60px !important;
 }
 
 /* .radioButton-data {
@@ -150,4 +147,38 @@ input[type="radio"]:checked + label::after {
 input[type="radio"]:checked + label {
 	background: #d5ccdb;
 	color: rgba(45, 0, 75, 1);
+}
+
+@media screen and (max-width: 960px) {
+	.data-container {
+		height: 100%;
+	}
+
+	.data-lineContent {
+		width: 100%;
+	}
+
+	.data-radioContent{
+		width: 100%;
+	}
+
+	.vertical-data-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.info-vertical-data {
+		width: 100%;
+	}
+
+	.vis-vertical-data {
+		width: 100%;
+		height: 80vh;
+	}
+
+	.vis-vertical-data-radio {
+		width: 100%;
+		height: 35vh;
+	}
 }
