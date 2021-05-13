@@ -41,14 +41,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "in",
+      value: "off",
       input: "input",
+      pass: "sdfsd",
     };
   }
 
   clickLogin = () => {
       this.setState({
-        value: "in",
+        value: "in"
       });
     }
   
@@ -137,7 +138,7 @@ class App extends Component {
       return(
         <>
         <div></div>
-        <input type="text" value="" />
+        <input type="text" value={this.state.pass} />
         <Button styleBtn="primary quiz-btn" text="Login" onClick={() => this.clickLogin() } />
         </>
       )

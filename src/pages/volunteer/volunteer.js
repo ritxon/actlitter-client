@@ -21,11 +21,11 @@ export class volunteer extends Component {
                 <div className="volunteer_organizations_background">
                     {/* Title */}
                     <div className="volunteer_organizations_title">
-                        <h1>ORGANIZATIONS</h1>
+                        <h1>GET INVOLVED</h1>
                     </div>
                     <div className="volunteer_all_summary_div contain1140">
                         <p className="volunteer_all_summary">
-                            &emsp;&emsp;Various organisations in Australia are committed to reduce and prevent littering. Find out below about distinguished Australian organisations, their contributions to reduce littering and participate in their volunteering activities.
+                            Various organisations in Australia are committed to reduce and prevent littering. Find out below about distinguished Australian organisations, their contributions to reduce littering and participate in their volunteering activities.
                         </p>
                     </div>
                     {/* pictures */}

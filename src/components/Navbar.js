@@ -52,28 +52,6 @@ class Navbar extends Component {
               MAP
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/data"
-              className="nav-links"
-              onClick={this.closeMobileMenu}
-            >
-              DATA
-            </Link>
-            <div className="nav-menu-sub">
-              <ul>
-                {/* <li>
-                  <a href="/impact">Litter Info Summary</a>
-                </li> */}
-                <li>
-                  <a href="/data/waste">Waste collected per year</a>
-                </li>
-                <li>
-                  <a href="/data/items">Common location of litter</a>
-                </li>
-              </ul>
-            </div>
-          </li>
           {/* litter info */}
           <li className="nav-item nav_laptop">
             <Link
@@ -100,14 +78,45 @@ class Navbar extends Component {
               </ul>
             </div>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/data"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              VISUALISATION
+            </Link>
+            <div className="nav-menu-sub">
+              <ul>
+                {/* <li>
+                  <a href="/impact">Litter Info Summary</a>
+                </li> */}
+                <li>
+                  <a href="/data/waste">Waste collected per year</a>
+                </li>
+                <li>
+                  <a href="/data/items">Common location of litter</a>
+                </li>
+              </ul>
+            </div>
+          </li>
           {/* volunteer */}
+          <li className="nav-item">
+            <Link
+              to="/quiz"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              QUIZ
+            </Link>
+          </li>
           <li className="nav-item">
             <Link
               to="/volunteer"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              VOLUNTEER
+              GET INVOLVED
             </Link>
             <div className="nav-menu-sub">
               <ul>
@@ -133,15 +142,6 @@ class Navbar extends Component {
             </div>
           </li>
 
-          <li className="nav-item">
-            <Link
-              to="/quiz"
-              className="nav-links"
-              onClick={this.closeMobileMenu}
-            >
-              QUIZ
-            </Link>
-          </li>
           {/* <li className="nav-item">
             <Link
               to="/login"

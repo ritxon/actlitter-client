@@ -31,7 +31,6 @@ export default function Map() {
 	const [bounds, setBounds] = useState(null);
 	const [zoom, setZoom] = useState(10);
 	useEffect(() => {
-    
 		// Check this url https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/8fgn-5q6t
 		// SoQL https://dev.socrata.com/docs/queries/
 		// App Token for the API CMgZAQjc7TpQfXi0JQvJsBax7
@@ -147,170 +146,172 @@ export default function Map() {
 			</div>
 
 			<div className="section-article-white">
-
-			{/* search area */}
-			<div className="contain1280">
-				<div className="map-title">
-					<h3>Find a bin location</h3>
-					<p>Find a specific types of trash cans near you.</p>
+				{/* search area */}
+				<div className="contain1280">
+					<div className="map-title">
+						<h3>Find a bin location</h3>
+						<p>
+							The map below displays location of waste bins in City of Melbourne and suburbs near it. Find a specific type
+							of waste bin near your location.
+						</p>
+					</div>
+					<div className="map-search">
+						<Search panTo={panTo} />
+						<BinTypeFilter />
+					</div>
 				</div>
-				<div className="map-search">
-					<Search panTo={panTo} />
-					<BinTypeFilter />
-				</div>
-			</div>
 
-			{/* map display area */}
-			<div className="contain1280-flex">
-				<div className="map-body">
-					<div className="map-container">
-						<Locate panTo={panTo} />
+				{/* map display area */}
+				<div className="contain1280-flex">
+					<div className="map-body">
+						<div className="map-container">
+							<Locate panTo={panTo} />
 
-						<GoogleMap
-							id="map"
-							mapContainerStyle={mapContainerStyle}
-							zoom={18}
-							center={center}
-							options={options}
-							onLoad={onMapLoad}
-							// yesIwantToUseGoogleMapApiInternals
-							// onGoogleApiLoaded={({ map }) => {
-							//   mapRef.current = map;
-							// }}
-							// onChange={({ zoom, bounds }) => {
-							//   setZoom(zoom);
-							//   setBounds([
-							//     bounds.nw.lng,
-							//     bounds.se.lat,
-							//     bounds.se.lng,
-							//     bounds.nw.lat,
-							//   ]);
-							// }}
-						>
-							<Marker
-								// icon="https://www.robotwoods.com/dev/misc/bluecircle.png"
-								icon={{
-									url: "images/current.png",
-									origin: new window.google.maps.Point(0, 0),
-									anchor: new window.google.maps.Point(10, 10),
-									scaledSize: new window.google.maps.Size(30, 30),
-								}}
-								position={currentPosition}
-							/>
-							{binDataSet.map((bin) => {
-								return (
-									<Marker
-										key={bin.gis_id}
+							<GoogleMap
+								id="map"
+								mapContainerStyle={mapContainerStyle}
+								zoom={18}
+								center={center}
+								options={options}
+								onLoad={onMapLoad}
+								// yesIwantToUseGoogleMapApiInternals
+								// onGoogleApiLoaded={({ map }) => {
+								//   mapRef.current = map;
+								// }}
+								// onChange={({ zoom, bounds }) => {
+								//   setZoom(zoom);
+								//   setBounds([
+								//     bounds.nw.lng,
+								//     bounds.se.lat,
+								//     bounds.se.lng,
+								//     bounds.nw.lat,
+								//   ]);
+								// }}
+							>
+								<Marker
+									// icon="https://www.robotwoods.com/dev/misc/bluecircle.png"
+									icon={{
+										url: "images/current.png",
+										origin: new window.google.maps.Point(0, 0),
+										anchor: new window.google.maps.Point(10, 10),
+										scaledSize: new window.google.maps.Size(30, 30),
+									}}
+									position={currentPosition}
+								/>
+								{binDataSet.map((bin) => {
+									return (
+										<Marker
+											key={bin.gis_id}
+											position={{
+												lat: parseFloat(bin.geometry.latitude),
+												lng: parseFloat(bin.geometry.longitude),
+											}}
+											// display bin with type
+											icon={
+												/Cigarette/.test(bin.description) && (binType == "All" || binType == "Cigarette")
+													? {
+															url: "images/cbin.png",
+															origin: new window.google.maps.Point(0, 0),
+															anchor: new window.google.maps.Point(15, 15),
+															scaledSize: new window.google.maps.Size(30, 30),
+													  }
+													: /Recycling/.test(bin.description) && (binType == "All" || binType == "Recycling")
+													? {
+															url: "images/greenbin.png",
+															origin: new window.google.maps.Point(0, 0),
+															anchor: new window.google.maps.Point(15, 15),
+															scaledSize: new window.google.maps.Size(30, 30),
+													  }
+													: !/Cigarette/.test(bin.description) && !/Recycling/.test(bin.description)
+													? {
+															url: "images/bin.png",
+															origin: new window.google.maps.Point(0, 0),
+															anchor: new window.google.maps.Point(15, 15),
+															scaledSize: new window.google.maps.Size(30, 30),
+													  }
+													: {
+															url: "images/bin.png",
+															origin: new window.google.maps.Point(0, 0),
+															anchor: new window.google.maps.Point(0, 0),
+															scaledSize: new window.google.maps.Size(0, 0),
+													  }
+											}
+											onClick={() => {
+												setSelectedBin(bin);
+											}}
+										></Marker>
+									);
+								})}
+
+								{selectedBin ? (
+									<InfoWindow
 										position={{
-											lat: parseFloat(bin.geometry.latitude),
-											lng: parseFloat(bin.geometry.longitude),
+											lat: parseFloat(selectedBin.geometry.latitude),
+											lng: parseFloat(selectedBin.geometry.longitude),
 										}}
-										// display bin with type
-										icon={
-											/Cigarette/.test(bin.description) && (binType == "All" || binType == "Cigarette")
-												? {
-														url: "images/cbin.png",
-														origin: new window.google.maps.Point(0, 0),
-														anchor: new window.google.maps.Point(15, 15),
-														scaledSize: new window.google.maps.Size(30, 30),
-												  }
-												: /Recycling/.test(bin.description) && (binType == "All" || binType == "Recycling")
-												? {
-														url: "images/greenbin.png",
-														origin: new window.google.maps.Point(0, 0),
-														anchor: new window.google.maps.Point(15, 15),
-														scaledSize: new window.google.maps.Size(30, 30),
-												  }
-												: !/Cigarette/.test(bin.description) && !/Recycling/.test(bin.description)
-												? {
-														url: "images/bin.png",
-														origin: new window.google.maps.Point(0, 0),
-														anchor: new window.google.maps.Point(15, 15),
-														scaledSize: new window.google.maps.Size(30, 30),
-												  }
-												: {
-														url: "images/bin.png",
-														origin: new window.google.maps.Point(0, 0),
-														anchor: new window.google.maps.Point(0, 0),
-														scaledSize: new window.google.maps.Size(0, 0),
-												  }
-										}
-										onClick={() => {
-											setSelectedBin(bin);
+										onCloseClick={() => {
+											setSelectedBin(null);
 										}}
-									></Marker>
-								);
-							})}
-
-							{selectedBin ? (
-								<InfoWindow
-									position={{
-										lat: parseFloat(selectedBin.geometry.latitude),
-										lng: parseFloat(selectedBin.geometry.longitude),
-									}}
-									onCloseClick={() => {
-										setSelectedBin(null);
-									}}
-								>
-									<div className="bin-window">
-										<div className="bin-info">
-											<h4>Bin Details</h4>
-											<p>Bin Type: {selectedBin.type} Bin</p>
-											<p>Bin Description: {selectedBin.description}</p>
+									>
+										<div className="bin-window">
+											<div className="bin-info">
+												<h4>Bin Details</h4>
+												<p>Bin Type: {selectedBin.type} Bin</p>
+												<p>Bin Description: {selectedBin.description}</p>
+											</div>
+											<a
+												className="map-btn btn btn-slide green-btn-modal btn-modal quiz-btn"
+												target="_blank"
+												href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${
+													currentPosition.lng
+												}&destination=${parseFloat(selectedBin.geometry.latitude)},${parseFloat(
+													selectedBin.geometry.longitude
+												)}`}
+											>
+												Navigation to Google Map
+											</a>
 										</div>
-										<a
-											className="map-btn btn btn-slide green-btn-modal btn-modal quiz-btn"
-											target="_blank"
-											href={`https://www.google.com/maps/dir/?api=1&origin=${currentPosition.lat},${
-												currentPosition.lng
-											}&destination=${parseFloat(selectedBin.geometry.latitude)},${parseFloat(
-												selectedBin.geometry.longitude
-											)}`}
-										>
-											Navigation to Google Map
-										</a>
-									</div>
-								</InfoWindow>
-							) : null}
-						</GoogleMap>
-					</div>
-					<div className="map-index">
-						<ul>
-							<h4>Map Legend</h4>
-							<li>
-								<img src="images/binB.png" alt="General Waste Bin"></img>
-								<p className="hashed-text">You can throw non-recyclables in this type of bin.</p>
-								<p>
-									General Waste Bin <img src="images/i.png"></img>
-								</p>
-							</li>
-							<li>
-								<img src="images/cbinB.png" alt="Cigarette Bin"></img>
-								<p className="hashed-text">You can only throw cigarette buts in this type of bin.</p>
-								<p>
-									Cigarette Bin <img src="images/i.png"></img>
-								</p>
-							</li>
-							<li>
-								<img src="images/greenbinB.png" alt="Recycling Bin"></img>
-								<p className="hashed-text">You can only throw recyclables into this trash can. </p>
-								<p>
-									Recycling Bin <img src="images/i.png"></img>
-								</p>
-							</li>
+									</InfoWindow>
+								) : null}
+							</GoogleMap>
+						</div>
+						<div className="map-index">
+							<ul>
+								<h4>Map Legend</h4>
+								<li>
+									<img src="images/binB.png" alt="General Waste Bin"></img>
+									<p className="hashed-text">You can throw non-recyclables in this type of bin.</p>
+									<p>
+										General Waste Bin <img src="images/i.png"></img>
+									</p>
+								</li>
+								<li>
+									<img src="images/cbinB.png" alt="Cigarette Bin"></img>
+									<p className="hashed-text">You can only throw cigarette buts in this type of bin.</p>
+									<p>
+										Cigarette Bin <img src="images/i.png"></img>
+									</p>
+								</li>
+								<li>
+									<img src="images/greenbinB.png" alt="Recycling Bin"></img>
+									<p className="hashed-text">You can only throw recyclables into this trash can. </p>
+									<p>
+										Recycling Bin <img src="images/i.png"></img>
+									</p>
+								</li>
 
-							<li>
-								<img src="images/compass.png" alt="Get Location"></img>
-								<p className="hashed-text">This icon helps you get your current location.</p>
-								<p>
-                Current Location <img src="images/i.png"></img>
-								</p>
-							</li>
-						</ul>
+								<li>
+									<img src="images/compass.png" alt="Get Location"></img>
+									<p className="hashed-text">This icon helps you get your current location.</p>
+									<p>
+										Current Location <img src="images/i.png"></img>
+									</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-      </div>
 		</>
 	);
 
@@ -383,7 +384,7 @@ export default function Map() {
 						value={value}
 						onChange={handleInput}
 						disabled={!ready}
-						placeholder="Search your address here"
+						placeholder="Search your location in City of Melbourne"
 					/>
 					<ComboboxPopover>
 						<ComboboxList>
@@ -422,6 +423,7 @@ export default function Map() {
 					options={options}
 					// defaultValue={options[0]}
 					onChange={handleSelect}
+					value="sdsds"
 					// theme={ }
 				/>
 			</div>
