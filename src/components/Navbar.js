@@ -45,6 +45,15 @@ class Navbar extends Component {
           </li>
           <li className="nav-item">
             <Link
+              to="/map"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              MAP
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
               to="/data"
               className="nav-links"
               onClick={this.closeMobileMenu}
@@ -131,15 +140,6 @@ class Navbar extends Component {
               onClick={this.closeMobileMenu}
             >
               QUIZ
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/map"
-              className="nav-links"
-              onClick={this.closeMobileMenu}
-            >
-              MAP
             </Link>
           </li>
           {/* <li className="nav-item">
