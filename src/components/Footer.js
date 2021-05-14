@@ -16,6 +16,13 @@ function Footer() {
               <h3>Explore More: </h3>
               <ul>
                 <li>
+                  <Link to="/data/waste">Waste collected per year</Link>
+                </li>
+                <li>
+                  <Link to="/data/items">Common location of litter</Link>
+                </li>
+                <br />
+                <li>
                   <Link to="/impact_enviorment">Impact on Enviroment</Link>
                 </li>
                 <li>
@@ -35,10 +42,19 @@ function Footer() {
                   <Link to="/">Homepage</Link>
                 </li>
                 <li>
+                  <Link to="/data">data virtualization</Link>
+                </li>
+                <li>
                   <Link to="/impact">Litter Information</Link>
                 </li>
                 <li>
+                  <Link to="/volunteer">Voluteering Organzation</Link>
+                </li>
+                <li>
                   <Link to="/quiz">Quiz</Link>
+                </li>
+                <li>
+                  <Link to="/map">Map</Link>
                 </li>
               </ul>
             </div>
