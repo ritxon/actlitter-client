@@ -128,7 +128,7 @@ export default function Map() {
     lat: -37.813629,
     lng: 144.963058,
   });
-
+  console.log(binDataSet, 111);
   const mapRef = React.useRef();
 
   const onMapLoad = React.useCallback((map) => {
@@ -464,7 +464,7 @@ export default function Map() {
         <Select
           className="map-filter-dropdown"
           options={options}
-          // defaultValue={options[0]}
+          defaultValue={options[0]}
           onChange={handleSelect}
           // theme={ }
         />
