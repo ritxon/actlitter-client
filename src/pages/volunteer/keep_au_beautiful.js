@@ -85,7 +85,9 @@ export class keep_au_beautiful extends Component {
                     <div className="volunteer_button_div">
                         <div className="volunteer_button">
                             <p className="">
-                                Click here to go to source :&ensp;
+                            This webpage is only for educational and informational purpose. 
+              It is non-profitable and copyrights go to the respective volunteering organisation. </p><p>
+              Click below link to go to source.</p><p>
                           <a target="blank" href="https://kab.org.au/">https://kab.org.au/</a>
                             </p>
                         </div>

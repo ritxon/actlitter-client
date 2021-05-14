@@ -215,8 +215,9 @@ export class beachpartol extends Component {
           <div className="volunteer_button_div">
             <div className="volunteer_button">
               <p className="">
-              This webpage is only for educational and informational purpose. It is non-profitable and copyrights go to the respective volunteering organisation. Click below link to go to source.
- :&ensp;
+              This webpage is only for educational and informational purpose. 
+              It is non-profitable and copyrights go to the respective volunteering organisation. </p><p>
+              Click below link to go to source.</p><p>
                             <a target="blank" href="https://www.beachpatrol.com.au/">https://www.beachpatrol.com.au/</a>
               </p>
             </div>
