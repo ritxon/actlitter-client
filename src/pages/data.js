@@ -5,12 +5,13 @@ const Data = () => {
 	return (
 		<>
 			<div className="sections-head">
-				<h1>Litter Information </h1>
+				<h1>Litter Visualisation </h1>
 			</div>
 			<SectionItem
 				src="images/figure4.png"
 				title="Do you know how huge the amount of different types of waste collected each year is?"
-				text="The government needs to dispose of the rubbish that people throw away every year, and there is a lot of rubbish that is disposed incorrectly, resulting in an increase in the cost of rubbish disposal."
+				text="This page shows amount of collected waste in Melbourne. It provides a visualisation about amount of waste collected from houses and garbage bins in public areas as well as dumped waste and provides interesting insights from it.
+			   "
 				path="/data/waste"
 				img="figure4"
 				align="left"

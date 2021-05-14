@@ -9,7 +9,7 @@ const LineGraph = ({dataSet, xLegend, yLegend}) => {
 		<>
 			<ResponsiveLine
 				data={dataSet}
-				margin={{ top: 50, right: 20, bottom: 50, left: 80 }}
+				margin={{ top: 120, right: 20, bottom: 20, left: 60 }}
 				xScale={{ type: "point" }}
 				yScale={{ type: "linear", min: 0, max: "auto", stacked: false, reverse: false }}
 				yFormat=" >-.2f"
@@ -44,12 +44,12 @@ const LineGraph = ({dataSet, xLegend, yLegend}) => {
 				useMesh={true}
 				legends={[
                     {
-                        anchor: 'top',
-                        direction: 'row',
+                        anchor: 'top-left',
+                        direction: 'column',
                         justify: false,
-                        translateX: 48,
-                        translateY: -32,
-                        itemsSpacing: 20,
+                        translateX: 0,
+                        translateY: -120,
+                        itemsSpacing: 0,
                         itemDirection: 'left-to-right',
                         itemWidth: 100,
                         itemHeight: 20,

@@ -21,16 +21,6 @@ const Home = () => {
 	return (
 		<>
 			<HeroSection />
-			<div className="vision-home">
-				<div className="contain1140">
-					<div className="left-desc">
-						<div className="title-section">Our Vision</div>
-						<p>
-						Aclitter aims to achieve maximum litter awareness in Victoria by imparting knowledge to Victorian students about the impact of litter in Australia.
-						</p>
-					</div>
-				</div>
-			</div>
 			<div className="section-home">
 				<div className="contain1140">
 					<div className="title-section">Litter Information</div>
@@ -65,6 +55,16 @@ const Home = () => {
 						</Link>
 					</div>
 				</div> */}
+			</div>
+			<div className="vision-home">
+				<div className="contain1140">
+					<div className="left-desc">
+						<div className="title-section">Our Vision</div>
+						<p>
+						Aclitter aims to achieve maximum litter awareness in Victoria by imparting knowledge to Victorian university students about the impact of litter in Australia.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div className="section-home">
 				<div className="contain1140">

@@ -45,25 +45,12 @@ class Navbar extends Component {
           </li>
           <li className="nav-item">
             <Link
-              to="/data"
+              to="/map"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              DATA
+              MAP
             </Link>
-            <div className="nav-menu-sub">
-              <ul>
-                {/* <li>
-                  <a href="/impact">Litter Info Summary</a>
-                </li> */}
-                <li>
-                  <a href="/data/waste">Waste collected per year</a>
-                </li>
-                <li>
-                  <a href="/data/items">Common location of litter</a>
-                </li>
-              </ul>
-            </div>
           </li>
           {/* litter info */}
           <li className="nav-item nav_laptop">
@@ -91,14 +78,45 @@ class Navbar extends Component {
               </ul>
             </div>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/data"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              VISUALISATION
+            </Link>
+            <div className="nav-menu-sub">
+              <ul>
+                {/* <li>
+                  <a href="/impact">Litter Info Summary</a>
+                </li> */}
+                <li>
+                  <a href="/data/waste">Waste collected per year</a>
+                </li>
+                <li>
+                  <a href="/data/items">Common location of litter</a>
+                </li>
+              </ul>
+            </div>
+          </li>
           {/* volunteer */}
+          <li className="nav-item">
+            <Link
+              to="/quiz"
+              className="nav-links"
+              onClick={this.closeMobileMenu}
+            >
+              QUIZ
+            </Link>
+          </li>
           <li className="nav-item">
             <Link
               to="/volunteer"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              VOLUNTEER
+              GET INVOLVED
             </Link>
             <div className="nav-menu-sub">
               <ul>
@@ -124,24 +142,6 @@ class Navbar extends Component {
             </div>
           </li>
 
-          <li className="nav-item">
-            <Link
-              to="/quiz"
-              className="nav-links"
-              onClick={this.closeMobileMenu}
-            >
-              QUIZ
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/map"
-              className="nav-links"
-              onClick={this.closeMobileMenu}
-            >
-              MAP
-            </Link>
-          </li>
           {/* <li className="nav-item">
             <Link
               to="/login"
@@ -171,7 +171,7 @@ class Navbar extends Component {
 
                     <p class="nav_title">LITTER INFO</p>
                     <img
-                      src="../../images/gallery_button_right.png"
+                      src="../../images/gallery_button_right_w.png"
                       className="nav_main_trans_img"
                     ></img>
                   </div>
@@ -181,7 +181,7 @@ class Navbar extends Component {
                   <div class="nav_box-item_trans ">
                     <p class="nav_title">VOLUNTEER</p>
                     <img
-                      src="../../images/gallery_button_right.png"
+                      src="../../images/gallery_button_right_w.png"
                       className="nav_main_trans_img"
                     ></img>
                   </div>
@@ -199,7 +199,7 @@ class Navbar extends Component {
                 <label for="rr1" class="bar">
                   <div className="nav_opyions_choose">
                     <img
-                      src="../../images/gallery_button_left.png"
+                      src="../../images/gallery_button_left_w.png"
                       className="nav_trans_img"
                     ></img>
                     <p className="nav_opyion_text">
@@ -231,7 +231,7 @@ class Navbar extends Component {
                 <label for="rr1" class="bar">
                   <div className="nav_opyions_choose">
                     <img
-                      src="../../images/gallery_button_left.png"
+                      src="../../images/gallery_button_left_w.png"
                       className="nav_trans_img"
                     ></img>
                     <p className="nav_opyion_text">
