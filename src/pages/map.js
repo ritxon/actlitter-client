@@ -243,7 +243,7 @@ export default function Map() {
                           : !/Cigarette/.test(bin.description) &&
                             !/Recycling/.test(bin.description)
                           ? {
-                              url: "images/red2.png",
+                              url: "images/red.png",
                               origin: new window.google.maps.Point(0, 0),
                               anchor: new window.google.maps.Point(15, 15),
                               scaledSize: new window.google.maps.Size(30, 30),
