@@ -423,7 +423,6 @@ export default function Map() {
 					options={options}
 					// defaultValue={options[0]}
 					onChange={handleSelect}
-					value="sdsds"
 					// theme={ }
 				/>
 			</div>
