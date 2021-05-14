@@ -113,7 +113,7 @@ class App extends Component {
 						<Grid item sm />
 						<Grid item sm>
 							<img src={AppIcon} alt="logo" className="logo-login" />
-							<h1>ActLitter Login</h1>
+							<h1>AcLitter Login</h1>
 							<form noValidate onSubmit={this.handleSubmit}>
 								<TextField
 									id="password"
