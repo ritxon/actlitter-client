@@ -13,7 +13,8 @@ import TreeExample from "../components/tree/TreeExample"
 export class impact_classification extends Component {
   render() {
     return (
-      <body>
+      <body className="impact_body_html">
+        <div className="impact_1">
         <div className="impact_fake_navigation">
           <p>
             <a href="/">&emsp; Home &ensp;</a>/ &ensp;
@@ -38,6 +39,7 @@ export class impact_classification extends Component {
           <p><a href="#tree">Recycling tree</a></p>
           <hr></hr>
         </div>
+</div>
 
         <div className="impact_details">
           <div id="classification_title" className="impact_jump"></div>

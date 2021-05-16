@@ -164,7 +164,7 @@ class Navbar extends Component {
                   <p class="nav_title"><a className="nav_title" href="/">HOME</a></p>
                 </div>
                 <div class="nav_box-item">
-                  <p class="nav_title"><a className="nav_title" href="/data">DATA</a></p>
+                  <p class="nav_title"><a className="nav_title" href="/map">MAP</a></p>
                 </div>
                 <label for="rr2" class="bar">
                   <div class="nav_box-item_trans">
@@ -177,21 +177,24 @@ class Navbar extends Component {
                   </div>
                   <div className="clear_float"></div>
                 </label>
+                <div class="nav_box-item">
+                  <p class="nav_title"><a className="nav_title" href="/data">VISUALISATION</a></p>
+                </div>
+                <div class="nav_box-item">
+                  <p class="nav_title"><a className="nav_title" href="/quiz">QUIZ</a></p>
+                </div>
+
                 <label for="rr3" class="bar">
                   <div class="nav_box-item_trans ">
-                    <p class="nav_title">VOLUNTEER</p>
+                    <p class="nav_title">GET INVOLVED</p>
                     <img
                       src="../../images/gallery_button_right_w.png"
                       className="nav_main_trans_img"
                     ></img>
                   </div>
                 </label>
-                <div class="nav_box-item">
-                  <p class="nav_title"><a className="nav_title" href="/quiz">QUIZ</a></p>
-                </div>
-                <div class="nav_box-item">
-                  <p class="nav_title"><a className="nav_title" href="/map">MAP</a></p>
-                </div>
+
+
               </div>
               
               {/* litter info */}

@@ -5,7 +5,8 @@ import ".././App.css";
 export class impact_human_animal extends Component {
   render() {
     return (
-      <body>
+      <body className="impact_body_html">
+        <div className="impact_1">
         {/* current place */}
         <div className="impact_fake_navigation">
           <p>
@@ -16,7 +17,6 @@ export class impact_human_animal extends Component {
         </div>
 
         {/* left top menu */}
-        <div>
           <div className="impact_menu">
             <p><a href="#human_title">Impact on Humans and Animals</a></p>
             <hr></hr>
@@ -29,7 +29,7 @@ export class impact_human_animal extends Component {
             <p><a href="#animal_id3">Impact of microplastic on animals</a></p>
             <hr></hr>
           </div>
-
+</div>
           {/* Article */}
           <div className="impact_details">
 
@@ -135,7 +135,6 @@ export class impact_human_animal extends Component {
                   </p>
                 </div>
               </div>
-            </div>
           </div>
         </div>
 

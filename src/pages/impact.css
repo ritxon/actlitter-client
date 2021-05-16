@@ -42,10 +42,10 @@
   text-align: center;
   text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
 }
-.impact_article_body {
+/* .impact_article_body {
   margin-left: 50px;
   margin-right: 50px;
-}
+} */
 
 .impact_img_div {
   padding-top: 10px;
@@ -70,7 +70,7 @@
 }
 .impact_th {
   border: 1px solid black;
-  padding: 15px;
+  padding: 15px 0px;
   text-align: center;
   background-color: #4caf50;
   color: white;
@@ -85,9 +85,7 @@
   background-color: #e0e0e0;
 }
 
-.impact_fake_navigation{
-  padding: 30px 30px 0 30px;
-}
+
 
 .impact_video_div {
   text-align: center;
@@ -105,7 +103,21 @@
      height:473px;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 960px) {
+  .impact_fake_navigation{
+    width: 600px;
+    padding: 30px 30px 0 30px;
+  }
+  .impact_body_html {
+
+    display: flex;
+  }
+  .impact_1 {
+    position: sticky;
+    align-self: flex-start;
+    top: 20px;
+    width: 20%;
+  }
   .impact_article_title {
     margin-top: 0px;
     margin-bottom: 40px;
@@ -130,7 +142,14 @@
     height: 400px;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
+  .impact_fake_navigation{
+    padding: 30px 30px 0 30px;
+  }
+  .impact_body_html {
+  }
+  .impact_1 {
+  }
   .w {
     background-color: #f5f5f5;
     max-width: 800px;
@@ -170,9 +189,7 @@
 
 @media screen and (min-width: 960px) {
 .impact_menu {
-  position:fixed;
   padding-left: 50px;
-  width: 20%;
   line-height: 1.8;
 }
 .impact_menu p{
@@ -180,6 +197,7 @@
 }
 
 .impact_details {
+  margin-top: 40px;
   display: flex;
   float: right;
   width: 80%;
@@ -195,8 +213,8 @@
   }
   
   .impact_details {
+    margin-top: 40px;
     display: flex;
-    /* padding-left: 130px; */
     float: right;
     width: 100%;
   }
