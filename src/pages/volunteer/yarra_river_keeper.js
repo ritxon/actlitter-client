@@ -186,7 +186,7 @@ export class yarra_river_keeper extends Component {
                             <p className="">
                             This webpage is only for educational and informational purpose. 
               It is non-profitable and copyrights go to the respective volunteering organisation. </p><p>
-              Click below link to go to source.</p><p>
+              Click the link to go to source ：
                             <a target="blank" href="https://yarrariver.org.au/">https://yarrariver.org.au</a>
                             </p>
                         </div>

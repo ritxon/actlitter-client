@@ -68,7 +68,7 @@ export class volunteer extends Component {
                                         name1="Tangaroa Blue"
                                         href2="/volunteer/beachpartol"
                                         src2="../../images/volunteer/beach-patrol_logo.jpg"
-                                        name2="Beach Patrol"
+                                        name2="BeachPatrol"
                                         href3="/volunteer/oceancrusaders"
                                         src3="../../images/volunteer/oceancrusaders_logo.png"
                                         name3="Ocean Crusaders"
@@ -108,7 +108,7 @@ export class volunteer extends Component {
                                     <Volunteer_organizations2
                                         href1="/volunteer/beachpartol"
                                         src1="../../images/volunteer/beach-patrol_logo.jpg"
-                                        name1="Beach Patrol"
+                                        name1="BeachPatrol"
                                         href2="/volunteer/cleanupAu"
                                         src2="../../images/volunteer/Clean_Up_Australia_logo.jpg"
                                         name2="Clean Up Australia"

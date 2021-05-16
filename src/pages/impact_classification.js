@@ -158,11 +158,11 @@ export class impact_classification extends Component {
                     <td className="impact_td"></td>
                     <td className="impact_td">Brick rubble/ whole</td>
                   </tr>
-                  <tr className="impact_tr">
+                  {/* <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td"></td>
                     <td className="impact_td">Concrete</td>
-                  </tr>
+                  </tr> */}
                   <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td"></td>
@@ -174,11 +174,11 @@ export class impact_classification extends Component {
                     <td className="impact_td">Glass</td>
                     <td className="impact_td">Container glass</td>
                   </tr>
-                  <tr className="impact_tr">
+                  {/* <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td"></td>
                     <td className="impact_td">CRT</td>
-                  </tr>
+                  </tr> */}
                   <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td"></td>
@@ -195,11 +195,11 @@ export class impact_classification extends Component {
                     <td className="impact_td">Metals</td>
                     <td className="impact_td">Roofing iron</td>
                   </tr>
-                  <tr className="impact_tr">
+                  {/* <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td"></td>
                     <td className="impact_td">Incl cans</td>
-                  </tr>
+                  </tr> */}
                   <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td"></td>
@@ -214,7 +214,7 @@ export class impact_classification extends Component {
                   <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td">Organics</td>
-                    <td className="impact_td">Animal bedding/ motalities</td>
+                    <td className="impact_td">Animal bedding</td>
                   </tr>
                   <tr className="impact_tr">
                     <td className="impact_td"></td>
@@ -253,7 +253,7 @@ export class impact_classification extends Component {
                     <td className="impact_td">Printing and writing paper</td>
                   </tr>
 
-                  <tr className="impact_tr">
+                  {/* <tr className="impact_tr">
                     <td className="impact_td"></td>
                     <td className="impact_td">Rubber</td>
                     <td className="impact_td">Crumb rubber</td>
@@ -272,7 +272,7 @@ export class impact_classification extends Component {
                     <td className="impact_td"></td>
                     <td className="impact_td"></td>
                     <td className="impact_td">Uncured rubber scrap</td>
-                  </tr>
+                  </tr> */}
 
                   <tr className="impact_tr">
                     <td className="impact_td"></td>

@@ -63,9 +63,9 @@
 
 .impact_table {
   padding-top: 20px;
-  margin: 20px auto;
+  /* margin: 0px auto; */
   border: 1px solid black;
-  width: 80%;
+  width: auto;
   border-collapse: collapse;
 }
 .impact_th {

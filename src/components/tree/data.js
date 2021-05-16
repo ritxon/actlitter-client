@@ -6,7 +6,6 @@ export default {
       children: [
         { name: 'Asphalt' },
         { name: 'Brick rubble/ whole' },
-        { name: 'Concrete' },
         { name: 'Soil/sand' },
       ],
     },
@@ -14,7 +13,6 @@ export default {
       name: 'Glass',
       children: [
         { name: 'Container glass' },
-        { name: 'CRT' },
         { name: 'Mixed glass waste' },
         { name: 'Sheet/ laminated glass' },
       ],
@@ -23,7 +21,6 @@ export default {
       name: 'Metals',
       children: [
         { name: 'Roofing iron' },
-        { name: 'Incl cans' },
         { name: 'Batteries' },
         { name: 'Steel cans' },
       ],
@@ -31,7 +28,7 @@ export default {
     {
       name: 'Organics',
       children: [
-        { name: 'Animal bedding/ motalities' },
+        { name: 'Animal bedding' },
         { name: 'Barks' },
         { name: 'Food waste' },
         { name: 'Garden organics' },
@@ -46,15 +43,15 @@ export default {
         { name: 'Printing & writing paper' },
       ],
     },
-    {
-      name: 'Rubber',
-      children: [
-        { name: 'Crumb rubber' },
-        { name: 'Rubber granules' },
-        { name: 'Tread ends' },
-        { name: 'Uncured rubber scrap' },
-      ],
-    },
+    // {
+    //   name: 'Rubber',
+    //   children: [
+    //     { name: 'Crumb rubber' },
+    //     { name: 'Rubber granules' },
+    //     // { name: 'Tread ends' },
+    //     // { name: 'Uncured rubber scrap' },
+    //   ],
+    // },
     {
       name: 'Textiles',
       children: [

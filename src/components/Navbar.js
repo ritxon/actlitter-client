@@ -121,7 +121,7 @@ class Navbar extends Component {
             <div className="nav-menu-sub">
               <ul>
                 <li>
-                  <a href="/volunteer/beachpartol">Beach Patrol</a>
+                  <a href="/volunteer/beachpartol">BeachPatrol</a>
                 </li>
                 <li>
                   <a href="/volunteer/cleanupAu">Clean Up Australia</a>
@@ -249,7 +249,7 @@ class Navbar extends Component {
                   </li>
                   <li>
                     <p className="nav_mobile_link">
-                      <a className="nav_mobile_link" href="/volunteer/beachpartol">&emsp;Beach Patrol</a></p>
+                      <a className="nav_mobile_link" href="/volunteer/beachpartol">&emsp;BeachPatrol</a></p>
                   </li>
                   <li>
                     <p className="nav_mobile_link">
