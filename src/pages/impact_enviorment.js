@@ -13,7 +13,7 @@ export class impact_enviorment extends Component {
             <a classname="bold" href="/impact">
               Litter Info &ensp;
             </a>
-            / &ensp; Impact on enviorment
+            / &ensp; Impact on Enviorment
           </p>
         </div>
 
