@@ -39,7 +39,7 @@ function Footer() {
               <h3>Menu</h3>
               <ul>
                 <li>
-                  <Link to="/">Homepage</Link>
+                  <Link to="/">HOME</Link>
                 </li>
                 <li>
                   <Link to="/data">VISUALISATION</Link>
@@ -51,10 +51,10 @@ function Footer() {
                   <Link to="/volunteer">GET INVOLVED</Link>
                 </li>
                 <li>
-                  <Link to="/quiz">Quiz</Link>
+                  <Link to="/quiz">QUIZ</Link>
                 </li>
                 <li>
-                  <Link to="/map">Map</Link>
+                  <Link to="/map">MAP</Link>
                 </li>
               </ul>
             </div>
