@@ -49,7 +49,7 @@ export default function Map() {
     // SoQL https://dev.socrata.com/docs/queries/
     // App Token for the API CMgZAQjc7TpQfXi0JQvJsBax7
     const url =
-      "https://data.melbourne.vic.gov.au/resource/8fgn-5q6t.json?$$app_token=CMgZAQjc7TpQfXi0JQvJsBax7&$limit=10000&asset_type=Litter%20Bin&$select=gis_id,description,geometry";
+      "https://data.melbourne.vic.gov.au/resource/8fgn-5q6t.json?$$app_token=CMgZAQjc7TpQfXi0JQvJsBax7&$limit=10000&asset_type=Litter%20Bin&$select=gis_id,description,geometry,location_desc";
 
     axios
       .get(url)
@@ -274,9 +274,31 @@ export default function Map() {
                   >
                     <div className="bin-window">
                       <div className="bin-info">
-                        <h4>Bin Details</h4>
-                        <p>Bin Type: {selectedBin.type} Bin</p>
-                        <p>Bin Description: {selectedBin.description}</p>
+                        <h4> Bin Details</h4>
+                        <table className="bin-info-table">
+                          <tr>
+                            <th>Bin Type:</th>
+                            <td>{selectedBin.type} Bin</td>
+                          </tr>
+                          <tr>
+                            <th>Bin Description:</th>
+                            <td>{selectedBin.description}</td>
+                          </tr>
+                          <tr>
+                            <th>Bin Location:</th>
+                            <td>{selectedBin.location_desc}</td>
+                          </tr>
+                        </table>
+                        {/* <h4> Bin Details</h4>
+                        <p>
+                          <b>Bin Type </b>: {selectedBin.type} Bin
+                        </p>
+                        <p>
+                          <b>Bin Description </b>: {selectedBin.description}
+                        </p>
+                        <p>
+                          <b>Bin Location</b>: {selectedBin.location_desc}
+                        </p> */}
                       </div>
                       <a
                         className="map-btn btn btn-slide green-btn-modal btn-modal quiz-btn"
