@@ -42,13 +42,13 @@ function Footer() {
                   <Link to="/">Homepage</Link>
                 </li>
                 <li>
-                  <Link to="/data">data virtualization</Link>
+                  <Link to="/data">VISUALISATION</Link>
                 </li>
                 <li>
-                  <Link to="/impact">Litter Information</Link>
+                  <Link to="/impact">LITTER INFO</Link>
                 </li>
                 <li>
-                  <Link to="/volunteer">Voluteering Organzation</Link>
+                  <Link to="/volunteer">GET INVOLVED</Link>
                 </li>
                 <li>
                   <Link to="/quiz">Quiz</Link>
