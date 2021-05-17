@@ -40,7 +40,7 @@ export class keep_au_beautiful extends Component {
                                     <h1>KEEP AUSTRALIA BEAUTIFUL</h1>
                                 </div>
                                 <p className="organization_details">
-                                    Keep Australia Beautiful (KAB) is a non-profit organization founded in 1968 that aims to achieve a litter-free and environmentally sustainable Australia. It is located in all states of Australia and provides a range of programs to educate Australian citizens about environmental sustainability and take action to reduce litter. Keep Australia Beautiful encourages involvement of volunteers by hosting clean-up events to pick up litter and reduce waste in the respective neighbourhoods.
+                                Keep Australia Beautiful (KAB) is an environmental non-profit organization founded in 1968 that aims to achieve an environmentally sustainable Australia. It is located in all states of Australia and provides a range of programs to educate Australian citizens about environmental sustainability and take action to reduce litter. Keep Australia Beautiful also hosts a few clean-up events to pick up litter and reduce waste in the respective neighbourhoods.
                         </p>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ export class keep_au_beautiful extends Component {
                     </p>
                         <p className="organization_details">
                             <img src="../../images/volunteer/fun-fact.png"
-                                className="volunteer_fun_fact"></img>  The organisation held a special campaign last year called Prevent The Spread to provide tips on how to reduce waste generated during the pandemic like beverage containers and used masks.
+                                className="volunteer_fun_fact"></img>  The organisation kept a theme called Prevent The Spread last year for the special week event to provide tips on how to reduce waste generated during the pandemic like used masks and beverage containers.
 
                     </p>
 
@@ -85,8 +85,7 @@ export class keep_au_beautiful extends Component {
                     <div className="volunteer_button_div">
                         <div className="volunteer_button">
                             <p className="">
-                            This webpage is only for educational and informational purpose. 
-              It is non-profitable and copyrights go to the respective volunteering organisation. </p><p>
+                            This webpage is only for educational and informational purpose. It is non-profitable and copyrights go to the respective environmental organisation. </p><p>
               Click the link to go to source ：
                           <a target="blank" href="https://kab.org.au/">https://kab.org.au/</a>
                             </p>

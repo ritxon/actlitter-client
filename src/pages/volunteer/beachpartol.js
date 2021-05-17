@@ -38,13 +38,7 @@ export class beachpartol extends Component {
                   <h1>BEACHPATROL</h1>
                 </div>
                 <p className="organization_details">
-                  BeachPatrol is a volunteer group in Melbourne that aims to
-                  improve cleanliness of beaches in Melbourne. BeachPatrol is
-                  spread over many postcode areas in Melbourne and conducts one
-                  activity in each area every month to pick litter from beaches,
-                  streets or parks. It collects litter data from these activities
-                  and uses it to raise awareness of littering as well as work with
-                  the government to provide solutions.
+                BeachPatrol is a volunteer group started in 2010 in Melbourne that aims to improve cleanliness of beaches in Melbourne. BeachPatrol covers approximately 50 postcode areas in Melbourne and conducts one activity in each area every month to pick litter from beaches, streets or parks. It collects litter data from these activities and uses it to raise awareness of littering as well as work with the government to provide solutions.
               </p>
               </div>
             </div>
@@ -107,9 +101,9 @@ export class beachpartol extends Component {
                 <Flip_card_blue
                   front_title="NUMBER OF VOLUNTEERS"
                   src="../../images/volunteer/volunteer.svg"
-                  front_num="3000"
+                  front_num="4500"
                   front_text="people"
-                  back_details=" BeachPatrol has 30 groups with over 3000 volunteers who can participate in events held in a region covering over 150 kms of Port Phillip Bay beaches and streets."
+                  back_details="BeachPatrol has over 50 groups with around 4500 registered volunteers who can participate in events held in a region covering over 150 kms of Port Phillip Bay beaches and streets."
                 />
               </div>
 

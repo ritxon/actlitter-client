@@ -54,13 +54,13 @@ class Navbar extends Component {
 						<div className="nav-menu-sub">
 							<ul>
 								{/* <li>
-                  <a href="/impact">Litter Info Summary</a>
+                  <Link to="/impact">Litter Info Summary</Link>
                 </li> */}
 								<li>
-									<a href="/impact_enviorment">Impact on Environment</a>
+									<Link to="/impact_enviorment">Impact on Environment</Link>
 								</li>
 								<li>
-									<a href="/impact_human_animal">Impact on Humans and Animals</a>
+									<Link to="/impact_human_animal">Impact on Humans and Animals</Link>
 								</li>
 								<li>
                   {/* This is the change Max  */}
@@ -76,13 +76,13 @@ class Navbar extends Component {
 						<div className="nav-menu-sub">
 							<ul>
 								{/* <li>
-                  <a href="/impact">Litter Info Summary</a>
+                  <Link href="/impact">Litter Info Summary</Link>
                 </li> */}
 								<li>
-									<a href="/data/waste">Waste collected per year</a>
+									<Link to="/data/waste">Waste collected per year</Link>
 								</li>
 								<li>
-									<a href="/data/items">Common location of litter</a>
+									<Link to="/data/items">Common location of litter</Link>
 								</li>
 							</ul>
 						</div>
@@ -100,22 +100,22 @@ class Navbar extends Component {
 						<div className="nav-menu-sub">
 							<ul>
 								<li>
-									<a href="/volunteer/beachpartol">Beach Patrol</a>
+									<Link to="/volunteer/beachpartol">BeachPatrol</Link>
 								</li>
 								<li>
-									<a href="/volunteer/cleanupAu">Clean Up Australia</a>
+									<Link to="/volunteer/cleanupAu">Clean Up Australia</Link>
 								</li>
 								<li>
-									<a href="/volunteer/keep_au_beautiful">Keep Australia Beautiful</a>
+									<Link to="/volunteer/keep_au_beautiful">Keep Australia Beautiful</Link>
 								</li>
 								<li>
-									<a href="/volunteer/oceancrusaders">Ocean Crusaders</a>
+									<Link to="/volunteer/oceancrusaders">Ocean Crusaders</Link>
 								</li>
 								<li>
-									<a href="/volunteer/tangaroaBlue">Tangaroa Blue</a>
+									<Link to="/volunteer/tangaroaBlue">Tangaroa Blue</Link>
 								</li>
 								<li>
-									<a href="/volunteer/yarrariver">Yarra Riverkeeper</a>
+									<Link to="/volunteer/yarrariver">Yarra Riverkeeper</Link>
 								</li>
 							</ul>
 						</div>
@@ -140,18 +140,19 @@ class Navbar extends Component {
 							<div className="nav_box_item_1 ss1">
 								<div class="nav_box-item">
 									<p class="nav_title">
-										<a className="nav_title" href="/">
+										<Link className="nav_title" to="/" onClick={this.closeMobileMenu}>
 											HOME
-										</a>
+										</Link>
 									</p>
 								</div>
 								<div class="nav_box-item">
 									<p class="nav_title">
-										<a className="nav_title" href="/data">
-											DATA
-										</a>
+										<Link className="nav_title" to="/map" onClick={this.closeMobileMenu}>
+											MAP
+										</Link>
 									</p>
 								</div>
+
 								<label for="rr2" class="bar">
 									<div class="nav_box-item_trans">
 										<p class="nav_title">LITTER INFO</p>
@@ -159,26 +160,28 @@ class Navbar extends Component {
 									</div>
 									<div className="clear_float"></div>
 								</label>
+								<div class="nav_box-item">
+									<p class="nav_title">
+										<Link className="nav_title" to="/data" onClick={this.closeMobileMenu}>
+										VISUALISATION
+										</Link>
+									</p>
+								</div>
+								<div class="nav_box-item">
+									<p class="nav_title">
+										<Link className="nav_title" to="/quiz" onClick={this.closeMobileMenu}>
+											QUIZ
+										</Link>
+									</p>
+								</div>
 								<label for="rr3" class="bar">
 									<div class="nav_box-item_trans ">
-										<p class="nav_title">VOLUNTEER</p>
+										<p class="nav_title">GET INVOLVED</p>
 										<img src="../../images/gallery_button_right_w.png" className="nav_main_trans_img"></img>
 									</div>
 								</label>
-								<div class="nav_box-item">
-									<p class="nav_title">
-										<a className="nav_title" href="/quiz">
-											QUIZ
-										</a>
-									</p>
-								</div>
-								<div class="nav_box-item">
-									<p class="nav_title">
-										<a className="nav_title" href="/map">
-											MAP
-										</a>
-									</p>
-								</div>
+
+
 							</div>
 
 							{/* litter info */}
@@ -191,30 +194,30 @@ class Navbar extends Component {
 									<ul class="nav_box-item-content">
 										<li>
 											<p className="nav_mobile_link">
-												<a className="nav_mobile_link" href="/impact">
+												<Link className="nav_mobile_link" to="/impact" onClick={this.closeMobileMenu}>
 													&emsp;Litter Info Summary
-												</a>
+												</Link>
 											</p>
 										</li>
 										<li>
 											<p className="nav_mobile_link">
-												<a className="nav_mobile_link" href="/impact_enviorment">
+												<Link className="nav_mobile_link" to="/impact_enviorment" onClick={this.closeMobileMenu}>
 													&emsp;Impact on Environment
-												</a>
+												</Link>
 											</p>
 										</li>
 										<li>
 											<p className="nav_mobile_link">
-												<a className="nav_mobile_link" href="/impact_human_animal">
+												<Link className="nav_mobile_link" to="/impact_human_animal" onClick={this.closeMobileMenu}>
 													&emsp;Impact on Humans and Animals
-												</a>
+												</Link>
 											</p>
 										</li>
 										<li>
 											<p className="nav_mobile_link">
-												<a className="nav_mobile_link" href="/impact_classification">
+												<Link className="nav_mobile_link" to="/impact_classification" onClick={this.closeMobileMenu}>
 													&emsp;Litter Classification
-												</a>
+												</Link>
 											</p>
 										</li>
 									</ul>
@@ -231,51 +234,51 @@ class Navbar extends Component {
 								<ul class="nav_box-item-content">
 									<li>
 										<p className="nav_mobile_link">
-											<a className="nav_mobile_link" href="/volunteer">
+											<Link className="nav_mobile_link" to="/volunteer" onClick={this.closeMobileMenu}>
 												&emsp;Volunteer Organizations
-											</a>
+											</Link>
 										</p>
 									</li>
 									<li>
 										<p className="nav_mobile_link">
-											<a className="nav_mobile_link" href="/volunteer/beachpartol">
-												&emsp;Beach Patrol
-											</a>
+											<Link className="nav_mobile_link" to="/volunteer/beachpartol" onClick={this.closeMobileMenu}>
+												&emsp;BeachPatrol
+											</Link>
 										</p>
 									</li>
 									<li>
 										<p className="nav_mobile_link">
-											<a className="nav_mobile_link" href="/volunteer/cleanupAu">
+											<Link className="nav_mobile_link" to="/volunteer/cleanupAu" onClick={this.closeMobileMenu}>
 												&emsp;Clean Up Australia
-											</a>
+											</Link>
 										</p>
 									</li>
 									<li>
 										<p className="nav_mobile_link">
-											<a className="nav_mobile_link" href="/volunteer/keep_au_beautiful">
+											<Link className="nav_mobile_link" to="/volunteer/keep_au_beautiful" onClick={this.closeMobileMenu}>
 												&emsp;Keep Australia Beautiful
-											</a>
+											</Link>
 										</p>
 									</li>
 									<li>
 										<p className="nav_mobile_link">
-											<a className="nav_mobile_link" href="/volunteer/oceancrusaders">
+											<Link className="nav_mobile_link" to="/volunteer/oceancrusaders" onClick={this.closeMobileMenu}>
 												&emsp;Ocean Crusaders
-											</a>
+											</Link>
 										</p>
 									</li>
 									<li>
 										<p className="nav_mobile_link">
-											<a className="nav_mobile_link" href="/volunteer/tangaroaBlue">
+											<Link className="nav_mobile_link" to="/volunteer/tangaroaBlue" onClick={this.closeMobileMenu}>
 												&emsp;Tangaroa Blue
-											</a>
+											</Link>
 										</p>
 									</li>
 									<li>
 										<p className="nav_mobile_link">
-											<a className="nav_mobile_link" href="/volunteer/yarrariver">
+											<Link className="nav_mobile_link" to="/volunteer/yarrariver" onClick={this.closeMobileMenu}>
 												&emsp;Yarra Riverkeeper
-											</a>
+											</Link>
 										</p>
 									</li>
 								</ul>
@@ -284,13 +287,13 @@ class Navbar extends Component {
 					</div>
 				</ul>
 			</nav>
-			/*             <AppBar>
+			/*             <LinkppBar>
           <Toolbar className="nav-container">
             <Button color="inherit" component={Link} to="/login" >Login</Button>
             <Button color="inherit" component={Link} to="/" >Home</Button>
             <Button color="inherit" component={Link} to="/signup" >Signup</Button>
           </Toolbar>
-        </AppBar> */
+        </LinkppBar> */
 		);
 	}
 }
