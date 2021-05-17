@@ -23,11 +23,11 @@ function Footer() {
                 </li>
                 <br />
                 <li>
-                  <Link to="/impact_enviorment">Impact on Enviroment</Link>
+                  <Link to="/impact_enviorment">Impact on Environment </Link>
                 </li>
                 <li>
                   <Link to="/impact_human_animal">
-                    Impact on Human & Animals
+                  Impact on Humans and Animals
                   </Link>
                 </li>
                 <li>
