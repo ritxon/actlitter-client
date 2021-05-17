@@ -188,7 +188,7 @@ const Items = () => {
 										<input id="2" type="radio" value="2" checked={valueOption == "2"} onChange={changeRadar} />
 										<label htmlFor="2">Cigarette butts (CB)</label>
 										<input id="3" type="radio" value="3" checked={valueOption == "3"} onChange={changeRadar} />
-										<label htmlFor="3">Take away containers (TW)</label>
+										<label htmlFor="3">Take away containers (TA)</label>
 										<input id="4" type="radio" value="4" checked={valueOption == "4"} onChange={changeRadar} />
 										<label htmlFor="4">Plastic bags (PB)</label>
 									</div>
