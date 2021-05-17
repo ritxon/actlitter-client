@@ -58,7 +58,7 @@ export class tangaroaBlue extends Component {
                     <div className="volunteer_key_facts">
                         <p className="organization_details">
                             <img src="../../images/volunteer/fun-fact.png"
-                                className="volunteer_fun_fact"></img>  Tangaroa Blue has removed around 18 million pieces of marine debris from the Australian coastline!
+                                className="volunteer_fun_fact"></img>  Tangaroa Blue Foundation has removed around 18 million pieces of marine debris from the Australian coastline!
                     </p>
                         <p className="organization_details">
                             <img src="../../images/volunteer/fun-fact.png"
