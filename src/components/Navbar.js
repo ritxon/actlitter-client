@@ -100,7 +100,7 @@ class Navbar extends Component {
 						<div className="nav-menu-sub">
 							<ul>
 								<li>
-									<Link to="/volunteer/beachpartol">Beach Patrol</Link>
+									<Link to="/volunteer/beachpartol">BeachPatrol</Link>
 								</li>
 								<li>
 									<Link to="/volunteer/cleanupAu">Clean Up Australia</Link>
@@ -242,7 +242,7 @@ class Navbar extends Component {
 									<li>
 										<p className="nav_mobile_link">
 											<Link className="nav_mobile_link" to="/volunteer/beachpartol" onClick={this.closeMobileMenu}>
-												&emsp;Beach Patrol
+												&emsp;BeachPatrol
 											</Link>
 										</p>
 									</li>
