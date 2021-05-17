@@ -5,7 +5,8 @@ import ".././App.css";
 export class impact_enviorment extends Component {
   render() {
     return (
-      <body>
+      <body className="impact_body_html">
+        <div className="impact_1">
         <div className="impact_fake_navigation">
           <p>
             <a href="/">&emsp; Home &ensp;</a>/ &ensp;
@@ -29,6 +30,7 @@ export class impact_enviorment extends Component {
           <hr></hr>
           <p><a href="#envirment5">Air pollution</a></p>
           <hr></hr>
+        </div>
         </div>
 
         {/* Article */}
