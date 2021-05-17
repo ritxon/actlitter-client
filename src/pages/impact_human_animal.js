@@ -41,7 +41,7 @@ export class impact_human_animal extends Component {
                 </div>
 
                 <div className="impact_video_div">
-                <iframe className="impact_video" src="https://www.youtube.com/embed/IB-y_SYQYOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="impact_video" src="https://www.youtube.com/embed/KaEQ7ct9Ifo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div className="impact_article_body">
