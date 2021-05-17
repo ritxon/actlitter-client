@@ -41,7 +41,7 @@ export class tangaroaBlue extends Component {
                                     <h1>TANGAROA BLUE</h1>
                                 </div>
                                 <p className="organization_details">
-                                    Tangaroa Blue is an Australia-wide non-profit organisation that focuses on reducing marine litter and protecting the marine environment. To address the issue of marine litter, Tangaroa Blue has launched AMDI or Australian Marine Debris Initiative, an on-ground network for organisations, volunteers and communities to contribute debris data collected during clean-up events to the AMDI Database.
+                                Tangaroa Blue Foundation is an Australian based not-for-profit organisation dedicated to protecting and preserving the environment through removal of marine debris and data driven interventions that prevent the release of plastic pollution into the environment. The Australian Marine Debris Initiative (AMDI) database was founded in 2004 and is Australia's largest data source for marine pollution. The AMDI citizen science network of organisations and volunteers has contributed over 18 million uniquely categorised items and 24000 clean-up events (May 2021) to the AMDI database.
                         </p>
                             </div>
                         </div>
@@ -62,15 +62,16 @@ export class tangaroaBlue extends Component {
                     </p>
                         <p className="organization_details">
                             <img src="../../images/volunteer/fun-fact.png"
-                                className="volunteer_fun_fact"></img>  In October 2015, Tangaroa Blue coordinated the Great Barrier Reef Clean-up in 2 weeks with over 1000 volunteers removing around 100,000 individual litter items from the reef.
+                                className="volunteer_fun_fact"></img>  Tangaroa Blue Foundation coordinates clean-up programs like the annual Great Barrier Reef Clean-up event
                     </p>
                         <p className="organization_details">
                             <img src="../../images/volunteer/fun-fact.png"
-                                className="volunteer_fun_fact"></img>  Tangaroa Blue has various clean-up events all year round and also provides support for beach clean-ups.
+                                className="volunteer_fun_fact"></img>  Tangaroa Blue Foundation has various clean-up events all year round and also provides support for beach clean-ups
                     </p>
                         <p className="organization_details">
                             <img src="../../images/volunteer/fun-fact.png"
-                                className="volunteer_fun_fact"></img>  Tangaroa Blue uses data collected in AMDI Database for analysis and provides solutions that can stop flow of litter at the source.
+                                className="volunteer_fun_fact"></img>  Tangaroa Blue Foundation uses data collected in Australian Marine Debris Initiative (AMDI) Database for analysis and provides solutions that can stop flow of litter at the source
+
                     </p>
                     </div>
                 </div>
@@ -137,13 +138,13 @@ export class tangaroaBlue extends Component {
                                 </div>
                                 <div className="previous_container">
                                     <Transition_cards
-                                        title="Cape York, Queensland"
-                                        text="Since 2011, Tangaroa Blue organises week long cleanups from May to September in Cape York that involves volunteers from all around Australia, local traditional owners and rangers."
+                                        title="Cairns to Cape York 2010-2020"
+                                        text=" Since 2010, Tangaroa Blue organises week long cleanups from Cairns to Cape York that involves volunteers from all around Australia, local traditional owners and rangers."
                                         front_title="NUMBER OF VOLUNTEERS"
-                                        front_text="200"
+                                        front_text="7837"
                                         front_text2="people"
                                         pink_front_title="AMOUNT OF LITTER"
-                                        pink_front_text="3"
+                                        pink_front_text="103"
                                         pink_front_text2="tonnes"
                                     />
 
@@ -163,7 +164,7 @@ export class tangaroaBlue extends Component {
                                 <div className="previous_container">
                                     <Transition
                                         title="Great Barrier Reef"
-                                        text="Since 2011, Tangaroa Blue organised the Great Barrier Reef cleanup over 2 weekends that involved 11 events. Over 1000 volunteers participated and removed more than 100,000 rubbish items from the lagoon."
+                                        text="Tangaroa Blue Foundation coordinates clean-up programs like the annual Great Barrier Reef Clean-up event. The 2020 events engaged over 200 volunteers and removed over 2.7 tonnes of marine debris from Bundaberg to Moa Island in the Torres Strait."
                                         src="../../images/volunteer/Great_Barrier_Reef.jpg"
                                         img_name="Great Barrier Reef"
                                     />
@@ -184,7 +185,9 @@ export class tangaroaBlue extends Component {
                     <div className="volunteer_button_div">
                         <div className="volunteer_button">
                             <p className="">
-                                Click here to go to source :&ensp;
+                            This webpage is only for educational and informational purpose. 
+              It is non-profitable and copyrights go to the respective volunteering organisation. </p><p>
+              Click the link to go to source ：
                                   <a target="blank" href="https://www.tangaroablue.org/">https://www.tangaroablue.org/</a>
                             </p>
                         </div>

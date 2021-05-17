@@ -17,7 +17,7 @@ export class beachpartol extends Component {
             <a classname="bold" href="/volunteer">
                 Volunteer Organizations &ensp;
             </a>
-            / &ensp; Beach Patrol
+            / &ensp; BeachPatrol
           </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export class beachpartol extends Component {
               </div>
               <div className="volunteer_right">
                 <div className="volunteer_title">
-                  <h1>BEACH PATROL</h1>
+                  <h1>BEACHPATROL</h1>
                 </div>
                 <p className="organization_details">
                   BeachPatrol is a volunteer group in Melbourne that aims to
@@ -215,8 +215,9 @@ export class beachpartol extends Component {
           <div className="volunteer_button_div">
             <div className="volunteer_button">
               <p className="">
-              This webpage is only for educational and informational purpose. It is non-profitable and copyrights go to the respective volunteering organisation. Click below link to go to source.
- :&ensp;
+              This webpage is only for educational and informational purpose. 
+              It is non-profitable and copyrights go to the respective volunteering organisation. </p><p>
+              Click the link to go to source ：
                             <a target="blank" href="https://www.beachpatrol.com.au/">https://www.beachpatrol.com.au/</a>
               </p>
             </div>

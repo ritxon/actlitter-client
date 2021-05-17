@@ -138,14 +138,14 @@ const Items = () => {
 						<p>
 							The graph below provides useful insights that certain items are more likely to be littered at certain
 							locations. <b>Beverage containers</b> are more likely to be littered on <b>highways</b> or near{" "}
-							<b>industrial areas</b>. Similarly, <b>cigarette butts</b> are more likely to be littered in large amounts
-							near <b>retail</b> and <b>shopping centres</b> with moderate amounts in <b>car parks</b>, near{" "}
-							<b>industrial areas</b> and on <b>beaches</b>.
+							industrial areas. Similarly, <b>cigarette butts</b> are more likely to be littered in large amounts
+							near <b>retail</b> and <b>shopping centres</b>  with moderate amounts in car parks, near{" "}
+							industrial areas and on beaches.
 						</p>
 						<p>
 							<b>Takeaway containers</b> are littered more often near recreational areas like <b>beaches</b> and{" "}
-							<b>retail centres</b> while <b>plastic bags</b> are most likely to be littered on <b>highways</b>,{" "}
-							<b>beaches</b> and near <b>industrial areas.</b>
+							<b>retail centres</b> while <b>plastic bags</b> are most likely to be littered on <b>highways</b> and{" "}
+							<b>beaches</b>.
 						</p>
 					</div>
 					<div className="section-image figure5"></div>

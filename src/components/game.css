@@ -103,7 +103,7 @@
 
 .result-text {
 	margin-bottom: 12px;
-	font-size: 24px;
+	font-size: 1.25rem;
 }
 
 .botton-section {
@@ -114,7 +114,19 @@
 }
 
 .titleQuiz {
-	padding: 50px 0 30px 0;
+	padding: 30px 0 30px 0;
+}
+
+.resultQuiz {
+	padding: 0;
+}
+
+.resultQuiz h2{
+	margin: 10px;
+}
+
+.greenResult{
+	color: red;
 }
 
 .titleQuiz h1 {
@@ -133,6 +145,10 @@
 	width: 55%;
 	order: 1;
 	padding: 40px;
+}
+
+.smallText{
+	font-size: 0.8rem;
 }
 
 .image-section {
@@ -165,8 +181,7 @@
 
 .trophy-img {
 	justify-content: center;
-	width: 180px;
-	height: 100px;
+	width: 120px;
 }
 
 .image-section-wrap {
