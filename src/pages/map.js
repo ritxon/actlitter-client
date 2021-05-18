@@ -230,7 +230,7 @@ export default function Map() {
                               url: "images/brown.png",
                               origin: new window.google.maps.Point(0, 0),
                               anchor: new window.google.maps.Point(15, 15),
-                              scaledSize: new window.google.maps.Size(30, 30),
+                              scaledSize: new window.google.maps.Size(25, 30),
                             }
                           : /Recycling/.test(bin.description) &&
                             (binType == "All" || binType == "Recycling")
@@ -238,7 +238,7 @@ export default function Map() {
                               url: "images/yellowbin.png",
                               origin: new window.google.maps.Point(0, 0),
                               anchor: new window.google.maps.Point(15, 15),
-                              scaledSize: new window.google.maps.Size(30, 30),
+                              scaledSize: new window.google.maps.Size(25, 30),
                             }
                           : !/Cigarette/.test(bin.description) &&
                             !/Recycling/.test(bin.description)
@@ -246,7 +246,7 @@ export default function Map() {
                               url: "images/red.png",
                               origin: new window.google.maps.Point(0, 0),
                               anchor: new window.google.maps.Point(15, 15),
-                              scaledSize: new window.google.maps.Size(30, 30),
+                              scaledSize: new window.google.maps.Size(25, 30),
                             }
                           : {
                               url: "images/bin.png",
