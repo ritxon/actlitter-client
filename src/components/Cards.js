@@ -38,7 +38,7 @@ export class Cards extends Component {
                 src="images/figure2.jpg"
                 // text="Litter can have an adverse impact on health of people as well as animals. Inefficient litter disposal can create unhygienic living conditions, block drainage systems and spread diseases. Litter can be injurious to Australian wildlife due to ingestion or entanglement that can lead to suffocation, drowning and maiming."
                 text=""
-                label="Impact on Human & Animals"
+                label="Impact on Humans and Animals"
                 path="/impact_human_animal"
               />
               <CardItem
