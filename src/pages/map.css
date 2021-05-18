@@ -188,15 +188,15 @@ td {
   display: none;
 }
 .map-index ul li:hover .hashed-text {
-  display: block;
-  height: 50px;
+display: block;
+  height: 70px;
   text-align: center;
-
-  margin: 0 auto;
+  margin: auto;
   background-color: #ccc;
+
 }
 .map-index img {
-  width: 50px;
+  height: 70px;
   margin: 0 auto;
 }
 
